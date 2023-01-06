@@ -14,6 +14,13 @@ will follow soon...
 
 > Many sources recommend using various IDE's (_e.g. Thonny, uPyCraft, Mu, etc._). They are all very good but not really needed.
 
+**Documentation**
+
+- [esptool](https://docs.espressif.com/projects/esptool/en/latest/esp32/)
+- [rshell](https://github.com/dhylands/rshell)
+
+**Installation**
+
 ```shell
 # create project
 $ mkdir -p ~/Projects/ESP32
@@ -37,5 +44,13 @@ $ source venv/bin/activate
 ### Micropython
 
 will follow soon...
+
+**Firmware**
+
+- [Firmware](https://micropython.org/download/)
+
+**Documentation**
+
+- [MicroPython](https://docs.micropython.org/en/latest/)
 
 [Go Back](https://github.com/Lupin3000/ESP)
