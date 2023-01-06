@@ -12,4 +12,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - Setup Micropython
 - [Tutorials](./Tutorials)
   - LED's
+    - [blink a single LED](./Tutorials/LED/single_led_blink.py)
+    - [fade a single LED](./Tutorials/LED/single_led_fade.py)
   - WiFi
+    - [Access Point Scan](./Tutorials/WiFi/access_point_scan.py)
