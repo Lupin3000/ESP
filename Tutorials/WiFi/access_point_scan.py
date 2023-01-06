@@ -3,6 +3,11 @@ import ubinascii as binascii
 
 
 def conv_to_auth(number: int) -> str:
+    """
+    convert authentication mode
+    :param number: int of authentication mode
+    :return: str of authentication mode
+    """
     if number == 0:
         return 'open'
     elif number == 1:
@@ -17,15 +22,19 @@ def conv_to_auth(number: int) -> str:
         return 'unknown'
 
 
+# declare variables
 new_line = '\n'
 count = 0
 
+# create station
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
 
+# scan access points
 ap = sta.scan()
 ap_count = len(ap)
 
+# output access points
 print(f"{new_line}{'Name' : <25}{'BSSID' : ^20}{'Channel' : ^10}{'RSSI' : ^10}{'Authentication' : ^20}")
 print('-' * 82)
 
