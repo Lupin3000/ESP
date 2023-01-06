@@ -5,6 +5,7 @@
 - LED's
   - [blink a single LED](./LED/single_led_blink.py)
   - [fade a single LED](./LED/single_led_fade.py)
+  - [single LED Heartbeat](./LED/single_led_heartbeat.py)
 - WiFi
   - [Access Point Scan](./WiFi/access_point_scan.py)
   - [Simple Access Point](./WiFi/simple_access_point.py)
