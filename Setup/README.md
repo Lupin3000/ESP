@@ -3,14 +3,14 @@
 ## Table of Contents
 
 - [Requirements](#Requirements)
-- [Prepare environment](#Prepare environment)
-- [Setup Micropython](#Setup Micropython)
+- [Environment](#Environment)
+- [Micropython](#Micropython)
 
 ### Requirements
 
 will follow soon...
 
-### Prepare environment
+### Environment
 
 > Many sources recommend using various IDE's (_e.g. Thonny, uPyCraft, Mu, etc._). They are all very good but not really needed.
 
@@ -34,7 +34,7 @@ $ source venv/bin/activate
 (venv) $ pip3 freeze
 ```
 
-### Setup Micropython
+### Micropython
 
 will follow soon...
 
