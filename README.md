@@ -7,9 +7,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
 ## Table of Contents
 
 - [Setup](./Setup)
-  - Requirements
-  - Prepare environment
-  - Setup Micropython
+  - [Requirements](./Setup#Requirements)
+  - [Environment](./Setup#Environment)
+  - [Micropython](./Setup#Micropython)
 - [Tutorials](./Tutorials)
   - LED's
     - [blink a single LED](./Tutorials/LED/single_led_blink.py)
