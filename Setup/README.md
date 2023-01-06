@@ -8,7 +8,10 @@
 
 ### Requirements
 
-will follow soon...
+- USB cable(s)
+- Python 3
+- Internet access
+- ESP device(s)
 
 ### Environment
 

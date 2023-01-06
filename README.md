@@ -2,7 +2,7 @@
 
 ## Very Important
 
-The author of this repository (_information, scripts, code_) take no responsibility for your use or misuse! Respect the law in your country/location/area! The information included at this repository is for educational purposes only!
+The author of this repository (_information, scripts, code_) take no responsibility for your use or misuse (_or any damage of your devices_)! Respect the law in your country/location/area! The information included at this repository is for educational purposes only!
 
 ## Table of Contents
 
