@@ -6,4 +6,4 @@
 - Prepare environment
 - Setup Micropython
 
-[Go Back](../README.md)
+[Go Back](../)
