@@ -12,9 +12,10 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - Micropython
 - [Tutorials](./Tutorials)
   - LED's
-    - [blink a single LED](./Tutorials/LED/single_led_blink.py)
-    - [fade a single LED](./Tutorials/LED/single_led_fade.py)
-    - [single LED Heartbeat](./Tutorials/LED/single_led_heartbeat.py)
+    - [Blink a single LED](./Tutorials/LED/single_led_blink.py)
+    - [Fade a single LED](./Tutorials/LED/single_led_fade.py)
+    - [Single LED Heartbeat](./Tutorials/LED/single_led_heartbeat.py)
   - WiFi
     - [Access Point Scan](./Tutorials/WiFi/access_point_scan.py)
     - [Simple Access Point](./Tutorials/WiFi/simple_access_point.py)
+    - [Connect to WLAN](./Tutorials/WiFi/connect_to_wlan.py)

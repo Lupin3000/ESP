@@ -3,11 +3,12 @@
 ## Table of Contents
 
 - LED's
-  - [blink a single LED](./LED/single_led_blink.py)
-  - [fade a single LED](./LED/single_led_fade.py)
-  - [single LED Heartbeat](./LED/single_led_heartbeat.py)
+  - [Blink a single LED](./LED/single_led_blink.py)
+  - [Fade a single LED](./LED/single_led_fade.py)
+  - [Single LED Heartbeat](./LED/single_led_heartbeat.py)
 - WiFi
   - [Access Point Scan](./WiFi/access_point_scan.py)
   - [Simple Access Point](./WiFi/simple_access_point.py)
+  - [Connect to WLAN](./WiFi/connect_to_wlan.py)
 
 [Go Back](https://github.com/Lupin3000/ESP)
