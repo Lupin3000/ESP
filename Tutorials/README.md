@@ -10,5 +10,6 @@
   - [Access Point Scan](./WiFi/access_point_scan.py)
   - [Simple Access Point](./WiFi/simple_access_point.py)
   - [Connect to WLAN](./WiFi/connect_to_wlan.py)
+  - [Webserver Station Mode](./WiFi/webserver_station_mode.py)
 
 [Go Back](https://github.com/Lupin3000/ESP)
