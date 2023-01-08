@@ -1,10 +1,10 @@
-import network
-import ubinascii as binascii
+from network import WLAN, STA_IF
+from ubinascii import hexlify
 
 
-def conv_to_auth(number: int) -> str:
+def conv_mode(number: int) -> str:
     """
-    convert authentication mode
+    convert WLAN authentication mode
     :param number: int of authentication mode
     :return: str of authentication mode
     """
@@ -22,12 +22,14 @@ def conv_to_auth(number: int) -> str:
         return 'unknown'
 
 
-# declare variables
-new_line = '\n'
+# declare constant
+NL = '\n'
+
+# declare variable
 count = 0
 
 # create station
-sta = network.WLAN(network.STA_IF)
+sta = WLAN(STA_IF)
 sta.active(True)
 
 # scan access points
@@ -35,18 +37,18 @@ ap = sta.scan()
 ap_count = len(ap)
 
 # output access points
-print(f"{new_line}{'Name' : <25}{'BSSID' : ^20}{'Channel' : ^10}{'RSSI' : ^10}{'Authentication' : ^20}")
+print(f"{NL}{'Name' : <25}{'BSSID' : ^20}{'Channel' : ^10}{'RSSI' : ^10}{'Authentication' : ^20}")
 print('-' * 82)
 
 for item in ap:
     count += 1
     byte_name = item[0]
     str_name = str(byte_name, 'utf-8')
-    byte_mac = binascii.hexlify(item[1], ':')
+    byte_mac = hexlify(item[1], ':')
     str_mac = str(byte_mac, 'utf-8')
-    strength = f'{item[3]} dBm'
+    int_strength = f'{item[3]} dBm'
 
     if count < ap_count:
-        print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{strength : ^10}{conv_to_auth(item[4]) : ^20}")
+        print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}")
     else:
-        print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{strength : ^10}{conv_to_auth(item[4]) : ^20}{new_line}")
+        print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}{NL}")

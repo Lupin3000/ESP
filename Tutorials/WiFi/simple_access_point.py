@@ -1,8 +1,11 @@
-import network
+from network import WLAN, AP_IF
 
+
+# declare constant
+NL = '\n'
 
 # create access point
-ap = network.WLAN(network.AP_IF)
+ap = WLAN(AP_IF)
 ap.active(True)
 ap.config(essid='ESP-Network', channel=6, hidden=False)
 
@@ -11,5 +14,4 @@ while not ap.active():
 
 # show configuration
 config = ap.ifconfig()
-new_line = '\n'
-print(f'IP: {config[0]}{new_line}Subnet mask: {config[1]}{new_line}Gateway: {config[2]}{new_line}DNS: {config[3]}')
+print(f'IP: {config[0]}{NL}Subnet mask: {config[1]}{NL}Gateway: {config[2]}{NL}DNS: {config[3]}')

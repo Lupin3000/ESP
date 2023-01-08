@@ -19,6 +19,7 @@
 
 - USB Hub(s)
 - Breadboard
+- Resistor(s)
 - LED(s)
 - Dupont cable(s)
 - Servomotor(s)
