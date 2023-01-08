@@ -9,7 +9,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - [Setup](./Setup)
 - [Tutorials](./Tutorials)
   - Board
-    - [ESP32 Information](./BOARD/esp32_info.py) 
+    - [ESP32 Information](./Tutorials/BOARD/esp32_info.py) 
   - LED's
     - [Blink a single LED](./Tutorials/LED/single_led_blink.py)
     - [Fade a single LED](./Tutorials/LED/single_led_fade.py)
