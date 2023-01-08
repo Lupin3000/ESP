@@ -1,24 +1,13 @@
-import network
-import usocket as socket
+from network import WLAN, STA_IF
+from usocket import socket, AF_INET, SOCK_STREAM
 
 
-# define variables
-ssid = ''
-password = ''
+# declare constant
+NL = '\n'
 
-# start connection
-sta = network.WLAN(network.STA_IF)
-sta.active(True)
-sta.connect(ssid, password)
-
-while not sta.isconnected():
-    print(f'Connect to {ssid} ... please wait')
-
-config = sta.ifconfig()
-new_line = '\n'
-print(f'IP: {config[0]}{new_line}Subnet mask: {config[1]}{new_line}Gateway: {config[2]}{new_line}DNS: {config[3]}')
-
-# define webpage
+# declare variables
+ssid = 'ORBI82'
+password = 'boldbug903'
 html = """<html>
             <head>
                 <title>ESP</title>
@@ -29,13 +18,25 @@ html = """<html>
             </body>
           </html>"""
 
-# start listener on port 80
-s_con = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s_con.bind(('', 80))
-s_con.listen(5)
+# create station and start connection
+sta = WLAN(STA_IF)
+sta.active(True)
+sta.connect(ssid, password)
+
+while not sta.isconnected():
+    print(f'Connect to {ssid} ... please wait')
+
+# get network configuration
+config = sta.ifconfig()
+print(f'IP: {config[0]}{NL}Subnet mask: {config[1]}{NL}Gateway: {config[2]}{NL}DNS: {config[3]}')
+
+# start socket listener on port 80
+s_lis = socket(AF_INET, SOCK_STREAM)
+s_lis.bind(('', 80))
+s_lis.listen(5)
 
 while True:
-  conn, addr = s_con.accept()
+  conn, addr = s_lis.accept()
   print(f'Got a connection from {str(addr)}')
 
   request = conn.recv(1024)
