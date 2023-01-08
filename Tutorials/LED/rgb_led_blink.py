@@ -1,11 +1,11 @@
 from machine import Pin
-from time import sleep
+from utime import sleep
 
 
 # define constant
 DELAY = 3
 
-# set GPIO pin
+# set GPIO pins
 rgb_r = Pin(21, Pin.OUT)
 rgb_g = Pin(22, Pin.OUT)
 rgb_b = Pin(23, Pin.OUT)
