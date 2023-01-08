@@ -8,14 +8,24 @@
 
 ### Requirements
 
+**Mandatory**
+
 - USB cable(s)
 - Python 3
 - Internet access
 - ESP device(s)
 
+**Optional**
+
+- Breadboard
+- LED(s)
+- Dupont cable(s)
+- Servomotor(s)
+- Piezo Buzzer
+
 ### Environment
 
-> Many sources recommend using various IDE's (_e.g. Thonny, uPyCraft, Mu, etc._). They are all very good but not really needed.
+> Many sources recommend using various IDE's (_e.g. Arduino, Thonny, uPyCraft, Mu, etc._). They are all very good but not really needed.
 
 **Documentation**
 
@@ -47,7 +57,7 @@ $ source venv/bin/activate
 
 ### Micropython
 
-> It is very important to use the appropriate MicroPython binary for the ESP chip! You can quickly find out this information. Depending on the operating system, you also need the VCP drivers (_before you start_).
+> It is very important to use the appropriate MicroPython binary for the ESP chip! You can quickly find out this information via `esptool`. Depending on the operating system, you also need the VCP drivers (_before you start_).
 
 - [VCP Driver for macOS/Windows](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 
