@@ -5,8 +5,8 @@ from network import WLAN, STA_IF
 NL = '\n'
 
 # declare variables
-ssid = ''
-password = ''
+ssid = 'YOUR WLAN SSID'
+password = 'YOUR WLAN PASSWORD'
 
 # create station
 sta = WLAN(STA_IF)

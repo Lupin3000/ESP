@@ -6,15 +6,16 @@ from usocket import socket, AF_INET, SOCK_STREAM
 NL = '\n'
 
 # declare variables
-ssid = ''
-password = ''
+ssid = 'YOUR WLAN SSID'
+password = 'YOUR WLAN PASSWORD'
+
 html = """<html>
             <head>
-                <title>ESP</title>
+                <title>ESP Webserver</title>
             </head>
             <body>
-                <h1>Welcome to ESP</h1>
-                <p>simple webserver on ESP</p>
+                <h1>Welcome to your ESP</h1>
+                <p>Example of an very simple webserver on ESP.</p>
             </body>
           </html>"""
 
