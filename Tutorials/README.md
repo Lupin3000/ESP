@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+- Board
+  - [ESP32 Information](./BOARD/esp32_info.py)
 - LED's
   - [Blink a single LED](./LED/single_led_blink.py)
   - [Fade a single LED](./LED/single_led_fade.py)
