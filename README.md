@@ -13,8 +13,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - LED's
     - [Blink a single LED](./Tutorials/LED/single_led_blink.py)
     - [Fade a single LED](./Tutorials/LED/single_led_fade.py)
-    - [Single LED Heartbeat](./Tutorials/LED/single_led_heartbeat.py)
-    - [RGB LED blink](./Tutorials/LED/rgb_led_blink.py)
+    - [Heartbeat a single LED](./Tutorials/LED/single_led_heartbeat.py)
+    - [Blink a RGB LED](./Tutorials/LED/rgb_led_blink.py)
+    - [Fade a RGB LED](./Tutorials/LED/rgb_led_fade.py)
   - WiFi
     - [Access Point Scan](./Tutorials/WiFi/access_point_scan.py)
     - [Simple Access Point](./Tutorials/WiFi/simple_access_point.py)
