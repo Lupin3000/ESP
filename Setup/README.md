@@ -75,7 +75,7 @@ On macOS (_depending to ESP board_) you can find `/dev/tty.usbmodem*` or `/dev/t
 
 ```shell
 # show information
-$ esptool.py --port [SERIAL-PORT] flash_id
+(venv) $ esptool.py --port [SERIAL-PORT] flash_id
 ```
 
 **Firmware**
@@ -86,10 +86,10 @@ Download the `*.bin` file suitable for ESP devices and flash MicroPython.
 
 ```shell
 # erease flash (ESP32)
-$ esptool --chip esp32 --port [SERIAL-PORT] erase_flash
+(venv) $ esptool --chip esp32 --port [SERIAL-PORT] erase_flash
 
 # upload mircopython firmware (ESP32)
-$ esptool --chip esp32 --port [SERIAL-PORT] --baud 460800 write_flash -z 0x1000 [BINFILE]
+(venv) $ esptool --chip esp32 --port [SERIAL-PORT] --baud 460800 write_flash -z 0x1000 [BINFILE]
 ```
 
 **Connect**
