@@ -6,8 +6,8 @@ from usocket import socket, AF_INET, SOCK_STREAM
 NL = '\n'
 
 # declare variables
-ssid = 'ORBI82'
-password = 'boldbug903'
+ssid = ''
+password = ''
 html = """<html>
             <head>
                 <title>ESP</title>
