@@ -4,24 +4,26 @@
 
 - [Requirements](#Requirements)
 - [Environment](#Environment)
-- [Micropython](#Micropython)
+- [MicroPython](#MicroPython)
 
 ### Requirements
 
 **Mandatory**
 
 - USB cable(s)
-- Python 3
+- Python 3.x
 - Internet access
 - ESP device(s)
 
 **Optional**
 
+- USB Hub(s)
 - Breadboard
 - LED(s)
 - Dupont cable(s)
 - Servomotor(s)
 - Piezo Buzzer
+- etc.
 
 ### Environment
 
@@ -55,7 +57,7 @@ $ source venv/bin/activate
 (venv) $ pip3 freeze
 ```
 
-### Micropython
+### MicroPython
 
 > It is very important to use the appropriate MicroPython binary for the ESP chip! You can quickly find out this information via `esptool`. Depending on the operating system, you also need the VCP drivers (_before you start_).
 
