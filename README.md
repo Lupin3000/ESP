@@ -17,6 +17,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - [Heartbeat a single LED](./Tutorials/LED/single_led_heartbeat.py)
     - [Blink a RGB LED](./Tutorials/LED/rgb_led_blink.py)
     - [Fade a RGB LED](./Tutorials/LED/rgb_led_fade.py)
+    - [NeoPixel LED Strip random colors](./Tutorials/LED/neopixel_sidelight_strip_simple.py)
   - WiFi
     - [Access Point Scan](./Tutorials/WiFi/access_point_scan.py)
     - [Simple Access Point](./Tutorials/WiFi/simple_access_point.py)

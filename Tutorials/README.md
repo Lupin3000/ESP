@@ -10,6 +10,7 @@
   - [Heartbeat a single LED](./LED/single_led_heartbeat.py)
   - [Blink a RGB LED](./LED/rgb_led_blink.py)
   - [Fade a RGB LED](./LED/rgb_led_fade.py)
+  - [NeoPixel LED Strip random colors](./LED/neopixel_sidelight_strip_simple.py)
 - WiFi
   - [Access Point Scan](./WiFi/access_point_scan.py)
   - [Simple Access Point](./WiFi/simple_access_point.py)

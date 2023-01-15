@@ -24,6 +24,7 @@
 - Dupont cable(s)
 - Servomotor(s)
 - Piezo Buzzer
+- Adafruit NeoPixel LED Side Light Strip - Black 90 LED
 - etc.
 
 ### Environment
