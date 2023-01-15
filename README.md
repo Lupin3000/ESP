@@ -22,4 +22,5 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - [Connect to WLAN](./Tutorials/WiFi/connect_to_wlan.py)
   - Server
     - [Webserver Station Mode](./Tutorials/SERVER/webserver_station_mode.py)
+    - [Webserver Access Point Mode](./Tutorials/SERVER/ap_time_info.py)
     - [Fade LED via webpage](./Tutorials/SERVER/fade_led_on_off.py)
