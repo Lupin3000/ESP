@@ -68,7 +68,9 @@ $ screen [SERIAL-PORT] 115200
 
 >>> # show python version
 >>> import sys
->>> print(sys.version)
+>>> sys.version
+>>> # ... or ...
+>>> sys.implementation
 
 >>> # working with directories
 >>> import os
