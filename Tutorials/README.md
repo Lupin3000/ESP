@@ -14,6 +14,8 @@
   - [Access Point Scan](./WiFi/access_point_scan.py)
   - [Simple Access Point](./WiFi/simple_access_point.py)
   - [Connect to WLAN](./WiFi/connect_to_wlan.py)
-  - [Webserver Station Mode](./WiFi/webserver_station_mode.py)
+- Server
+  - [Webserver Station Mode](./SERVER/webserver_station_mode.py)
+  - [Fade LED via webpage](./SERVER/fade_led_on_off.py)
 
 [Go Back](https://github.com/Lupin3000/ESP)

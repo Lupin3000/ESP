@@ -20,4 +20,6 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - [Access Point Scan](./Tutorials/WiFi/access_point_scan.py)
     - [Simple Access Point](./Tutorials/WiFi/simple_access_point.py)
     - [Connect to WLAN](./Tutorials/WiFi/connect_to_wlan.py)
-    - [Webserver Station Mode](./Tutorials/WiFi/webserver_station_mode.py)
+  - Server
+    - [Webserver Station Mode](./Tutorials/SERVER/webserver_station_mode.py)
+    - [Fade LED via webpage](./Tutorials/SERVER/fade_led_on_off.py)
