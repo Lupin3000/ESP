@@ -6,8 +6,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## Table of Contents
 
-- [Setup](./Setup)
-- [Tutorials](./Tutorials)
+- [Setup](./Setup/README.md)
+- [REPL](./REPL/README.md)
+- [Tutorials](./Tutorials/README.md)
   - Board
     - [ESP32 Information](./Tutorials/BOARD/esp32_info.py) 
   - LED's
