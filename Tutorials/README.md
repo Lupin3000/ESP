@@ -13,6 +13,7 @@
   - [NeoPixel LED Strip random colors](./LED/neopixel_sidelight_strip_simple.py)
   - [NeoPixel LED Strip color race](./LED/neopixel_sidelight_strip_race.py)
   - [Touch single LED on/off](./LED/single_led_touch.py)
+  - [Touch 3 single LEDs on/off](./LED/3_single_led_touch.py)
 - WiFi
   - [Access Point Scan](./WiFi/access_point_scan.py)
   - [Simple Access Point](./WiFi/simple_access_point.py)

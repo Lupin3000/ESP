@@ -16,6 +16,7 @@ touch_pin = TouchPad(Pin(TOUCH_GPIO))
 
 def toggle_led() -> None:
     global led_status
+    global led_pin
 
     if not led_status:
         print('[INFO] LED ON')

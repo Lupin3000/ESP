@@ -21,6 +21,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - [NeoPixel LED Strip random colors](./Tutorials/LED/neopixel_sidelight_strip_simple.py)
     - [NeoPixel LED Strip color race](./Tutorials/LED/neopixel_sidelight_strip_race.py)
     - [Touch single LED on/off](./Tutorials/LED/single_led_touch.py)
+    - [Touch 3 single LEDs on/off](./Tutorials/LED/3_single_led_touch.py)
   - WiFi
     - [Access Point Scan](./Tutorials/WiFi/access_point_scan.py)
     - [Simple Access Point](./Tutorials/WiFi/simple_access_point.py)
