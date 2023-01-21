@@ -3,6 +3,12 @@
 ## Basic commands
 
 ```shell
+# show rshell help
+$ rshell -h
+
+# list serial ports
+$ rshell -l
+
 # start rshell
 $ rshell
 
