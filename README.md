@@ -7,6 +7,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 ## Table of Contents
 
 - [Setup](./Setup/README.md)
+- [RSHELL](./RSHELL/README.md)
 - [REPL](./REPL/README.md)
 - [Tutorials](./Tutorials/README.md)
   - Board
