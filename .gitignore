@@ -1,4 +1,8 @@
 .DS_Store
 .idea
+
 venv
 bin
+./main.py
+./boot.py
+
