@@ -49,6 +49,8 @@ $ rshell -p [SERIAL PORT] ls /pyboard
 
 _Note: The following examples require the first or second option (what you see at the prompt)._
 
+> Always pay attention to whether you are working locally or on the board!
+
 ## Boards
 
 ```shell
@@ -79,8 +81,6 @@ _Note: However, note the name change in the following examples (this has not bee
 
 ## Files
 
-> Always pay attention to whether you are working locally or on the board!
-
 **List and show files**
 
 ```shell
@@ -92,6 +92,12 @@ _Note: However, note the name change in the following examples (this has not bee
 
 # show board file conntent on stdout
 /your/local/path> cat /pyboard/boot.py
+
+# show filetype (board)
+/your/local/path> filetype /pyboard/boot.py
+
+# show filesize (board)
+/your/local/path> filesize /pyboard/boot.py
 ```
 
 **Copy files**
