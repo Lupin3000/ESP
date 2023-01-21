@@ -144,6 +144,6 @@ _Note: However, note the name change in the following examples (this has not bee
 
 ## other commands
 
-> There are many more commands but I am sure that you will find out for yourself what they do and how they are carried out.
+> There are many more rshell arguments, options and commands but I am sure that you will find out for yourself what they do and how they are carried out.
 
 [Go Back](https://github.com/Lupin3000/ESP)
