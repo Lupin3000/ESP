@@ -81,6 +81,8 @@ _Note: However, note the name change in the following examples (this has not bee
 
 > Always pay attention to whether you are working locally or on the board!
 
+**List and show files**
+
 ```shell
 # list local files
 /your/local/path> ls
@@ -102,14 +104,21 @@ _Note: However, note the name change in the following examples (this has not bee
 /your/local/path> cp /pyboard/boot.py boot.py
 ```
 
-**Delete files and directories**
+**Delete files**
 
 ```shell
-# copy from local to board
+# delete file (board)
 /your/local/path> rm /pyboard/example.py
+```
 
-# copy from board to local
-/your/local/path> rm -r /pyboard/demo/example.py
+## Directories
+
+```shell
+# create directory (board)
+/your/local/path> mkdir /pyboard/demo
+
+# delete directory (board)
+/your/local/path> rm -r /pyboard/demo/
 ```
 
 ## REPL
