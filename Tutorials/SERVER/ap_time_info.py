@@ -36,7 +36,7 @@ def get_time() -> str:
     # get date/time without NTP
     rtc = RTC()
     tuple_rtc = rtc.datetime()
-    str_date_time = f'{tuple_rtc[0]}-{tuple_rtc[1]}-{tuple_rtc[2]} {tuple_rtc[3]}:{tuple_rtc[4]}:{tuple_rtc[5]}'
+    str_date_time = f'{tuple_rtc[0]}-{tuple_rtc[1]}-{tuple_rtc[2]} {tuple_rtc[4]}:{tuple_rtc[5]}:{tuple_rtc[6]}'
     org_time = f'Local time without synchronization: {str_date_time}'
 
     return org_time
