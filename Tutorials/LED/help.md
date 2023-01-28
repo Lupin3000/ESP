@@ -11,6 +11,18 @@
 
 ![circuit_diagram_single_led.png](../../images/help/circuit_diagram_single_led.png)
 
+## Turn single LED ON/OFF with button
+
+### Necessary parts
+
+- 1x Button
+- 1x LED (_any color_)
+- 1x Resistor (_min. 220 ohms_)
+
+### Circuit diagram
+
+![circuit_diagram_single_led_btn.png](../../images/help/circuit_diagram_single_led_btn.png)
+
 ## One RGB LED
 
 ### Necessary parts

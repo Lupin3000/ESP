@@ -4,9 +4,11 @@
 
 - Board
   - [ESP32 Board Information](./BOARD/esp32_info.py)
+  - [Show memory information](./BOARD/memory.py)
 - LED's (_[Some help](./LED/help.md)_)
   - [Blink a single LED ON/OFF](./LED/one_single_led_blink.py)
   - [Fade a single LED ON/OFF](./LED/one_single_led_fade.py)
+  - [Turn single LED ON/OFF with button](./LED/one_single_led_btn.py)
   - [Heartbeat a single LED ON/OFF](./LED/one_single_led_heartbeat.py)
   - [Blink a single RGB LED](./LED/one_rgb_led_blink.py)
   - [Fade a single RGB LED](./LED/one_rgb_led_fade.py)
