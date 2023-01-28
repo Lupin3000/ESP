@@ -22,3 +22,12 @@
 
 ![circuit_diagram_single_led.png](../../images/help/circuit_diagram_rgb_led.png)
 
+## Touch 3 single LEDs ON/OFF
+
+### Necessary parts
+
+- 1x red RGB LED
+- 1x green RGB LED
+- 1x blue RGB LED
+- 3x Resistors (_min. 220 ohms_)
+
