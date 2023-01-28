@@ -31,6 +31,7 @@ On [wokwi](https://wokwi.com) you can simulate your circuit/code inside the brow
   - Sensor's (_[Some help](./Tutorials/SENSORS/help.md)_)
     - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)
     - [Light/Shadow detection with LED](./Tutorials/SENSORS/shadow_detection.py)
+    - [Temperature/Humidity with DHT11](./Tutorials/SENSORS/dht11.py)
   - WLAN
     - [Simple OPEN WLAN Access Point Mode](./Tutorials/WiFi/wlan_access_point_mode_open.py)
     - [Simple WP2 WLAN Access Point Mode](./Tutorials/WiFi/wlan_access_point_mode_wp2.py)
