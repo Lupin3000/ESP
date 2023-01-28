@@ -19,7 +19,7 @@
 
 ## Temperature/Humidity with DHT11
 
-> You can use the same source code and circuit diagram for DHT11 and DHT22! Only the import must adapted for specific device.
+> You can use the same source code and circuit diagram for DHT11 and DHT22! Only the import  and object must adapted for specific device.
 
 ```python
 # DHT11 import
@@ -27,6 +27,14 @@ from dht import DHT11
 
 # DHT22 import
 from dht import DHT22
+
+# ...
+
+# DHT11 object
+sensor = DHT11(Pin(DHT_GPIO_PIN))
+
+# DHT22 object
+sensor = DHT22(Pin(DHT_GPIO_PIN))
 ```
 
 Minimum values for `DELAY` and ranges:

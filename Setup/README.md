@@ -27,6 +27,8 @@
 - Adafruit NeoPixel LED Side Light Strip - Black 90 LED
 - etc.
 
+> see "Help pages" for more details!
+
 ### Environment
 
 > Many sources recommend using various IDE's (_e.g. Arduino, Thonny, uPyCraft, Mu, etc._). They are all very good but not really needed.
