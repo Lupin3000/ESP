@@ -4,3 +4,4 @@ bin
 .DS_Store
 /main.py
 /boot.py
+/TEST/

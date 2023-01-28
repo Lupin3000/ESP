@@ -1,15 +1,15 @@
 from micropython import const
-from network import WLAN, AP_IF, AUTH_OPEN
+from network import WLAN, AP_IF
 
 
 # define constants
-WLAN_ESSID = const('ESP-NET')
+WLAN_ESSID = const('OPEN-NET')
 WLAN_CHANNEL = const(6)
 
 # create WLAN object (access point mode)
 ap = WLAN(AP_IF)
 ap.active(True)
-ap.config(essid=WLAN_ESSID, channel=WLAN_CHANNEL, authmode=AUTH_OPEN, hidden=False)
+ap.config(essid=WLAN_ESSID, channel=WLAN_CHANNEL, hidden=False)
 
 while not ap.active():
     print('[INFO] Create Access Point ... please wait')

@@ -20,7 +20,8 @@
   - [IR Flame detection with LED](./SENSORS/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./SENSORS/shadow_detection.py)
 - WLAN
-  - [Simple WLAN Access Point Mode](./WiFi/wlan_access_point_mode.py)
+  - [Simple OPEN WLAN Access Point Mode](./WiFi/wlan_access_point_mode_open.py)
+  - [Simple WP2 WLAN Access Point Mode](./WiFi/wlan_access_point_mode_wp2.py)
   - [Simple WLAN Station Mode](./WiFi/wlan_station_mode.py)
   - [Access Point Scanner](./WiFi/access_point_scan.py)
 - Server
