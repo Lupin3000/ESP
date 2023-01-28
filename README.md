@@ -4,6 +4,10 @@
 
 The author of this repository (_information, scripts, code_) take no responsibility for your use or misuse (_or any damage of your devices_)! Respect the law in your country/location/area! The information included at this repository is for educational purposes only!
 
+## Information
+
+On [wokwi](https://wokwi.com) you can simulate your circuit/code inside the browser.
+
 ## Table of Contents
 
 - [Setup](./Setup/README.md)
@@ -11,21 +15,24 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - [REPL](./REPL/README.md)
 - [Tutorials](./Tutorials/README.md)
   - Board
-    - [ESP32 Information](./Tutorials/BOARD/esp32_info.py) 
-  - LED's
-    - [Blink a single LED](./Tutorials/LED/single_led_blink.py)
-    - [Fade a single LED](./Tutorials/LED/single_led_fade.py)
-    - [Heartbeat a single LED](./Tutorials/LED/single_led_heartbeat.py)
-    - [Blink a RGB LED](./Tutorials/LED/rgb_led_blink.py)
-    - [Fade a RGB LED](./Tutorials/LED/rgb_led_fade.py)
+    - [ESP32 Board Information](./Tutorials/BOARD/esp32_info.py) 
+  - LED's (_[Some help](./Tutorials/LED/help.md)_)
+    - [Blink a single LED ON/OFF](./Tutorials/LED/one_single_led_blink.py)
+    - [Fade a single LED ON/OFF](./Tutorials/LED/one_single_led_fade.py)
+    - [Heartbeat a single LED ON/OFF](./Tutorials/LED/one_single_led_heartbeat.py)
+    - [Blink a single RGB LED](./Tutorials/LED/one_rgb_led_blink.py)
+    - [Fade a single RGB LED](./Tutorials/LED/one_rgb_led_fade.py)
+    - [Touch single LED ON/OFF](./Tutorials/LED/one_single_led_touch.py)
+    - [Touch 3 single LEDs ON/OFF](./Tutorials/LED/three_single_led_touch.py)
     - [NeoPixel LED Strip random colors](./Tutorials/LED/neopixel_sidelight_strip_simple.py)
     - [NeoPixel LED Strip color race](./Tutorials/LED/neopixel_sidelight_strip_race.py)
-    - [Touch single LED on/off](./Tutorials/LED/single_led_touch.py)
-    - [Touch 3 single LEDs on/off](./Tutorials/LED/3_single_led_touch.py)
-  - WiFi
-    - [Access Point Scan](./Tutorials/WiFi/access_point_scan.py)
-    - [Simple Access Point](./Tutorials/WiFi/simple_access_point.py)
-    - [Connect to WLAN](./Tutorials/WiFi/connect_to_wlan.py)
+  - Sensor's (_[Some help](./Tutorials/SENSORS/help.md)_)
+    - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)
+    - [Light/Shadow detection with LED](./Tutorials/SENSORS/shadow_detection.py)
+  - WLAN
+    - [Simple WLAN Access Point Mode](./Tutorials/WiFi/wlan_access_point_mode.py)
+    - [Simple WLAN Station Mode](./Tutorials/WiFi/wlan_station_mode.py)
+    - [Access Point Scanner](./Tutorials/WiFi/access_point_scan.py)
   - Server
     - [Webserver Station Mode](./Tutorials/SERVER/webserver_station_mode.py)
     - [Webserver Access Point Mode](./Tutorials/SERVER/ap_time_info.py)

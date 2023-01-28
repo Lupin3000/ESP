@@ -1,23 +1,25 @@
+from micropython import const
 from machine import PWM, Pin
 from utime import sleep
 
 
-# declare constant
-DELAY = 0.001
-FREQUENCE = 100
+# define constants
+LED_RED_GPIO_PIN = const(21)
+LED_GREEN_GPIO_PIN = const(22)
+LED_BLUE_GPIO_PIN = const(23)
+LED_FREQUENCY = const(100)
+DELAY = const(0.001)
 
-# declare PWM and Pins
-rgb_r = PWM(Pin(21))
-rgb_g = PWM(Pin(22))
-rgb_b = PWM(Pin(23))
-
-rgb_r.freq(FREQUENCE)
-rgb_g.freq(FREQUENCE)
-rgb_b.freq(FREQUENCE)
+# create PWM objects with GPIO pin & set frequencies
+rgb_r = PWM(Pin(LED_RED_GPIO_PIN))
+rgb_g = PWM(Pin(LED_GREEN_GPIO_PIN))
+rgb_b = PWM(Pin(LED_BLUE_GPIO_PIN))
+rgb_r.freq(LED_FREQUENCY)
+rgb_g.freq(LED_FREQUENCY)
+rgb_b.freq(LED_FREQUENCY)
 
 while True:
-    # LED Fade ON
-    print('LED: Fade ON')
+    print('[INFO] Fade LED ON')
     for dc in range(0, 1023):
         rgb_r.duty(dc)
         sleep(DELAY)
@@ -30,8 +32,7 @@ while True:
         rgb_b.duty(dc)
         sleep(DELAY)
 
-    # LED Fade OFF
-    print('LED: Fade OFF')
+    print('[INFO] Fade LED OFF')
     for dc in range(1023, 0, -1):
         rgb_r.duty(dc)
         sleep(DELAY)

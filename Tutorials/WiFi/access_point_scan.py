@@ -1,5 +1,13 @@
+from micropython import const
 from network import WLAN, STA_IF
 from ubinascii import hexlify
+
+
+# define constants
+NL = const('\n')
+
+# define variable
+station_count = 0
 
 
 def conv_mode(number: int) -> str:
@@ -22,17 +30,11 @@ def conv_mode(number: int) -> str:
         return 'unknown'
 
 
-# declare constant
-NL = '\n'
-
-# declare variable
-count = 0
-
-# create station
+# create WLAN object (station mode)
 sta = WLAN(STA_IF)
 sta.active(True)
 
-# scan access points
+# scan for access points
 ap = sta.scan()
 ap_count = len(ap)
 
@@ -41,14 +43,14 @@ print(f"{NL}{'Name' : <25}{'BSSID' : ^20}{'Channel' : ^10}{'RSSI' : ^10}{'Authen
 print('-' * 82)
 
 for item in ap:
-    count += 1
+    station_count += 1
     byte_name = item[0]
     str_name = str(byte_name, 'utf-8')
     byte_mac = hexlify(item[1], ':')
     str_mac = str(byte_mac, 'utf-8')
     int_strength = f'{item[3]} dBm'
 
-    if count < ap_count:
+    if station_count < ap_count:
         print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}")
     else:
         print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}{NL}")

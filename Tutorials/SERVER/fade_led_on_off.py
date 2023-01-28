@@ -20,7 +20,12 @@ led.freq(LED_FREQ)
 # define variable
 led_status = 1
 
+
 def fade_led_on() -> None:
+    """
+    Fade LED on
+    :return: None
+    """
     global led_status
 
     if led_status == 0:
@@ -31,7 +36,12 @@ def fade_led_on() -> None:
             led.duty(dc)
             sleep(DELAY)
 
+
 def fade_led_off() -> None:
+    """
+    Fade LED off
+    :return: None
+    """
     global led_status
 
     if led_status == 1:
@@ -42,8 +52,13 @@ def fade_led_off() -> None:
             led.duty(dc)
             sleep(DELAY)
 
+
 def connect_to_ap(max_retries: int = 10) -> bool:
-    # create station mode and start connection
+    """
+    Create WlAN station and connect to Access Point
+    :param max_retries: int
+    :return: bool
+    """
     sta = WLAN(STA_IF)
     sta.active(True)
     sta.connect(SSID, PWD)
@@ -68,7 +83,12 @@ def connect_to_ap(max_retries: int = 10) -> bool:
 
     return True
 
+
 def create_webserver() -> None:
+    """
+    Create webserver on port 80
+    :return: None
+    """
     print('[INFO] Start webserver on port 80')
     s_lis = socket(AF_INET, SOCK_STREAM)
     s_lis.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
@@ -114,6 +134,5 @@ def create_webserver() -> None:
         conn.close()
 
 
-# connect to WLAN
 if connect_to_ap():
     create_webserver()

@@ -5,33 +5,37 @@ from random import randint
 from utime import sleep_ms
 
 
-# declare constants
-NEO_PIXEL_COUNT = const(90)
-LED_GPIO = const(23)
+# define constants
+NEOPIXEL_NUMBER = const(90)
+LED_GPIO_PIN = const(23)
+DELAY = const(1)
 
-# create neo pixel object
-nps = NeoPixel(Pin(LED_GPIO), NEO_PIXEL_COUNT)
+# create neopixel object
+nps = NeoPixel(Pin(LED_GPIO_PIN), NEOPIXEL_NUMBER)
+
+# define variable
+counter = 1
 
 
 def set_all() -> None:
-    # random values
+    """
+    Turn LED's on/off
+    :return: None
+    """
+    # random color values
     red = randint(0, 255)
     green = randint(0, 255)
     blue = randint(0, 255)
 
-    for item in range(0, NEO_PIXEL_COUNT):
+    for item in range(0, NEOPIXEL_NUMBER):
         nps[item] = (red, green, blue)
         nps[item - 1] = (red, green, blue)
         nps[item - 4] = (0, 0, 0)
         nps.write()
-        sleep_ms(1)
+        sleep_ms(DELAY)
 
 
-# define some variables
-max_count = 15
-start_count = 0
-
-while start_count < max_count:
-    print(f'round {start_count} of {max_count}')
+while True:
+    print(f'[INFO] Round: {counter}')
     set_all()
-    start_count += 1
+    counter += 1

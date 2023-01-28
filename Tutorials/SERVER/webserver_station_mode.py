@@ -37,16 +37,16 @@ s_lis.bind(('', 80))
 s_lis.listen(5)
 
 while True:
-  conn, addr = s_lis.accept()
-  print(f'Got a connection from {str(addr)}')
+    conn, addr = s_lis.accept()
+    print(f'Got a connection from {str(addr)}')
 
-  request = conn.recv(1024)
-  request = str(request)
-  print('Content = %s' % request)
+    request = conn.recv(1024)
+    request = str(request)
+    print('Content = %s' % request)
 
-  response = html
-  conn.send('HTTP/1.1 200 OK\n')
-  conn.send('Content-Type: text/html\n')
-  conn.send('Connection: close\n\n')
-  conn.sendall(response)
-  conn.close()
+    response = html
+    conn.send('HTTP/1.1 200 OK\n')
+    conn.send('Content-Type: text/html\n')
+    conn.send('Connection: close\n\n')
+    conn.sendall(response)
+    conn.close()

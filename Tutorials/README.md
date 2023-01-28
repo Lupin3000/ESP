@@ -3,21 +3,24 @@
 ## Table of Contents
 
 - Board
-  - [ESP32 Information](./BOARD/esp32_info.py)
-- LED's
-  - [Blink a single LED](./LED/single_led_blink.py)
-  - [Fade a single LED](./LED/single_led_fade.py)
-  - [Heartbeat a single LED](./LED/single_led_heartbeat.py)
-  - [Blink a RGB LED](./LED/rgb_led_blink.py)
-  - [Fade a RGB LED](./LED/rgb_led_fade.py)
+  - [ESP32 Board Information](./BOARD/esp32_info.py)
+- LED's (_[Some help](./LED/help.md)_)
+  - [Blink a single LED ON/OFF](./LED/one_single_led_blink.py)
+  - [Fade a single LED ON/OFF](./LED/one_single_led_fade.py)
+  - [Heartbeat a single LED ON/OFF](./LED/one_single_led_heartbeat.py)
+  - [Blink a single RGB LED](./LED/one_rgb_led_blink.py)
+  - [Fade a single RGB LED](./LED/one_rgb_led_fade.py)
+  - [Touch single LED ON/OFF](./LED/one_single_led_touch.py)
+  - [Touch 3 single LEDs ON/OFF](./LED/three_single_led_touch.py)
   - [NeoPixel LED Strip random colors](./LED/neopixel_sidelight_strip_simple.py)
   - [NeoPixel LED Strip color race](./LED/neopixel_sidelight_strip_race.py)
-  - [Touch single LED on/off](./LED/single_led_touch.py)
-  - [Touch 3 single LEDs on/off](./LED/3_single_led_touch.py)
-- WiFi
-  - [Access Point Scan](./WiFi/access_point_scan.py)
-  - [Simple Access Point](./WiFi/simple_access_point.py)
-  - [Connect to WLAN](./WiFi/connect_to_wlan.py)
+- Sensor's (_[Some help](./SENSORS/help.md)_)
+  - [IR Flame detection with LED](./SENSORS/ir_flame_detection.py)
+  - [Light/Shadow detection with LED](./SENSORS/shadow_detection.py)
+- WLAN
+  - [Simple WLAN Access Point Mode](./WiFi/wlan_access_point_mode.py)
+  - [Simple WLAN Station Mode](./WiFi/wlan_station_mode.py)
+  - [Access Point Scanner](./WiFi/access_point_scan.py)
 - Server
   - [Webserver Station Mode](./SERVER/webserver_station_mode.py)
   - [Webserver Access Point Mode](./SERVER/ap_time_info.py)
