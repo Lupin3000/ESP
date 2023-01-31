@@ -10,6 +10,8 @@
 
 **Mandatory**
 
+> To setup your ESP device, you need following items:
+
 - USB cable(s)
 - Python 3.x
 - Internet access
@@ -17,17 +19,22 @@
 
 **Optional**
 
+> To the ESP tutorials/examples, you need following items:
+
 - USB Hub(s)
 - Breadboard
 - Resistor(s)
+- Sensor(s)
 - LED(s)
-- Dupont cable(s)
+- Dupont/Jumper cable(s)
 - Servomotor(s)
 - Piezo Buzzer
-- Adafruit NeoPixel LED Side Light Strip - Black 90 LED
-- etc.
+- NeoPixel LED Strip(s)
 
-> see "Help pages" for more details!
+> Have a look on specific "Help pages" for more details!
+
+- [Help page for LED examples](../Tutorials/LED/help.md)
+- [Help page for Sensor examples](../Tutorials/SENSORS/help.md)
 
 ### Environment
 
