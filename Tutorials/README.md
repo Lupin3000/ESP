@@ -21,6 +21,7 @@
   - [IR Flame detection with LED](./SENSORS/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./SENSORS/shadow_detection.py)
   - [Temperature/Humidity with DHT11](./SENSORS/dht11.py)
+  - [PIR Sensor](./SENSORS/pir.py)
 - Motor (_[Some help](./MOTOR/help.md)_)
   - [Servo Motor via duty](./MOTOR/servo_duty.py) 
   - [Servo Motor via duty_ns](./MOTOR/servo_duty_ns.py)
