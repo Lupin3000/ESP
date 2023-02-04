@@ -17,6 +17,7 @@ On [wokwi](https://wokwi.com) you can simulate your circuit/code inside the brow
   - Board
     - [ESP32 Board Information](./Tutorials/BOARD/esp32_info.py) 
     - [Show memory information](./Tutorials/BOARD/memory.py)
+    - [List I2C devices](./Tutorials/BOARD/i2c_scan.py)
   - LED's (_[Some help](./Tutorials/LED/help.md)_)
     - [Blink a single LED ON/OFF](./Tutorials/LED/one_single_led_blink.py)
     - [Fade a single LED ON/OFF](./Tutorials/LED/one_single_led_fade.py)
