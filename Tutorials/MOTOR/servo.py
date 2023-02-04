@@ -18,10 +18,11 @@ max_pos = 102
 
 while True:
     # reset to middle
+    print('[INFO] reset to middle position')
     servo.duty(mid_pos)
     sleep(DELAY)
 
     for pos in (min_pos, mid_pos, max_pos):
-        print(pos)
+        print(f'[INFO] set position {pos}')
         servo.duty(pos)
         sleep(DELAY)
