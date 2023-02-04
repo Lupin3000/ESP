@@ -53,7 +53,7 @@ Minimum values for `DELAY` and ranges:
 
 ![circuit_diagram_dht22.png](../../images/help/circuit_diagram_dht22.png)
 
-## PIR Sensor
+## Motion detection with PIR
 
 ### Necessary parts
 
