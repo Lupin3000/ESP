@@ -52,3 +52,5 @@ Minimum values for `DELAY` and ranges:
 ### Circuit diagram
 
 ![circuit_diagram_dht22.png](../../images/help/circuit_diagram_dht22.png)
+
+[Go Back](https://github.com/Lupin3000/ESP)
