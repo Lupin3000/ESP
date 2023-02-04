@@ -21,7 +21,9 @@
   - [Light/Shadow detection with LED](./SENSORS/shadow_detection.py)
   - [Temperature/Humidity with DHT11](./SENSORS/dht11.py)
 - Motor (_[Some help](./MOTOR/help.md)_)
-  - [Servo Motor](./MOTOR/servo.py) 
+  - [Servo Motor via duty](./MOTOR/servo_duty.py) 
+  - [Servo Motor via duty_ns](./MOTOR/servo_duty_ns.py)
+  - [Servo Motor via duty_u16](./MOTOR/servo_duty_u16.py)
 - WLAN
   - [Simple OPEN WLAN Access Point Mode](./WiFi/wlan_access_point_mode_open.py)
   - [Simple WP2 WLAN Access Point Mode](./WiFi/wlan_access_point_mode_wp2.py)

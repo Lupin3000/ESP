@@ -6,12 +6,12 @@ from utime import sleep
 # define constants
 SERVO_GPIO_PIN = const(21)
 SERVO_FREQUENCY = const(50)
-DELAY = const(5)
+DELAY = const(1)
 
 # create PWM object
 servo = PWM(Pin(SERVO_GPIO_PIN), freq=SERVO_FREQUENCY)
 
-# define variables between 52 and 102
+# define variables (between 52 and 102)
 min_pos = 52
 mid_pos = 77
 max_pos = 102
