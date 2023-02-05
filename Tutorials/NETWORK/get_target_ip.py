@@ -36,8 +36,5 @@ def connect_to_wlan() -> bool:
 
 
 if connect_to_wlan():
-    try:
-        target = getaddrinfo(TARGET, 23)
-        print(f'[INFO] IP of {TARGET} is {target[0][-1][0]}')
-    except IOError as err:
-        print(f'[ERROR] {err}')
+    info = getaddrinfo(TARGET, 23)
+    print(f'[INFO] IP of {TARGET} is {info[0][-1][0]}')
