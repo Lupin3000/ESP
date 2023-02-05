@@ -37,4 +37,4 @@ def connect_to_wlan() -> bool:
 
 if connect_to_wlan():
     info = getaddrinfo(TARGET, 23)
-    print(f'[INFO] IP of {TARGET} is {info[0][-1][0]}')
+    print(f'[INFO] The IP of {TARGET} is {info[0][-1][0]}')
