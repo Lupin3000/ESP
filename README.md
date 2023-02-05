@@ -1,4 +1,4 @@
-# ESP
+# Learn MicroPython with ESP microcontroller
 
 ## Very Important
 
