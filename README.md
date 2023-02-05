@@ -45,8 +45,8 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Simple WLAN Station Mode](./Tutorials/WiFi/wlan_station_mode.py)
   - [Access Point Scanner](./Tutorials/WiFi/access_point_scan.py)
 - Network
-  - [Get target IP](./Tutorials/NETWORK/get_target_ip.py)
+  - [Get target IP (station mode)](./Tutorials/NETWORK/get_target_ip.py)
 - Server
-  - [Webserver Station Mode](./Tutorials/SERVER/webserver_station_mode.py)
-  - [Webserver Access Point Mode](./Tutorials/SERVER/ap_time_info.py)
-  - [Fade LED via webpage](./Tutorials/SERVER/fade_led_on_off.py)
+  - [Webserver (station mode)](./Tutorials/SERVER/webserver_station_mode.py)
+  - [Webserver (access point mode)](./Tutorials/SERVER/ap_time_info.py)
+  - [Fade LED via webpage (station mode)](./Tutorials/SERVER/fade_led_on_off.py)
