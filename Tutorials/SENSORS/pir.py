@@ -14,6 +14,11 @@ pir = Pin(PIR_GPIO_PIN, Pin.IN, Pin.PULL_DOWN)
 
 
 def motion_detect(motion) -> None:
+    """
+    Print motion status and sleep
+    :param motion: int
+    :return: None
+    """
     global count
 
     if motion == 1:
