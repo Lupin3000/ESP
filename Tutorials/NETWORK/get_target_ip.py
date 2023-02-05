@@ -5,14 +5,18 @@ from usocket import getaddrinfo
 
 
 # define constants
-WLAN_SSID = const('ORBI82')
-WLAN_PASSWORD = const('boldbug903')
+WLAN_SSID = const('YOUR WLAN SSID')
+WLAN_PASSWORD = const('YOUR WLAN PASSWORD')
 WLAN_CONNECT_DELAY = const(500)
+WLAN_MAX_RETRIES = const(10)
 TARGET = const('root-me.org')
 
 
 def connect_to_wlan() -> bool:
-    max_retries = 10
+    """
+    Connect to WLAN access point
+    :return: bool
+    """
     attempt = 0
 
     sta = WLAN(STA_IF)
@@ -24,8 +28,8 @@ def connect_to_wlan() -> bool:
         attempt += 1
         print(f'[INFO] {attempt}. connect to {WLAN_SSID} ... please wait')
 
-        if attempt >= max_retries:
-            print(f'[ERROR] Connection to {SSID} failed')
+        if attempt >= WLAN_MAX_RETRIES:
+            print(f'[ERROR] Connection to {WLAN_SSID} failed')
             return False
 
     return True
