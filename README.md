@@ -41,7 +41,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Servo Motor via duty_u16](./Tutorials/MOTOR/servo_duty_u16.py)
 - WLAN
   - [Simple OPEN WLAN Access Point Mode](./Tutorials/WiFi/wlan_access_point_mode_open.py)
-  - [Simple WP2 WLAN Access Point Mode](./Tutorials/WiFi/wlan_access_point_mode_wp2.py)
+  - [Simple WPA2 WLAN Access Point Mode](./Tutorials/WiFi/wlan_access_point_mode_wp2.py)
   - [Simple WLAN Station Mode](./Tutorials/WiFi/wlan_station_mode.py)
   - [Access Point Scanner](./Tutorials/WiFi/access_point_scan.py)
 - Server
