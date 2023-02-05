@@ -44,6 +44,8 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Simple WPA2 WLAN Access Point Mode](./Tutorials/WiFi/wlan_access_point_mode_wp2.py)
   - [Simple WLAN Station Mode](./Tutorials/WiFi/wlan_station_mode.py)
   - [Access Point Scanner](./Tutorials/WiFi/access_point_scan.py)
+- Network
+  - [Get target IP](./Tutorials/NETWORK/get_target_ip.py)
 - Server
   - [Webserver Station Mode](./Tutorials/SERVER/webserver_station_mode.py)
   - [Webserver Access Point Mode](./Tutorials/SERVER/ap_time_info.py)
