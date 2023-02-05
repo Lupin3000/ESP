@@ -34,6 +34,7 @@ On [wokwi](https://wokwi.com) you can simulate your circuit/code inside the brow
     - [Light/Shadow detection with LED](./Tutorials/SENSORS/shadow_detection.py)
     - [Temperature/Humidity with DHT11](./Tutorials/SENSORS/dht11.py)
     - [Motion detection with PIR](./Tutorials/SENSORS/pir.py)
+    - [Distance measure](./Tutorials/SENSORS/hcsr04.py)
   - Motor (_[Some help](./Tutorials/MOTOR/help.md)_)
     - [Servo Motor via duty](./Tutorials/MOTOR/servo_duty.py)
     - [Servo Motor via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)

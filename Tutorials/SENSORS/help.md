@@ -63,4 +63,14 @@ Minimum values for `DELAY` and ranges:
 
 ![circuit_diagram_pir.png](../../images/help/circuit_diagram_pir.png)
 
+## Distance Measure
+
+### Necessary parts
+
+- Ultrasonic Sensor (_HC-SR04_)
+
+### Circuit diagram
+
+![circuit_diagram_hcsr04.png](../../images/help/circuit_diagram_hcsr04.png)
+
 [Go Back](https://github.com/Lupin3000/ESP)
