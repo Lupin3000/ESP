@@ -13,7 +13,7 @@ DELAY_NO_MOTION = const(1)
 pir = Pin(PIR_GPIO_PIN, Pin.IN, Pin.PULL_DOWN)
 
 
-def motion_detect(motion) -> None:
+def motion_detect(motion: int) -> None:
     """
     Print motion status and sleep
     :param motion: int
