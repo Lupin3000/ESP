@@ -1,0 +1,4 @@
+pyserial==3.5
+adafruit-ampy==1.0.7
+esptool==4.4
+rshell==0.0.31

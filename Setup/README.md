@@ -61,8 +61,11 @@ $ python3 -m venv venv
 # activate virtualenv
 $ source venv/bin/activate
 
-# install packages
-(venv) $ pip3 install esptool rshell mpfshell
+# install packages (manually)
+(venv) $ pip3 install pyserial adafruit-ampy esptool rshell
+
+# install packages (automatically)
+(venv) $ pip3 install -r requirements.txt
 
 # show installed packages (optional)
 (venv) $ pip3 freeze
