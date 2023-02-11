@@ -37,15 +37,15 @@ def connect_to_wlan() -> bool:
 
 
 if connect_to_wlan():
-    estimated_time = localtime()
-    conv_estimated_date = f'{estimated_time[2]:02d}.{estimated_time[1]:02d}.{estimated_time[0]}'
-    conv_estimated_time = f'{estimated_time[3]:02d}:{estimated_time[4]:02d}'
+    estimated = localtime()
+    estimated_date = f'{estimated[2]:02d}.{estimated[1]:02d}.{estimated[0]}'
+    estimated_time = f'{estimated[3]:02d}:{estimated[4]:02d}'
 
     settime()
 
-    actual_time = localtime(time() + UTC_OFFSET)
-    conv_actual_date = f'{actual_time[2]:02d}.{actual_time[1]:02d}.{actual_time[0]}'
-    conv_actual_time = f'{actual_time[3]:02d}:{actual_time[4]:02d}'
+    actual = localtime(time() + UTC_OFFSET)
+    actual_date = f'{actual[2]:02d}.{actual[1]:02d}.{actual[0]}'
+    actual_time = f'{actual[3]:02d}:{actual[4]:02d}'
 
-    print(f'[INFO] Non-synced time: {conv_estimated_time} {conv_estimated_date}')
-    print(f'[INFO] Synced time: {conv_actual_time} {conv_actual_date}')
+    print(f'[INFO] Non-synced time: {estimated_time} {estimated_date}')
+    print(f'[INFO] Synced time: {actual_time} {actual_date}')
