@@ -27,7 +27,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Fade a single RGB LED](./Tutorials/LED/one_rgb_led_fade.py)
   - [Touch single LED ON/OFF](./Tutorials/LED/one_single_led_touch.py)
   - [Touch 3 single LEDs ON/OFF](./Tutorials/LED/three_single_led_touch.py)
-  - [NeoPixel LED Strip random colors](./Tutorials/LED/neopixel_sidelight_strip_simple.py)
+  - [NeoPixel LED (simple)](./Tutorials/LED/neopixel_simple.py)
   - [NeoPixel LED Strip color race](./Tutorials/LED/neopixel_sidelight_strip_race.py)
 - Sensor's (_[Some help](./Tutorials/SENSORS/help.md)_)
   - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)

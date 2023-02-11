@@ -43,4 +43,14 @@
 - 1x blue RGB LED
 - 3x Resistors (_min. 220 ohms_)
 
+## NeoPixel (_WS2812B addressable RGB LED's_)
+
+### Necessary parts
+
+- NeoPixel (strip/ring) or WS2812B addressable RGB LED's
+
+### Circuit diagram
+
+![circuit_diagram_neopixel.png](../../images/help/circuit_diagram_neopixel.png)
+
 [Go Back](https://github.com/Lupin3000/ESP)
