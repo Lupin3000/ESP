@@ -14,6 +14,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Setup](./Setup/README.md)
   - [RSHELL](./RSHELL/README.md)
   - [REPL](./REPL/README.md)
+  - [MPY](./MPY/README.md)
 - Board (_[Some help](./Tutorials/BOARD/help.md)_)
   - [ESP32 Board Information](./Tutorials/BOARD/esp32_info.py) 
   - [Show memory information](./Tutorials/BOARD/memory.py)
