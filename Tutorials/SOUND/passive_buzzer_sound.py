@@ -32,7 +32,7 @@ mario = ["E7", "E7", "P", "E7", "P", "C7", "E7", "P", "G7", "P", "P", "P", "G6",
 def stop_tone() -> None:
     """
     Stop buzzer tone
-    :return:
+    :return: None
     """
     buzzer.duty_u16(0)
 
