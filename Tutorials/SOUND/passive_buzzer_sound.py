@@ -50,6 +50,11 @@ def play_tone(frequency: int) -> None:
 
 
 def player(sound: list) -> None:
+    """
+    Simple sound player
+    :param sound: list of song items
+    :return: None
+    """
     for item in range(len(sound)):
         if sound[item] == 'P':
             stop_tone()
@@ -57,5 +62,5 @@ def player(sound: list) -> None:
             play_tone(tones[sound[item]])
 
 
-# play song
+print('[INFO] Play mario sound')
 player(mario)

@@ -21,19 +21,19 @@ count = 1
 while count <= REPEATS:
     count += 1
 
-    # play tone a
+    print('[INFO] Play tone A')
     buzzer.freq(BUZZER_FREQUENCY_TONE_A)
     buzzer.duty_u16(BUZZER_DUTY_CYCLE)
     sleep(DELAY)
     buzzer.duty_u16(0)
 
-    # play tone b
+    print('[INFO] Play tone B')
     buzzer.freq(BUZZER_FREQUENCY_TONE_B)
     buzzer.duty_u16(BUZZER_DUTY_CYCLE)
     sleep(DELAY)
     buzzer.duty_u16(0)
 
-    # play tone c
+    print('[INFO] Play tone C')
     buzzer.freq(BUZZER_FREQUENCY_TONE_C)
     buzzer.duty_u16(BUZZER_DUTY_CYCLE)
     sleep(DELAY)
