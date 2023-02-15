@@ -49,7 +49,8 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Simple WPA2 WLAN Access Point](./Tutorials/WiFi/wlan_access_point_mode_wp2.py)
   - [Simple WLAN Station](./Tutorials/WiFi/wlan_station_mode.py)
 - Network
-  - [Access Point Scanner (station mode)](Tutorials/NETWORK/access_point_scan.py)
+  - [Access Point Scanner (station mode)](./Tutorials/NETWORK/access_point_scan.py)
+  - [BLE Scanner](./Tutorials/NETWORK/ble_scan.py)
   - [Get target IP (station mode)](./Tutorials/NETWORK/get_target_ip.py)
   - [Get HTTP Status code (station mode)](./Tutorials/NETWORK/get_http_status.py)
   - [NTP synchronisation (station mode)](./Tutorials/NETWORK/ntp_time.py)
