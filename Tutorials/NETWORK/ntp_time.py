@@ -41,7 +41,10 @@ if connect_to_wlan():
     estimated_date = f'{estimated[2]:02d}.{estimated[1]:02d}.{estimated[0]}'
     estimated_time = f'{estimated[3]:02d}:{estimated[4]:02d}'
 
-    settime()
+    try:
+        settime()
+    except Exception as err:
+        print(f'[ERROR] Connection to NTP server failed: {err}')
 
     actual = localtime(time() + UTC_OFFSET)
     actual_date = f'{actual[2]:02d}.{actual[1]:02d}.{actual[0]}'
