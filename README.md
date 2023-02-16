@@ -44,13 +44,16 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Servo Motor via duty](./Tutorials/MOTOR/servo_duty.py)
   - [Servo Motor via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)
   - [Servo Motor via duty_u16](./Tutorials/MOTOR/servo_duty_u16.py)
+- Timer
+  - [Virtual timers (cli only)](./Tutorials/TIMER/timer_cli.py)
+  - [Blink a single LED ON/OFF](./Tutorials/TIMER/blink_single_led.py)
 - WLAN
   - [Simple OPEN WLAN Access Point](./Tutorials/WiFi/wlan_access_point_mode_open.py)
   - [Simple WPA2 WLAN Access Point](./Tutorials/WiFi/wlan_access_point_mode_wp2.py)
   - [Simple WLAN Station](./Tutorials/WiFi/wlan_station_mode.py)
 - Network
   - [Access Point Scanner (station mode)](./Tutorials/NETWORK/access_point_scan.py)
-  - [BLE Scanner](./Tutorials/NETWORK/ble_scan.py)
+  - [BLE Scanner (simple)](./Tutorials/NETWORK/ble_scan.py)
   - [Get target IP (station mode)](./Tutorials/NETWORK/get_target_ip.py)
   - [Get HTTP Status code (station mode)](./Tutorials/NETWORK/get_http_status.py)
   - [NTP synchronisation (station mode)](./Tutorials/NETWORK/ntp_time.py)

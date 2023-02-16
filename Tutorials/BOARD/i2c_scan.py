@@ -38,4 +38,4 @@ try:
     list_devices(devices)
 
 except Exception as err:
-    print(f'[ERROR] I2C bus initialization failed: {err}.')
+    print(f'[ERROR] I2C bus initialization failed: {err}')
