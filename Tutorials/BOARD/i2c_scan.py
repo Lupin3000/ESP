@@ -30,12 +30,15 @@ def list_devices(i2c_devices: list) -> None:
             print(f'[INFO] Decimal address: {device} Hex address: {hex(device)}')
 
 
+# define variable
+i2c = None
+
 try:
     i2c = I2C(0, scl=Pin(I2C_SCL_PIN), sda=Pin(I2C_SDA_PIN), freq=I2C_FREQUENCY)
+except Exception as err:
+    print(f'[ERROR] I2C bus initialization failed: {err}')
 
+if i2c:
     print('[Info] Scanning the I2C bus')
     devices = i2c.scan()
     list_devices(devices)
-
-except Exception as err:
-    print(f'[ERROR] I2C bus initialization failed: {err}')

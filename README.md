@@ -40,6 +40,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Temperature/Humidity with DHT11](./Tutorials/SENSORS/dht11.py)
   - [Motion detection with PIR](./Tutorials/SENSORS/pir.py)
   - [Distance measure with HC-SR04](./Tutorials/SENSORS/hcsr04.py)
+  - [ALLNET B38 Temperature I2C Sensor](./Tutorials/SENSORS/allnet_B38_temperature.py)
 - Motor (_[Some help](./Tutorials/MOTOR/help.md)_)
   - [Servo Motor via duty](./Tutorials/MOTOR/servo_duty.py)
   - [Servo Motor via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)
