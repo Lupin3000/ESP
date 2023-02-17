@@ -1,4 +1,4 @@
-# Learn MicroPython with ESP microcontroller
+# Learn MicroPython with ESP8266/ESP32 microcontroller
 
 ## Very Important
 
@@ -6,7 +6,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## Information
 
-To make it easier to get started, the basic examples are not object-oriented. On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your circuit/code inside the browser. Depending on your microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports.
+To make it easier to get started, the basic examples are not object-oriented. On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your circuit/code inside the browser. Depending on your ESP microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports.
 
 ## Table of Contents
 
