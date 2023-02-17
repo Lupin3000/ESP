@@ -9,9 +9,6 @@ DELAY_INITIAL = const(30)
 DELAY_MOTION = const(5)
 DELAY_NO_MOTION = const(1)
 
-# create PIN object
-pir = Pin(PIR_GPIO_PIN, Pin.IN, Pin.PULL_DOWN)
-
 
 def motion_detect(motion: int) -> None:
     """
@@ -29,6 +26,9 @@ def motion_detect(motion: int) -> None:
         print("[INFO] no motion detected")
         sleep(DELAY_NO_MOTION)
 
+
+# create PIN object
+pir = Pin(PIR_GPIO_PIN, Pin.IN, Pin.PULL_DOWN)
 
 print(f'[INFO] warm-up pir sensor for {DELAY_INITIAL} seconds')
 sleep(DELAY_INITIAL)

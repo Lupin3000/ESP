@@ -13,13 +13,6 @@ DELAY = const(0.005)
 LED_FREQ = const(5000)
 NL = const('\n')
 
-# create PWM object with GPIO pin
-led = PWM(Pin(LED_GPIO))
-led.freq(LED_FREQ)
-
-# define variable
-led_status = 1
-
 
 def fade_led_on() -> None:
     """
@@ -133,6 +126,13 @@ def create_webserver() -> None:
         conn.sendall(response)
         conn.close()
 
+
+# create PWM object with GPIO pin
+led = PWM(Pin(LED_GPIO))
+led.freq(LED_FREQ)
+
+# define variable
+led_status = 1
 
 if connect_to_ap():
     create_webserver()

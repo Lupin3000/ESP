@@ -1,4 +1,3 @@
-import sys
 from micropython import const
 from machine import I2C, Pin
 from usys import exit
@@ -8,10 +7,6 @@ from usys import exit
 I2C_SDA_PIN = const(21)
 I2C_SCL_PIN = const(22)
 I2C_FREQUENCY = const(400000)
-
-if 0 < I2C_FREQUENCY >= 500000:
-    print(f'[ERROR] Wrong value for I2C frequency')
-    exit()
 
 
 def list_devices(i2c_devices: list) -> None:
@@ -29,6 +24,10 @@ def list_devices(i2c_devices: list) -> None:
         for device in i2c_devices:
             print(f'[INFO] Decimal address: {device} Hex address: {hex(device)}')
 
+
+if 0 < I2C_FREQUENCY >= 500000:
+    print(f'[ERROR] Wrong value for I2C frequency')
+    exit()
 
 # define variable
 i2c = None

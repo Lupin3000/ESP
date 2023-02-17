@@ -6,9 +6,6 @@ from ubinascii import hexlify
 # define constants
 NL = const('\n')
 
-# define variable
-station_count = 0
-
 
 def conv_mode(number: int) -> str:
     """
@@ -29,6 +26,9 @@ def conv_mode(number: int) -> str:
     else:
         return 'unknown'
 
+
+# define variable
+station_count = 0
 
 # create WLAN object (station mode)
 sta = WLAN(STA_IF)

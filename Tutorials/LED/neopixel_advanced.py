@@ -10,9 +10,6 @@ NEOPIXEL_NUMBER = const(90)
 LED_GPIO_PIN = const(23)
 DELAY = const(5)
 
-# create neopixel object
-nps = NeoPixel(Pin(LED_GPIO_PIN), NEOPIXEL_NUMBER)
-
 
 def value_verification(value: int, minimum: int = 0, maximum: int = 255) -> bool:
     """
@@ -150,6 +147,9 @@ def random_colors(value: str = 'single') -> None:
             nps[item] = color
             nps.write()
 
+
+# create neopixel object
+nps = NeoPixel(Pin(LED_GPIO_PIN), NEOPIXEL_NUMBER)
 
 while True:
     print('[INFO] Set each LED to random color')

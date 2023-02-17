@@ -9,11 +9,6 @@ TOUCH_GPIO_PIN = const(13)
 TOUCH_MIN = const(100)
 TOUCH_DELAY = const(0.5)
 
-# set GPIO pins & define variables
-led = Pin(LED_GPIO_PIN, Pin.OUT)
-touch = TouchPad(Pin(TOUCH_GPIO_PIN))
-led_status = False
-
 
 def toggle_led() -> None:
     """
@@ -32,6 +27,11 @@ def toggle_led() -> None:
         led.value(0)
         led_status = False
 
+
+# set GPIO pins & define variables
+led = Pin(LED_GPIO_PIN, Pin.OUT)
+touch = TouchPad(Pin(TOUCH_GPIO_PIN))
+led_status = False
 
 while True:
     touch_value = touch.read()
