@@ -1,4 +1,4 @@
-# ESP Setup
+# Environment & ESP Setup
 
 ## Table of Contents
 
@@ -92,7 +92,7 @@ On macOS (_depending to ESP board_) you can find `/dev/tty.usbmodem*` or `/dev/t
 (venv) $ esptool.py --port [SERIAL-PORT] flash_id
 ```
 
-**Firmware**
+**Flash Firmware**
 
 - [MicroPython firmware](https://micropython.org/download/)
 
@@ -106,7 +106,7 @@ Download the `*.bin` file suitable for ESP devices and flash MicroPython.
 (venv) $ esptool --chip esp32 --port [SERIAL-PORT] --baud 460800 write_flash -z 0x1000 [BINFILE]
 ```
 
-**Connect**
+**Connect to ESP**
 
 > As already mentioned there are many possibilities to create a connection. Here now few examples. For macOS `screen` is already available (_no installation needed_). For Linux tools like `picocom` or `minicom` could be interesting.
 
@@ -121,7 +121,7 @@ $ screen [SERIAL-PORT] 115200
 (venv) $ mpfshell -o [SERIAL-PORT]
 ```
 
-**Documentation**
+**MicroPython Documentation**
 
 - [MicroPython](https://docs.micropython.org/en/latest/)
 
