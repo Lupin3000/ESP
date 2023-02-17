@@ -11,10 +11,10 @@ To make it easier to get started, the basic examples are not object-oriented. On
 ## Table of Contents
 
 - Introduction
-  - [Setup](./Setup/README.md)
-  - [RSHELL](./RSHELL/README.md)
-  - [REPL](./REPL/README.md)
-  - [MPY](./MPY/README.md)
+  - [Setup (download - flash - connect)](./Setup/README.md)
+  - [RSHELL (some tiny introduction)](./RSHELL/README.md)
+  - [MicroPython REPL](./REPL/README.md)
+  - [MicroPython MPY](./MPY/README.md)
 - Board (_[Some help](./Tutorials/BOARD/help.md)_)
   - [ESP32 Board Information](./Tutorials/BOARD/esp32_info.py) 
   - [Show memory information](./Tutorials/BOARD/memory.py)
