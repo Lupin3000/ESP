@@ -42,11 +42,13 @@ def toggle_leds() -> None:
         led_counter_on = 0
 
 
-# set GPIO pins & define variables
+# set GPIO pins
 led_red = Pin(LED_RED_GPIO_PIN, Pin.OUT)
 led_green = Pin(LED_GREEN_GPIO_PIN, Pin.OUT)
 led_blue = Pin(LED_BLUE_GPIO_PIN, Pin.OUT)
 touch = TouchPad(Pin(TOUCH_GPIO_PIN))
+
+# define variables
 led_counter_on = 0
 
 while True:
