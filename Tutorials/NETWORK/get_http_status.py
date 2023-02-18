@@ -35,6 +35,7 @@ def connect_to_wlan() -> bool:
     return True
 
 
-if connect_to_wlan():
-    res = urequests.get(TARGET_URL)
-    print(f'[INFO] HTTP Status Code is {res.status_code}')
+if __name__ == '__main__':
+    if connect_to_wlan():
+        res = urequests.get(TARGET_URL)
+        print(f'[INFO] HTTP Status Code is {res.status_code}')

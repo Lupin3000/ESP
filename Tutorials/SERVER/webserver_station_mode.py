@@ -1,14 +1,13 @@
+from micropython import const
 from network import WLAN, STA_IF
 from usocket import socket, AF_INET, SOCK_STREAM
 
 
 # declare constant
-NL = '\n'
+SSID = const('YOUR WLAN SSID')
+PASSWORD = const('YOUR WLAN PASSWORD')
 
-# declare variables
-ssid = 'YOUR WLAN SSID'
-password = 'YOUR WLAN PASSWORD'
-
+# html template
 html = """<html>
             <head>
                 <title>ESP Webserver</title>
@@ -19,34 +18,36 @@ html = """<html>
             </body>
           </html>"""
 
-# create station and start connection
-sta = WLAN(STA_IF)
-sta.active(True)
-sta.connect(ssid, password)
+if __name__ == '__main__':
+    # create station and start connection
+    sta = WLAN(STA_IF)
+    sta.active(True)
+    sta.connect(SSID, PASSWORD)
 
-while not sta.isconnected():
-    print(f'Connect to {ssid} ... please wait')
+    while not sta.isconnected():
+        print(f'Connect to {SSID} ... please wait')
 
-# get network configuration
-config = sta.ifconfig()
-print(f'IP: {config[0]}{NL}Subnet mask: {config[1]}{NL}Gateway: {config[2]}{NL}DNS: {config[3]}')
+    # get network configuration
+    config = sta.ifconfig()
+    nl = '\n'
+    print(f'IP: {config[0]}{nl}Subnet mask: {config[1]}{nl}Gateway: {config[2]}{nl}DNS: {config[3]}')
 
-# start socket listener on port 80
-s_lis = socket(AF_INET, SOCK_STREAM)
-s_lis.bind(('', 80))
-s_lis.listen(5)
+    # start socket listener on port 80
+    s_lis = socket(AF_INET, SOCK_STREAM)
+    s_lis.bind(('', 80))
+    s_lis.listen(5)
 
-while True:
-    conn, addr = s_lis.accept()
-    print(f'Got a connection from {str(addr)}')
+    while True:
+        conn, addr = s_lis.accept()
+        print(f'Got a connection from {str(addr)}')
 
-    request = conn.recv(1024)
-    request = str(request)
-    print('Content = %s' % request)
+        request = conn.recv(1024)
+        request = str(request)
+        print('Content = %s' % request)
 
-    response = html
-    conn.send('HTTP/1.1 200 OK\n')
-    conn.send('Content-Type: text/html\n')
-    conn.send('Connection: close\n\n')
-    conn.sendall(response)
-    conn.close()
+        response = html
+        conn.send('HTTP/1.1 200 OK\n')
+        conn.send('Content-Type: text/html\n')
+        conn.send('Connection: close\n\n')
+        conn.sendall(response)
+        conn.close()

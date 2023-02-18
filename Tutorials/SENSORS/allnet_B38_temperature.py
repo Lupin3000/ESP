@@ -22,15 +22,15 @@ def convert_data(value: bytes) -> float:
     return temp_c
 
 
-# define variable
-i2c = None
+if __name__ == '__main__':
+    i2c = None
 
-try:
-    i2c = I2C(0, scl=Pin(I2C_SCL_PIN), sda=Pin(I2C_SDA_PIN))
-except Exception as err:
-    print(f'[ERROR] I2C bus initialization failed: {err}')
+    try:
+        i2c = I2C(0, scl=Pin(I2C_SCL_PIN), sda=Pin(I2C_SDA_PIN))
+    except Exception as err:
+        print(f'[ERROR] I2C bus initialization failed: {err}')
 
-if i2c:
-    data = bytearray(2)
-    i2c.readfrom_mem_into(I2C_ADDRESS, 0x00, data)
-    print(f'[INFO] {convert_data(data)} °C')
+    if i2c:
+        data = bytearray(2)
+        i2c.readfrom_mem_into(I2C_ADDRESS, 0x00, data)
+        print(f'[INFO] {convert_data(data)} °C')

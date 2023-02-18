@@ -37,32 +37,32 @@ def ble_irq(event, data) -> None:
         process = False
 
 
-# define variables
-process = False
-ble_adv = {}
-ble = None
+if __name__ == '__main__':
+    process = False
+    ble_adv = {}
+    ble = None
 
-try:
-    ble = BLE()
-except Exception as err:
-    print(f'[ERROR] bluetooth initialization failed: {err}')
+    try:
+        ble = BLE()
+    except Exception as err:
+        print(f'[ERROR] bluetooth initialization failed: {err}')
 
-if ble:
-    ble.active(True)
-    ble.irq(ble_irq)
-    process = True
+    if ble:
+        ble.active(True)
+        ble.irq(ble_irq)
+        process = True
 
-    ble.gap_scan(DURATION_MS, INTERVAL_US, WINDOW_US, False)
-    print('[INFO] Scanning BLE...')
-    while process:
-        sleep(1)
+        ble.gap_scan(DURATION_MS, INTERVAL_US, WINDOW_US, False)
+        print('[INFO] Scanning BLE...')
+        while process:
+            sleep(1)
 
-    count = len(ble_adv)
-    if count > 0:
-        print(f'[INFO] {count} BLE devices found')
-        for mac in ble_adv:
-            print(f'[INFO] {mac} (rssi {ble_adv[mac][0]} dBm)')
-    else:
-        print('[INFO] No BLE devices found')
+        count = len(ble_adv)
+        if count > 0:
+            print(f'[INFO] {count} BLE devices found')
+            for mac in ble_adv:
+                print(f'[INFO] {mac} (rssi {ble_adv[mac][0]} dBm)')
+        else:
+            print('[INFO] No BLE devices found')
 
-    ble.active(False)
+        ble.active(False)

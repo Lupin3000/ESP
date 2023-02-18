@@ -5,6 +5,10 @@ from usys import version, platform
 
 
 def show_date_time() -> None:
+    """
+    Print out current device date/time
+    :return: None
+    """
     rtc = None
 
     try:
@@ -21,6 +25,10 @@ def show_date_time() -> None:
 
 
 def show_device_mac() -> None:
+    """
+    Print out device mac address
+    :return: None
+    """
     byte_mac = hexlify(unique_id(), ':')
     str_mac = str(byte_mac, 'utf-8')
 
@@ -28,25 +36,42 @@ def show_device_mac() -> None:
 
 
 def show_hall() -> None:
+    """
+    Print out device hall sensor value
+    :return: None
+    """
     print(f"{'Hall' : < 15}{hall_sensor()}")
 
 
 def show_cpu() -> None:
+    """
+    Print out device CPU frequency
+    :return: None
+    """
     print(f"{'CPU' : < 15}{freq()} Hz")
 
 
 def show_mcu_temp() -> None:
+    """
+    Print out device MCU temperature
+    :return: None
+    """
     print(f"{'MCU' : < 15}{raw_temperature()} Fahrenheit")
 
 
 def show_micropython_info() -> None:
+    """
+    Print out MicroPython information
+    :return: None
+    """
     print(f"{'Version' : <15}{version}")
     print(f"{'Platform' : <15}{platform}")
 
 
-show_date_time()
-show_device_mac()
-show_hall()
-show_cpu()
-show_mcu_temp()
-show_micropython_info()
+if __name__ == '__main__':
+    show_date_time()
+    show_device_mac()
+    show_hall()
+    show_cpu()
+    show_mcu_temp()
+    show_micropython_info()

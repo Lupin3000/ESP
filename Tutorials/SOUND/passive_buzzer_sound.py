@@ -42,7 +42,7 @@ def player(sound: list) -> None:
             play_tone(tones[sound[item]])
 
 
-# create PWM object
+# create pwm object
 buzzer = PWM(Pin(BUZZER_GPIO_PIN))
 
 # define variables
@@ -62,5 +62,6 @@ mario = ["E7", "E7", "P", "E7", "P", "C7", "E7", "P", "G7", "P", "P", "P", "G6",
          "P", "E7", "P", "C7", "D7", "B6", "P", "P", "C7", "P", "P", "G6", "P", "P", "E6", "P", "P", "A6", "P", "B6",
          "P", "AS6", "A6", "P", "G6", "E7", "P", "G7", "A7", "P", "F7", "G7", "P", "E7", "P", "C7", "D7", "B6"]
 
-print('[INFO] Play mario sound')
-player(mario)
+if __name__ == '__main__':
+    print('[INFO] Play mario sound')
+    player(mario)

@@ -7,14 +7,15 @@ from utime import sleep
 LED_GPIO_PIN = const(23)
 DELAY = const(0.5)
 
-# set GPIO pin
+# create pin object
 led = Pin(LED_GPIO_PIN, Pin.OUT)
 
-while True:
-    print('[INFO] LED ON')
-    led.value(1)
-    sleep(DELAY)
+if __name__ == '__main__':
+    while True:
+        print('[INFO] LED ON')
+        led.value(1)
+        sleep(DELAY)
 
-    print('[INFO] LED OFF')
-    led.value(0)
-    sleep(DELAY)
+        print('[INFO] LED OFF')
+        led.value(0)
+        sleep(DELAY)

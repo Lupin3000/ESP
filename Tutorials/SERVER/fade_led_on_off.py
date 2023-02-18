@@ -127,12 +127,12 @@ def create_webserver() -> None:
         conn.close()
 
 
-# create PWM object with GPIO pin
+# create pwm/pin objects
 led = PWM(Pin(LED_GPIO))
 led.freq(LED_FREQ)
 
-# define variable
-led_status = 1
+if __name__ == '__main__':
+    led_status = 1
 
-if connect_to_ap():
-    create_webserver()
+    if connect_to_ap():
+        create_webserver()

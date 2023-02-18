@@ -13,16 +13,17 @@ DELAY = const(1)
 adc = ADC(Pin(ADC_PIN_GPIO))
 led = Pin(LED_GPIO_PIN, Pin.OUT)
 
-while True:
-    adc_value = adc.read_u16()
-    value = round(adc_value / 65535 * 100, 2)
-    print(f'[INFO] shadow {value} %')
+if __name__ == '__main__':
+    while True:
+        adc_value = adc.read_u16()
+        value = round(adc_value / 65535 * 100, 2)
+        print(f'[INFO] shadow {value} %')
 
-    if value > MAX_SHADOW:
-        print('[INFO] LED ON')
-        led.value(1)
-    else:
-        print('[INFO] LED OFF')
-        led.value(0)
+        if value > MAX_SHADOW:
+            print('[INFO] LED ON')
+            led.value(1)
+        else:
+            print('[INFO] LED OFF')
+            led.value(0)
 
-    sleep(DELAY)
+        sleep(DELAY)

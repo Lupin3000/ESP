@@ -151,25 +151,26 @@ def random_colors(value: str = 'single') -> None:
 # create neopixel object
 nps = NeoPixel(Pin(LED_GPIO_PIN), NEOPIXEL_NUMBER)
 
-while True:
-    print('[INFO] Set each LED to random color')
-    random_colors()
-    sleep(DELAY)
+if __name__ == '__main__':
+    while True:
+        print('[INFO] Set each LED to random color')
+        random_colors()
+        sleep(DELAY)
 
-    print("[INFO] Set all LED's to random color")
-    random_colors('all')
-    sleep(DELAY)
+        print("[INFO] Set all LED's to random color")
+        random_colors('all')
+        sleep(DELAY)
 
-    print("[INFO] Turn off all LED's")
-    clear_all()
-    sleep(DELAY)
+        print("[INFO] Turn off all LED's")
+        clear_all()
+        sleep(DELAY)
 
-    print("[INFO] Set all LED's to same color")
-    set_color(150, 150, 150)
-    sleep(DELAY)
+        print("[INFO] Set all LED's to same color")
+        set_color(150, 150, 150)
+        sleep(DELAY)
 
-    print("[INFO] Cycle LED's with specific colors")
-    cycle_color(foreground=(255, 0, 0), background=(0, 0, 0), rounds=3, wait=50)
+        print("[INFO] Cycle LED's with specific colors")
+        cycle_color(foreground=(255, 0, 0), background=(0, 0, 0), rounds=3, wait=50)
 
-    print("[INFO] Cycle LED's with specific colors")
-    cycle_color(foreground=(0, 0, 0), background=(0, 255, 0), rounds=3, wait=25)
+        print("[INFO] Cycle LED's with specific colors")
+        cycle_color(foreground=(0, 0, 0), background=(0, 255, 0), rounds=3, wait=25)

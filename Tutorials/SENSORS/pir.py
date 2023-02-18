@@ -27,15 +27,16 @@ def motion_detect(motion: int) -> None:
         sleep(DELAY_NO_MOTION)
 
 
-# create PIN object
+# create pin object
 pir = Pin(PIR_GPIO_PIN, Pin.IN, Pin.PULL_DOWN)
 
-print(f'[INFO] warm-up pir sensor for {DELAY_INITIAL} seconds')
-sleep(DELAY_INITIAL)
+if __name__ == '__main__':
+    print(f'[INFO] warm-up pir sensor for {DELAY_INITIAL} seconds')
+    sleep(DELAY_INITIAL)
 
-print('[INFO] start pir sensor')
-count = 0
+    print('[INFO] start pir sensor')
+    count = 0
 
-while True:
-    status = pir.value()
-    motion_detect(status)
+    while True:
+        status = pir.value()
+        motion_detect(status)

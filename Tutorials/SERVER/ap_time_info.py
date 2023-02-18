@@ -79,5 +79,6 @@ def create_webserver() -> None:
             lis.close()
 
 
-if create_ap():
-    create_webserver()
+if __name__ == '__main__':
+    if create_ap():
+        create_webserver()

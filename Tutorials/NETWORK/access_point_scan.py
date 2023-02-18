@@ -1,10 +1,5 @@
-from micropython import const
 from network import WLAN, STA_IF
 from ubinascii import hexlify
-
-
-# define constants
-NL = const('\n')
 
 
 def conv_mode(number: int) -> str:
@@ -27,30 +22,49 @@ def conv_mode(number: int) -> str:
         return 'unknown'
 
 
-# define variable
-station_count = 0
+def list_access_points(access_points: tuple) -> None:
+    """
+    Print out all access point form list
+    :param access_points: tuple of access points
+    :return: None
+    """
+    nl = '\n'
+    counter = 0
+    ap_count = len(access_points)
 
-# create WLAN object (station mode)
-sta = WLAN(STA_IF)
-sta.active(True)
+    # output access points
+    print(f"{nl}{'Name' : <25}{'BSSID' : ^20}{'Channel' : ^10}{'RSSI' : ^10}{'Authentication' : ^20}")
+    print('-' * 82)
 
-# scan for access points
-ap = sta.scan()
-ap_count = len(ap)
+    for item in access_points:
+        counter += 1
+        byte_name = item[0]
+        str_name = str(byte_name, 'utf-8')
+        byte_mac = hexlify(item[1], ':')
+        str_mac = str(byte_mac, 'utf-8')
+        int_strength = f'{item[3]} dBm'
 
-# output access points
-print(f"{NL}{'Name' : <25}{'BSSID' : ^20}{'Channel' : ^10}{'RSSI' : ^10}{'Authentication' : ^20}")
-print('-' * 82)
+        if counter < ap_count:
+            print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}")
+        else:
+            print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}{nl}")
 
-for item in ap:
-    station_count += 1
-    byte_name = item[0]
-    str_name = str(byte_name, 'utf-8')
-    byte_mac = hexlify(item[1], ':')
-    str_mac = str(byte_mac, 'utf-8')
-    int_strength = f'{item[3]} dBm'
 
-    if station_count < ap_count:
-        print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}")
-    else:
-        print(f"{str_name : <25}{str_mac : ^20}{item[2] : ^10}{int_strength : ^10}{conv_mode(item[4]) : ^20}{NL}")
+if __name__ == '__main__':
+    sta = None
+    ap = 0
+
+    try:
+        sta = WLAN(STA_IF)
+    except Exception as err:
+        print(f'[ERROR] WLAN initialization failed: {err}')
+
+    if sta:
+        sta.active(True)
+        print('[INFO] Scan for access points')
+        ap = sta.scan()
+
+        if len(ap) > 0:
+            list_access_points(ap)
+        else:
+            print('[INFO] No access points found')

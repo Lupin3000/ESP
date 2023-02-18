@@ -8,21 +8,22 @@ SERVO_GPIO_PIN = const(21)
 SERVO_FREQUENCY = const(50)
 DELAY = const(1)
 
-# create PWM object
+# create pwm object
 servo = PWM(Pin(SERVO_GPIO_PIN), freq=SERVO_FREQUENCY)
 
-# define variables (between 52 and 102)
-min_pos = 52
-mid_pos = 77
-max_pos = 102
+if __name__ == '__main__':
+    # define variables (between 52 and 102)
+    min_pos = 52
+    mid_pos = 77
+    max_pos = 102
 
-while True:
-    # reset to middle
-    print('[INFO] reset to middle position')
-    servo.duty(mid_pos)
-    sleep(DELAY)
-
-    for pos in (min_pos, mid_pos, max_pos):
-        print(f'[INFO] set position {pos}')
-        servo.duty(pos)
+    while True:
+        # reset to middle
+        print('[INFO] reset to middle position')
+        servo.duty(mid_pos)
         sleep(DELAY)
+
+        for pos in (min_pos, mid_pos, max_pos):
+            print(f'[INFO] set position {pos}')
+            servo.duty(pos)
+            sleep(DELAY)
