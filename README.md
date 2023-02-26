@@ -42,6 +42,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Motion detection with PIR](./Tutorials/SENSORS/pir.py)
   - [Distance measure with HC-SR04](./Tutorials/SENSORS/hcsr04.py)
   - [ALLNET B38 Temperature I2C Sensor](./Tutorials/SENSORS/allnet_B38_temperature.py)
+  - [ALLNET B18 Light Barrier](./Tutorials/SENSORS/allnet_B18_light_barrier.py)
 - Motor (_[some help](./Tutorials/MOTOR/help.md)_)
   - [Servo Motor via duty](./Tutorials/MOTOR/servo_duty.py)
   - [Servo Motor via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)
