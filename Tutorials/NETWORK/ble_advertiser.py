@@ -45,6 +45,8 @@ def device_advertiser(name: str) -> None:
     :param name: name of device
     :return: None
     """
+    global ble
+
     dev_name = bytes(name, 'UTF-8')
     adv_data = bytearray('\x02\x01\x02') + bytearray((len(dev_name) + 1, 0x09)) + dev_name
     ble.gap_advertise(100, adv_data)
