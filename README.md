@@ -58,6 +58,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
 - Network
   - [Access Point Scanner (station mode)](./Tutorials/NETWORK/access_point_scan.py)
   - [BLE Scanner (simple)](./Tutorials/NETWORK/ble_scan.py)
+  - [BLE Advertiser (simple)](./Tutorials/NETWORK/ble_advertiser.py)
   - [Get target IP (station mode)](./Tutorials/NETWORK/get_target_ip.py)
   - [Get HTTP Status code (station mode)](./Tutorials/NETWORK/get_http_status.py)
   - [NTP synchronisation (station mode)](./Tutorials/NETWORK/ntp_time.py)
