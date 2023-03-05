@@ -1,15 +1,13 @@
 from ubluetooth import BLE, UUID, FLAG_WRITE, FLAG_NOTIFY
 
 
-def device_irq(event, data):
+def device_irq(event: int, data: tuple) -> None:
     """
     event handler for BLE IRQ
-    :param event: constants of the event handler codes
+    :param event: number of the event handler codes
     :param data: event-specific tuple of values
     :return: None
     """
-    global ble
-
     if event == 1:
         print('[INFO] A central has connected to this peripheral')
     elif event == 2:
@@ -41,7 +39,7 @@ def device_register() -> None:
 
 def device_advertiser(name: str) -> None:
     """
-    BLE advertiser
+    BLE device advertiser
     :param name: name of device
     :return: None
     """
