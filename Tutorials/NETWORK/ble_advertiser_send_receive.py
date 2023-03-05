@@ -4,7 +4,7 @@ from utime import sleep_ms
 from ubluetooth import BLE, UUID, FLAG_WRITE, FLAG_NOTIFY
 
 
-DELAY = const(500)
+DELAY = const(1500)
 
 
 class SimpleBluetoothLight:
