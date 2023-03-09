@@ -1,10 +1,4 @@
-from micropython import const
-from esp32 import raw_temperature
-from utime import sleep_ms
 from ubluetooth import BLE, UUID, FLAG_WRITE, FLAG_NOTIFY
-
-
-DELAY = const(1500)
 
 
 class SimpleBluetoothLight:
@@ -86,12 +80,3 @@ class SimpleBluetoothLight:
         """
         msg = data + '\n'
         self._ble.gatts_notify(0, self.tx, msg)
-
-
-if __name__ == '__main__':
-    ble = SimpleBluetoothLight('ESP-DEMO')
-
-    while True:
-        if ble.connected:
-            ble.send_msg(str(raw_temperature()))
-            sleep_ms(DELAY)

@@ -59,7 +59,6 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Access Point Scanner (station mode)](./Tutorials/NETWORK/access_point_scan.py)
   - [BLE Scanner (simple)](./Tutorials/NETWORK/ble_scan.py)
   - [BLE Advertiser (simple)](./Tutorials/NETWORK/ble_advertiser.py)
-  - [BLE Advertiser (advanced)](./Tutorials/NETWORK/ble_advertiser_send_receive.py)
   - [Get target IP (station mode)](./Tutorials/NETWORK/get_target_ip.py)
   - [Get HTTP Status code (station mode)](./Tutorials/NETWORK/get_http_status.py)
   - [NTP synchronisation (station mode)](./Tutorials/NETWORK/ntp_time.py)
@@ -67,3 +66,8 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Webserver (station mode)](./Tutorials/SERVER/webserver_station_mode.py)
   - [Webserver (access point mode)](./Tutorials/SERVER/ap_time_info.py)
   - [Fade LED via webpage (station mode)](./Tutorials/SERVER/fade_led_on_off.py)
+
+## Classes
+
+- [BLE Advertiser](./classes/ble_advertiser.py)
+- [NeoPixel Ring](./classes/neopixelring.py)
