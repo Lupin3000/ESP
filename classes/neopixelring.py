@@ -6,14 +6,25 @@ from utime import sleep_ms
 
 class NeoPixelRing:
 
+    _INT_VALUE_ERROR = 'Parameter must be an positive integer'
+    _RGB_VALUE_ERROR = 'All tuple parameters must in range 0 to 255'
+    _STR_VALUE_ERROR = 'String parameter is not defined'
+
     def __init__(self, pin: int, count: int):
         """
         class initializer
         :param pin: integer for data GPIO Pin
         :param count: integer for total Neopixel count
         """
-        self.neopixel_count = int(count)
-        self.neopixel = NeoPixel(Pin(int(pin)), self.neopixel_count)
+        if not int(pin):
+            error = TypeError(self._INT_VALUE_ERROR)
+            raise Exception(error)
+
+        if not int(count):
+            error = TypeError(self._INT_VALUE_ERROR)
+            raise Exception(error)
+
+        self.neopixel = NeoPixel(Pin(int(pin)), int(count))
 
     def fill(self, rgb: tuple) -> None:
         """
@@ -23,7 +34,8 @@ class NeoPixelRing:
         """
         for value in rgb:
             if not 0 <= int(value) <= 255:
-                raise Exception('Tuple parameter not in range 0 to 255')
+                error = ValueError(self._RGB_VALUE_ERROR)
+                raise Exception(error)
 
         self.neopixel.fill(tuple(rgb))
         self.neopixel.write()
@@ -35,68 +47,86 @@ class NeoPixelRing:
         """
         self.fill((0, 0, 0))
 
-    def random(self, single: bool = True) -> None:
+    def random(self, single_rgb: bool = True) -> None:
         """
         set all or each Neopixel to random color
-        :param single: bool for single random color, False mean all pixel
+        :param single_rgb: bool for single random color, False mean all pixel
         :return: None
         """
-        if single:
-            for item in range(self.neopixel_count):
+        if bool(single_rgb):
+            for item in range(len(self.neopixel)):
                 self.neopixel[item] = (randint(0, 255), randint(0, 255), randint(0, 255))
                 self.neopixel.write()
         else:
             rgb = (randint(0, 255), randint(0, 255), randint(0, 255))
-            for item in range(self.neopixel_count):
+            for item in range(len(self.neopixel)):
                 self.neopixel[item] = rgb
                 self.neopixel.write()
 
-    def circle(self, front_rgb: tuple, back_rgb: tuple, milliseconds: int) -> None:
+    def circle(self, front_rgb: tuple, back_rgb: tuple, ms: int = 100, way: str = 'forward', on: bool = False) -> None:
         """
         circle Neopixel with specific front- and background color
-        :param front_rgb: tuple of rgb color (eq. 255, 0, 0)
-        :param back_rgb: tuple of rgb color (eq. 0, 0, 255)
-        :param milliseconds: integer in milliseconds
+        :param front_rgb: tuple of rgb front color to circle (eq. 255, 0, 0)
+        :param back_rgb: tuple of rgb background color (eq. 0, 0, 255)
+        :param ms: integer in milliseconds, Default = 100ms
+        :param way: string for direction, Default = forward
+        :param on: bool value if pixel turn back to back_rgb color, Default = False
         :return: None
         """
         for value in front_rgb:
             if not 0 <= int(value) <= 255:
-                raise Exception('Tuple parameter not in range 0 to 255')
+                error = ValueError(self._RGB_VALUE_ERROR)
+                raise Exception(error)
 
         for value in back_rgb:
             if not 0 <= int(value) <= 255:
-                raise Exception('Tuple parameter not in range 0 to 255')
+                error = ValueError(self._RGB_VALUE_ERROR)
+                raise Exception(error)
 
-        if not int(milliseconds):
-            error = TypeError("Parameter must be integer")
+        if not int(ms):
+            error = TypeError(self._INT_VALUE_ERROR)
             raise Exception(error)
 
-        self.fill(front_rgb)
+        valid = {'forward', 'backward'}
+        if way not in valid:
+            error = ValueError(self._STR_VALUE_ERROR)
+            raise Exception(error)
 
-        for index in range(self.neopixel_count):
-            self.neopixel[index] = tuple(back_rgb)
-            self.neopixel[index - 1] = tuple(front_rgb)
-            self.neopixel.write()
-            sleep_ms(int(milliseconds))
+        self.fill(back_rgb)
 
-    def fade(self, milliseconds: int, direction: bool = True) -> None:
+        if str(way) == 'forward':
+            for index in range(0, len(self.neopixel), 1):
+                self.neopixel[index] = tuple(front_rgb)
+                if not bool(on):
+                    self.neopixel[index - 1] = tuple(back_rgb)
+                self.neopixel.write()
+                sleep_ms(int(ms))
+        else:
+            for index in range(len(self.neopixel) - 1, -1, -1):
+                self.neopixel[index] = tuple(front_rgb)
+                if index < 11 and not bool(on):
+                    self.neopixel[index + 1] = tuple(back_rgb)
+                self.neopixel.write()
+                sleep_ms(int(ms))
+
+    def fade(self, ms: int = 100, direction: bool = True) -> None:
         """
         fade all Neopixel in or out
-        :param milliseconds: integer in milliseconds
-        :param direction: bool for fade in/out, False means fade out
+        :param ms: integer in milliseconds, Default = 100ms
+        :param direction: bool for fade in/out, False means fade out, Default = True
         :return: None
         """
-        if not int(milliseconds):
-            error = TypeError("Parameter must be integer")
+        if not int(ms):
+            error = TypeError(self._INT_VALUE_ERROR)
             raise Exception(error)
 
-        if direction:
+        if bool(direction):
             for value in range(0, 255, 1):
                 self.fill((value, value, value))
-                sleep_ms(int(milliseconds))
+                sleep_ms(int(ms))
         else:
             for value in range(255, 0, -1):
                 self.fill((value, value, value))
-                sleep_ms(int(milliseconds))
+                sleep_ms(int(ms))
 
             self.fill((0, 0, 0))
