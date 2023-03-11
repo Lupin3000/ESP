@@ -7,7 +7,7 @@ from utime import sleep_ms
 class NeoPixelRing:
 
     _INT_VALUE_ERROR = 'Parameter must be an positive integer'
-    _RGB_VALUE_ERROR = 'All tuple parameters must in range 0 to 255'
+    _RGB_VALUE_ERROR = 'All tuple parameter values must in range 0 to 255'
     _STR_VALUE_ERROR = 'String parameter is not defined'
 
     def __init__(self, pin: int, count: int):
@@ -46,6 +46,25 @@ class NeoPixelRing:
         :return: None
         """
         self.fill((0, 0, 0))
+
+    def pixel(self, number: int, rgb: tuple) -> None:
+        """
+        set specific pixel to rgb color
+        :param number: integer of pixel
+        :param rgb: tuple of rgb color (eq. 100, 200, 0)
+        :return: None
+        """
+        for value in rgb:
+            if not 0 <= int(value) <= 255:
+                error = ValueError(self._RGB_VALUE_ERROR)
+                raise Exception(error)
+
+        if not 0 <= int(number) <= (len(self.neopixel) - 1):
+            error = ValueError(f'{self._INT_VALUE_ERROR} between 0 and {len(self.neopixel) - 1}')
+            raise Exception(error)
+
+        self.neopixel[int(number)] = tuple(rgb)
+        self.neopixel.write()
 
     def random(self, single_rgb: bool = True) -> None:
         """
