@@ -66,9 +66,26 @@ class NeoPixelRing:
             error = TypeError('Parameter must be a bool')
             raise Exception(error)
 
+    @staticmethod
+    def wheel(pos: int) -> tuple:
+        """
+        generates the rainbow color spectrum
+        :param pos: integer value
+        :return: tuple
+        """
+        if pos < 0 or pos > 255:
+            return 0, 0, 0
+        if pos < 85:
+            return 255 - pos * 3, pos * 3, 0
+        if pos < 170:
+            pos -= 85
+            return 0, 255 - pos * 3, pos * 3
+        pos -= 170
+        return pos * 3, 0, 255 - pos * 3
+
     def pixel(self, index: int, rgb: tuple) -> None:
         """
-        set specific pixel to rgb color
+        set specific Neopixel to rgb color
         :param index: integer of pixel
         :param rgb: tuple of rgb color (eq. 100, 200, 0)
         :return: None
@@ -96,6 +113,17 @@ class NeoPixelRing:
         :return: None
         """
         self.fill((0, 0, 0))
+
+    def rainbow(self) -> None:
+        """
+        create animated Neopixel rainbow effect
+        :return: None
+        """
+        for value in range(255):
+            for item in range(len(self.neopixel)):
+                rc_index = (item * 256 // len(self.neopixel)) + value
+                self.neopixel[item] = NeoPixelRing.wheel(rc_index & 255)
+            self.neopixel.write()
 
     def random(self, single: bool = True) -> None:
         """
