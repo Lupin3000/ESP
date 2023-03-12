@@ -30,6 +30,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Touch 3 single LEDs ON/OFF](./Tutorials/LED/three_single_led_touch.py)
   - [NeoPixel LED (simple)](./Tutorials/LED/neopixel_simple.py)
   - [NeoPixel LED (advanced)](./Tutorials/LED/neopixel_advanced.py)
+  - [NeoPixel LED (morse code)](./Tutorials/LED/neopixel_morse.py)
   - [NeoPixel LED (matrix)](./Tutorials/LED/neopixel_matrix.py)
 - Sound's (_[some help](./Tutorials/SOUND/help.md)_)
   - [Passive Buzzer(simple)](./Tutorials/SOUND/passive_buzzer_simple.py)
