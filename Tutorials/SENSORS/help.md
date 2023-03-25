@@ -74,3 +74,7 @@ Minimum values for `DELAY` and ranges:
 ![circuit_diagram_hcsr04.png](../../images/help/circuit_diagram_hcsr04.png)
 
 [Go Back](https://github.com/Lupin3000/ESP)
+
+## Pimoroni VL53L1X
+
+> You need the python driver script! You can find it [here](../../driver/vl53l1x.py).
