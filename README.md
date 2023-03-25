@@ -45,6 +45,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [ALLNET B38 Temperature I2C Sensor](./Tutorials/SENSORS/allnet_B38_temperature.py)
   - [ALLNET B18 Light Barrier Sensor](./Tutorials/SENSORS/allnet_B18_light_barrier.py)
   - [ALLNET B08 Touch Sensor](./Tutorials/SENSORS/allnet_B08_touch.py)
+  - [Waveshare Laser Sensor](./Tutorials/SENSORS/LaserSensor10929.py)
 - Motor (_[some help](./Tutorials/MOTOR/help.md)_)
   - [Servo Motor via duty](./Tutorials/MOTOR/servo_duty.py)
   - [Servo Motor via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)
