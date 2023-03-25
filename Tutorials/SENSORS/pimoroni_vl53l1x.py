@@ -20,5 +20,5 @@ if __name__ == '__main__':
     if i2c:
         distance = VL53L1X(i2c)
         while True:
-            print(f"range: {distance.read()} mm ")
+            print(f"[INFO] distance: {distance.read()}mm")
             sleep_ms(50)
