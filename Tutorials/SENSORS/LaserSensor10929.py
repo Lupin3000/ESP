@@ -3,9 +3,11 @@ from machine import Pin, RTC
 from utime import sleep_ms
 
 
+# define constant
 DATA_GPIO_PIN = const(23)
 DELAY = const(500)
 
+# create Pin and RTC objects
 detection = Pin(DATA_GPIO_PIN, Pin.IN)
 rtc = RTC()
 
