@@ -72,7 +72,11 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Webserver (access point mode)](./Tutorials/SERVER/ap_time_info.py)
   - [Fade LED via webpage (station mode)](./Tutorials/SERVER/fade_led_on_off.py)
 
-## Classes
+## Classes & Drivers
+
+> The 'drivers' are just copied from internet
 
 - [BLE Advertiser](./classes/ble_advertiser.py)
 - [NeoPixel Ring](./classes/neopixelring.py)
+- [VL53L1X](./driver/vl53l1x.py)
+- [BME680](./driver/bme680.py)
