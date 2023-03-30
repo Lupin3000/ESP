@@ -47,6 +47,8 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [ALLNET B08 Touch Sensor](./Tutorials/SENSORS/allnet_B08_touch.py)
   - [Waveshare Laser Sensor](./Tutorials/SENSORS/LaserSensor10929.py)
   - [Pimoroni VL53L1X TOF Sensor](./Tutorials/SENSORS/pimoroni_vl53l1x.py)
+  - [Adafruit MAX9814](./Tutorials/SENSORS/max9814.py)
+  - [Bosh Sensortec BME680](./Tutorials/SENSORS/bosch_sensortec_bme680.py) 
 - Motor (_[some help](./Tutorials/MOTOR/help.md)_)
   - [Servo Motor via duty](./Tutorials/MOTOR/servo_duty.py)
   - [Servo Motor via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)

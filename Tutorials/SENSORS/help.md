@@ -78,3 +78,7 @@ Minimum values for `DELAY` and ranges:
 ## Pimoroni VL53L1X
 
 > You need the python driver script! You can find it [here](../../driver/vl53l1x.py).
+
+## Bosh Sensortec BME680
+
+> You need the python driver script! You can find it [here](../../driver/bme680.py).
