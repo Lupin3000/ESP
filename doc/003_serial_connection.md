@@ -76,7 +76,7 @@ There are basically 3 options to connect to microcontroller.
 
 **First option**
 
-Here you start `RSHELL` first and in a second step you connect to the microcontroller via `serial` or `telnet`.
+Here you start `rshell` first and in a second step you connect to the microcontroller via `serial` or `telnet`.
 
 ```shell
 # start rshell
