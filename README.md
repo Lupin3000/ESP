@@ -20,7 +20,12 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Board tutorial](./doc/006_board_tutorials.md)
     - (code) [ESP32 board information](./examples/board/esp32_information.py)
     - (code) [ESP32 disc space and memory information](./examples/board/esp32_memory.py)
-  - [ESP32: I2C scanner](./Tutorials/BOARD/i2c_scan.py)
+- WLAN
+  - [WLAN tutorial](./doc/007_wlan_tutorials.md)
+    - (code) [Access Point Scanner](./examples/wlan/ap_scanner.py)
+    - (code) [Simple Station Mode](./examples/wlan/simple_station.py)
+    - (code) [Open Access Point Mode](./examples/wlan/open_access_point.py)
+    - (code) [WP2 Access Point Mode](./examples/wlan/wp2_access_point.py)
 - LED (_[some help](./Tutorials/LED/help.md)_)
   - [LED: Blink 1x ON/OFF](./Tutorials/LED/one_single_led_blink.py)
   - [LED: Fade 1x ON/OFF](./Tutorials/LED/one_single_led_fade.py)
@@ -39,6 +44,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Passive Buzzer: play many tones](./Tutorials/SOUND/passive_buzzer_tones.py)
   - [Passive Buzzer: play song](./Tutorials/SOUND/passive_buzzer_sound.py)
 - Sensors (_[some help](./Tutorials/SENSORS/help.md)_)
+  - [ESP32: I2C scanner](./Tutorials/BOARD/i2c_scan.py)
   - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./Tutorials/SENSORS/shadow_detection.py)
   - [DHT11 Temperature/Humidity measure](./Tutorials/SENSORS/dht11.py)
@@ -58,11 +64,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
 - Timer
   - [Virtual timers (cli only)](./Tutorials/TIMER/timer_cli.py)
   - [Blink a single LED ON/OFF](./Tutorials/TIMER/blink_single_led.py)
-- WLAN
-  - [WLAN: AccessPoint Scanner](./Tutorials/WiFi/wlan_ap_scanner.py)
-  - [WLAN: AccessPoint Mode (OPEN)](./Tutorials/WiFi/wlan_access_point_mode_open.py)
-  - [WLAN: AccessPoint Mode (WPA2)](./Tutorials/WiFi/wlan_access_point_mode_wp2.py)
-  - [WLAN: Station Mode](./Tutorials/WiFi/wlan_station_mode.py)
+- WIFI
   - [WLAN: Get target IP](./Tutorials/WiFi/wlan_get_target_ip.py)
   - [WLAN: HTTP Status code](./Tutorials/WiFi/wlan_get_http_status.py)
   - [WLAN: NTP time synchronisation](./Tutorials/WiFi/wlan_ntp_time.py)

@@ -2,13 +2,16 @@
 
 ## Table of Contents
 
+- [Prolog](#prolog)
 - [Know your options](#know-your-options)
 - [The first script about board information](#the-first-script-about-board-information)
 - [The second script about disc space and memory](#the-second-script-about-disc-space-and-memory)
 
-## Know your options
+## Prolog
 
 Before you start you should always check which features your microcontroller and the MircoPython firmware support. If you have flashed the firmware for your microcontroller that is not 100% suitable, errors can occur. Therefore, test with the REPL first before you upload and run your code.
+
+## Know your options
 
 Connect your microcontroller to your local device, start the local environment and connect via `rshell`.
 
@@ -138,4 +141,4 @@ $ touch ~/Projects/ESP32/examples/board/esp32_memory.py
 
 Press the keys `Control` + `d` or the `reset button` and observe the output. If you want to leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./005_frozen_code.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./005_frozen_code.md) | [Next](./007_wlan_tutorials.md)
