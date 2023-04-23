@@ -2,10 +2,27 @@
 
 ## Table of Contents
 
+- [Prolog](#prolog)
 - [Benefit of frozen code](#benefit-of-frozen-code)
 - [Required package](#required-package)
 - [Compile py to mpy](#compile-py-to-mpy)
 - [Use MPY](#use-mpy)
+
+## Prolog
+
+The local directory structure and files after all examples:
+
+```shell
+$ tree .
+|____firmware
+| |____esp32-20220618-v1.19.1.bin
+|____examples
+| |____mpy
+|   |____example_module.py
+|____venv
+| |____bin
+...
+```
 
 ## Benefit of frozen code
 

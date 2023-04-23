@@ -13,6 +13,28 @@
 
 If your microcontroller has WLAN capabilities, you can take advantage of networks. All you really have to do is to decide in which mode you want to operate the microcontroller. 
 
+The local directory structure and files after all examples:
+
+```shell
+$ tree .
+|____firmware
+| |____esp32-20220618-v1.19.1.bin
+|____examples
+| |____board
+|   |____esp32_memory.py
+|   |____esp32_information.py
+| |____mpy
+|   |____example_module.py
+| |____wlan
+|   |____ap_scanner.py
+|   |____simple_station.py
+|   |____wp2_access_point.py
+|   |____open_access_point.py
+|____venv
+| |____bin
+...
+```
+
 **Advantage: station mode**
 
 - You can connect to the microcontroller with almost any other device in the network (_e.g. home network_)

@@ -11,6 +11,23 @@
 
 Before you start you should always check which features your microcontroller and the MircoPython firmware support. If you have flashed the firmware for your microcontroller that is not 100% suitable, errors can occur. Therefore, test with the REPL first before you upload and run your code.
 
+The local directory structure and files after all examples:
+
+```shell
+$ tree .
+|____firmware
+| |____esp32-20220618-v1.19.1.bin
+|____examples
+| |____board
+|   |____esp32_memory.py
+|   |____esp32_information.py
+| |____mpy
+|   |____example_module.py
+|____venv
+| |____bin
+...
+```
+
 ## Know your options
 
 Connect your microcontroller to your local device, start the local environment and connect via `rshell`.
