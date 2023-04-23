@@ -5,35 +5,37 @@ from utime import sleep
 
 
 # define constants
-DURATION_MS = const(7000)
-INTERVAL_US = const(1000000)
-WINDOW_US = const(50000)
+_SCAN_DURATION_MS = const(7000)
+_SCAN_INTERVAL_US = const(1000000)
+_SCAN_WINDOW_US = const(50000)
+
 _IRQ_SCAN_RESULT = const(5)
-_IRQ_SCAN_DONE = const(6)
+_IRQ_SCAN_COMPLETE = const(6)
 
 
 def mac_to_str(mac_address: bytes) -> str:
     """
-    Convert mac address
-    :param mac_address: bytes of mac address
+    Convert byte value of mac address to str
+    :param mac_address: bytes value of mac address
     :return: str
     """
     return hexlify(mac_address, ':').decode().upper()
 
 
-def ble_irq(event, data) -> None:
+def irq_scan(event, data) -> None:
     """
-    event handler for BLE IRQ
+    event handler for BLE _IRQ constants
     :param event: constants of the event handler codes
     :param data: event-specific tuple of values
     :return: None
     """
     global process
+    global ble_adv
 
     if event == _IRQ_SCAN_RESULT:
         addr_type, addr, adv_type, rssi, adv_data = data
         ble_adv[mac_to_str(addr)] = [rssi, bytes(adv_data)]
-    elif event == _IRQ_SCAN_DONE:
+    elif event == _IRQ_SCAN_COMPLETE:
         process = False
 
 
@@ -49,11 +51,13 @@ if __name__ == '__main__':
 
     if ble:
         ble.active(True)
-        ble.irq(ble_irq)
+        ble.irq(irq_scan)
+
         process = True
 
-        ble.gap_scan(DURATION_MS, INTERVAL_US, WINDOW_US, False)
         print('[INFO] Scanning BLE...')
+        ble.gap_scan(_SCAN_DURATION_MS, _SCAN_INTERVAL_US, _SCAN_WINDOW_US, False)
+
         while process:
             sleep(1)
 

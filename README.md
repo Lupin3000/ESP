@@ -26,7 +26,10 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code) [Simple Station Mode](./examples/wlan/simple_station.py)
     - (code) [Open Access Point Mode](./examples/wlan/open_access_point.py)
     - (code) [WP2 Access Point Mode](./examples/wlan/wp2_access_point.py)
-- LED (_[some help](./Tutorials/LED/help.md)_)
+
+IN PROGRESS
+
+- LED
   - [LED: Blink 1x ON/OFF](./Tutorials/LED/one_single_led_blink.py)
   - [LED: Fade 1x ON/OFF](./Tutorials/LED/one_single_led_fade.py)
   - [LED: Switch 1x ON/OFF by button](./Tutorials/LED/one_single_led_btn.py)
@@ -39,11 +42,11 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [NeoPixel: (advanced)](./Tutorials/LED/neopixel_advanced.py)
   - [NeoPixel: (morse code)](./Tutorials/LED/neopixel_morse.py)
   - [NeoPixel: (matrix)](./Tutorials/LED/neopixel_matrix.py)
-- Sound (_[some help](./Tutorials/SOUND/help.md)_)
+- Sound
   - [Passive Buzzer: play single tone](./Tutorials/SOUND/passive_buzzer_simple.py)
   - [Passive Buzzer: play many tones](./Tutorials/SOUND/passive_buzzer_tones.py)
   - [Passive Buzzer: play song](./Tutorials/SOUND/passive_buzzer_sound.py)
-- Sensors (_[some help](./Tutorials/SENSORS/help.md)_)
+- Sensors
   - [ESP32: I2C scanner](./Tutorials/BOARD/i2c_scan.py)
   - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./Tutorials/SENSORS/shadow_detection.py)
@@ -57,7 +60,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Pimoroni: VL53L1X TOF Sensor](./Tutorials/SENSORS/pimoroni_vl53l1x.py)
   - [Adafruit: MAX9814](./Tutorials/SENSORS/max9814.py)
   - [Bosh: Sensortec BME680](./Tutorials/SENSORS/bosch_sensortec_bme680.py) 
-- Motor (_[some help](./Tutorials/MOTOR/help.md)_)
+- Motor
   - [Servo Motor (90°): control via duty](./Tutorials/MOTOR/servo_duty.py)
   - [Servo Motor (90°): control via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)
   - [Servo Motor (90°): control via duty_u16](./Tutorials/MOTOR/servo_duty_u16.py)
@@ -69,7 +72,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [WLAN: HTTP Status code](./Tutorials/WiFi/wlan_get_http_status.py)
   - [WLAN: NTP time synchronisation](./Tutorials/WiFi/wlan_ntp_time.py)
   - [WLAN: Webserver](./Tutorials/WiFi/wlan_webserver_station_mode.py)
-- Bluetooth Low Energy (_[some help](./Tutorials/BLE/help.md)_)
+- Bluetooth Low Energy
   - [BLE: Device scanner](./Tutorials/BLE/ble_scan.py)
   - [BLE: Advertiser](./Tutorials/BLE/ble_advertiser.py)
   - [BLE: Services](./Tutorials/BLE/ble_service.py)

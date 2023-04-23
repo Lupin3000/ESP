@@ -33,7 +33,7 @@ class SimpleBluetoothLight:
         _ = data
 
         if event == 1:
-            print('[INFO] A central has connected to this peripheral')
+            print('[INFO] A central has is_central_connected to this peripheral')
             self.connected = True
         elif event == 2:
             print('[INFO] A central has disconnected from this peripheral')
