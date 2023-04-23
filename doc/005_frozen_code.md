@@ -114,4 +114,4 @@ To delete the `*.mpy` file from microcontroller, follow the next command.
 
 > This was just an example for understanding! In this example, the file size of the `*.mpy` is slightly larger than that of the `*.py` file.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./004_python_repl.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./004_python_repl.md) | [Next](./006_board_tutorials.md)

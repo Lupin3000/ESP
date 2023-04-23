@@ -16,9 +16,10 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Serial connection](./doc/003_serial_connection.md)
   - [MicroPython REPL](./doc/004_python_repl.md)
   - [MicroPython frozen code](./doc/005_frozen_code.md)
-- Board (_[some help](./Tutorials/BOARD/help.md)_)
-  - [ESP32: Board Information](./Tutorials/BOARD/esp32_info.py) 
-  - [ESP32: Show memory information](./Tutorials/BOARD/memory.py)
+- Board
+  - [Board tutorial](./doc/006_board_tutorials.md)
+    - [ESP32 board information](./examples/board/esp32_information.py)
+    - [ESP32 disc space and memory information](./examples/board/esp32_memory.py)
   - [ESP32: I2C scanner](./Tutorials/BOARD/i2c_scan.py)
 - LED (_[some help](./Tutorials/LED/help.md)_)
   - [LED: Blink 1x ON/OFF](./Tutorials/LED/one_single_led_blink.py)
