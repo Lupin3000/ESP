@@ -126,7 +126,7 @@ The second script should output information about the current disc space and mem
 $ touch ~/Projects/ESP32/examples/board/esp32_memory.py
 ```
 
-> [Source code]() for `esp32_memory.py`
+> [Source code](../examples/board/esp32_memory.py) for `esp32_memory.py`
 
 ```shell
 # copy file into pyboard as main.py
