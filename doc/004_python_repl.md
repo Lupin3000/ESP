@@ -1,5 +1,11 @@
 # MicroPython REPL
 
+## Table of Contents
+
+- [What is REPL?](#what-is-repl)
+- [Start a REPL](#start-a-repl)
+- [Usage of REPL](#usage-of-repl)
+
 ## What is REPL?
 
 With the Python REPL (_Read–eval–print loop_) you type commands and see the output. The very nice thing is you have features like: Code Suggestions, Auto-Completion, Auto-Indentation, Contextual History and many more.  
@@ -20,31 +26,33 @@ With the Python REPL (_Read–eval–print loop_) you type commands and see the 
 
 ## Start a REPL
 
-**RSHELL**
-
-You can start the REPL via two options
-
-```shell
-# directly
-$ rshell -p [SERIAL-PORT] repl
-
-# from RSHELL
-$ rshell -p [SERIAL-PORT]
-/your/current/path> repl
-```
-
-**MPFSHELL**
-
-```shell
-$ mpfshell -o [SERIAL-PORT]
-mpfs [/]> repl
-```
-
 **SCREEN**
 
 ```shell
 $ screen [SERIAL-PORT] 115200
 # now press CTRL-D or RST button on device
+```
+
+**MPFSHELL**
+
+```shell
+(venv) $ mpfshell -o [SERIAL-PORT]
+mpfs [/]> repl
+```
+
+**rshell**
+
+You can start the REPL via two options
+
+```shell
+# start REPL directly
+(venv) $ rshell -p [SERIAL-PORT] repl
+
+# start serial connection
+(venv) $ rshell -p [SERIAL-PORT]
+
+# start REPL
+/your/current/path> repl
 ```
 
 ## Usage of REPL
@@ -88,4 +96,4 @@ $ screen [SERIAL-PORT] 115200
 >>> machine.soft_reset()
 ```
 
-[Go Back](https://github.com/Lupin3000/ESP)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./003_serial_connection.md) | [Next](./005_frozen_code.md)
