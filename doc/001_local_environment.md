@@ -7,7 +7,7 @@
 - [Project preparation](#project-preparation)
 - [Basic Python packages](#basic-python-packages)
 
-## local requirements
+## Local requirements
 
 Here are the most important things you need to get started with Micropython/microcontrollers.
 
