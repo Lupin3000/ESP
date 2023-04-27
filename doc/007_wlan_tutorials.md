@@ -142,4 +142,4 @@ Press the keys `Control` + `d` or the `reset button` and observe the output. If 
 
 Later examples then fall back on this basic examples. Think about what the improved version of the examples in `boot.py` would do then!
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./006_board_tutorials.md) | [Next](./006_board_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./006_board_tutorials.md) | [Next](./007_wlan_tutorials.md)
