@@ -47,7 +47,7 @@ def bt_irq(event: int, data: tuple) -> None:
     _ = data
 
     if event == _IRQ_CENTRAL_CONNECT:
-        print('[INFO] A central has is to this peripheral')
+        print('[INFO] A central has connected to this peripheral')
         is_central_connected = True
     elif event == _IRQ_CENTRAL_DISCONNECT:
         print('[INFO] A central has disconnected from this peripheral')

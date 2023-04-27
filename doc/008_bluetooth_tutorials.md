@@ -72,7 +72,7 @@ Here the example output from ESP:
 ```
 [INFO] Start ble services and irq for SimpleBLE
 [INFO] Start ble advertise as SimpleBLE...
-[INFO] A central has is to this peripheral
+[INFO] A central has connected to this peripheral
 [INFO] A peripheral send notification: Hi from ESP32... to central
 [INFO] A central has written this: test
 [INFO] A central has disconnected from this peripheral
