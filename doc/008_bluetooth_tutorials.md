@@ -65,7 +65,7 @@ $ touch ~/Projects/ESP32/examples/ble/ble_service.py
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-As soon as your ESP starts to advertise the BLE service, you can use the `BLE Serial Terminal` on a second device to communicate.
+Press the keys `Control` + `d` or the `reset button` and observe the output. As soon as your ESP starts to advertise the BLE service, you can use the `BLE Serial Terminal` on a second device to communicate.
 
 Here the example output from ESP:
 
@@ -81,6 +81,8 @@ Here the example output from ESP:
 Here the example output from other device:
 
 ![008_ble_serial_terminal.png](../images/examples/008_ble_serial_terminal.png)
+
+To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
 ## Additional information
 
