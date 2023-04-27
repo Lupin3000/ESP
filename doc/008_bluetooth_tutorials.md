@@ -9,7 +9,7 @@
 
 ## Prolog
 
-IoT without Bluetooth is almost impossible these days. Current versions of MicroPython already support Bluetooth Low Energy (_although this is still being developed_). So that you can later for example can control NeoPixel via BLE, or transmit values from sensors via BLE, here some very first basic examples.
+IoT without Bluetooth is almost impossible these days. Current versions of MicroPython already support Bluetooth Low Energy (_although this is still being developed_). So that you can later for example control NeoPixel via BLE or transmit values from sensors via BLE, here some very first basic examples.
 
 ## Scan for BLE devices
 
