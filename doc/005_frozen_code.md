@@ -134,7 +134,7 @@ To delete the `*.mpy` file from microcontroller, follow the next command.
 
 ```shell
 # cleanup example
-/your/current/path> rm /pyboard/example_module.mpy
+/your/current/path> rm /pyboard/lib/example_module.mpy
 ```
 
 > This was just an example for understanding! In this example, the file size of the `*.mpy` is slightly larger than that of the `*.py` file.
