@@ -16,16 +16,21 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Serial connection](./doc/003_serial_connection.md)
   - [MicroPython REPL](./doc/004_python_repl.md)
   - [MicroPython frozen code](./doc/005_frozen_code.md)
+    - (code example) [Frozen code](./examples/mpy/example_module.py) 
 - Board
   - [Board tutorial](./doc/006_board_tutorials.md)
-    - (code) [ESP32 board information](./examples/board/esp32_information.py)
-    - (code) [ESP32 disc space and memory information](./examples/board/esp32_memory.py)
+    - (code example) [ESP32 board information](./examples/board/esp32_information.py)
+    - (code example) [ESP32 disc space and memory information](./examples/board/esp32_memory.py)
 - WLAN
   - [WLAN tutorial](./doc/007_wlan_tutorials.md)
-    - (code) [Access Point Scanner](./examples/wlan/ap_scanner.py)
-    - (code) [Simple Station Mode](./examples/wlan/simple_station.py)
-    - (code) [Open Access Point Mode](./examples/wlan/open_access_point.py)
-    - (code) [WP2 Access Point Mode](./examples/wlan/wp2_access_point.py)
+    - (code example) [Access point scanner](./examples/wlan/ap_scanner.py)
+    - (code example) [Simple station mode](./examples/wlan/simple_station.py)
+    - (code example) [Open access point mode](./examples/wlan/open_access_point.py)
+    - (code example) [WP2 access point mode](./examples/wlan/wp2_access_point.py)
+- Bluetooth Low Energy
+  - [Bluetooth Low Energy tutorial](./doc/008_bluetooth_tutorials.md)
+    - (code example) [BLE scanner](./examples/ble/ble_scanner.py)
+    - (code example) [Own BLE service](./examples/ble/ble_service.py)
 
 IN PROGRESS
 
@@ -72,10 +77,6 @@ IN PROGRESS
   - [WLAN: HTTP Status code](./Tutorials/WiFi/wlan_get_http_status.py)
   - [WLAN: NTP time synchronisation](./Tutorials/WiFi/wlan_ntp_time.py)
   - [WLAN: Webserver](./Tutorials/WiFi/wlan_webserver_station_mode.py)
-- Bluetooth Low Energy
-  - [BLE: Device scanner](./Tutorials/BLE/ble_scan.py)
-  - [BLE: Advertiser](./Tutorials/BLE/ble_advertiser.py)
-  - [BLE: Services](./Tutorials/BLE/ble_service.py)
 - Server
   - [Webserver: WLAN access point mode](./Tutorials/SERVER/ap_time_info.py)
   - [Webserver: WLAN station mode - control LED](./Tutorials/SERVER/fade_led_on_off.py)

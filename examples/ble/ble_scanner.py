@@ -4,7 +4,6 @@ from ubinascii import hexlify
 from utime import sleep
 
 
-# define constants
 _SCAN_DURATION_MS = const(7000)
 _SCAN_INTERVAL_US = const(1000000)
 _SCAN_WINDOW_US = const(50000)
@@ -15,16 +14,16 @@ _IRQ_SCAN_COMPLETE = const(6)
 
 def mac_to_str(mac_address: bytes) -> str:
     """
-    Convert byte value of mac address to str
+    convert byte value of mac address to string value
     :param mac_address: bytes value of mac address
-    :return: str
+    :return: str of mac address
     """
     return hexlify(mac_address, ':').decode().upper()
 
 
 def irq_scan(event, data) -> None:
     """
-    event handler for BLE _IRQ constants
+    set global variables for specific ble _IRQ events
     :param event: constants of the event handler codes
     :param data: event-specific tuple of values
     :return: None
@@ -55,7 +54,7 @@ if __name__ == '__main__':
 
         process = True
 
-        print('[INFO] Scanning BLE...')
+        print('[INFO] Scanning for ble devices...')
         ble.gap_scan(_SCAN_DURATION_MS, _SCAN_INTERVAL_US, _SCAN_WINDOW_US, False)
 
         while process:
@@ -63,10 +62,10 @@ if __name__ == '__main__':
 
         count = len(ble_adv)
         if count > 0:
-            print(f'[INFO] {count} BLE devices found')
+            print(f'[INFO] {count} ble devices found')
             for mac in ble_adv:
                 print(f'[INFO] {mac} (rssi {ble_adv[mac][0]} dBm)')
         else:
-            print('[INFO] No BLE devices found')
+            print('[INFO] No ble devices found')
 
         ble.active(False)

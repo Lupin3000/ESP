@@ -6,7 +6,7 @@ class SimpleBluetoothLight:
     def __init__(self, name: str):
         """
         class initializer
-        :param name: name of BLE device
+        :param name: name of ble device
         """
         print('[INFO] Start ble device')
 
@@ -25,7 +25,7 @@ class SimpleBluetoothLight:
 
     def _irq(self, event: int, data: tuple) -> None:
         """
-        BLE irq event handler
+        ble irq event handler
         :param event: number of the event handler codes
         :param data: event-specific tuple of values (not used)
         :return: None
@@ -44,7 +44,7 @@ class SimpleBluetoothLight:
 
     def _register(self) -> None:
         """
-        BLE device register
+        ble device register
         :return: None
         """
         nus_uuid = self.device_uuid
@@ -63,18 +63,18 @@ class SimpleBluetoothLight:
 
     def _advertiser(self) -> None:
         """
-        BLE device advertiser
+        ble device advertiser
         :return: None
         """
         dev_name = bytes(self.device_name, 'UTF-8')
         adv_data = bytearray('\x02\x01\x02') + bytearray((len(dev_name) + 1, 0x09)) + dev_name
         self._ble.gap_advertise(100, adv_data)
 
-        print(f'[INFO] BLE device {self.device_name} started')
+        print(f'[INFO] ble device {self.device_name} started')
 
     def send_msg(self, data: str) -> None:
         """
-        BLE send message
+        ble send message
         :param data: message string
         :return: None
         """

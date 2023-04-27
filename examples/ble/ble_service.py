@@ -1,9 +1,8 @@
 from micropython import const
-from ubluetooth import BLE, UUID, FLAG_WRITE, FLAG_READ, FLAG_NOTIFY
+from ubluetooth import BLE, UUID
 from utime import sleep
 
 
-# define constants
 _DELAY_SEC = const(50)
 
 _ADV_TYP_NAME = const(9)
@@ -34,9 +33,9 @@ _UART_SERVICE = (
 )
 
 
-def ble_irq(event: int, data: tuple) -> None:
+def bt_irq(event: int, data: tuple) -> None:
     """
-    BLE irq event handler
+    ble irq event handler
     :param event: number of the event handler codes
     :param data: event-specific tuple of values (not used)
     :return: None
@@ -48,7 +47,7 @@ def ble_irq(event: int, data: tuple) -> None:
     _ = data
 
     if event == _IRQ_CENTRAL_CONNECT:
-        print('[INFO] A central has is_central_connected to this peripheral')
+        print('[INFO] A central has is to this peripheral')
         is_central_connected = True
     elif event == _IRQ_CENTRAL_DISCONNECT:
         print('[INFO] A central has disconnected from this peripheral')
@@ -58,23 +57,23 @@ def ble_irq(event: int, data: tuple) -> None:
         print(f"[INFO] A central has written this: {buffer.decode('UTF-8').strip()}")
 
 
-def ble_notify(data: str) -> None:
+def bt_notify(data: str) -> None:
     """
-    Notify the connected central that value has changed, and issue a reading of current value of this peripheral
+    notify the connected central that value has changed, and issue a reading of current value of this peripheral
     :param data: short string of value(s)
     :return: None
     """
     global my_ble
     global tx
 
-    print(f'[INFO] Peripheral send notification: {data} to central')
+    print(f'[INFO] A peripheral send notification: {data} to central')
     message = data.strip()
     my_ble.gatts_notify(0, tx, message + '\n')
 
 
-def ble_advertise(name: str = 'ESP32') -> None:
+def bt_advertise(name: str = 'ESP32') -> None:
     """
-    Start broadcasting in interval with device name
+    start broadcasting in interval with device name
     :param name: device name as string
     :return: None
     """
@@ -87,14 +86,13 @@ def ble_advertise(name: str = 'ESP32') -> None:
     # 0x02 - value = 0x02
     adv_data = bytearray('\x02\x01\x02') + bytearray((len(dev_name) + 1, _ADV_TYP_NAME)) + dev_name
 
-    print(f'[INFO] Start BLE advertise as {name}...')
+    print(f'[INFO] Start ble advertise as {name}...')
     my_ble.gap_advertise(_BROADCASTING_INTERVAL_US, adv_data, connectable=True)
 
 
-def ble_services() -> None:
+def bt_services() -> None:
     """
-    Configure specific services
-    :param bluetooth: bluetooth object
+    configure specific services
     :return: None
     """
     global my_ble
@@ -102,7 +100,7 @@ def ble_services() -> None:
     global rx
 
     services = (_UART_SERVICE,)
-    ((tx, rx,), ) = my_ble.gatts_register_services(services)
+    ((tx, rx,),) = my_ble.gatts_register_services(services)
 
 
 if __name__ == '__main__':
@@ -118,16 +116,16 @@ if __name__ == '__main__':
         print(f'[ERROR] Bluetooth initialization failed: {err}')
 
     if my_ble:
-        print(f'[INFO] Start BLE services and irq for {device_name}')
+        print(f'[INFO] Start ble services and irq for {device_name}')
         my_ble.active(True)
-        ble_services()
-        my_ble.irq(ble_irq)
+        bt_services()
+        my_ble.irq(bt_irq)
 
         while True:
-            ble_advertise(device_name)
+            bt_advertise(device_name)
 
             sleep(_DELAY_SEC / 2)
             if is_central_connected:
-                ble_notify('Hi from ESP32...')
+                bt_notify('Hi from ESP32...')
 
             sleep(_DELAY_SEC)

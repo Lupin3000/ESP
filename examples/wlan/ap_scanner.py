@@ -3,6 +3,11 @@ from ubinascii import hexlify
 
 
 def conv_wlan_mode(number: int) -> str:
+    """
+    convert a provided integer to string value
+    :param number: integer value for encryption type
+    :return: string value for encryption type
+    """
     if number == 0:
         return 'open'
     elif number == 1:
@@ -18,6 +23,11 @@ def conv_wlan_mode(number: int) -> str:
 
 
 def list_access_points(access_points: tuple) -> None:
+    """
+    print scan report into output
+    :param access_points: tuple of scan results
+    :return: None
+    """
     print(f"\n{'Name' : <25}{'BSSID' : ^20}{'Channel' : ^10}{'RSSI' : ^10}{'Authentication' : ^20}")
     print('-' * 82)
 
