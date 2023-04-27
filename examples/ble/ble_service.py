@@ -71,22 +71,22 @@ def bt_notify(data: str) -> None:
     my_ble.gatts_notify(0, tx, message + '\n')
 
 
-def bt_advertise(name: str = 'ESP32') -> None:
+def bt_advertise() -> None:
     """
     start broadcasting in interval with device name
-    :param name: device name as string
     :return: None
     """
     global my_ble
+    global device_name
 
-    dev_name = bytes(name, 'UTF-8')
+    dev_name = bytes(device_name, "utf-8")
 
     # 0x02 - General discoverable mode
     # 0x01 - AD Type = 0x01
     # 0x02 - value = 0x02
-    adv_data = bytearray('\x02\x01\x02') + bytearray((len(dev_name) + 1, _ADV_TYP_NAME)) + dev_name
+    adv_data = bytearray('\x02\x01\x02', "utf-8") + bytearray((len(dev_name) + 1, _ADV_TYP_NAME)) + dev_name
 
-    print(f'[INFO] Start ble advertise as {name}...')
+    print(f'[INFO] Start ble advertise as {device_name}...')
     my_ble.gap_advertise(_BROADCASTING_INTERVAL_US, adv_data, connectable=True)
 
 
@@ -122,7 +122,7 @@ if __name__ == '__main__':
         my_ble.irq(bt_irq)
 
         while True:
-            bt_advertise(device_name)
+            bt_advertise()
 
             sleep(_DELAY_SEC / 2)
             if is_central_connected:

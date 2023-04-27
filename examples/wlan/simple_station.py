@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     config = sta.ifconfig()
 
-    print('[INFO] connected to WLAN')
+    print(f'[INFO] connected to WLAN {AP_SSID}')
     print(f"{'IP' : <15}{config[0]}")
     print(f"{'Subnet mask' :<15}{config[1]}")
     print(f"{'Gateway' :<15}{config[2]}")

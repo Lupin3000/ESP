@@ -35,11 +35,13 @@ Inside your project root the structure should be similar to this example:
 ```shell
 $ tree .
 |____firmware
-| |____esp32-20220618-v1.19.1.bin
+| |____esp32-20230426-v1.20.0.bin
 |____venv
 | |____bin
 ...
 ```
+
+> As you can see, all following examples are with MicroPython **version:`1.20.0`**.
 
 ## Flash firmware
 
@@ -62,8 +64,10 @@ Here an example for ESP32 with usage of `firmware` directory.
 
 ```shell
 # flash firmware (ESP32)
-(venv) $ esptool.py --chip esp32 --port [SERIAL-PORT] --baud 460800 write_flash -z 0x1000 firmware/[BINFILE]
+(venv) $ esptool.py --chip esp32 --port [SERIAL-PORT] --baud 460800 write_flash -z 0x1000 firmware/esp32-20230426-v1.20.0.bin
 ```
+
+> Read careful the respective `Installation instructions` on download page!
 
 This process can take some time.
 
