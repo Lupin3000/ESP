@@ -15,7 +15,7 @@ The local directory structure and files after all examples:
 ```shell
 $ tree .
 |____firmware
-| |____esp32-20220618-v1.19.1.bin
+| |____esp32-20230426-v1.20.0.bin
 |____examples
 | |____mpy
 |   |____example_module.py
