@@ -98,15 +98,23 @@ Now compile this module.
 
 **Copy `*.mpy` file to microcontroller**
 
+> It's a good practice to add your `*.mpy` modules into directory `/pyboard/lib/`.
+
 ```shell
 # start serial connection
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy mpy via rshell
-/your/current/path> cp example_module.mpy /pyboard/example_module.mpy
+# create new directory
+/your/current/path>  mkdir /pyboard/lib
 
-# list files (optional)
+# copy mpy via rshell
+/your/current/path> cp example_module.mpy /pyboard/lib/example_module.mpy
+
+# list files and directories (optional)
 /your/current/path> ls /pyboard/
+
+# list files inside lib directory (optional)
+/your/current/path> ls /pyboard/lib/
 ```
 
 **Run `*.mpy` via REPL**
