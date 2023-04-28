@@ -3,19 +3,18 @@ from machine import Pin
 from utime import sleep
 
 
-# define constants
 LED_GPIO_PIN = const(23)
-DELAY = const(0.5)
+DELAY_SECONDS = const(0.5)
 
-# create pin object
-led = Pin(LED_GPIO_PIN, Pin.OUT)
 
 if __name__ == '__main__':
+    led = Pin(LED_GPIO_PIN, Pin.OUT)
+
     while True:
         print('[INFO] LED ON')
         led.value(1)
-        sleep(DELAY)
+        sleep(DELAY_SECONDS)
 
         print('[INFO] LED OFF')
         led.value(0)
-        sleep(DELAY)
+        sleep(DELAY_SECONDS)

@@ -29,7 +29,7 @@ Copy the script to the microcontroller as `main.py`.
 
 ```shell
 # copy file into pyboard as main.py
-(venv) $ rshell -p [SERIAL-PORT] cp Tutorials/ble/ble_scanner.py /pyboard/main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/ble/ble_scanner.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
@@ -59,7 +59,7 @@ $ touch ~/Projects/ESP32/examples/ble/ble_service.py
 
 ```shell
 # copy file into pyboard as main.py
-(venv) $ rshell -p [SERIAL-PORT] cp Tutorials/ble/ble_service.py /pyboard/main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/ble/ble_service.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
@@ -88,4 +88,4 @@ To stop the program, press keys `Control` + `c`. If you want to leave the REPL, 
 
 Later examples then fall back on this basic examples. For example, the usage of sensors will be described.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./007_wlan_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./007_wlan_tutorials.md) | [Next](./009_gpio_basic_tutorials.md)

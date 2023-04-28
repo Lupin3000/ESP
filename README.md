@@ -31,17 +31,20 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Bluetooth Low Energy tutorial](./doc/008_bluetooth_tutorials.md)
     - (code example) [BLE scanner](./examples/ble/ble_scanner.py)
     - (code example) [Own BLE service](./examples/ble/ble_service.py)
+- GPIO basic
+  - [GPIO basic tutorial](./doc/009_gpio_basic_tutorials.md)
+    - (code example) [Blink a single LED](./examples/gpio_basic/blink_single_led_high_low.py)
+    - (code example) [Blink a single LED by Timer](./examples/gpio_basic/blink_single_led_high_low_timer.py)
+    - (code example) [Fade a single LED](./examples/gpio_basic/fade_single_led_high_low.py)
+    - (code example) [Change RGB LED color](./examples/gpio_basic/change_rgb_led_color_high_low.py)
 
 IN PROGRESS
 
 - LED
-  - [LED: Blink 1x ON/OFF](./Tutorials/LED/one_single_led_blink.py)
-  - [LED: Fade 1x ON/OFF](./Tutorials/LED/one_single_led_fade.py)
   - [LED: Switch 1x ON/OFF by button](./Tutorials/LED/one_single_led_btn.py)
   - [LED: Switch 1x ON/OFF by touch](./Tutorials/LED/one_single_led_touch.py)
   - [LED: Switch 3x ON/OFF by touch](./Tutorials/LED/three_single_led_touch.py)
   - [LED: Heartbeat](./Tutorials/LED/one_single_led_heartbeat.py)
-  - [RGB LED: Blink 1x ON/OFF](./Tutorials/LED/one_rgb_led_blink.py)
   - [RGB LED: Fade 1x ON/OFF](./Tutorials/LED/one_rgb_led_fade.py)
   - [NeoPixel: (simple)](./Tutorials/LED/neopixel_simple.py)
   - [NeoPixel: (advanced)](./Tutorials/LED/neopixel_advanced.py)
@@ -71,7 +74,6 @@ IN PROGRESS
   - [Servo Motor (90°): control via duty_u16](./Tutorials/MOTOR/servo_duty_u16.py)
 - Timer
   - [Virtual timers (cli only)](./Tutorials/TIMER/timer_cli.py)
-  - [Blink a single LED ON/OFF](./Tutorials/TIMER/blink_single_led.py)
 - WIFI
   - [WLAN: Get target IP](./Tutorials/WiFi/wlan_get_target_ip.py)
   - [WLAN: HTTP Status code](./Tutorials/WiFi/wlan_get_http_status.py)
