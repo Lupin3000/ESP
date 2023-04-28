@@ -5,7 +5,7 @@
 - [Prolog](#prolog)
 - [Create single tone (passive buzzer)](#create-single-tone-passive-buzzer)
 - [Create different tones (passive buzzer)](#create-different-tones-passive-buzzer)
-- [Play as song (passive buzzer)](#play-as-song-passive-buzzer)
+- [Play a song (passive buzzer)](#play-a-song-passive-buzzer)
 
 ## Prolog
 
@@ -84,7 +84,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 To leave the REPL, press keys `Control` + `x`.
 
-## Play as song (passive buzzer)
+## Play a song (passive buzzer)
 
 The last example is actually a logical conclusion. Do you know Mario?
 

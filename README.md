@@ -42,7 +42,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Sound tutorial](./doc/010_sound_tutorials.md)
     - (code example) [Create single tone (passive buzzer)](./examples/sound/passive_buzzer_simple.py)
     - (code example) [Create different tones (passive buzzer)](./examples/sound/passive_buzzer_tones.py)
-    - (code example) [Play as song (passive buzzer)](./examples/sound/passive_buzzer_sound.py)
+    - (code example) [Play a song (passive buzzer)](./examples/sound/passive_buzzer_sound.py)
 
 IN PROGRESS
 
