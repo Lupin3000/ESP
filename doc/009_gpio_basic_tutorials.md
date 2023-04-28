@@ -116,7 +116,7 @@ In the second example, an RGB LED is used. Here the color is changed endlessly (
 ### Requirements
 
 - mandatory 1x RGB LED (_any color_)
-- mandatory 3x Resistor (_min. 220 ohms_)
+- mandatory 3x Resistors (_min. 220 ohms_)
 - few cables
 - optional few breadboard
 

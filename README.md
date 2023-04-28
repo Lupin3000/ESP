@@ -35,7 +35,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [GPIO basic tutorial](./doc/009_gpio_basic_tutorials.md)
     - (code example) [Blink a single LED](./examples/gpio_basic/blink_single_led_high_low.py)
     - (code example) [Blink a single LED by Timer](./examples/gpio_basic/blink_single_led_high_low_timer.py)
-    - (code example) [Fade a single LED](./examples/gpio_basic/fade_single_led_high_low.py)
+    - (code example) [Fade a single LED by PWM](./examples/gpio_basic/fade_single_led_high_low.py)
     - (code example) [Change RGB LED color](./examples/gpio_basic/change_rgb_led_color_high_low.py)
 
 IN PROGRESS
