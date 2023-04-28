@@ -5,7 +5,7 @@
 - [Prolog](#prolog)
 - [Blink a single LED (High/Low)](#blink-a-single-led-highlow)
 - [Blink a single LED (High/Low) with Timer](#improved-version-with-timer)
-- [Fade a single LED (High/Low)](#fade-a-single-led-highlow)
+- [Fade a single LED (High/Low) with PWM](#fade-a-single-led-highlow-with-pwm)
 - [Change RGB LED color (High/Low)](#change-rgb-led-color-highlow)
 
 ## Prolog
@@ -76,7 +76,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
-## Fade a single LED (High/Low)
+## Fade a single LED (High/Low) with PWM
 
 In the previous example, the transition from `high` to `low` was very "hard". But you can use `PWM` (_Pulse-width modulation_) to do this some "smoother". The circuit is not changed for this, only the code.
 
