@@ -8,6 +8,7 @@
 - [Blink a single LED (High/Low) with Timer](#improved-version-with-timer)
 - [Fade a single LED (High/Low) with PWM](#fade-a-single-led-highlow-with-pwm)
 - [Change RGB LED color (High/Low)](#change-rgb-led-color-highlow)
+- [Additional information](#additional-information)
 
 ## Prolog
 
@@ -168,5 +169,9 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 ```
 
 To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+
+## Additional information
+
+The class Pin has other methods, too! Also, you can use for example ADC, UART, SPI or I2C on GPIOs.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./008_bluetooth_tutorials.md) | [Next]()
