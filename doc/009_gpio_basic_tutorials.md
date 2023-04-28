@@ -25,7 +25,7 @@ In the first example, a simple LED is switched on/off endlessly.
 - mandatory 1x LED (_any color_)
 - mandatory 1x Resistor (_min. 220 ohms_)
 - few cables
-- optional few breadboard
+- optional a breadboard
 
 ### Circuit
 
@@ -174,4 +174,4 @@ To stop the program, press keys `Control` + `c`. If you want to leave the REPL, 
 
 The class Pin has other methods, too! Also, you can use for example ADC, UART, SPI or I2C on GPIOs.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./008_bluetooth_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./008_bluetooth_tutorials.md) | [Next](./010_sound_tutorials.md)

@@ -38,6 +38,11 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code example) [Blink a single LED with Timer](./examples/gpio_basic/blink_single_led_high_low_timer.py)
     - (code example) [Fade a single LED with PWM](./examples/gpio_basic/fade_single_led_high_low.py)
     - (code example) [Change RGB LED color](./examples/gpio_basic/change_rgb_led_color_high_low.py)
+- Sound
+  - [Sound tutorial](./doc/010_sound_tutorials.md)
+    - (code example) [Create single tone (passive buzzer)](./examples/sound/passive_buzzer_simple.py)
+    - (code example) [Create different tones (passive buzzer)](./examples/sound/passive_buzzer_tones.py)
+    - (code example) [Play as song (passive buzzer)](./examples/sound/passive_buzzer_sound.py)
 
 IN PROGRESS
 
@@ -51,10 +56,6 @@ IN PROGRESS
   - [NeoPixel: (advanced)](./Tutorials/LED/neopixel_advanced.py)
   - [NeoPixel: (morse code)](./Tutorials/LED/neopixel_morse.py)
   - [NeoPixel: (matrix)](./Tutorials/LED/neopixel_matrix.py)
-- Sound
-  - [Passive Buzzer: play single tone](./Tutorials/SOUND/passive_buzzer_simple.py)
-  - [Passive Buzzer: play many tones](./Tutorials/SOUND/passive_buzzer_tones.py)
-  - [Passive Buzzer: play song](./Tutorials/SOUND/passive_buzzer_sound.py)
 - Sensors
   - [ESP32: I2C scanner](./Tutorials/BOARD/i2c_scan.py)
   - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)

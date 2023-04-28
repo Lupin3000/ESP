@@ -3,7 +3,6 @@ from machine import Pin, PWM
 from utime import sleep
 
 
-# define constant
 BUZZER_GPIO_PIN = const(23)
 BUZZER_DUTY_CYCLE = const(1000)
 BUZZER_FREQUENCY_TONE_A = const(300)
@@ -12,10 +11,9 @@ BUZZER_FREQUENCY_TONE_C = const(400)
 DELAY = const(.15)
 REPEATS = const(5)
 
-# create pwm object
-buzzer = PWM(Pin(BUZZER_GPIO_PIN))
 
 if __name__ == '__main__':
+    buzzer = PWM(Pin(BUZZER_GPIO_PIN))
     count = 1
 
     while count <= REPEATS:
