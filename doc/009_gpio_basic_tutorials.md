@@ -4,6 +4,7 @@
 
 - [Prolog](#prolog)
 - [Blink a single LED (High/Low)](#blink-a-single-led-highlow)
+- [Blink a single LED (High/Low) with PWM](#different-version-with-pwm)
 - [Blink a single LED (High/Low) with Timer](#improved-version-with-timer)
 - [Fade a single LED (High/Low) with PWM](#fade-a-single-led-highlow-with-pwm)
 - [Change RGB LED color (High/Low)](#change-rgb-led-color-highlow)
@@ -53,9 +54,32 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
+### Different version (_with PWM_)
+
+You can also realize the blinking in a different way! Let's try with `PWM`. Circuit and requirements stay the same. Only the code needs to be adapted.
+
+```shell
+# create script
+$ touch ~/Projects/ESP32/examples/gpio_basic/blink_single_led_high_low_pwm.py
+```
+
+> [Source Code](../examples/gpio_basic/blink_single_led_high_low_pwm.py) for `blink_single_led_high_low_pwm.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/gpio_basic/blink_single_led_high_low_pwm.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+
 ### Improved version (_with Timer_)
 
-You can also realize the blinking in a different way! Therefore, MicroPython and ESP offers the feature of `Timers`. Circuit and requirements stay the same. Only the code needs to be adapted.
+MicroPython and ESP offers the feature of `Timers`. Circuit and requirements stay the same. Only the code needs to be adapted.
 
 ```shell
 # create script
