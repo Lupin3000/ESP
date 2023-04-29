@@ -44,6 +44,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code example) [Create different tones (passive buzzer)](./examples/sound/passive_buzzer_tones.py)
     - (code example) [Play a song (passive buzzer)](./examples/sound/passive_buzzer_sound.py)
 - Motor
+  - [Motor tutorial](./doc/011_motor_tutorials.md)
     - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
     - (code example) [Control servo via duty_ns](./examples/motor/servo_duty_ns.py)
     - (code example) [Control servo via duty_u16](./examples/motor/servo_duty_u16.py)
