@@ -85,4 +85,4 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_motor_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_motor_tutorials.md) | [Next](./013_package_management.md)

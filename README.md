@@ -52,6 +52,8 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [NeoPixel tutorials](./doc/012_neopixel_tutorials.md)
     - (code example) [NeoPixel basics](./examples/neopixel/neopixel_basics.py)
     - (code example) [NeoPixel morse code](./examples/neopixel/neopixel_morse.py)
+- More introduction
+  - [Package management](./doc/013_package_management.md)
 
 IN PROGRESS
 
