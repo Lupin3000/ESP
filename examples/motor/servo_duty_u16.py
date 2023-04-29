@@ -3,15 +3,14 @@ from machine import Pin, PWM
 from utime import sleep
 
 
-# define constants
 SERVO_GPIO_PIN = const(21)
 SERVO_FREQUENCY = const(50)
 DELAY = const(1)
 
-# create pwm object
-servo = PWM(Pin(SERVO_GPIO_PIN), freq=SERVO_FREQUENCY)
 
 if __name__ == '__main__':
+    servo = PWM(Pin(SERVO_GPIO_PIN), freq=SERVO_FREQUENCY)
+
     # define variables (between 3276 and 6553)
     min_pos = 3276
     mid_pos = 4915

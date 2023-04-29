@@ -43,6 +43,10 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code example) [Create single tone (passive buzzer)](./examples/sound/passive_buzzer_simple.py)
     - (code example) [Create different tones (passive buzzer)](./examples/sound/passive_buzzer_tones.py)
     - (code example) [Play a song (passive buzzer)](./examples/sound/passive_buzzer_sound.py)
+- Motor
+    - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
+    - (code example) [Control servo via duty_ns](./examples/motor/servo_duty_ns.py)
+    - (code example) [Control servo via duty_u16](./examples/motor/servo_duty_u16.py)
 
 IN PROGRESS
 
@@ -69,11 +73,7 @@ IN PROGRESS
   - [WaveShare: Laser Sensor](./Tutorials/SENSORS/LaserSensor10929.py)
   - [Pimoroni: VL53L1X TOF Sensor](./Tutorials/SENSORS/pimoroni_vl53l1x.py)
   - [Adafruit: MAX9814](./Tutorials/SENSORS/max9814.py)
-  - [Bosh: Sensortec BME680](./Tutorials/SENSORS/bosch_sensortec_bme680.py) 
-- Motor
-  - [Servo Motor (90°): control via duty](./Tutorials/MOTOR/servo_duty.py)
-  - [Servo Motor (90°): control via duty_ns](./Tutorials/MOTOR/servo_duty_ns.py)
-  - [Servo Motor (90°): control via duty_u16](./Tutorials/MOTOR/servo_duty_u16.py)
+  - [Bosh: Sensortec BME680](./Tutorials/SENSORS/bosch_sensortec_bme680.py)
 - Timer
   - [Virtual timers (cli only)](./Tutorials/TIMER/timer_cli.py)
 - WIFI
