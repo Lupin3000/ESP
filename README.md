@@ -6,9 +6,13 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## Information
 
-To make it easier to get started, the basic examples are not object-oriented. On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your circuit/code inside the browser. Depending on your ESP microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports.
+On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your circuit/code inside the browser. 
 
-## Table of Contents
+> Depending on your ESP microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports.
+
+## Tutorials & examples
+
+### Table of Contents
 
 - Introduction
   - [Setup local environment](./doc/001_local_environment.md)
@@ -61,7 +65,18 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code example) [I2C OLED (ssd1306) basics](./examples/display/i2c_oled_ssd1306_basics.py)
     - (code example) [I2C OLED (ssd1306) date/time](./examples/display/i2c_oled_ssd1306_time.py)
 
-IN PROGRESS
+## external libraries
+
+Display
+- [SSD1306 driver](./lib/ssd1306.py)
+- [Writer module](./lib/writer.py)
+- [freesans20 font](./lib/freesans20.py)
+
+Sensors
+- [BME680 driver](./lib/bme680.py)
+- [Vl53L1X driver](./lib/vl53l1x.py)
+
+IN PROGRESS (_to be refactored_)
 
 - LED
   - [LED: Switch 1x ON/OFF by button](./Tutorials/LED/one_single_led_btn.py)
@@ -94,14 +109,3 @@ IN PROGRESS
 - Server
   - [Webserver: WLAN access point mode](./Tutorials/SERVER/ap_time_info.py)
   - [Webserver: WLAN station mode - control LED](./Tutorials/SERVER/fade_led_on_off.py)
-
-## external libraries
-
-Display
-- [SSD1306 driver](./lib/ssd1306.py)
-- [Writer module](./lib/writer.py)
-- [freesans20 font](./lib/freesans20.py)
-
-Sensors
-- [BME680 driver](./lib/bme680.py)
-- [Vl53L1X driver](./lib/vl53l1x.py)
