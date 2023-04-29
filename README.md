@@ -98,10 +98,10 @@ IN PROGRESS
 ## external libraries
 
 Display
-- [SSD1306](./lib/ssd1306.py)
-- [Writer](./lib/writer.py)
-- [freesans20](./lib/freesans20.py)
+- [SSD1306 driver](./lib/ssd1306.py)
+- [Writer module](./lib/writer.py)
+- [freesans20 font](./lib/freesans20.py)
 
 Sensors
-- [BME680](./lib/bme680.py)
-- [Vl53L1X](./lib/vl53l1x.py)
+- [BME680 driver](./lib/bme680.py)
+- [Vl53L1X driver](./lib/vl53l1x.py)
