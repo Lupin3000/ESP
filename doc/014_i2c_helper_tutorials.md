@@ -42,6 +42,6 @@ Make a note of the important values of the output and leave the REPL, press keys
 
 Since MicroPython version 1.14.x a message is displayed, that the usage of I2C is deprecated and [SoftI2C](https://docs.micropython.org/en/latest/esp32/quickref.html?highlight=softi2c#software-i2c-bus) should be used. I won't go into the advantages of SoftI2C here, but I would like to mention that the switch is not that difficult and that it will probably be necessary at some point.
 
-> In the tutorial for the OLED display (_with ssd1306_) you will come into contact with SoftI2C.
+> In the later tutorials, for example the OLED display (_with ssd1306 driver_) you will come into contact with SoftI2C.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./013_package_management.md) | [Next]()
