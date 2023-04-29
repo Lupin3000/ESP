@@ -94,11 +94,8 @@ IN PROGRESS
   - [Webserver: WLAN access point mode](./Tutorials/SERVER/ap_time_info.py)
   - [Webserver: WLAN station mode - control LED](./Tutorials/SERVER/fade_led_on_off.py)
 
-## Classes & Drivers
+## external libraries
 
-> The 'drivers' are just copied from internet
-
-- [BLE Advertiser](./classes/ble_advertiser.py)
-- [NeoPixel Ring](./classes/neopixelring.py)
-- [VL53L1X](./driver/vl53l1x.py)
-- [BME680](./driver/bme680.py)
+- [SSD1306](./lib/ssd1306.py)
+- [BME680](./lib/bme680.py)
+- [Vl53L1X](./lib/vl53l1x.py)
