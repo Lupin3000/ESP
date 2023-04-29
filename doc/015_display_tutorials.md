@@ -4,6 +4,7 @@
 
 - [Prolog](#prolog)
 - [I2C OLED (ssd1306)](#i2c-oled-basics-ssd1306)
+- [I2C OLED date and time (ssd1306)](#i2c-oled-date-and-time-ssd1306)
 
 ## Prolog
 
@@ -50,5 +51,54 @@ Check your circuit (_adapt pins if needed_) and copy the script to the microcont
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
+
+## I2C OLED date and time (ssd1306)
+
+Actually, this task seems very simple. But that is a bit deceptive! The font size and the current time will play a role in this example.
+
+### Requirements
+
+... same as [previous example](#requirements) ...
+
+### Circuit
+
+... same as [previous example](#circuit) ...
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP32/examples/display/i2c_oled_ssd1306_time.py
+```
+
+> [Source Code](../examples/display/i2c_oled_ssd1306_time.py) for `i2c_oled_ssd1306_time.py`
+
+You need 2 more modules. Download this to your local environment (_in the `lib` folder_).
+
+```shell
+# download font freesans
+$ curl -L 'https://raw.githubusercontent.com/peterhinch/micropython-font-to-py/master/writer/freesans20.py' -o lib/freesans20.py
+
+# download writer.py
+$ curl -L 'https://raw.githubusercontent.com/miguelgrinberg/micropython-iot-tutorial/master/chapter6/writer.py' -o lib/writer.py
+```
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# start rshell serial connection
+(venv) $ rshell -p [SERIAL-PORT]
+
+# copy files from local project to microcontroller
+/your/current/path> cp lib/freesans20.py /pyboard/lib/
+/your/current/path> cp lib/writer.py /pyboard/lib/
+/your/current/path> cp examples/display/i2c_oled_ssd1306_time.py /pyboard/main.py
+
+# start the REPL
+/your/current/path> repl
+```
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+
+> Since the time is set by `rshell` when connecting, the display is not up-to-date without `rshell`! An NTP time synchronization would be necessary for this.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_i2c_helper_tutorials.md) | [Next]()

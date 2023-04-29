@@ -47,7 +47,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 ## Control servo via duty_ns
 
@@ -80,7 +80,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 ## Control servo via duty_u16
 
@@ -111,6 +111,6 @@ $ touch ~/Projects/ESP32/examples/motor/servo_duty_u16.py
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./010_sound_tutorials.md) | [Next](./012_neopixel_tutorials.md)

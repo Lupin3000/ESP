@@ -53,7 +53,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
 ### Different version (_with PWM_)
 
@@ -76,7 +76,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
 ### Improved version (_with Timer_)
 
@@ -99,7 +99,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
 ## Fade a single LED (High/Low) with PWM
 
@@ -132,7 +132,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
 ## Change RGB LED color (High/Low)
 
@@ -168,7 +168,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
 ## Additional information
 

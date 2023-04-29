@@ -36,7 +36,7 @@ Now connect the I2C device (_pay attention to the correct polarity_), copy the I
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-Make a note of the important values of the output and leave the REPL, press keys `Control` + `x`. Don't forget to delete the scanner script on the microcontroller (_waste of resources_).
+Start with keys `Control` + `d`. Make a note of the important values of the output and leave the REPL, press keys `Control` + `x`. Don't forget to delete the scanner script on the microcontroller (_waste of resources_).
 
 ## SoftI2C
 

@@ -3,6 +3,7 @@ from machine import Pin, SoftI2C
 from ssd1306 import SSD1306_I2C
 from utime import sleep
 
+
 DISPLAY_WIDTH = const(128)
 DISPLAY_HEIGHT = const(64)
 

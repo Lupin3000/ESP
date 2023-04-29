@@ -49,7 +49,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 ## Create different tones (passive buzzer)
 
@@ -82,7 +82,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 ## Play a song (passive buzzer)
 
@@ -115,6 +115,6 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./009_gpio_basic_tutorials.md) | [Next](./011_motor_tutorials.md)
