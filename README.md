@@ -58,7 +58,7 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code example) [I2C scanner](./examples/i2c_helper/i2c_scanner.py) 
 - Displays
   - [Display tutorial](./doc/015_display_tutorials.md)
-    - (code example) [I2C OLED (ssd1306) basics](./examples/dipslay/i2c_oled_ssd1306_basics.py) 
+    - (code example) [I2C OLED (ssd1306) basics](examples/display/i2c_oled_ssd1306_basics.py) 
 
 IN PROGRESS
 

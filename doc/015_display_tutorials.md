@@ -39,13 +39,13 @@ $ mkdir -p ~/Projects/ESP32/examples/display
 $ touch ~/Projects/ESP32/examples/display/i2c_oled_ssd1306_basics.py
 ```
 
-> [Source Code](../examples/dipslay/i2c_oled_ssd1306_basics.py) for `i2c_oled_ssd1306_basics.py`
+> [Source Code](../examples/display/i2c_oled_ssd1306_basics.py) for `i2c_oled_ssd1306_basics.py`
 
 Check your circuit (_adapt pins if needed_) and copy the script to the microcontroller as `main.py`.
 
 ```shell
 # copy file into pyboard as main.py
-(venv) $ rshell -p [SERIAL-PORT] cp examples/dipslay/i2c_oled_ssd1306_basics.py /pyboard/main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/display/i2c_oled_ssd1306_basics.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl

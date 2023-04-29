@@ -5,8 +5,6 @@ from utime import sleep
 
 DISPLAY_WIDTH = const(128)
 DISPLAY_HEIGHT = const(64)
-LINE_HEIGHT = const(9)
-COLUMN_WIDTH = const(8)
 
 MICROPYTHON_ICON = [
     [0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1],
