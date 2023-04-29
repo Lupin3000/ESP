@@ -49,11 +49,13 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code example) [Control servo via duty_ns](./examples/motor/servo_duty_ns.py)
     - (code example) [Control servo via duty_u16](./examples/motor/servo_duty_u16.py)
 - NeoPixel
-  - [NeoPixel tutorials](./doc/012_neopixel_tutorials.md)
+  - [NeoPixel tutorial](./doc/012_neopixel_tutorials.md)
     - (code example) [NeoPixel basics](./examples/neopixel/neopixel_basics.py)
     - (code example) [NeoPixel morse code](./examples/neopixel/neopixel_morse.py)
 - More introduction
   - [Package management](./doc/013_package_management.md)
+  - [I2C helper tutorial](./doc/014_i2c_helper_tutorials.md)
+    - (code example) [I2C scanner](./examples/i2c_helper/i2c_scanner.py) 
 
 IN PROGRESS
 
@@ -66,7 +68,6 @@ IN PROGRESS
   - [NeoPixel: (simple)](./Tutorials/LED/neopixel_simple.py)
   - [NeoPixel: (matrix)](./Tutorials/LED/neopixel_matrix.py)
 - Sensors
-  - [ESP32: I2C scanner](./Tutorials/BOARD/i2c_scan.py)
   - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./Tutorials/SENSORS/shadow_detection.py)
   - [DHT11 Temperature/Humidity measure](./Tutorials/SENSORS/dht11.py)

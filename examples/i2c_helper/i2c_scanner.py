@@ -3,7 +3,6 @@ from machine import I2C, Pin
 from usys import exit
 
 
-# define constants
 I2C_SDA_PIN = const(21)
 I2C_SCL_PIN = const(22)
 I2C_FREQUENCY = const(400000)
@@ -11,7 +10,7 @@ I2C_FREQUENCY = const(400000)
 
 def list_devices(i2c_devices: list) -> None:
     """
-    Print out the list of I2C devices
+    print out the list of I2C devices
     :param i2c_devices: list of I2C devices
     :return: None
     """
