@@ -2,7 +2,7 @@
 
 ## Very Important
 
-The author of this repository (_information, scripts, code_) take no responsibility for your use or misuse (_or any damage of your devices_)! Respect the law in your country/location/area! The information included at this repository is for educational purposes only!
+The author of this repository (_information, scripts, code_) take no responsibility for your use or misuse (_or any damage to your devices_)! Respect the law in your country/location/area! The information included at this repository is for educational purposes only!
 
 ## Information
 
@@ -56,6 +56,9 @@ To make it easier to get started, the basic examples are not object-oriented. On
   - [Package management](./doc/013_package_management.md)
   - [I2C helper tutorial](./doc/014_i2c_helper_tutorials.md)
     - (code example) [I2C scanner](./examples/i2c_helper/i2c_scanner.py) 
+- Displays
+  - [Display tutorial](./doc/015_display_tutorials.md)
+    - (code example) [I2C OLED (ssd1306) basics](./examples/dipslay/i2c_oled_ssd1306_basics.py) 
 
 IN PROGRESS
 
