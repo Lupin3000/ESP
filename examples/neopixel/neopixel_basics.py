@@ -5,15 +5,14 @@ from random import randint
 from utime import sleep, sleep_ms
 
 
-# define constants
-NEOPIXEL_NUMBER = const(90)
+NEOPIXEL_NUMBER = const(16)
 LED_GPIO_PIN = const(23)
 DELAY = const(5)
 
 
 def value_verification(value: int, minimum: int = 0, maximum: int = 255) -> bool:
     """
-    Verify if specific value is between specific minimum and maximum values
+    verify if specific value is between specific minimum and maximum values
     :param value: int of value
     :param minimum: int of minimum value (default = 0)
     :param maximum: int of maximum value (default = 255)
@@ -27,7 +26,7 @@ def value_verification(value: int, minimum: int = 0, maximum: int = 255) -> bool
 
 def random_rgb() -> tuple:
     """
-    Return random rgb tuple with 3 items (between 0 and 255)
+    return random rgb tuple with 3 items (between 0 and 255)
     :return: tuple
     """
     rgb = (randint(0, 255), randint(0, 255), randint(0, 255))
@@ -36,9 +35,11 @@ def random_rgb() -> tuple:
 
 def clear_all() -> None:
     """
-    Turn off all LED's by rgb value (0, 0, 0)
+    turn off all LED's by rgb value (0, 0, 0)
     :return: None
     """
+    global nps
+
     for item in range(NEOPIXEL_NUMBER):
         nps[item] = (0, 0, 0)
         nps.write()
@@ -46,12 +47,13 @@ def clear_all() -> None:
 
 def set_color(red: int, green: int, blue: int) -> None:
     """
-    Set all LED's (on) in specific rgb color
+    set all LED's (on) in specific rgb color
     :param red: int between 0 and 255
     :param green: int between 0 and 255
     :param blue: int between 0 and 255
     :return: None
     """
+    global nps
     arg_verify = True
 
     if not value_verification(value=red):
@@ -74,13 +76,14 @@ def set_color(red: int, green: int, blue: int) -> None:
 
 def cycle_color(foreground: tuple, background: tuple, rounds: int = 1, wait: int = 10) -> None:
     """
-    Cycle a single LED in specific rgb color
+    cycle a single LED in specific rgb color
     :param foreground: tuple of foreground rgb colors eq. (255, 0, 0)
     :param background: tuple of background rgb colors eq. (0, 0, 0)
     :param rounds: int (minimum is 1, default = 1)
     :param wait: int (minimum is 1, default = 10) in milliseconds
     :return: None
     """
+    global nps
     arg_verify = True
     count = 1
 
@@ -130,10 +133,11 @@ def cycle_color(foreground: tuple, background: tuple, rounds: int = 1, wait: int
 
 def random_colors(value: str = 'single') -> None:
     """
-    Set LED's to random rgb color value specified by parameter argument
+    set LED's to random rgb color value specified by parameter argument
     :param value: string of either 'all' or 'single' (default = 'single')
     :return: None
     """
+    global nps
     valid = {'all', 'single'}
 
     if value in valid and value == 'single':
@@ -148,10 +152,9 @@ def random_colors(value: str = 'single') -> None:
             nps.write()
 
 
-# create neopixel object
-nps = NeoPixel(Pin(LED_GPIO_PIN), NEOPIXEL_NUMBER)
-
 if __name__ == '__main__':
+    nps = NeoPixel(Pin(LED_GPIO_PIN), NEOPIXEL_NUMBER)
+
     while True:
         print('[INFO] Set each LED to random color')
         random_colors()

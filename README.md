@@ -48,6 +48,10 @@ To make it easier to get started, the basic examples are not object-oriented. On
     - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
     - (code example) [Control servo via duty_ns](./examples/motor/servo_duty_ns.py)
     - (code example) [Control servo via duty_u16](./examples/motor/servo_duty_u16.py)
+- NeoPixel
+  - [NeoPixel tutorials](./doc/012_neopixel_tutorials.md)
+    - (code example) [NeoPixel basics](./examples/neopixel/neopixel_basics.py)
+    - (code example) [NeoPixel morse code](./examples/neopixel/neopixel_morse.py)
 
 IN PROGRESS
 
@@ -58,8 +62,6 @@ IN PROGRESS
   - [LED: Heartbeat](./Tutorials/LED/one_single_led_heartbeat.py)
   - [RGB LED: Fade 1x ON/OFF](./Tutorials/LED/one_rgb_led_fade.py)
   - [NeoPixel: (simple)](./Tutorials/LED/neopixel_simple.py)
-  - [NeoPixel: (advanced)](./Tutorials/LED/neopixel_advanced.py)
-  - [NeoPixel: (morse code)](./Tutorials/LED/neopixel_morse.py)
   - [NeoPixel: (matrix)](./Tutorials/LED/neopixel_matrix.py)
 - Sensors
   - [ESP32: I2C scanner](./Tutorials/BOARD/i2c_scan.py)
