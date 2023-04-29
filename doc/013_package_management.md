@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Prolog](#prolog)
-- [Package management](#download-and-installation-of-external-libraries)
+- [Download and installation of external libraries](#download-and-installation-of-external-libraries)
 - [Microcontroller without LAN/WLAN](#microcontroller-without-lanwlan)
 - [Microcontroller with LAN/WLAN](#microcontroller-with-lanwlan)
 
