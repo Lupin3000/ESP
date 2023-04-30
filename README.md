@@ -1,4 +1,4 @@
-# Learn MicroPython with ESP8266/ESP32 microcontroller
+# Learn MicroPython with ESP32 microcontroller
 
 [![Static](https://img.shields.io/badge/Microcontroller-ESP32-green)](https://www.espressif.com)
 [![Static](https://img.shields.io/badge/Language-MicroPython_1.20.0-green)](https://github.com/micropython)
