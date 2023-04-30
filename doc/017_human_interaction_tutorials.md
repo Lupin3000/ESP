@@ -8,6 +8,7 @@
 - [Button (Polling)](#button-polling)
 - [Button (Interrupt Handler)](#button-interrupt-handler)
 - [Button (Interrupt Handler and Debounce)](#button-interrupt-handler-and-debounce)
+- [Potentiometer](#potentiometer)
 
 ## Prolog
 
@@ -55,7 +56,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
-> There is also an other disadvantage in case of `polling`, it does take a lot of the CPU resources!
+> There is also another disadvantage in case of `polling`, it does take a lot of the CPU resources!
 
 ## Button (Interrupt Handler)
 
@@ -125,7 +126,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
-> An other solution for debouncing could be, to deactivate the IRQ for few milliseconds (_inside function interrupt_handler(pin)_). This would save you from the time measurement and calculation but (_like any sleep_) blocks the program flow.
+> Another solution for debouncing could be, to deactivate the IRQ for few milliseconds (_inside function interrupt_handler(pin)_). This would save you from the time measurement and calculation but (_like any sleep_) blocks the program flow.
 > ```python
 > ...
 > btn.irq(handler=None)
@@ -134,5 +135,40 @@ Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 > ...
 >```
 > Decide for yourself which is the best solution on your current particular problem!
+
+## Potentiometer
+
+With this passive component you can regulate the resistance (_in ohms_). On the ESP microcontroller, the ADC (_analog-digital converter_) then helps to display the value with a little MicroPython.
+
+### Requirements
+
+- mandatory 1x potentiometer (_e.g. 10 kilo ohms_)
+- few cables
+- optional breadboard
+
+### Circuit
+
+![017_circuit_diagram_potentiometer.png](../images/examples/017_circuit_diagram_potentiometer.png)
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/user_input/potentiometer.py
+```
+
+> [Source Code](../examples/user_input/potentiometer.py) for `potentiometer.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/potentiometer.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./016_network_tutorials.md) | [Next]()
