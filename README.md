@@ -1,5 +1,9 @@
 # Learn MicroPython with ESP8266/ESP32 microcontroller
 
+[![Static](https://img.shields.io/badge/Microcontroller-ESP32-green)](https://www.espressif.com)
+[![Static](https://img.shields.io/badge/Language-MicroPython_1.20.0-green)](https://github.com/micropython)
+![Static](https://img.shields.io/badge/Status-In_Progress-red)
+
 ## Very Important
 
 The author of this repository (_information, scripts, code_) take no responsibility for your use or misuse (_or any damage to your devices_)! Respect the law in your country/location/area! The information included at this repository is for educational purposes only!
