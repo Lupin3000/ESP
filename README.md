@@ -82,7 +82,7 @@ Sensors
 - [BME680 driver](./lib/bme680.py)
 - [Vl53L1X driver](./lib/vl53l1x.py)
 
-IN PROGRESS (_to be refactored_)
+### IN PROGRESS (_to be refactored_)
 
 - LED
   - [LED: Switch 1x ON/OFF by button](./Tutorials/LED/one_single_led_btn.py)
