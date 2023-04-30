@@ -10,6 +10,10 @@ WLAN_MAX_RETRIES = const(15)
 
 
 def connect_to_ap() -> bool:
+    """
+    connect as station to access point
+    :return: bool
+    """
     attempt = 0
 
     sta = WLAN(STA_IF)
