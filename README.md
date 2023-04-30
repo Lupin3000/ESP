@@ -75,7 +75,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [HTTP status](./examples/network/http_status.py)
     - (code example) [REST API](./examples/network/rest_api.py)
 - Human interaction
-  - [Human_interaction tutorial](./doc/017_human_interaction_tutorials.md)
+  - [Human interaction tutorial](./doc/017_human_interaction_tutorials.md)
     - (code example) [Button (Polling)](./examples/user_input/btn_led_polling.py)
     - (code example) [Button (Interrupt Handler)](./examples/user_input/btn_led_interrupt_handler.py)
     - (code example) [Button (Interrupt Handler and Debounce)](./examples/user_input/btn_led_interrupt_handler_debounce.py)
