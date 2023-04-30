@@ -6,6 +6,7 @@
 - [Important preparation](#important-preparation)
 - [Time synchronisation with NTP](#time-synchronisation-with-ntp)
 - [DNS resolve](#dns-resolve)
+- [HTTP status](#http-status)
 
 ## Prolog
 
@@ -88,6 +89,37 @@ To change the target, just modify the value of constant `DNS_TARGET`.
 ```shell
 # copy file into pyboard as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/network/dns_resolve.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d` or press `reset` button. To leave the REPL, press keys `Control` + `x`.
+
+## HTTP status
+
+Similar to the previous example (_DNS resolve_), this example can be extremely helpful. The HTTP status code of a domain is checked here.
+
+**Overview**
+
+- 1xx for information
+- 2xx for successful operations
+- 3xx for redirects
+- 4xx for client side issues
+- 5xx for server side issues
+
+```shell
+# create script
+$ touch ~/Projects/ESP32/examples/network/http_status.py
+```
+
+> [Source Code](../examples/network/http_status.py) for `http_status.py`
+
+To change the target, just modify the value of constant `TARGET_URL`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/network/http_status.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl

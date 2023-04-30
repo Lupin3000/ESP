@@ -68,6 +68,7 @@ On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your 
   - [Network tutorial](./doc/016_network_tutorials.md)
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
     - (code example) [DNS resolve](./examples/network/dns_resolve.py)
+    - (code example) [HTTP status](./examples/network/http_status.py)
 
 ## external libraries
 
@@ -105,9 +106,7 @@ IN PROGRESS (_to be refactored_)
   - [Bosh: Sensortec BME680](./Tutorials/SENSORS/bosch_sensortec_bme680.py)
 - Timer
   - [Virtual timers (cli only)](./Tutorials/TIMER/timer_cli.py)
-- WIFI
-  - [WLAN: HTTP Status code](./Tutorials/WiFi/wlan_get_http_status.py)
-  - [WLAN: Webserver](./Tutorials/WiFi/wlan_webserver_station_mode.py)
 - Server
   - [Webserver: WLAN access point mode](./Tutorials/SERVER/ap_time_info.py)
   - [Webserver: WLAN station mode - control LED](./Tutorials/SERVER/fade_led_on_off.py)
+  - [WLAN: Webserver](./Tutorials/WiFi/wlan_webserver_station_mode.py)
