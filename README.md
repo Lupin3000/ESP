@@ -109,4 +109,4 @@ IN PROGRESS (_to be refactored_)
 - Server
   - [Webserver: WLAN access point mode](./Tutorials/SERVER/ap_time_info.py)
   - [Webserver: WLAN station mode - control LED](./Tutorials/SERVER/fade_led_on_off.py)
-  - [WLAN: Webserver](./Tutorials/WiFi/wlan_webserver_station_mode.py)
+  - [WLAN: Webserver](./Tutorials/SERVER/wlan_webserver_station_mode.py)
