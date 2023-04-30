@@ -7,6 +7,7 @@
 - [Time synchronisation with NTP](#time-synchronisation-with-ntp)
 - [DNS resolve](#dns-resolve)
 - [HTTP status](#http-status)
+- [REST API](#rest-api)
 
 ## Prolog
 
@@ -120,6 +121,29 @@ To change the target, just modify the value of constant `TARGET_URL`.
 ```shell
 # copy file into pyboard as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/network/http_status.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d` or press `reset` button. To leave the REPL, press keys `Control` + `x`.
+
+## REST API
+
+REST APIs are essential these days. These are also extremely important for IoT. So here is a small example for a `GET` request.
+
+```shell
+# create script
+$ touch ~/Projects/ESP32/examples/network/rest_api.py
+```
+
+> [Source Code](../examples/network/rest_api.py) for `rest_api.py`
+
+To change the target, just modify the values of constant `API_TARGET` and variable `url`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/network/rest_api.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl

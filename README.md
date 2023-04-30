@@ -69,6 +69,7 @@ On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your 
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
     - (code example) [DNS resolve](./examples/network/dns_resolve.py)
     - (code example) [HTTP status](./examples/network/http_status.py)
+    - (code example) [REST API](./examples/network/rest_api.py)
 
 ## external libraries
 
