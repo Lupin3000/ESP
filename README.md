@@ -67,6 +67,7 @@ On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your 
 - Network
   - [Network tutorial](./doc/016_network_tutorials.md)
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
+    - (code example) [DNS resolve](./examples/network/dns_resolve.py)
 
 ## external libraries
 
@@ -105,7 +106,6 @@ IN PROGRESS (_to be refactored_)
 - Timer
   - [Virtual timers (cli only)](./Tutorials/TIMER/timer_cli.py)
 - WIFI
-  - [WLAN: Get target IP](./Tutorials/WiFi/wlan_get_target_ip.py)
   - [WLAN: HTTP Status code](./Tutorials/WiFi/wlan_get_http_status.py)
   - [WLAN: Webserver](./Tutorials/WiFi/wlan_webserver_station_mode.py)
 - Server

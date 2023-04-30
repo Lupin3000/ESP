@@ -5,6 +5,7 @@
 - [Prolog](#prolog)
 - [Important preparation](#important-preparation)
 - [Time synchronisation with NTP](#time-synchronisation-with-ntp)
+- [DNS resolve](#dns-resolve)
 
 ## Prolog
 
@@ -70,5 +71,28 @@ $ touch ~/Projects/ESP32/examples/network/time_synchronisation_ntp.py
 Start with keys `Control` + `d` or press `reset` button. To leave the REPL, press keys `Control` + `x`.
 
 > Test also without `rshell` connection! For example with `screen`.
+
+## DNS resolve
+
+This example contains very little code, but it can become very important! It is about resolving the corresponding IP (_v4_) from a domain.
+
+```shell
+# create script
+$ touch ~/Projects/ESP32/examples/network/dns_resolve.py
+```
+
+> [Source Code](../examples/network/dns_resolve.py) for `dns_resolve.py`
+
+To change the target, just modify the value of constant `DNS_TARGET`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/network/dns_resolve.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d` or press `reset` button. To leave the REPL, press keys `Control` + `x`.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./015_display_tutorials.md) | [Next]()
