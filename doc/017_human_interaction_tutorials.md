@@ -125,7 +125,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
-> An other solution for debouncing could be, to deactivate the IRQ for few milliseconds (_inside function interrupt_handler(pin)_).
+> An other solution for debouncing could be, to deactivate the IRQ for few milliseconds (_inside function interrupt_handler(pin)_). This would save you from the time measurement and calculation but (_any sleep_) blocks the program flow.
 > ```python
 > ...
 > btn.irq(handler=None)
