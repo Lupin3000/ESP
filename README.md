@@ -64,6 +64,9 @@ On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your 
   - [Display tutorial](./doc/015_display_tutorials.md)
     - (code example) [I2C OLED (ssd1306) basics](./examples/display/i2c_oled_ssd1306_basics.py)
     - (code example) [I2C OLED (ssd1306) date/time](./examples/display/i2c_oled_ssd1306_time.py)
+- Network
+  - [Network tutorial](./doc/016_network_tutorials.md)
+    - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
 
 ## external libraries
 
@@ -104,7 +107,6 @@ IN PROGRESS (_to be refactored_)
 - WIFI
   - [WLAN: Get target IP](./Tutorials/WiFi/wlan_get_target_ip.py)
   - [WLAN: HTTP Status code](./Tutorials/WiFi/wlan_get_http_status.py)
-  - [WLAN: NTP time synchronisation](./Tutorials/WiFi/wlan_ntp_time.py)
   - [WLAN: Webserver](./Tutorials/WiFi/wlan_webserver_station_mode.py)
 - Server
   - [Webserver: WLAN access point mode](./Tutorials/SERVER/ap_time_info.py)

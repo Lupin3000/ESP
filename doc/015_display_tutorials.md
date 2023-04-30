@@ -101,4 +101,4 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 
 > Since the time is set by `rshell` when connecting, the display is not up-to-date without `rshell`! An NTP time synchronization would be necessary for this. You can reproduce, for example, by pressing `reset` button of the device.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./014_i2c_helper_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./014_i2c_helper_tutorials.md) | [Next](./016_network_tutorials.md)
