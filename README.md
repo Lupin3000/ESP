@@ -10,9 +10,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## Information
 
-On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your circuit/code inside the browser. 
+> Depending on your `ESP32` microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports. Many of the examples also run on the `ESP8266`, you have to adjust the pins here too!
 
-> Depending on your ESP microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports.
+> On [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your circuit/code inside the browser.
 
 ## Tutorials & examples
 
