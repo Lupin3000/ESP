@@ -8,7 +8,7 @@ DURATION_MILLISECONDS = const(250)
 
 
 if __name__ == '__main__':
-    adc = ADC(Pin(ADC_PIN, mode=Pin.IN))
+    adc = ADC(Pin(ADC_PIN, Pin.IN))
     adc.atten(ADC.ATTN_11DB)
 
     while True:
