@@ -74,6 +74,10 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [DNS resolve](./examples/network/dns_resolve.py)
     - (code example) [HTTP status](./examples/network/http_status.py)
     - (code example) [REST API](./examples/network/rest_api.py)
+- Human interaction
+  - [Human_interaction tutorial](./doc/017_human_interaction_tutorials.md)
+    - (code example) [Button (Polling)](./examples/user_input/btn_led_polling.py)
+    - (code example) [Button (Interrupt Handler)](./examples/user_input/btn_led_interrupt_handler.py)
 
 ## external libraries
 
@@ -89,7 +93,6 @@ Sensors
 ### IN PROGRESS (_to be refactored_)
 
 - LED
-  - [LED: Switch 1x ON/OFF by button](./Tutorials/LED/one_single_led_btn.py)
   - [LED: Switch 1x ON/OFF by touch](./Tutorials/LED/one_single_led_touch.py)
   - [LED: Switch 3x ON/OFF by touch](./Tutorials/LED/three_single_led_touch.py)
   - [LED: Heartbeat](./Tutorials/LED/one_single_led_heartbeat.py)

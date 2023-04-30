@@ -151,4 +151,4 @@ To change the target, just modify the values of constant `API_TARGET` and variab
 
 Start with keys `Control` + `d` or press `reset` button. To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./015_display_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./015_display_tutorials.md) | [Next](./017_human_interaction_tutorials.md)
