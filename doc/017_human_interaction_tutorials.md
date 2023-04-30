@@ -7,6 +7,7 @@
 - [Prolog](#prolog)
 - [Button (Polling)](#button-polling)
 - [Button (Interrupt Handler)](#button-interrupt-handler)
+- [Button (Interrupt Handler and Debounce)](#button-interrupt-handler-and-debounce)
 
 ## Prolog
 
@@ -87,8 +88,51 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 > If you observe the output, you see that the counter shows the problem with the button. Don't worry that will be solved in next example.
+
+## Button (Interrupt Handler and Debounce)
+
+Again, same objective but with measurement of milliseconds since button was last pressed. If the time difference is under 200 milliseconds, nothing will happen. 
+
+### Requirements
+
+... same as [previous example](#requirements) ...
+
+### Circuit
+
+... same as [previous example](#circuit) ...
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/user_input/btn_led_interrupt_handler_debounce.py
+```
+
+> [Source Code](../examples/user_input/btn_led_interrupt_handler_debounce.py) for `btn_led_interrupt_handler_debounce.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/btn_led_interrupt_handler_debounce.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
+
+> An other solution for debouncing could be, to deactivate the IRQ for few milliseconds (_inside function interrupt_handler(pin)_).
+> ```python
+> ...
+> btn.irq(handler=None)
+> sleep_ms(200)
+> btn.irq(trigger=Pin.IRQ_FALLING, handler=interrupt_handler)
+> ...
+>```
+> Decide for yourself which is the best solution on your current particular problem!
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./016_network_tutorials.md) | [Next]()
