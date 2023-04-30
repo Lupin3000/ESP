@@ -27,7 +27,7 @@ Select and download the latest `*.bin` file to your local device. Create another
 
 ```shell
 # create local project directory
-$ mkdir -p ~/Projects/ESP32/firmware
+$ mkdir -p ~/Projects/ESP/firmware
 ```
 
 Inside your project root the structure should be similar to this example:

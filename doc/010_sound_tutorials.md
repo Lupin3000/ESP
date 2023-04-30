@@ -31,10 +31,10 @@ In fact, in this example, you're just creating a noisy tone with a passive buzze
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/sound
+$ mkdir -p ~/Projects/ESP/examples/sound
 
 # create script
-$ touch ~/Projects/ESP32/examples/sound/passive_buzzer_simple.py
+$ touch ~/Projects/ESP/examples/sound/passive_buzzer_simple.py
 ```
 
 > [Source Code](../examples/sound/passive_buzzer_simple.py) for `passive_buzzer_simple.py`
@@ -67,7 +67,7 @@ You can use `PWM` to create different tones! Just use different frequencies.
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/sound/passive_buzzer_tones.py
+$ touch ~/Projects/ESP/examples/sound/passive_buzzer_tones.py
 ```
 
 > [Source Code](../examples/sound/passive_buzzer_tones.py) for `passive_buzzer_tones.py`
@@ -100,7 +100,7 @@ The last example is actually a logical conclusion. Do you know Mario?
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/sound/passive_buzzer_tones.py
+$ touch ~/Projects/ESP/examples/sound/passive_buzzer_tones.py
 ```
 
 > [Source Code](../examples/sound/passive_buzzer_sound.py) for `passive_buzzer_sound.py`

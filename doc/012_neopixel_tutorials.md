@@ -32,10 +32,10 @@ This example contains various functions to create effects with NeoPixel.
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/neopixel
+$ mkdir -p ~/Projects/ESP/examples/neopixel
 
 # create script
-$ touch ~/Projects/ESP32/examples/neopixel/neopixel_basics.py
+$ touch ~/Projects/ESP/examples/neopixel/neopixel_basics.py
 ```
 
 > [Source Code](../examples/neopixel/neopixel_basics.py) for `neopixel_basics.py`
@@ -68,7 +68,7 @@ In this example, a string is converted into Morse code and displayed visually.
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/neopixel/neopixel_morse.py
+$ touch ~/Projects/ESP/examples/neopixel/neopixel_morse.py
 ```
 
 > [Source Code](../examples/neopixel/neopixel_morse.py) for `neopixel_morse.py`

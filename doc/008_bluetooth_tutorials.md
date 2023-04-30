@@ -17,10 +17,10 @@ The simplest action is to find nearby BLE devices and then list them inside REPL
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/ble
+$ mkdir -p ~/Projects/ESP/examples/ble
 
 # create script
-$ touch ~/Projects/ESP32/examples/ble/ble_scanner.py
+$ touch ~/Projects/ESP/examples/ble/ble_scanner.py
 ```
 
 > [Source Code](../examples/ble/ble_scanner.py) for `ble_scanner.py`
@@ -52,7 +52,7 @@ Here few examples for possible applications, you can try:
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/ble/ble_service.py
+$ touch ~/Projects/ESP/examples/ble/ble_service.py
 ```
 
 > [Source Code](../examples/ble/ble_service.py) for `ble_service.py`

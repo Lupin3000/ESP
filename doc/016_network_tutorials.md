@@ -19,7 +19,7 @@ Since all examples in this section require an internet connection, the file `boo
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/network
+$ mkdir -p ~/Projects/ESP/examples/network
 
 # download boot.py from microcontroller
 (venv) $ rshell -p [SERIAL-PORT] cp /pyboard/boot.py examples/network/
@@ -55,7 +55,7 @@ The time always starts (_without prior change_) with `00:00 01.01.2000`! If you 
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/network/time_synchronisation_ntp.py
+$ touch ~/Projects/ESP/examples/network/time_synchronisation_ntp.py
 ```
 
 > [Source Code](../examples/network/time_synchronisation_ntp.py) for `time_synchronisation_ntp.py`
@@ -80,7 +80,7 @@ This example contains very little code, but it can become very important! It is 
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/network/dns_resolve.py
+$ touch ~/Projects/ESP/examples/network/dns_resolve.py
 ```
 
 > [Source Code](../examples/network/dns_resolve.py) for `dns_resolve.py`
@@ -111,7 +111,7 @@ Similar to the previous example (_DNS resolve_), this example can be extremely h
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/network/http_status.py
+$ touch ~/Projects/ESP/examples/network/http_status.py
 ```
 
 > [Source Code](../examples/network/http_status.py) for `http_status.py`
@@ -134,7 +134,7 @@ REST APIs are essential these days. These are also extremely important for IoT. 
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/network/rest_api.py
+$ touch ~/Projects/ESP/examples/network/rest_api.py
 ```
 
 > [Source Code](../examples/network/rest_api.py) for `rest_api.py`

@@ -35,10 +35,10 @@ In the first example, a simple LED is switched on/off endlessly.
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/gpio_basic
+$ mkdir -p ~/Projects/ESP/examples/gpio_basic
 
 # create script
-$ touch ~/Projects/ESP32/examples/gpio_basic/blink_single_led_high_low.py
+$ touch ~/Projects/ESP/examples/gpio_basic/blink_single_led_high_low.py
 ```
 
 > [Source Code](../examples/gpio_basic/blink_single_led_high_low.py) for `blink_single_led_high_low.py`
@@ -61,7 +61,7 @@ You can also realize the blinking in a different way! Let's try with `PWM`. Circ
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/gpio_basic/blink_single_led_high_low_pwm.py
+$ touch ~/Projects/ESP/examples/gpio_basic/blink_single_led_high_low_pwm.py
 ```
 
 > [Source Code](../examples/gpio_basic/blink_single_led_high_low_pwm.py) for `blink_single_led_high_low_pwm.py`
@@ -84,7 +84,7 @@ MicroPython and ESP offers the feature of `Timers`. Circuit and requirements sta
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/gpio_basic/blink_single_led_high_low_timer.py
+$ touch ~/Projects/ESP/examples/gpio_basic/blink_single_led_high_low_timer.py
 ```
 
 > [Source Code](../examples/gpio_basic/blink_single_led_high_low_timer.py) for `blink_single_led_high_low_timer.py`
@@ -117,7 +117,7 @@ In the previous example, the transition from `high` to `low` was very "hard". Bu
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/gpio_basic/fade_single_led_high_low.py
+$ touch ~/Projects/ESP/examples/gpio_basic/fade_single_led_high_low.py
 ```
 
 > [Source Code](../examples/gpio_basic/fade_single_led_high_low.py) for `fade_single_led_high_low.py`
@@ -153,7 +153,7 @@ In the second example, an RGB LED is used. Here the color is changed endlessly (
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/gpio_basic/change_rgb_led_color_high_low.py
+$ touch ~/Projects/ESP/examples/gpio_basic/change_rgb_led_color_high_low.py
 ```
 
 > [Source Code](../examples/gpio_basic/change_rgb_led_color_high_low.py) for `change_rgb_led_color_high_low.py`

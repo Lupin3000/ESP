@@ -29,10 +29,10 @@ The first option to steer the servo motor in a range of 90° is `duty`.
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/motor
+$ mkdir -p ~/Projects/ESP/examples/motor
 
 # create script
-$ touch ~/Projects/ESP32/examples/motor/servo_duty.py
+$ touch ~/Projects/ESP/examples/motor/servo_duty.py
 ```
 
 > [Source Code](../examples/motor/servo_duty.py) for `servo_duty.py`
@@ -65,7 +65,7 @@ The second option to steer the servo motor in a range of 90° is `duty_ns`. The 
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/motor/servo_duty_ns.py
+$ touch ~/Projects/ESP/examples/motor/servo_duty_ns.py
 ```
 
 > [Source Code](../examples/motor/servo_duty_ns.py) for `servo_duty_ns.py`
@@ -98,7 +98,7 @@ The second option to steer the servo motor in a range of 90° is `duty_u16`. The
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/motor/servo_duty_u16.py
+$ touch ~/Projects/ESP/examples/motor/servo_duty_u16.py
 ```
 
 > [Source Code](../examples/motor/servo_duty_u16.py) for `servo_duty_u16.py`

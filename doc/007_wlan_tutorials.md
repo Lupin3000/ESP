@@ -51,10 +51,10 @@ It sometimes makes sense to scan the surrounding area for access points. You can
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/wlan
+$ mkdir -p ~/Projects/ESP/examples/wlan
 
 # create script
-$ touch ~/Projects/ESP32/examples/wlan/ap_scanner.py
+$ touch ~/Projects/ESP/examples/wlan/ap_scanner.py
 ```
 
 > [Source Code](../examples/wlan/ap_scanner.py) for `ap_scanner.py`
@@ -75,7 +75,7 @@ Okay, now try to connect to a reachable and known access point.
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/wlan/simple_station.py
+$ touch ~/Projects/ESP/examples/wlan/simple_station.py
 ```
 
 > [Source Code](../examples/wlan/simple_station.py) for `simple_station.py`
@@ -100,7 +100,7 @@ Even if it is now against all security, the first access point is created withou
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/wlan/open_access_point.py
+$ touch ~/Projects/ESP/examples/wlan/open_access_point.py
 ```
 
 > [Source Code](../examples/wlan/open_access_point.py) for `open_access_point.py`
@@ -123,7 +123,7 @@ Then with a security standard for wireless radio networks based on Advanced-Encr
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/wlan/wp2_access_point.py
+$ touch ~/Projects/ESP/examples/wlan/wp2_access_point.py
 ```
 
 > [Source Code](../examples/wlan/wp2_access_point.py) for `wp2_access_point.py`

@@ -31,7 +31,7 @@ In the local project (_root folder_) create another folder named `lib`.
 
 ```shell
 # create new directory
-$ mkdir -p ~/Projects/ESP32/lib
+$ mkdir -p ~/Projects/ESP/lib
 ```
 
 Download now the library into the folder. Here is an example for SSD1306:

@@ -13,7 +13,7 @@ Here are the most important things you need to get started with Micropython/micr
 
 - ESP32 device(s)
 - USB cable(s)
-- Python 3.x locally installed
+- Python 3.x locally installed (_minimum version 3.5_)
 - Internet access
 
 Later you will also need various cables, active/passive components, possibly a breadboard, a display plus other devices and software. I will point this out to you in the relevant examples.
@@ -51,10 +51,10 @@ So that you can follow each example later, you should now create a project folde
 
 ```shell
 # create local project directory
-$ mkdir -p ~/Projects/ESP32
+$ mkdir -p ~/Projects/ESP
 
 # change into project directory
-$ cd ~/Projects/ESP32
+$ cd ~/Projects/ESP
 
 # create python virtualenvironment
 $ python3 -m venv venv

@@ -34,10 +34,10 @@ Install first the `ssd1306` driver! [Here](./013_package_management.md) you will
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/display
+$ mkdir -p ~/Projects/ESP/examples/display
 
 # create script
-$ touch ~/Projects/ESP32/examples/display/i2c_oled_ssd1306_basics.py
+$ touch ~/Projects/ESP/examples/display/i2c_oled_ssd1306_basics.py
 ```
 
 > [Source Code](../examples/display/i2c_oled_ssd1306_basics.py) for `i2c_oled_ssd1306_basics.py`
@@ -68,7 +68,7 @@ Actually, this task seems very simple. But that is a bit deceptive! The font siz
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/display/i2c_oled_ssd1306_time.py
+$ touch ~/Projects/ESP/examples/display/i2c_oled_ssd1306_time.py
 ```
 
 > [Source Code](../examples/display/i2c_oled_ssd1306_time.py) for `i2c_oled_ssd1306_time.py`

@@ -34,7 +34,7 @@ Connect your microcontroller to your local device, start the local environment a
 
 ```shell
 # change into project root directory
-$ cd ~/Projects/ESP32
+$ cd ~/Projects/ESP
 
 # activate python virtual environment
 $ source venv/bin/activate
@@ -106,10 +106,10 @@ I hope no issues occur till here! To know more about MicroPython libraries, read
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/board
+$ mkdir -p ~/Projects/ESP/examples/board
 
 # create script
-$ touch ~/Projects/ESP32/examples/board/esp32_information.py
+$ touch ~/Projects/ESP/examples/board/esp32_information.py
 ```
 
 > [Source Code](../examples/board/esp32_information.py) for `esp32_information.py`
@@ -143,7 +143,7 @@ The second script should output information about the current disc space and mem
 
 ```shell
 # create script
-$ touch ~/Projects/ESP32/examples/board/esp32_memory.py
+$ touch ~/Projects/ESP/examples/board/esp32_memory.py
 ```
 
 > [Source code](../examples/board/esp32_memory.py) for `esp32_memory.py`

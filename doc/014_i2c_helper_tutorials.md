@@ -18,10 +18,10 @@ Build now an I2C scanner, which will save you time in the future!
 
 ```shell
 # create new subdirectory
-$ mkdir -p ~/Projects/ESP32/examples/i2c_helper
+$ mkdir -p ~/Projects/ESP/examples/i2c_helper
 
 # create script
-$ touch ~/Projects/ESP32/examples/i2c_helper/i2c_scanner.py
+$ touch ~/Projects/ESP/examples/i2c_helper/i2c_scanner.py
 ```
 
 > [Source Code](../examples/i2c_helper/i2c_scanner.py) for `i2c_scanner.py`

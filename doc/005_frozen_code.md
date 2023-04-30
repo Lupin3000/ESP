@@ -67,10 +67,10 @@ Now create a new folder with a sample Python script (_inside your local project_
 
 ```shell
 # create subdirectory for example
-$ mkdir -p ~/Projects/ESP32/examples/mpy
+$ mkdir -p ~/Projects/ESP/examples/mpy
 
 # create a example module
-$ touch ~/Projects/ESP32/examples/mpy/example_module.py
+$ touch ~/Projects/ESP/examples/mpy/example_module.py
 ```
 
 Inside this path you should now create a file called `example_module.py` with the following code.
@@ -87,7 +87,7 @@ Now compile this module.
 
 ```shell
 # change directory
-(venv) $ cd ~/Projects/ESP32/examples/mpy/
+(venv) $ cd ~/Projects/ESP/examples/mpy/
 
 # run compile
 (venv) $ mpy-cross example_module.py
