@@ -155,7 +155,7 @@ Start with keys `Control` + `d` or press `reset` button. To leave the REPL, pres
 
 ## HTML webserver
 
-...
+Now you will learn to create your first web server. This delivers a very simple HTML page.
 
 ```shell
 # create script
