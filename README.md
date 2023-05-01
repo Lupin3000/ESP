@@ -94,6 +94,9 @@ Sensors
 - [BME680 driver](./lib/bme680.py)
 - [Vl53L1X driver](./lib/vl53l1x.py)
 
+NeoPixel
+- [NeoPixel-Ring module](./lib/neopixelring.py)
+
 ### IN PROGRESS (_to be refactored_)
 
 - LED
