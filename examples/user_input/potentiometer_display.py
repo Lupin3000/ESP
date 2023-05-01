@@ -13,6 +13,11 @@ DURATION_MILLISECONDS = const(250)
 
 
 def draw_on_screen(current_value: int) -> None:
+    """
+    draws graphic and text on display
+    :param current_value: adc value as int
+    :return: None
+    """
     global oled
 
     oled.fill(0)
