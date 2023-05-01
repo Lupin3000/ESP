@@ -99,7 +99,6 @@ Sensors
   - [LED: Switch 1x ON/OFF by touch](./Tutorials/LED/one_single_led_touch.py)
   - [LED: Switch 3x ON/OFF by touch](./Tutorials/LED/three_single_led_touch.py)
   - [LED: Heartbeat](./Tutorials/LED/one_single_led_heartbeat.py)
-  - [RGB LED: Fade 1x ON/OFF](./Tutorials/LED/one_rgb_led_fade.py)
   - [NeoPixel: (matrix)](./Tutorials/LED/neopixel_matrix.py)
   - [Webserver: WLAN station mode - control LED](Tutorials/LED/fade_led_on_off.py)
 - Sensors
