@@ -192,4 +192,9 @@ When it comes to sensors, the WLAN and web server will be used again (_in a diff
 
 > You can delete or comment out the content of `boot.py` to save resources! As soon as it is needed again, you will be informed.
 
+```shell
+# start remote editor
+(venv) $ rshell -p [SERIAL-PORT] edit /pyboard/boot.py
+```
+
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./015_display_tutorials.md) | [Next](./017_human_interaction_tutorials.md)
