@@ -8,6 +8,8 @@ from utime import sleep
 
 DISPLAY_WIDTH = const(128)
 DISPLAY_HEIGHT = const(64)
+DISPLAY_SDA_PIN = const(21)
+DISPLAY_SCL_PIN = const(22)
 DISPLAY_DELAY = const(1)
 
 
@@ -25,7 +27,7 @@ def get_date_time() -> tuple:
 
 if __name__ == '__main__':
     rtc = RTC()
-    i2c = SoftI2C(sda=Pin(21), scl=Pin(22))
+    i2c = SoftI2C(sda=Pin(DISPLAY_SDA_PIN), scl=Pin(DISPLAY_SCL_PIN))
     oled = SSD1306_I2C(DISPLAY_WIDTH, DISPLAY_HEIGHT, i2c)
 
     font_writer = writer.Writer(oled, freesans20)
