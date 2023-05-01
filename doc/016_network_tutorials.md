@@ -190,4 +190,6 @@ To stop the loop press keys `Control` and `c`, to leave the REPL, press keys `Co
 
 When it comes to sensors, the WLAN and web server will be used again (_in a different forms_).
 
+> You can delete or comment out the content of `boot.py` to save resources! As soon as it is needed again, you will be informed.
+
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./015_display_tutorials.md) | [Next](./017_human_interaction_tutorials.md)
