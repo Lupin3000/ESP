@@ -174,7 +174,9 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 
 ## Potentiometer and SSD1306 OLED
 
-Now the values should not be shown in the REPL but on the OLED display (_ssh1306_) - as graphics and text.
+Now the values should not be shown in the REPL but on the OLED display (_ssd1306_) - as graphics and text.
+
+> If you miss the basic information about the OLED (_ssd1306_), have a look [here](./015_display_tutorials.md).
 
 ### Requirements
 
