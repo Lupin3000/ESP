@@ -74,6 +74,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [DNS resolve](./examples/network/dns_resolve.py)
     - (code example) [HTTP status](./examples/network/http_status.py)
     - (code example) [REST API](./examples/network/rest_api.py)
+    - (code example) [HTML webserver](./examples/network/html_webserver.py)
 - Human interaction
   - [Human interaction tutorial](./doc/017_human_interaction_tutorials.md)
     - (code example) [Button (Polling)](./examples/user_input/btn_led_polling.py)
@@ -100,6 +101,7 @@ Sensors
   - [LED: Heartbeat](./Tutorials/LED/one_single_led_heartbeat.py)
   - [RGB LED: Fade 1x ON/OFF](./Tutorials/LED/one_rgb_led_fade.py)
   - [NeoPixel: (matrix)](./Tutorials/LED/neopixel_matrix.py)
+  - [Webserver: WLAN station mode - control LED](Tutorials/LED/fade_led_on_off.py)
 - Sensors
   - [IR Flame detection](./Tutorials/SENSORS/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./Tutorials/SENSORS/shadow_detection.py)
@@ -113,9 +115,3 @@ Sensors
   - [Pimoroni: VL53L1X TOF Sensor](./Tutorials/SENSORS/pimoroni_vl53l1x.py)
   - [Adafruit: MAX9814](./Tutorials/SENSORS/max9814.py)
   - [Bosh: Sensortec BME680](./Tutorials/SENSORS/bosch_sensortec_bme680.py)
-- Timer
-  - [Virtual timers (cli only)](./Tutorials/TIMER/timer_cli.py)
-- Server
-  - [Webserver: WLAN access point mode](./Tutorials/SERVER/ap_time_info.py)
-  - [Webserver: WLAN station mode - control LED](./Tutorials/SERVER/fade_led_on_off.py)
-  - [WLAN: Webserver](./Tutorials/SERVER/wlan_webserver_station_mode.py)

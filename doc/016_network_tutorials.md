@@ -8,6 +8,8 @@
 - [DNS resolve](#dns-resolve)
 - [HTTP status](#http-status)
 - [REST API](#rest-api)
+- [HTML webserver](#html-webserver)
+- [Additional information](#additional-information)
 
 ## Prolog
 
@@ -150,5 +152,42 @@ To change the target, just modify the values of constant `API_TARGET` and variab
 ```
 
 Start with keys `Control` + `d` or press `reset` button. To leave the REPL, press keys `Control` + `x`.
+
+## HTML webserver
+
+...
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/network/html_webserver.py
+```
+
+> [Source Code](../examples/network/html_webserver.py) for `html_webserver.py`
+
+Upload `html_webserver.py` as `main.py` to ESP microcontroller.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/network/html_webserver.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d` or press `reset` button. Now search the IP and connect.
+
+```shell
+# start ARP scan to find IP (optional)
+$ arp -a
+
+# connect via curl
+$ curl 'http://[IP MICROCONTROLLER]'
+```
+
+To stop the loop press keys `Control` and `c`, to leave the REPL, press keys `Control` + `x`.
+
+## Additional information
+
+When it comes to sensors, the WLAN and web server will be used again (_in a different forms_).
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./015_display_tutorials.md) | [Next](./017_human_interaction_tutorials.md)
