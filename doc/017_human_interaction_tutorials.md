@@ -9,6 +9,7 @@
 - [Button (Interrupt Handler)](#button-interrupt-handler)
 - [Button (Interrupt Handler and Debounce)](#button-interrupt-handler-and-debounce)
 - [Potentiometer](#potentiometer)
+- [Potentiometer and SSD1306 OLED](#potentiometer-and-ssd1306-oled)
 
 ## Prolog
 
@@ -170,5 +171,38 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 ```
 
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+
+## Potentiometer and SSD1306 OLED
+
+Now the values should not be shown in the REPL but on the OLED display (_ssh1306_) - as graphics and text.
+
+### Requirements
+
+- mandatory 1x potentiometer (_e.g. 10 kilo ohms_)
+- mandatory 1x I2C OLED (_example 0.96" 128x64_)
+- few cables
+- optional breadboard
+
+### Circuit
+
+![017_circuit_diagram_potentiometer_display.png](../images/examples/017_circuit_diagram_potentiometer_display.png)
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/user_input/potentiometer_display.py
+```
+
+> [Source Code](../examples/user_input/potentiometer_display.py) for `potentiometer_display.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/potentiometer_display.py /pyboard/main.py
+```
+
+Press `reset` button and and turn the potentiometer. If you don't have a `reset` button, just unplug and reconnect the USB cable.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./016_network_tutorials.md) | [Next]()

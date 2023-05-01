@@ -81,6 +81,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Button (Interrupt Handler)](./examples/user_input/btn_led_interrupt_handler.py)
     - (code example) [Button (Interrupt Handler and Debounce)](./examples/user_input/btn_led_interrupt_handler_debounce.py)
     - (code example) [Potentiometer](./examples/user_input/potentiometer.py)
+    - (code example) [Potentiometer and SSD1306 OLED](./examples/user_input/potentiometer_display.py)
 
 ## external libraries
 
