@@ -67,7 +67,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - Displays
   - [Display tutorial](./doc/015_display_tutorials.md)
     - (code example) [I2C OLED (ssd1306) basics](./examples/display/i2c_oled_ssd1306_basics.py)
-    - (code example) [I2C OLED (ssd1306) date/time](./examples/display/i2c_oled_ssd1306_time.py)
+    - (code example) [I2C OLED (ssd1306) date/time and fonts](./examples/display/i2c_oled_ssd1306_time.py)
+    - (code example) [Icons on OLED (ssd1306)](./examples/display/i2c_oled_ssd1306_icons.py)
 - Network
   - [Network tutorial](./doc/016_network_tutorials.md)
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)

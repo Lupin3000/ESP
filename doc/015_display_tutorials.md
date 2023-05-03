@@ -104,7 +104,7 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 
 ## Icons on OLED (ssd1306)
 
-...
+The objective of this example is to show how you can create icons. There will be two absolute identical icons displayed but created in two different ways.
 
 ### Requirements
 
@@ -121,7 +121,7 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 $ touch ~/Projects/ESP/examples/display/i2c_oled_ssd1306_icons.py
 
 # download image to local directory
-$ curl -L '' -o examples/display/demo.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/display/demo.pbm' -o examples/display/demo.pbm
 ```
 
 > [Source Code](../examples/display/i2c_oled_ssd1306_icons.py) for `i2c_oled_ssd1306_icons.py`
