@@ -104,7 +104,7 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 
 ## Icons on OLED (ssd1306)
 
-The objective of this example is to show how you can create icons. There will be two absolute identical icons displayed but created in two different ways.
+The objective of this example is to show how you can create icons. There will be two absolute identical icons (_25x25 px_) displayed, but created in two different ways.
 
 ### Requirements
 
