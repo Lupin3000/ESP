@@ -144,4 +144,21 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
+> The simplest solution to create `*.pbm` is, to convert a standard format (_like JPG or PNG_) with [GIMP](https://www.gimp.org) (_GNU Image
+Manipulation Program_).
+> 
+> Import an image: `File` -> `Open`  
+> 
+> Select on menubar: `Image` -> `Mode` -> `Indexed`
+> 
+> Select radio button: `Use black and white (1-bit) palette`
+> 
+> Enable checkbox: `Remove unused colors from colormap`
+>
+> Press button: `Convert`
+> 
+> Export with filename: `[YOUR NAME].pbm
+> 
+> Select radio button: `Raw` and press button `Export`
+
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_i2c_helper_tutorials.md) | [Next](./016_network_tutorials.md)
