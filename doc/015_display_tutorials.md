@@ -157,7 +157,7 @@ Manipulation Program_).
 >
 > Press button: `Convert`
 > 
-> Export with filename: `[YOUR NAME].pbm
+> Export with filename: `[YOUR NAME].pbm`
 > 
 > Select radio button: `Raw` and press button `Export`
 
