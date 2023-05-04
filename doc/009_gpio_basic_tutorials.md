@@ -7,6 +7,7 @@
 - [Blink a single LED (High/Low) with PWM](#different-version-with-pwm)
 - [Blink a single LED (High/Low) with Timer](#improved-version-with-timer)
 - [Fade a single LED (High/Low) with PWM](#fade-a-single-led-highlow-with-pwm)
+- [Heartbeat a single LED with PWM](#heartbeat-a-single-led-with-pwm)
 - [Change RGB LED color (High/Low)](#change-rgb-led-color-highlow)
 - [Additional information](#additional-information)
 
@@ -133,6 +134,40 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 ```
 
 Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+
+## Heartbeat a single LED with PWM
+
+This example is very similar to the previous one. But it should show you how you can use `PWM for different objectives.
+
+### Requirements
+
+... same as [previous example](#requirements) ...
+
+### Circuit
+
+... same as [previous example](#circuit) ...
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/gpio_basic/heartbeat_single_led.py
+```
+
+> [Source Code](../examples/gpio_basic/heartbeat_single_led.py) for `heartbeat_single_led.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/gpio_basic/heartbeat_single_led.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
+
 
 ## Change RGB LED color (High/Low)
 

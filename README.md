@@ -45,6 +45,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Blink a single LED with PWM](./examples/gpio_basic/blink_single_led_high_low_pwm.py)
     - (code example) [Blink a single LED with Timer](./examples/gpio_basic/blink_single_led_high_low_timer.py)
     - (code example) [Fade a single LED with PWM](./examples/gpio_basic/fade_single_led_high_low.py)
+    - (code example) [Heartbeat a single LED with PWM](./examples/gpio_basic/heartbeat_single_led.py)
     - (code example) [Change RGB LED color](./examples/gpio_basic/change_rgb_led_color_high_low.py)
 - Sound
   - [Sound tutorial](./doc/010_sound_tutorials.md)
@@ -103,7 +104,6 @@ NeoPixel
 - LED
   - [LED: Switch 1x ON/OFF by touch](./Tutorials/LED/one_single_led_touch.py)
   - [LED: Switch 3x ON/OFF by touch](./Tutorials/LED/three_single_led_touch.py)
-  - [LED: Heartbeat](./Tutorials/LED/one_single_led_heartbeat.py)
   - [NeoPixel: (matrix)](./Tutorials/LED/neopixel_matrix.py)
   - [Webserver: WLAN station mode - control LED](Tutorials/LED/fade_led_on_off.py)
 - Sensors

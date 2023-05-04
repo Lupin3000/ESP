@@ -3,18 +3,17 @@ from machine import PWM, Pin
 from utime import sleep_us
 
 
-# define constants
 LED_GPIO_PIN = const(23)
 LED_FREQUENCY = const(5000)
 DELAY_MAIN = const(300)
 DELAY_LOW = const(1000)
 DELAY_END = const(500000)
 
-# create pwm/pin objects
-led = PWM(Pin(LED_GPIO_PIN))
-led.freq(LED_FREQUENCY)
 
 if __name__ == '__main__':
+    led = PWM(Pin(LED_GPIO_PIN))
+    led.freq(LED_FREQUENCY)
+
     while True:
         print('[INFO] Fade LED ON (main beat)')
         for dc in range(0, 1023):
