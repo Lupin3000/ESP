@@ -1,7 +1,5 @@
 # Human interaction tutorials
 
-# Network tutorials
-
 ## Table of Contents
 
 - [Prolog](#prolog)
