@@ -42,6 +42,11 @@ ICON_B = const('demo.pbm')
 
 
 def load_image(filename: str):
+    """
+    load pbm file, convert and return as FrameBuffer class
+    :param filename:
+    :return: class
+    """
     with open(filename, 'rb') as f:
         f.readline()
         f.readline()
