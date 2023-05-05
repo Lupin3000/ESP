@@ -50,9 +50,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Change RGB LED color](./examples/gpio_basic/change_rgb_led_color_high_low.py)
 - 007 - Sound
   - [Sound tutorial](./doc/007_sound_tutorials.md)
-    - (code example) [Create single tone (passive buzzer)](./examples/sound/passive_buzzer_simple.py)
-    - (code example) [Create different tones (passive buzzer)](./examples/sound/passive_buzzer_tones.py)
-    - (code example) [Play a song (passive buzzer)](./examples/sound/passive_buzzer_sound.py)
+    - (code example) [Create single tone (passive piezo buzzer)](./examples/sound/passive_buzzer_simple.py)
+    - (code example) [Create different tones (passive piezo buzzer)](./examples/sound/passive_buzzer_tones.py)
+    - (code example) [Play a song (passive piezo buzzer)](./examples/sound/passive_buzzer_sound.py)
 - 008 - Motor
   - [Motor tutorial](./doc/008_motor_tutorials.md)
     - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
@@ -68,9 +68,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [I2C scanner](./examples/i2c_helper/i2c_scanner.py) 
 - 011 - Displays
   - [Display tutorial](./doc/011_display_tutorials.md)
-    - (code example) [I2C OLED (ssd1306) basics](./examples/display/i2c_oled_ssd1306_basics.py)
-    - (code example) [I2C OLED (ssd1306) date/time and fonts](./examples/display/i2c_oled_ssd1306_time.py)
-    - (code example) [Icons on OLED (ssd1306)](./examples/display/i2c_oled_ssd1306_icons.py)
+    - (code example) [I2C OLED basics (SSD1306)](./examples/display/i2c_oled_ssd1306_basics.py)
+    - (code example) [I2C OLED date/time and fonts (SSD1306)](./examples/display/i2c_oled_ssd1306_time.py)
+    - (code example) [I2C OLED icons (SSD1306)](./examples/display/i2c_oled_ssd1306_icons.py)
 - 012 - Network
   - [Network tutorial](./doc/012_network_tutorials.md)
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
@@ -84,9 +84,15 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Button (Interrupt Handler)](./examples/user_input/btn_led_interrupt_handler.py)
     - (code example) [Button (Interrupt Handler and Debounce)](./examples/user_input/btn_led_interrupt_handler_debounce.py)
     - (code example) [Potentiometer](./examples/user_input/potentiometer.py)
-    - (code example) [Potentiometer and SSD1306 OLED](./examples/user_input/potentiometer_display.py)
+    - (code example) [Potentiometer and OLED (SSD1306)](./examples/user_input/potentiometer_display.py)
 - 014 - Sensors
+  - `under construction`
+    - (code example) [Temperature/Humidity sensor (DHT11/DHT22)](./examples/sensors/dht11.py) 
+    - (code example) [PIR sensor (HC-SR501)](./examples/sensors/pir.py)
+    - (code example) [Ultrasonic sensor (HC-SR04)](./examples/sensors/hcsr04.py)
 - 015 - Games
+  - `under construction`
+    - (code example) [Crazy Car Racer](./examples/games/racer.py)
 
 ## external libraries
 
@@ -112,9 +118,6 @@ NeoPixel
 - Sensors
   - [IR Flame detection](./examples/sensors/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./examples/sensors/shadow_detection.py)
-  - [DHT11 Temperature/Humidity measure](./examples/sensors/dht11.py)
-  - [PIR Motion detection](./examples/sensors/pir.py)
-  - [HC-SR04 Distance measure](./examples/sensors/hcsr04.py)
   - [ALLNET: B38 Temperature I2C Sensor](./examples/sensors/allnet_B38_temperature.py)
   - [ALLNET: B18 Light Barrier Sensor](./examples/sensors/allnet_B18_light_barrier.py)
   - [ALLNET: B08 Touch Sensor](./examples/sensors/allnet_B08_touch.py)

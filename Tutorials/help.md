@@ -51,7 +51,7 @@ Minimum values for `DELAY` and ranges:
 
 ### Circuit diagram
 
-![circuit_diagram_dht22.png](../../images/help/circuit_diagram_dht22.png)
+![circuit_diagram_dht22.png](../images/examples/014_circuit_diagram_dht22.png)
 
 ## Motion detection with PIR
 
@@ -61,7 +61,7 @@ Minimum values for `DELAY` and ranges:
 
 ### Circuit diagram
 
-![circuit_diagram_pir.png](../../images/help/circuit_diagram_pir.png)
+![circuit_diagram_pir.png](../images/examples/014_circuit_diagram_pir.png)
 
 ## Distance Measure
 
@@ -71,14 +71,4 @@ Minimum values for `DELAY` and ranges:
 
 ### Circuit diagram
 
-![circuit_diagram_hcsr04.png](../../images/help/circuit_diagram_hcsr04.png)
-
-[Go Back](https://github.com/Lupin3000/ESP)
-
-## Pimoroni VL53L1X
-
-> You need the python driver script! You can find it [here](../../driver/vl53l1x.py).
-
-## Bosh Sensortec BME680
-
-> You need the python driver script! You can find it [here](../../driver/bme680.py).
+![circuit_diagram_hcsr04.png](../images/examples/014_circuit_diagram_hcsr04.png)
