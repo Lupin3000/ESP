@@ -50,9 +50,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Change RGB LED color](./examples/gpio_basic/change_rgb_led_color_high_low.py)
 - 007 - Sound
   - [Sound tutorial](./doc/007_sound_tutorials.md)
-    - (code example) [Create single tone (passive piezo buzzer)](./examples/sound/passive_buzzer_simple.py)
-    - (code example) [Create different tones (passive piezo buzzer)](./examples/sound/passive_buzzer_tones.py)
-    - (code example) [Play a song (passive piezo buzzer)](./examples/sound/passive_buzzer_sound.py)
+    - (code example) [Create single tone (Passive piezo buzzer)](./examples/sound/passive_buzzer_simple.py)
+    - (code example) [Create different tones (Passive piezo buzzer)](./examples/sound/passive_buzzer_tones.py)
+    - (code example) [Play a song (Passive piezo buzzer)](./examples/sound/passive_buzzer_sound.py)
 - 008 - Motor
   - [Motor tutorial](./doc/008_motor_tutorials.md)
     - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
