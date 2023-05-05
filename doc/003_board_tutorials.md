@@ -1,4 +1,4 @@
-# Board
+# Board information
 
 ## Table of Contents
 
