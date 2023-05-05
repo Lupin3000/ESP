@@ -29,7 +29,7 @@ The objective is to turn an LED ON (_if LED is OFF_) or OFF (_if LED is ON_) wit
 
 ### Circuit
 
-![017_circuit_diagram_single_led_btn.png](../images/examples/017_circuit_diagram_single_led_btn.png)
+![017_circuit_diagram_single_led_btn.png](../images/examples/013_circuit_diagram_single_led_btn.png)
 
 ### Code
 
@@ -147,7 +147,7 @@ With this passive component you can regulate the resistance (_in ohms_). On the 
 
 ### Circuit
 
-![017_circuit_diagram_potentiometer.png](../images/examples/017_circuit_diagram_potentiometer.png)
+![017_circuit_diagram_potentiometer.png](../images/examples/013_circuit_diagram_potentiometer.png)
 
 ### Code
 
@@ -174,7 +174,7 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 
 Now the values should not be shown in the REPL but on the OLED display (_ssd1306_) - as graphics and text.
 
-> If you miss the basic information about the OLED (_ssd1306_), have a look [here](./015_display_tutorials.md).
+> If you miss the basic information about the OLED (_ssd1306_), have a look [here](./011_display_tutorials.md).
 
 ### Requirements
 
@@ -185,7 +185,7 @@ Now the values should not be shown in the REPL but on the OLED display (_ssd1306
 
 ### Circuit
 
-![017_circuit_diagram_potentiometer_display.png](../images/examples/017_circuit_diagram_potentiometer_display.png)
+![017_circuit_diagram_potentiometer_display.png](../images/examples/013_circuit_diagram_potentiometer_display.png)
 
 ### Code
 
@@ -205,4 +205,4 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Press `reset` button and and turn the potentiometer. If you don't have a `reset` button, just unplug and reconnect the USB cable.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./016_network_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./012_network_tutorials.md) | [Next]()

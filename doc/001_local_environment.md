@@ -88,4 +88,4 @@ We will install more packages later! If you want to exit the virtual environment
 (venv) $ deactivate
 ```
 
-[Home](https://github.com/Lupin3000/ESP) | [Next](./002_firmware.md)
+[Home](https://github.com/Lupin3000/ESP) | [Next](./001_firmware.md)

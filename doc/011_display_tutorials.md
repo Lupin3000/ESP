@@ -25,11 +25,11 @@ The first example should show you a few basics. Play around with it (_modify the
 
 ### Circuit
 
-![015_circuit_diagram_i2c_oled.png](../images/examples/015_circuit_diagram_i2c_oled.png)
+![015_circuit_diagram_i2c_oled.png](../images/examples/010_circuit_diagram_i2c_oled.png)
 
 ### Code
 
-Install first the `ssd1306` driver! [Here](./013_package_management.md) you will find some solutions proposals about how to install.
+Install first the `ssd1306` driver! [Here](./010_package_management.md) you will find some solutions proposals about how to install.
 
 > If you're using the SPI version, just adapt the code! [Here](https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html) it's described.
 
@@ -161,4 +161,4 @@ Manipulation Program_).
 > 
 > Select radio button: `Raw` and press button `Export`
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./014_i2c_helper_tutorials.md) | [Next](./016_network_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./010_i2c_helper_tutorials.md) | [Next](./012_network_tutorials.md)

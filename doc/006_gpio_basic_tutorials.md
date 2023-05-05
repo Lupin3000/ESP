@@ -30,7 +30,7 @@ In the first example, a simple LED is switched on/off endlessly.
 
 ### Circuit
 
-![009_circuit_diagram_single_led.png](../images/examples/009_circuit_diagram_single_led.png)
+![009_circuit_diagram_single_led.png](../images/examples/006_circuit_diagram_single_led.png)
 
 ### Code
 
@@ -182,7 +182,7 @@ In the second example, an RGB LED is used. Here the color is changed endlessly (
 
 ### Circuit
 
-![009_circuit_diagram_rgb_led.png](../images/examples/009_circuit_diagram_rgb_led.png)
+![009_circuit_diagram_rgb_led.png](../images/examples/006_circuit_diagram_rgb_led.png)
 
 ### Code
 
@@ -209,4 +209,4 @@ Start with keys `Control` + `d`. To stop the program, press keys `Control` + `c`
 
 The class Pin has other methods, too! Also, you can use for example ADC, UART, SPI or I2C on GPIOs.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./008_bluetooth_tutorials.md) | [Next](./010_sound_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./005_bluetooth_tutorials.md) | [Next](./007_sound_tutorials.md)

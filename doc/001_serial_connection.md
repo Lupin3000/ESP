@@ -199,4 +199,4 @@ _Note: However, note the name change in the following examples (this has not bee
 
 If you like to know more, have a look on this [link](https://github.com/dhylands/rshell).
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./002_firmware.md) | [Next](./004_python_repl.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./001_firmware.md) | [Next](./001_python_repl.md)

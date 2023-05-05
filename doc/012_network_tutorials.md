@@ -53,7 +53,7 @@ You can check if the connection really works before you continue with the next e
 
 ## Time synchronisation with NTP
 
-The time always starts (_without prior change_) with `00:00 01.01.2000`! If you followed the example [I2C OLED date and time (ssd1306)](./015_display_tutorials.md), you should have noticed. That should change now.
+The time always starts (_without prior change_) with `00:00 01.01.2000`! If you followed the example [I2C OLED date and time (ssd1306)](./011_display_tutorials.md), you should have noticed. That should change now.
 
 ```shell
 # create script
@@ -197,4 +197,4 @@ When it comes to sensors, the WLAN and web server will be used again (_in a diff
 (venv) $ rshell -p [SERIAL-PORT] edit /pyboard/boot.py
 ```
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./015_display_tutorials.md) | [Next](./017_human_interaction_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_display_tutorials.md) | [Next](./013_human_interaction_tutorials.md)

@@ -158,4 +158,4 @@ $ touch ~/Projects/ESP/examples/board/esp32_memory.py
 
 Press the keys `Control` + `d` or the `reset button` and observe the output. If you want to leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./005_frozen_code.md) | [Next](./007_wlan_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./002_frozen_code.md) | [Next](./004_wlan_tutorials.md)

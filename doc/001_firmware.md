@@ -71,4 +71,4 @@ Here an example for ESP32 with usage of `firmware` directory.
 
 This process can take some time.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./001_local_environment.md) | [Next](./003_serial_connection.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./001_local_environment.md) | [Next](./001_serial_connection.md)

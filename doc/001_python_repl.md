@@ -96,4 +96,4 @@ You can start the REPL via two options
 >>> machine.soft_reset()
 ```
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./003_serial_connection.md) | [Next](./005_frozen_code.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./001_serial_connection.md) | [Next](./002_frozen_code.md)

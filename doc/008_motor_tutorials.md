@@ -23,7 +23,7 @@ The first option to steer the servo motor in a range of 90° is `duty`.
 
 ### Circuit
 
-![011_circuit_diagram_servo_motor.png](../images/examples/011_circuit_diagram_servo_motor.png)
+![011_circuit_diagram_servo_motor.png](../images/examples/008_circuit_diagram_servo_motor.png)
 
 ### Code
 
@@ -113,4 +113,4 @@ $ touch ~/Projects/ESP/examples/motor/servo_duty_u16.py
 
 Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./010_sound_tutorials.md) | [Next](./012_neopixel_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./007_sound_tutorials.md) | [Next](./009_neopixel_tutorials.md)

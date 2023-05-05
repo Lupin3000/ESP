@@ -18,72 +18,75 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ### Table of Contents
 
-- Introduction
+- 001 - Introduction
   - [Setup local environment](./doc/001_local_environment.md)
-  - [Micropython firmware](./doc/002_firmware.md)
-  - [Serial connection](./doc/003_serial_connection.md)
-  - [MicroPython REPL](./doc/004_python_repl.md)
-  - [MicroPython frozen code](./doc/005_frozen_code.md)
+  - [Micropython firmware](./doc/001_firmware.md)
+  - [Serial connection](./doc/001_serial_connection.md)
+  - [MicroPython REPL](./doc/001_python_repl.md)
+- 002 - Frozen Code
+  - [MicroPython frozen code](./doc/002_frozen_code.md)
     - (code example) [Frozen code](./examples/mpy/example_module.py) 
-- Board
-  - [Board tutorial](./doc/006_board_tutorials.md)
+- 003 - Board
+  - [Board tutorial](./doc/003_board_tutorials.md)
     - (code example) [ESP32 board information](./examples/board/esp32_information.py)
     - (code example) [ESP32 disc space and memory information](./examples/board/esp32_memory.py)
-- WLAN
-  - [WLAN tutorial](./doc/007_wlan_tutorials.md)
+- 004 - WLAN
+  - [WLAN tutorial](./doc/004_wlan_tutorials.md)
     - (code example) [Access point scanner](./examples/wlan/ap_scanner.py)
     - (code example) [Simple station mode](./examples/wlan/simple_station.py)
     - (code example) [Open access point mode](./examples/wlan/open_access_point.py)
     - (code example) [WP2 access point mode](./examples/wlan/wp2_access_point.py)
-- Bluetooth Low Energy
-  - [Bluetooth Low Energy tutorial](./doc/008_bluetooth_tutorials.md)
+- 005 - Bluetooth Low Energy
+  - [Bluetooth Low Energy tutorial](./doc/005_bluetooth_tutorials.md)
     - (code example) [BLE scanner](./examples/ble/ble_scanner.py)
     - (code example) [Own BLE service](./examples/ble/ble_service.py)
-- GPIO basic
-  - [GPIO basic tutorial](./doc/009_gpio_basic_tutorials.md)
+- 006 - GPIO basic
+  - [GPIO basic tutorial](./doc/006_gpio_basic_tutorials.md)
     - (code example) [Blink a single LED](./examples/gpio_basic/blink_single_led_high_low.py)
     - (code example) [Blink a single LED with PWM](./examples/gpio_basic/blink_single_led_high_low_pwm.py)
     - (code example) [Blink a single LED with Timer](./examples/gpio_basic/blink_single_led_high_low_timer.py)
     - (code example) [Fade a single LED with PWM](./examples/gpio_basic/fade_single_led_high_low.py)
     - (code example) [Heartbeat a single LED with PWM](./examples/gpio_basic/heartbeat_single_led.py)
     - (code example) [Change RGB LED color](./examples/gpio_basic/change_rgb_led_color_high_low.py)
-- Sound
-  - [Sound tutorial](./doc/010_sound_tutorials.md)
+- 007 - Sound
+  - [Sound tutorial](./doc/007_sound_tutorials.md)
     - (code example) [Create single tone (passive buzzer)](./examples/sound/passive_buzzer_simple.py)
     - (code example) [Create different tones (passive buzzer)](./examples/sound/passive_buzzer_tones.py)
     - (code example) [Play a song (passive buzzer)](./examples/sound/passive_buzzer_sound.py)
-- Motor
-  - [Motor tutorial](./doc/011_motor_tutorials.md)
+- 008 - Motor
+  - [Motor tutorial](./doc/008_motor_tutorials.md)
     - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
     - (code example) [Control servo via duty_ns](./examples/motor/servo_duty_ns.py)
     - (code example) [Control servo via duty_u16](./examples/motor/servo_duty_u16.py)
-- NeoPixel
-  - [NeoPixel tutorial](./doc/012_neopixel_tutorials.md)
+- 009 - NeoPixel
+  - [NeoPixel tutorial](./doc/009_neopixel_tutorials.md)
     - (code example) [NeoPixel basics](./examples/neopixel/neopixel_basics.py)
     - (code example) [NeoPixel morse code](./examples/neopixel/neopixel_morse.py)
-- More introduction
-  - [Package management](./doc/013_package_management.md)
-  - [I2C helper tutorial](./doc/014_i2c_helper_tutorials.md)
+- 010 - More introduction
+  - [Package management](./doc/010_package_management.md)
+  - [I2C helper tutorial](./doc/010_i2c_helper_tutorials.md)
     - (code example) [I2C scanner](./examples/i2c_helper/i2c_scanner.py) 
-- Displays
-  - [Display tutorial](./doc/015_display_tutorials.md)
+- 011 - Displays
+  - [Display tutorial](./doc/011_display_tutorials.md)
     - (code example) [I2C OLED (ssd1306) basics](./examples/display/i2c_oled_ssd1306_basics.py)
     - (code example) [I2C OLED (ssd1306) date/time and fonts](./examples/display/i2c_oled_ssd1306_time.py)
     - (code example) [Icons on OLED (ssd1306)](./examples/display/i2c_oled_ssd1306_icons.py)
-- Network
-  - [Network tutorial](./doc/016_network_tutorials.md)
+- 012 - Network
+  - [Network tutorial](./doc/012_network_tutorials.md)
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
     - (code example) [DNS resolve](./examples/network/dns_resolve.py)
     - (code example) [HTTP status](./examples/network/http_status.py)
     - (code example) [REST API](./examples/network/rest_api.py)
     - (code example) [HTML webserver](./examples/network/html_webserver.py)
-- Human interaction
-  - [Human interaction tutorial](./doc/017_human_interaction_tutorials.md)
+- 013 - Human interaction
+  - [Human interaction tutorial](./doc/013_human_interaction_tutorials.md)
     - (code example) [Button (Polling)](./examples/user_input/btn_led_polling.py)
     - (code example) [Button (Interrupt Handler)](./examples/user_input/btn_led_interrupt_handler.py)
     - (code example) [Button (Interrupt Handler and Debounce)](./examples/user_input/btn_led_interrupt_handler_debounce.py)
     - (code example) [Potentiometer](./examples/user_input/potentiometer.py)
     - (code example) [Potentiometer and SSD1306 OLED](./examples/user_input/potentiometer_display.py)
+- 014 - Sensors
+- 015 - Games
 
 ## external libraries
 

@@ -26,7 +26,7 @@ This example contains various functions to create effects with NeoPixel.
 
 ### Circuit
 
-![012_circuit_diagram_neopixel.png](../images/examples/012_circuit_diagram_neopixel.png)
+![012_circuit_diagram_neopixel.png](../images/examples/009_circuit_diagram_neopixel.png)
 
 ### Code
 
@@ -85,4 +85,4 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_motor_tutorials.md) | [Next](./013_package_management.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./008_motor_tutorials.md) | [Next](./010_package_management.md)

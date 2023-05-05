@@ -25,7 +25,7 @@ In fact, in this example, you're just creating a noisy tone with a passive buzze
 
 ### Circuit
 
-![010_circuit_diagram_passive_buzzer.png](../images/examples/010_circuit_diagram_passive_buzzer.png)
+![010_circuit_diagram_passive_buzzer.png](../images/examples/007_circuit_diagram_passive_buzzer.png)
 
 ### Code
 
@@ -117,4 +117,4 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./009_gpio_basic_tutorials.md) | [Next](./011_motor_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./006_gpio_basic_tutorials.md) | [Next](./008_motor_tutorials.md)
