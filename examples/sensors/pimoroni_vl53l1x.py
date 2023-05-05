@@ -4,7 +4,6 @@ from vl53l1x import VL53L1X
 from utime import sleep_ms
 
 
-# define constants
 I2C_SDA_PIN = const(21)
 I2C_SCL_PIN = const(22)
 

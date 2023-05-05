@@ -3,15 +3,13 @@ from machine import Pin
 from utime import sleep
 
 
-# define constants
 BARRIER_GPIO_PIN = const(23)
 DELAY = const(1)
 
 
-# create pin objects
-barrier = Pin(BARRIER_GPIO_PIN, Pin.IN, Pin.PULL_UP)
-
 if __name__ == '__main__':
+    barrier = Pin(BARRIER_GPIO_PIN, Pin.IN, Pin.PULL_UP)
+
     while True:
         sleep(DELAY)
         if barrier.value():

@@ -4,17 +4,15 @@ from time import sleep
 from bme680 import *
 
 
-# define constant
 SDA_GPIO_PIN = const(21)
 SCL_GPIO_PIN = const(22)
 NL = const('\n')
 
-# create I2C and BME objects
-i2c = I2C(scl=Pin(SCL_GPIO_PIN), sda=Pin(SDA_GPIO_PIN))
-bme = BME680_I2C(i2c=i2c)
-
 
 if __name__ == '__main__':
+    i2c = I2C(scl=Pin(SCL_GPIO_PIN), sda=Pin(SDA_GPIO_PIN))
+    bme = BME680_I2C(i2c=i2c)
+
     while True:
         try:
             temp = str(round(bme.temperature, 2)) + ' C'

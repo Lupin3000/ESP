@@ -2,7 +2,6 @@ from micropython import const
 from machine import Pin, I2C
 
 
-# define constants
 I2C_SDA_PIN = const(21)
 I2C_SCL_PIN = const(22)
 I2C_ADDRESS = const(79)
@@ -10,7 +9,7 @@ I2C_ADDRESS = const(79)
 
 def convert_data(value: bytes) -> float:
     """
-    Convert bytes to float value (degrees Celsius)
+    convert bytes to float value (degrees Celsius)
     :param value: bytes
     :return: float
     """

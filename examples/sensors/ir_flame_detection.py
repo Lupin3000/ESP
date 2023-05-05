@@ -3,17 +3,16 @@ from machine import Pin, RTC
 from utime import sleep
 
 
-# define constants
 FLAME_GPIO_PIN = const(23)
 LED_GPIO_PIN = const(21)
 DETECTION_DELAY = const(0.25)
 
-# create rtc/pin objects
-rtc = RTC()
-flame = Pin(FLAME_GPIO_PIN, Pin.IN)
-led = Pin(LED_GPIO_PIN, Pin.OUT)
 
 if __name__ == '__main__':
+    rtc = RTC()
+    flame = Pin(FLAME_GPIO_PIN, Pin.IN)
+    led = Pin(LED_GPIO_PIN, Pin.OUT)
+
     while True:
         sleep(DETECTION_DELAY)
 

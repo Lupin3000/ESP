@@ -3,7 +3,6 @@ from machine import Pin
 from utime import sleep
 
 
-# define constants
 PIR_GPIO_PIN = const(23)
 DELAY_INITIAL = const(30)
 DELAY_MOTION = const(5)
@@ -12,7 +11,7 @@ DELAY_NO_MOTION = const(1)
 
 def motion_detect(motion: int) -> None:
     """
-    Print motion status and sleep
+    print motion status and sleep
     :param motion: int
     :return: None
     """
@@ -27,10 +26,9 @@ def motion_detect(motion: int) -> None:
         sleep(DELAY_NO_MOTION)
 
 
-# create pin object
-pir = Pin(PIR_GPIO_PIN, Pin.IN, Pin.PULL_DOWN)
-
 if __name__ == '__main__':
+    pir = Pin(PIR_GPIO_PIN, Pin.IN, Pin.PULL_DOWN)
+
     print(f'[INFO] warm-up pir sensor for {DELAY_INITIAL} seconds')
     sleep(DELAY_INITIAL)
 

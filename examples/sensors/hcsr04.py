@@ -2,15 +2,15 @@ from micropython import const
 from machine import Pin
 from utime import sleep_us, ticks_us, sleep
 
-# define constants
+
 TRIGGER_GPIO_PIN = const(23)
 ECHO_GPIO_PIN = const(21)
 
-# create pin objects
-trigger = Pin(TRIGGER_GPIO_PIN, Pin.OUT)
-echo = Pin(ECHO_GPIO_PIN, Pin.IN)
 
 if __name__ == '__main__':
+    trigger = Pin(TRIGGER_GPIO_PIN, Pin.OUT)
+    echo = Pin(ECHO_GPIO_PIN, Pin.IN)
+
     while True:
         trigger.value(0)
         sleep_us(2)
