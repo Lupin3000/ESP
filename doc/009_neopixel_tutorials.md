@@ -1,4 +1,4 @@
-# NeoPixel tutorials
+# NeoPixel
 
 ## Table of Contents
 

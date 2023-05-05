@@ -1,4 +1,4 @@
-# Bluetooth Low Energy tutorials
+# Bluetooth Low Energy
 
 ## Table of Contents
 

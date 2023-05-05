@@ -1,4 +1,4 @@
-# Game tutorials
+# Games
 
 ## Table of Contents
 

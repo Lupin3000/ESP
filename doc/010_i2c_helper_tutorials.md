@@ -1,4 +1,4 @@
-# I2C helper tutorials
+# I2C helper
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# Network tutorials
+# Network
 
 ## Table of Contents
 

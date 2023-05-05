@@ -1,4 +1,4 @@
-# GPIO basic tutorials
+# GPIO basic
 
 ## Table of Contents
 

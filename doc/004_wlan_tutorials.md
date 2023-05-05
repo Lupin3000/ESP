@@ -1,4 +1,4 @@
-# WLAN tutorials
+# WLAN
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# Sound tutorials
+# Sound
 
 ## Table of Contents
 

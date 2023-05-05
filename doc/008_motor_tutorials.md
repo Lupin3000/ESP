@@ -1,4 +1,4 @@
-# Motor tutorials
+# Motor
 
 ## Table of Contents
 

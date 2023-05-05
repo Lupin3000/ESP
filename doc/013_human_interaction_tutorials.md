@@ -1,4 +1,4 @@
-# Human interaction tutorials
+# Human interaction
 
 ## Table of Contents
 

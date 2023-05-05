@@ -1,4 +1,4 @@
-# Board tutorials
+# Board
 
 ## Table of Contents
 

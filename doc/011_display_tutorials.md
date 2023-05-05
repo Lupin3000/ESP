@@ -1,4 +1,4 @@
-# Display tutorials
+# Display
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# Sensor tutorials
+# Sensors
 
 ## Table of Contents
 
