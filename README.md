@@ -25,7 +25,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [MicroPython REPL](./doc/001_python_repl.md)
 - 002 - Frozen Code
   - [MicroPython frozen code](./doc/002_frozen_code.md)
-    - (code example) [Frozen code](./examples/mpy/example_module.py) 
+    - :page_facing_up: [Frozen code](./examples/mpy/example_module.py) 
 - 003 - Board information
   - [Board tutorial](./doc/003_board_tutorials.md)
     - (code example) [ESP32 board information](./examples/board/esp32_information.py)
