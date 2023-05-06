@@ -12,7 +12,7 @@ DELAY_NO_MOTION = const(1)
 def motion_detect(motion: int) -> None:
     """
     print motion status and sleep
-    :param motion: int
+    :param motion: status integer
     :return: None
     """
     global count

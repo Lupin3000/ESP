@@ -205,4 +205,4 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Press `reset` button and and turn the potentiometer. If you don't have a `reset` button, just unplug and reconnect the USB cable.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./012_network_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./012_network_tutorials.md) | [Next](./014_sensor_tutorials.md)

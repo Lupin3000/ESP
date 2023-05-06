@@ -6,7 +6,6 @@ from utime import sleep
 
 DHT_GPIO_PIN = const(5)
 DELAY = const(5)
-NL = const('\n')
 
 
 if __name__ == '__main__':
@@ -25,6 +24,6 @@ if __name__ == '__main__':
             print(f'Date: {str_date}')
             print(f'Time: {str_time}')
             print(f'Temperature: {sensor.temperature()} °C')
-            print(f'Humidity: {sensor.humidity()} %{NL}')
+            print(f'Humidity: {sensor.humidity()} \n')
         except OSError as e:
             print('Cannot read sensor.')

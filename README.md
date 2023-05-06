@@ -86,7 +86,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Potentiometer](./examples/user_input/potentiometer.py)
     - (code example) [Potentiometer and OLED (SSD1306)](./examples/user_input/potentiometer_display.py)
 - 014 - Sensors
-  - `under construction`
+  - [Sensor tutorials](./doc/014_sensor_tutorials.md)
     - (code example) [Temperature/Humidity sensor (DHT11/DHT22)](./examples/sensors/dht11.py) 
     - (code example) [PIR sensor (HC-SR501)](./examples/sensors/pir.py)
     - (code example) [Ultrasonic sensor (HC-SR04)](./examples/sensors/hcsr04.py)
