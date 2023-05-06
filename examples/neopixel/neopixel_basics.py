@@ -40,9 +40,8 @@ def clear_all() -> None:
     """
     global nps
 
-    for item in range(NEOPIXEL_NUMBER):
-        nps[item] = (0, 0, 0)
-        nps.write()
+    nps.fill((0, 0, 0))
+    nps.write()
 
 
 def set_color(red: int, green: int, blue: int) -> None:
@@ -71,7 +70,7 @@ def set_color(red: int, green: int, blue: int) -> None:
     if arg_verify:
         for item in range(NEOPIXEL_NUMBER):
             nps[item] = (red, green, blue)
-            nps.write()
+        nps.write()
 
 
 def cycle_color(foreground: tuple, background: tuple, rounds: int = 1, wait: int = 10) -> None:
@@ -143,13 +142,13 @@ def random_colors(value: str = 'single') -> None:
     if value in valid and value == 'single':
         for item in range(NEOPIXEL_NUMBER):
             nps[item] = random_rgb()
-            nps.write()
+        nps.write()
 
     if value in valid and value == 'all':
         color = random_rgb()
         for item in range(NEOPIXEL_NUMBER):
             nps[item] = color
-            nps.write()
+        nps.write()
 
 
 if __name__ == '__main__':
