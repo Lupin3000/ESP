@@ -91,7 +91,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [PIR sensor (HC-SR501)](./examples/sensors/pir.py)
     - (code example) [Ultrasonic sensor (HC-SR04)](./examples/sensors/hcsr04.py)
 - 015 - Games
-  - `under construction`
+  - [Game tutorials](./doc/015_game_tutorials.md)
     - (code example) [Crazy Car Racer](./examples/games/racer.py)
 
 ## external libraries
