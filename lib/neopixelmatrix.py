@@ -114,6 +114,14 @@ class NeoPixelMatrix:
         self.vline((int(x) + int(length) - 1), int(y), int(height), tuple(color))
 
     def set_digit(self, val: int, x: int, y: int, color: tuple) -> None:
+        """
+        create a digit 0 -9 on NeoPixels by value incl. x,y coordinates and color
+        :param val: number from 0 till 9
+        :param x: value for x coordinate on matrix
+        :param y: value for y coordinate on matrix
+        :param color: tuple of RGB values
+        :return: None
+        """
         offset = int(val) * 15
 
         for item in range(offset, offset + 15):
