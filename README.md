@@ -63,7 +63,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [NeoPixel basics](./examples/neopixel/neopixel_basics.py)
     - (code example) [NeoPixel morse code](./examples/neopixel/neopixel_morse.py)
   - [NeoPixel extended](./doc/009_neopixel_extended.md)
-    - (code example) [NeoPixel Matrix example](./examples/neopixel/neopixel_matrix.py) 
+    - (code example) [NeoPixel Matrix example](./examples/neopixel/neopixel_matrix.py)
+    - (code example) [NeoPixel Matrix icons](./examples/neopixel/neopixel_matrix_icon.py)
 - 010 - More introduction
   - [Package management](./doc/010_package_management.md)
   - [I2C helper tutorial](./doc/010_i2c_helper_tutorials.md)

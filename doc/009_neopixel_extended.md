@@ -4,6 +4,7 @@
 
 - [Prolog](#prolog)
 - [NeoPixel Matrix Module](#neopixel-matrix-module)
+- [NeoPixel Matrix Icons](#neopixel-matrix-icons)
 
 ## Prolog
 
@@ -45,5 +46,27 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/lib/neopixelma
 ```
 
 Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
+
+## NeoPixel Matrix Icons
+
+You can easily extend the `neopixelmatrix` module to create fast icons! Through inheritance, you can easily extend the module.
+
+> The icons are not real pictures! By the way ... the same principle is used in the tutorial for [OLED Display (ssd1306)](./011_display_tutorials.md).
+
+### Code
+
+> [Source Code](../examples/neopixel/neopixel_matrix_icon.py) for `neopixel_matrix_icon.py`
+
+```shell
+# copy example file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/neopixel/neopixel_matrix_icon.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d` or press `reset` key. To stop the loop press keys `Control`+ `c`, to leave the REPL, press keys `Control` + `x`.
+
+> You could also display multicolored icons! For example by specifying further numbers like 2, 3, 4 (_inside the icon definition_) and so on with the respective RGB tuples (_as method parameters_).
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./009_neopixel_tutorials.md) | [Next](./010_package_management.md)
