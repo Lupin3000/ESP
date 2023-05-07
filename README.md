@@ -97,23 +97,22 @@ The author of this repository (_information, scripts, code_) take no responsibil
 ## external libraries
 
 Display
-- [SSD1306 driver](./lib/ssd1306.py)
-- [Writer module](./lib/writer.py)
-- [freesans20 font](./lib/freesans20.py)
+- [SSD1306](./lib/ssd1306.py)
+- [Writer](./lib/writer.py)
+- [freesans20 (font)](./lib/freesans20.py)
 
 Sensors
-- [BME680 driver](./lib/bme680.py)
-- [Vl53L1X driver](./lib/vl53l1x.py)
+- [BME680](./lib/bme680.py)
+- [Vl53L1X](./lib/vl53l1x.py)
 
 NeoPixel
-- [NeoPixel-Ring module](./lib/neopixelring.py)
+- [NeoPixel-Matrix](./lib/neopixelmatrix.py)
 
 ### IN PROGRESS (_to be refactored_)
 
 - LED
   - [LED: Switch 1x ON/OFF by touch](Tutorials/one_single_led_touch.py)
   - [LED: Switch 3x ON/OFF by touch](Tutorials/three_single_led_touch.py)
-  - [NeoPixel: (matrix)](Tutorials/neopixel_matrix.py)
   - [Webserver: WLAN station mode - control LED](Tutorials/fade_led_on_off.py)
 - Sensors
   - [IR Flame detection](./examples/sensors/ir_flame_detection.py)

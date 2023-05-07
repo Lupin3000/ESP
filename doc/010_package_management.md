@@ -113,4 +113,4 @@ To exit the `REPL` press keys `Control` + `x`.
 
 This option was super easy too... wasn't it? There are many other options! No matter which one you want to use, simply adapt it to your needs and the environment. Also, have a look on MicroPython [documentation](https://docs.micropython.org/en/latest/reference/packages.html)!
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./009_neopixel_tutorials.md) | [Next](./010_i2c_helper_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./009_neopixel_extended.md) | [Next](./010_i2c_helper_tutorials.md)
