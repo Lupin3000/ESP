@@ -115,7 +115,7 @@ class NeoPixelMatrix:
 
     def set_digit(self, val: int, x: int, y: int, color: tuple) -> None:
         """
-        create a digit 0 -9 on NeoPixels by value incl. x,y coordinates and color
+        create a digit 0-9 on NeoPixels by value incl. x,y coordinates and color
         :param val: number from 0 till 9
         :param x: value for x coordinate on matrix
         :param y: value for y coordinate on matrix
