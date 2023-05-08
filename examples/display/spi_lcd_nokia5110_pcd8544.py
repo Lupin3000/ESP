@@ -33,7 +33,7 @@ if __name__ == '__main__':
         lcd.text('Nokia 5110', 0, 0, 1)
         lcd.text('PCD8544', 0, 10, 1)
         lcd.text('84x48', 0, 20, 1)
-        lcd.text('Python1.20', 0, 30, 1)
+        lcd.text('Python 1.2', 0, 30, 1)
         lcd.text('ESP32', 0, 40, 1)
         lcd.show()
         sleep(2)
