@@ -197,4 +197,4 @@ When it comes to sensors, the WLAN and web server will be used again (_in a diff
 (venv) $ rshell -p [SERIAL-PORT] edit /pyboard/boot.py
 ```
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_display_ssd1306_tutorials.md) | [Next](./013_human_interaction_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_display_nokia5110_pcd8544_tutorials.md) | [Next](./013_human_interaction_tutorials.md)

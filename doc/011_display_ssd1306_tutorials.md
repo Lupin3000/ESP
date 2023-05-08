@@ -53,6 +53,8 @@ Check your circuit (_adapt pins if needed_) and copy the script to the microcont
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
+
 ## I2C OLED date/time with fonts (ssd1306)
 
 Actually, this task seems very simple. But that is a bit deceptive! The font size and the current time will play a role in this example.
@@ -161,4 +163,4 @@ Manipulation Program_).
 > 
 > Select radio button: `Raw` and press button `Export`
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./010_i2c_helper_tutorials.md) | [Next](./012_network_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./010_i2c_helper_tutorials.md) | [Next](./011_display_nokia5110_pcd8544_tutorials.md)
