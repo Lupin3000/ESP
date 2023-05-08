@@ -1,4 +1,4 @@
-# Display
+# Display (ssd1306)
 
 ## Table of Contents
 

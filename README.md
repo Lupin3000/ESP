@@ -70,7 +70,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [I2C helper tutorial](./doc/010_i2c_helper_tutorials.md)
     - (code example) [I2C scanner](./examples/i2c_helper/i2c_scanner.py) 
 - 011 - Displays
-  - [Display tutorial](./doc/011_display_tutorials.md)
+  - [Display tutorial (SSD1306)](./doc/011_display_ssd1306_tutorials.md)
     - (code example) [I2C OLED basics (SSD1306)](./examples/display/i2c_oled_ssd1306_basics.py)
     - (code example) [I2C OLED date/time and fonts (SSD1306)](./examples/display/i2c_oled_ssd1306_time.py)
     - (code example) [I2C OLED icons (SSD1306)](./examples/display/i2c_oled_ssd1306_icons.py)
@@ -101,6 +101,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 Display
 - [SSD1306](./lib/ssd1306.py)
+- [PCD8544](./lib/pcd8544.py)
 - [Writer](./lib/writer.py)
 - [freesans20 (font)](./lib/freesans20.py)
 

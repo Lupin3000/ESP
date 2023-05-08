@@ -44,4 +44,4 @@ Since MicroPython version 1.14.x a message is displayed, that the usage of I2C i
 
 > In the later tutorials, for example the OLED display (_with ssd1306 driver_) you will come into contact with SoftI2C.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./010_package_management.md) | [Next](./011_display_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./010_package_management.md) | [Next](./011_display_ssd1306_tutorials.md)

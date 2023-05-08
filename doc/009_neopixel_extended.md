@@ -51,7 +51,7 @@ Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 Through inheritance of the `neopixelmatrix` module, you can easily extend the module to draw simple icons on the Matrix. This saves you a lot of time, and you don't have to control every NeoPixel (_using the existing methods of the module_).
 
-> The icons are not real pictures! By the way ... the same principle is used in the tutorial for [OLED Display (ssd1306)](./011_display_tutorials.md).
+> The icons are not real pictures! By the way ... the same principle is used in the tutorial for [OLED Display (ssd1306)](./011_display_ssd1306_tutorials.md).
 
 ### Code
 
