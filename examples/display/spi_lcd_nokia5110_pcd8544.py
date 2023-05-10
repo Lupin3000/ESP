@@ -29,7 +29,7 @@ if __name__ == '__main__':
     lcd.contrast(0x3f, pcd8544.BIAS_1_40, pcd8544.TEMP_COEFF_2)
 
     while True:
-        lcd.clear()
+        lcd.fill(0)
         lcd.text('Nokia 5110', 0, 0, 1)
         lcd.text('PCD8544', 0, 10, 1)
         lcd.text('84x48', 0, 20, 1)
