@@ -98,6 +98,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - 015 - Games
   - [Game tutorials](./doc/015_game_tutorials.md)
     - (code example) [Crazy Car Racer](./examples/games/racer.py)
+    - (code example) [Space Invaders](./examples/games/invader.py)
 
 ## external libraries
 

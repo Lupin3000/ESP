@@ -4,6 +4,7 @@
 
 - [Prolog](#prolog)
 - [Crazy Car Racer](#crazy-car-racer)
+- [Space Invaders](#space-invaders)
 
 ## Prolog
 
@@ -11,7 +12,7 @@ Games are great and help to forget everyday life. In addition, the development o
 
 ## Crazy Car Racer
 
-When I created the examples with the OLED display and the potentiometers, this game came to my mind. The goal is to control a small car horizontally using a potentiometer and avoid obstacles. As in reality, there is only one life and if you collide ... game over.
+It's a cold and dark night. The drugs are still working and your blood is boiling. You get in your car and take off. As in reality, there is only one life and if you collide ... game over.
 
 ### Requirements
 
@@ -60,5 +61,37 @@ Check your circuit and copy all images and the script to the microcontroller.
 Press `reset` key or start with keys `Control` + `d`.
 
 > Feel free to expand the game! For example, add more objects that simulate trees and bushes or more levels (_after about 10 points the road gets smaller_) and so on.
+
+## Space Invaders
+
+Everyone knows the Space Invaders! But nobody knows where they come from. If you value our planet, protect our world from these invaders.
+
+### Requirements
+
+- mandatory 1x SPI LCD Nokia 5110 
+- mandatory 1x potentiometer (_e.g. 10 kilo ohms_)
+- mandatory 1x button
+- few cables 
+- optional a breadboard
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/games/invader.py
+```
+
+> [Source Code](../examples/games/invader.py) for `invader.py`
+
+Check your circuit and copy all images and the script to the microcontroller.
+
+```shell
+# upload script
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/invader.py /pyboard/main.py
+```
+
+Press `reset` key or start with keys `Control` + `d`.
+
+> Feel free to expand the game! For example, add more objects enemies or change speed if enemy goes down.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_tutorials.md) | [Next]()
