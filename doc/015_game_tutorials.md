@@ -5,6 +5,7 @@
 - [Prolog](#prolog)
 - [Crazy Car Racer](#crazy-car-racer)
 - [Space Invaders](#space-invaders)
+- [Pong](#pong)
 
 ## Prolog
 
@@ -83,7 +84,7 @@ $ touch ~/Projects/ESP/examples/games/invader.py
 
 > [Source Code](../examples/games/invader.py) for `invader.py`
 
-Check your circuit and copy all images and the script to the microcontroller.
+Check your circuit and copy the script to the microcontroller.
 
 ```shell
 # upload script
@@ -93,5 +94,42 @@ Check your circuit and copy all images and the script to the microcontroller.
 Press `reset` key or start with keys `Control` + `d`.
 
 > Feel free to expand the game! For example, add more objects enemies or change speed if enemy goes down.
+
+## Pong
+
+On of the retro-gaming classics! Catch the ball or die... 
+
+## Requirements
+
+- mandatory 1x NeoPixel Matrix (_[LED Matrix Panel ](https://www.waveshare.com/pico-rgb-led.htm)_)
+- mandatory 1x potentiometer (_e.g. 10 kilo ohms_)
+- few cables 
+- optional a breadboard
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/games/pong.py
+```
+
+> [Source Code](../examples/games/pong.py) for `pong.py`
+
+> [Source Code](../lib/neopixelmatrix.py) for `/lib/neopixelmatrix.py`
+
+Check your circuit and copy the script to the microcontroller.
+
+```shell
+# copy module file into lib
+(venv) $ rshell -p [SERIAL-PORT] cp lib/neopixelmatrix.py
+
+# copy example file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/neopixel/pong.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Press `reset` key or start with keys `Control` + `d`.
+
+> Feel free to expand the game! For example, increase continuously the speed after some minutes.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_tutorials.md) | [Next]()
