@@ -65,6 +65,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [NeoPixel extended](./doc/009_neopixel_extended.md)
     - (code example) [NeoPixel Matrix example](./examples/neopixel/neopixel_matrix.py)
     - (code example) [NeoPixel Matrix icons](./examples/neopixel/neopixel_matrix_icon.py)
+    - (code example) [NeoPixel Matrix bounce](./examples/neopixel/neopixel_matrix_bounce.py)
 - 010 - More introduction
   - [Package management](./doc/010_package_management.md)
   - [I2C helper tutorial](./doc/010_i2c_helper_tutorials.md)

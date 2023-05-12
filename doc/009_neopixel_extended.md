@@ -5,6 +5,7 @@
 - [Prolog](#prolog)
 - [NeoPixel Matrix Module](#neopixel-matrix-module)
 - [NeoPixel Matrix Icons](#neopixel-matrix-icons)
+- [NeoPixel Matrix Bounce](#neopixel-matrix-bounce)
 
 ## Prolog
 
@@ -68,5 +69,24 @@ Through inheritance of the `neopixelmatrix` module, you can easily extend the mo
 Start with keys `Control` + `d` or press `reset` key. To stop the loop press keys `Control`+ `c`, to leave the REPL, press keys `Control` + `x`.
 
 > You could also display multicolored icons! For example by specifying further numbers like 2, 3, 4 (_inside the icon definition_) and so on with the respective RGB tuples (_as method parameters_).
+
+## NeoPixel Matrix Bounce
+
+This small example should show you further possibilities with an LED matrix. You will also learn a few basics about random number generators.
+
+### Code
+
+> [Source Code](../examples/neopixel/neopixel_matrix_bounce.py) for `neopixel_matrix_bounce.py`
+
+```shell
+# copy example file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/neopixel/neopixel_matrix_bounce.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d` or press `reset` key. To stop the loop press keys `Control`+ `c`, to leave the REPL, press keys `Control` + `x`.
+
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./009_neopixel_tutorials.md) | [Next](./010_package_management.md)
