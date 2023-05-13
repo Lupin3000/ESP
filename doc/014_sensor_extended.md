@@ -104,6 +104,10 @@ The OLED display is used to display 2 images for obstacle detection (_Stop & Go_
 Check your circuit and copy all files to the microcontroller.
 
 ```shell
+# download images
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/sensors/go.pbm' -o examples/sensors/go.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/sensors/stop.pbm' -o examples/sensors/stop.pbm
+
 # connect via rshel
 (venv) $ rshell -p [SERIAL-PORT]
 
