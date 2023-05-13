@@ -36,7 +36,7 @@ class Display:
         self.display.fill(0)
 
         current_len = self.font_writer.stringlen(str(value))
-        self.font_writer.set_textpos(30 + (64 - current_len) // 2, 20)
+        self.font_writer.set_textpos(25 + (DISPLAY_HEIGHT - current_len) // 2, 20)
         self.font_writer.printstring(str(value))
 
         self.display.show()
