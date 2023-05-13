@@ -69,7 +69,7 @@ Start with keys `Control` + `d` or press `reset` key. To stop the loop press key
 
 Everything goes super fast and your vehicles and robots must be able to stop and resume movements very quickly. With the following example you will learn to control these fast movements via obstacle detection. A laser sensor is used for this.  
 
-> Note: The example uses IRQ multiplexing to respond to interrupts! If you don't understand, please have a look [here](./013_human_interaction_tutorials.md).
+> Note: The example uses IRQ multiplexing to respond to interrupts! If you don't understand how IRGs working, please have a look [here](./013_human_interaction_tutorials.md).
 
 ### Requirements
 
