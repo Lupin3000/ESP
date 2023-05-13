@@ -132,4 +132,4 @@ Press `reset` key or start with keys `Control` + `d`.
 
 > Feel free to expand the game! For example, increase continuously the speed after some minutes.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_tutorials.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next]()
