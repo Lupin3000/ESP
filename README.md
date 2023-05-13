@@ -104,11 +104,15 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## external libraries
 
+Font
+- [freesans20](./lib/freesans20.py)
+- [vga bold 16x16](./lib/vga1_bold_16x16.py)
+
 Display
 - [SSD1306](./lib/ssd1306.py)
 - [PCD8544](./lib/pcd8544.py)
 - [Writer](./lib/writer.py)
-- [freesans20 (font)](./lib/freesans20.py)
+- [](./lib/st7789py.py)
 
 Sensors
 - [BME680](./lib/bme680.py)
