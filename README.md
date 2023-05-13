@@ -98,6 +98,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Ultrasonic sensor (HC-SR04)](./examples/sensors/hcsr04.py)
   - [Sensor extended](./doc/014_sensor_extended.md)
     - (code example) [Measure environment decibel (MAX9814 - SSD1306)](./examples/sensors/max9814.py)
+    - (code example) [Obstacle Detection (Laser Sensor - SSD1306)](./examples/sensors/laser_sensor_10929.py)
 - 015 - Games
   - [Game tutorials](./doc/015_game_tutorials.md)
     - (code example) [Crazy Car Racer (SSD1306)](./examples/games/racer.py)
@@ -135,6 +136,5 @@ NeoPixel
   - [ALLNET: B38 Temperature I2C Sensor](./examples/sensors/allnet_B38_temperature.py)
   - [ALLNET: B18 Light Barrier Sensor](./examples/sensors/allnet_B18_light_barrier.py)
   - [ALLNET: B08 Touch Sensor](./examples/sensors/allnet_B08_touch.py)
-  - [WaveShare: Laser Sensor](./examples/sensors/LaserSensor10929.py)
   - [Pimoroni: VL53L1X TOF Sensor](./examples/sensors/pimoroni_vl53l1x.py)
   - [Bosh: Sensortec BME680](./examples/sensors/bosch_sensortec_bme680.py)
