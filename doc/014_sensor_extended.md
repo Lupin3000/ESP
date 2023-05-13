@@ -5,6 +5,7 @@
 - [Prolog](#prolog)
 - [Measure environment decibel (MAX9814 - SSD1306)](#measure-environment-decibel-max9814---ssd1306)
 - [Obstacle Detection (Laser Sensor - SSD1306)](#obstacle-detection-laser-sensor---ssd1306)
+- [Light Barrier (ALLNET: B18 - Pushover)](#light-barrier-allnet-b18---pushover)
 
 ## Prolog
 
@@ -115,6 +116,52 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/senso
 /your/current/path> cp examples/sensors/go.pbm /pyboard/
 /your/current/path> cp examples/sensors/stop.pbm /pyboard/
 /your/current/path> cp examples/sensors/laser_sensor_10929.py /pyboard/main.py
+
+# start repl
+/your/current/path> repl
+```
+
+Start with keys `Control` + `d` or press `reset` key. To stop the program and to leave the REPL, press keys `Control` + `x`.
+
+## Light Barrier (ALLNET: B18 - Pushover)
+
+In the next example, a sensor with a light barrier is used. As soon as the light barrier is interrupted, a push notification should be sent to a mobile. An NTP time synchronization is carried out beforehand so that the time of the interruption can be sent.
+
+### Requirements
+
+- mandatory 1x Light Barrier (_[Allnet](https://www.allnet-shop.de/4DUINO/Module/ALLNET-4duino-Light-Barrier-Lichtschranke.html)_)
+- mandatory Pushover Application (_[Pushover](https://pushover.net)_) 
+- internet
+- few cables 
+- optional a breadboard
+
+### Pinout table
+
+Here you can see the respective wiring for the circuit.
+
+| Light Barrier | ESP32 |
+|---------------|-------|
+| +5V           | 5V5   |
+| GND           | GND   |
+| OUT           | 23    |
+
+### Code
+
+The microcontroller needs to have internet connection! Therefor you need to set the device in station mode via `boot.py`. You can reuse the example from [here](./004_wlan_tutorials.md).
+
+> [Source Code](../examples/sensors/allnet_B18_light_barrier.py) for example `allnet_B18_light_barrier.py`
+> 
+> [Source Code](../examples/network/boot.py) for station setup `boot.py`
+
+Check your circuit, change constants to your needs and copy all files to the microcontroller.
+
+```shell
+# connect via rshel
+(venv) $ rshell -p [SERIAL-PORT]
+
+# copy all files to esp32
+/your/current/path> cp examples/sensors/allnet_B18_light_barrier /pyboard/main.py
+/your/current/path> cp examples/network/boot.py /pyboard/boot.py
 
 # start repl
 /your/current/path> repl
