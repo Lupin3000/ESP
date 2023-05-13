@@ -114,7 +114,7 @@ Display
 - [SSD1306](./lib/ssd1306.py)
 - [PCD8544](./lib/pcd8544.py)
 - [Writer](./lib/writer.py)
-- [](./lib/st7789py.py)
+- [ST7789](./lib/st7789py.py)
 
 Sensors
 - [BME680](./lib/bme680.py)
