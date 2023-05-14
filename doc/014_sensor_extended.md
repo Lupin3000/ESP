@@ -6,6 +6,7 @@
 - [Measure environment decibel (MAX9814 - SSD1306)](#measure-environment-decibel-max9814---ssd1306)
 - [Obstacle Detection (Laser Sensor - SSD1306)](#obstacle-detection-laser-sensor---ssd1306)
 - [Light Barrier (ALLNET: B18 - Pushover)](#light-barrier-allnet-b18---pushover)
+- [Environment Sensing (Bosh: BME680 - Web Server)](#environment-sensing-bosh-bme680---web-server)
 
 ## Prolog
 
