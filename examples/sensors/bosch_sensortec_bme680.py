@@ -25,6 +25,8 @@ class AccessPoint:
 
             while not self.ap.active():
                 print('[INFO] Create access point')
+        else:
+            print('[ERROR] Password length must min. 8')
 
     def get_status(self) -> None:
         """
@@ -48,7 +50,7 @@ class BME680:
 
     def get_values(self) -> dict:
         """
-        get values from BME680 sensor
+        get all 4 values from BME680 sensor
         :return: dict
         """
         dictionary = {}
@@ -58,8 +60,8 @@ class BME680:
             dictionary['humidity'] = str(round(self.bme.humidity, 2))
             dictionary['pressure'] = str(round(self.bme.pressure, 2))
             dictionary['gas'] = str(round(self.bme.gas / 1000, 2))
-        except OSError as err:
-            print(f'[ERROR] Failed to read sensor: {err}')
+        except OSError as s_err:
+            print(f'[ERROR] Failed to read sensor: {s_err}')
 
         return dictionary
 
