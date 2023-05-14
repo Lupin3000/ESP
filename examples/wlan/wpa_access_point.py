@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
         config = ap.ifconfig()
 
-        print('[INFO] WPA2 access point created')
+        print('[INFO] WPA access point created')
         print(f"{'IP' : <15}{config[0]}")
         print(f"{'Subnet mask' :<15}{config[1]}")
         print(f"{'Gateway' :<15}{config[2]}")
