@@ -2,8 +2,9 @@ from micropython import const
 from network import WLAN, STA_IF
 
 
-AP_SSID = const('YOUR WLAN NAME')
-AP_PASSWORD = const('YOUR WLAN PASSWORD')
+AP_SSID = 'YOUR WLAN NAME'
+AP_PASSWORD = 'YOUR WLAN PASSWORD'
+
 
 if __name__ == '__main__':
     sta = WLAN(STA_IF)

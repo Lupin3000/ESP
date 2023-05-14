@@ -2,8 +2,9 @@ from micropython import const
 from network import WLAN, AP_IF
 
 
-AP_ESSID = const('OPEN-NET')
+AP_ESSID = 'OPEN-NET'
 AP_CHANNEL = const(6)
+
 
 if __name__ == '__main__':
     ap = WLAN(AP_IF)

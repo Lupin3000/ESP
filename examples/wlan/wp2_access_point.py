@@ -2,8 +2,9 @@ from micropython import const
 from network import WLAN, AP_IF
 
 
-WLAN_ESSID = const('ESP-NETWORK')
-WLAN_PASSWORD = const('12345678')
+WLAN_ESSID = 'ESP-NETWORK'
+WLAN_PASSWORD = '12345678'
+
 
 if __name__ == '__main__':
     if len(WLAN_PASSWORD) >= 8:
