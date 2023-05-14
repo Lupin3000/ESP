@@ -3,8 +3,8 @@ from network import WLAN, STA_IF
 from utime import sleep_ms
 
 
-WLAN_SSID = const('YOUR WLAN SSID')
-WLAN_PASSWORD = const('YOUR WLAN PASSWORD')
+WLAN_SSID = 'YOUR WLAN SSID'
+WLAN_PASSWORD = 'YOUR WLAN PASSWORD'
 WLAN_CONNECT_DELAY = const(500)
 WLAN_MAX_RETRIES = const(15)
 
