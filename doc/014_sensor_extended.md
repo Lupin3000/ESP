@@ -117,6 +117,7 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/senso
 /your/current/path> cp examples/sensors/go.pbm /pyboard/
 /your/current/path> cp examples/sensors/stop.pbm /pyboard/
 /your/current/path> cp examples/sensors/laser_sensor_10929.py /pyboard/main.py
+/your/current/path> cp lib/ssd1306.py /pyboard/lib/
 
 # start repl
 /your/current/path> repl
@@ -198,6 +199,8 @@ The connection will be via WLAN (_access point mode_). For html a template is us
 > [Source Code](../examples/sensors/bosch_sensortec_bme680.py) for example `bosch_sensortec_bme680.py`
 > 
 > [Source Code](../examples/sensors/template.htm) for template `template.htm`
+>
+> [Source Code](../lib/bme680.py) for module `bme680.py`
 
 Check your circuit, change constants to your needs and copy all files to the microcontroller.
 
@@ -208,6 +211,7 @@ Check your circuit, change constants to your needs and copy all files to the mic
 # copy all files to esp32
 /your/current/path> cp examples/sensors/bosch_sensortec_bme680.py /pyboard/main.py
 /your/current/path> cp examples/sensors/template.htm /pyboard/
+/your/current/path> cp lib/bme680.py /pyboard/lib/
 
 # start repl
 /your/current/path> repl
