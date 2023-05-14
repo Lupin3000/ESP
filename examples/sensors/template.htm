@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESP32 - BME680</title>
+    <style>
+        html, body, div, h1, ul, li, span {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1em;
+            line-height: 1.5em;
+            color: darkslategray;
+            background-color: #4B515D;
+        }
+        h1 {
+            padding: 1em 0;
+            font-size: 3em;
+            font-weight: lighter;
+            text-align: center;
+            color: black;
+        }
+        ul {
+            list-style: none;
+            padding: 0 0 3em 7.5em;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-item {
+            padding: .5em;
+            flex-grow: 1;
+        }
+        #card {
+            margin: 10% auto;
+            width: 350px;
+            background-color: aqua;
+            box-shadow: 5px 5px 5px #000000;
+            border-radius: 10px;
+        }
+        #date {
+            text-align: left;
+        }
+        #time {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<div id="card">
+    <div class="container">
+        <div class="container-item" id="date"><!-- date --></div>
+        <div class="container-item" id="time"><!-- time --></div>
+    </div>
+    <div>
+        <h1>
+            <span id="temperature"><!-- temperature --></span> &deg;C
+        </h1>
+    </div>
+    <ul>
+        <li>
+            <span id="humidity"><!-- humidity --></span> &#37;
+        </li>
+        <li>
+            <span id="pressure"><!-- pressure --></span> hPa
+        </li>
+        <li>
+            <span id="gas"><!-- gas --></span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

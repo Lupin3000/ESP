@@ -6,7 +6,7 @@
 - [Scan for access points](#scan-for-access-points)
 - [Connect as station to access point](#connect-as-station-to-access-point)
 - [Create own access point (open)](#create-own-access-point-open)
-- [Create own access point (WP2)](#create-own-access-point-wp2)
+- [Create own access point (WPA)](#create-own-access-point-wpa)
 - [Additional information](#additional-information)
 
 ## Prolog
@@ -117,20 +117,20 @@ $ touch ~/Projects/ESP/examples/wlan/open_access_point.py
 
 Press the keys `Control` + `d` or the `reset button` and observe the output. If you want to leave the REPL, press keys `Control` + `x`.
 
-## Create own access point (WP2)
+## Create own access point (WPA)
 
-Then with a security standard for wireless radio networks based on Advanced-Encryption-Standard (_AES_) technology.
+Then with a (_no more_) security standard for wireless radio networks based on Advanced-Encryption-Standard (_AES_) technology.
 
 ```shell
 # create script
-$ touch ~/Projects/ESP/examples/wlan/wp2_access_point.py
+$ touch ~/Projects/ESP/examples/wlan/wpa_access_point.py
 ```
 
-> [Source Code](../examples/wlan/wp2_access_point.py) for `wp2_access_point.py`
+> [Source Code](../examples/wlan/wpa_access_point.py) for `wpa_access_point.py`
 
 ```shell
 # copy file into pyboard as main.py
-(venv) $ rshell -p [SERIAL-PORT] cp examples/wlan/wp2_access_point.py /pyboard/main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/wlan/wpa_access_point.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl

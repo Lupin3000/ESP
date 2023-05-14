@@ -169,4 +169,50 @@ Check your circuit, change constants to your needs and copy all files to the mic
 
 Start with keys `Control` + `d` or press `reset` key. To stop the program and to leave the REPL, press keys `Control` + `x`.
 
+## Environment Sensing (Bosh: BME680 - Web Server)
+
+In this example, the measurement data of the BME680 are displayed in the browser.
+
+### Requirements
+
+- mandatory 1x Bosh Sensortec BME680 (_or similar_)
+- few cables
+- optional a breadboard
+
+### Pinout table
+
+Here you can see the respective wiring for the circuit.
+
+| BME680 | ESP32 |
+|--------|-------|
+| GND    | GND   |
+| VCC    | 3V3   |
+| SCL    | 22    |
+| SDA    | 21    |
+
+### Code
+
+The connection will be via WLAN (_access point mode_). For html a template is used. 
+
+> [Source Code](../examples/sensors/bosch_sensortec_bme680.py) for example `bosch_sensortec_bme680.py`
+> 
+> [Source Code](../examples/sensors/template.htm) for template `template.htm`
+
+Check your circuit, change constants to your needs and copy all files to the microcontroller.
+
+```shell
+# connect via rshel
+(venv) $ rshell -p [SERIAL-PORT]
+
+# copy all files to esp32
+/your/current/path> cp examples/sensors/bosch_sensortec_bme680.py /pyboard/main.py
+/your/current/path> cp examples/sensors/template.htm /pyboard/
+
+# start repl
+/your/current/path> repl
+```
+
+Start with keys `Control` + `d` or press `reset` key. To stop the program and to leave the REPL, press keys `Control` + `x`.
+
+
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_tutorials.md) | [Next](./015_game_tutorials.md)

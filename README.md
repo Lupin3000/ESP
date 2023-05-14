@@ -35,7 +35,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Access point scanner](./examples/wlan/ap_scanner.py)
     - (code example) [Simple station mode](./examples/wlan/simple_station.py)
     - (code example) [Open access point mode](./examples/wlan/open_access_point.py)
-    - (code example) [WP2 access point mode](./examples/wlan/wp2_access_point.py)
+    - (code example) [WPA access point mode](./examples/wlan/wpa_access_point.py)
 - 005 - Bluetooth Low Energy
   - [Bluetooth Low Energy tutorial](./doc/005_bluetooth_tutorials.md)
     - (code example) [BLE scanner](./examples/ble/ble_scanner.py)
@@ -105,6 +105,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Crazy Car Racer (SSD1306)](./examples/games/racer.py)
     - (code example) [Space Invaders (PCD8544)](./examples/games/invader.py)
     - (code example) [NeoPixel Matrix Pong](./examples/games/pong.py)
+    - (code example) [Environment Sensing (Bosh: BME680 - Web Server)](./examples/sensors/bosch_sensortec_bme680.py)
 
 ## external libraries
 
@@ -137,4 +138,3 @@ NeoPixel
   - [ALLNET: B38 Temperature I2C Sensor](./examples/sensors/allnet_B38_temperature.py)
   - [ALLNET: B08 Touch Sensor](./examples/sensors/allnet_B08_touch.py)
   - [Pimoroni: VL53L1X TOF Sensor](./examples/sensors/pimoroni_vl53l1x.py)
-  - [Bosh: Sensortec BME680](./examples/sensors/bosch_sensortec_bme680.py)
