@@ -118,6 +118,7 @@ Display
 - [PCD8544](./lib/pcd8544.py)
 - [Writer](./lib/writer.py)
 - [ST7789](./lib/st7789py.py)
+- [SH1106](./lib/sh1106.py)
 
 Sensors
 - [BME680](./lib/bme680.py)
