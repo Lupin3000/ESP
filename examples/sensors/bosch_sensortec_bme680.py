@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
         while True:
             sensor_values = sensor.get_values()
-            year, month, day, hour, minutes, secs, weekday, yearday = localtime()
+            year, month, day, hour, minutes, _, _, _ = localtime()
 
             connection, address = listener.accept()
             request = connection.recv(1024)
