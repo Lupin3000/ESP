@@ -1,4 +1,4 @@
-# Display OLED (ssd1306)
+# OLED Display (ssd1306)
 
 ## Table of Contents
 

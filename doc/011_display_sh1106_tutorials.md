@@ -1,4 +1,4 @@
-# Display OLED (sh1106)
+# OLED Display (sh1106)
 
 ## Table of Contents
 
