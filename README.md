@@ -100,12 +100,12 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Measure environment decibel (MAX9814 - SSD1306)](./examples/sensors/max9814.py)
     - (code example) [Obstacle Detection (Laser Sensor - SSD1306)](./examples/sensors/laser_sensor_10929.py)
     - (code example) [Light Barrier (ALLNET: B18 - Pushover)](./examples/sensors/allnet_B18_light_barrier.py)
+    - (code example) [Environment Sensing (Bosh: BME680 - Web Server)](./examples/sensors/bosch_sensortec_bme680.py)
 - 015 - Games
   - [Game tutorials](./doc/015_game_tutorials.md)
     - (code example) [Crazy Car Racer (SSD1306)](./examples/games/racer.py)
     - (code example) [Space Invaders (PCD8544)](./examples/games/invader.py)
     - (code example) [NeoPixel Matrix Pong](./examples/games/pong.py)
-    - (code example) [Environment Sensing (Bosh: BME680 - Web Server)](./examples/sensors/bosch_sensortec_bme680.py)
 
 ## external libraries
 
