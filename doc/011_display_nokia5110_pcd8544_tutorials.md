@@ -1,4 +1,4 @@
-# Display Nokia 5110 (pcd8544)
+# Display LCD Nokia 5110 (pcd8544)
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# Display Nokia 5110 (pcd8544)
+# Display OLED (sh1106)
 
 ## Table of Contents
 
