@@ -1,9 +1,8 @@
-from micropython import const
 import urequests as requests
 import ujson as json
 
 
-API_TARGET = const('https://dog.ceo')
+API_TARGET = 'https://dog.ceo'
 
 
 if __name__ == '__main__':

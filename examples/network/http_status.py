@@ -1,8 +1,7 @@
-from micropython import const
 import urequests
 
 
-TARGET_URL = const('https://pentest-tools.com')
+TARGET_URL = 'https://pentest-tools.com'
 
 
 if __name__ == '__main__':

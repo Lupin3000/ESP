@@ -1,8 +1,7 @@
-from micropython import const
 from usocket import getaddrinfo
 
 
-DNS_TARGET = const('root-me.org')
+DNS_TARGET = 'root-me.org'
 
 
 if __name__ == '__main__':
