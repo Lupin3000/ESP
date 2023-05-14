@@ -70,4 +70,4 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 
 > To convert your image into bytes, use this free [service](https://sparks.gogo.co.nz/pcd8554-bmp.html).
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_display_ssd1306_tutorials.md) | [Next](./012_network_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_display_ssd1306_tutorials.md) | [Next](./011_display_sh1106_tutorials.md)

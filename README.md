@@ -77,6 +77,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [I2C OLED icons (SSD1306)](./examples/display/i2c_oled_ssd1306_icons.py)
   - [Display tutorial Nokia 5110 (PCD8544)](./doc/011_display_nokia5110_pcd8544_tutorials.md)
     - (code example) [SPI LCD Nokia 5110 basics (PCD8544)](./examples/display/spi_lcd_nokia5110_pcd8544.py)
+  - [Display tutorial (SH1106)](./doc/011_display_sh1106_tutorials.md)
+    - (code example) [SPI OLED basics (SH1106)](./examples/display/spi_oled_sh1106_basics.py)
 - 012 - Network
   - [Network tutorial](./doc/012_network_tutorials.md)
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
