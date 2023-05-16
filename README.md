@@ -93,6 +93,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Button (Interrupt Handler and Debounce)](./examples/user_input/btn_led_interrupt_handler_debounce.py)
     - (code example) [Potentiometer](./examples/user_input/potentiometer.py)
     - (code example) [Potentiometer and OLED (SSD1306)](./examples/user_input/potentiometer_display.py)
+    - (code example) [Joystick (XY + Button)](./examples/user_input/joystick.py)
 - 014 - Sensors
   - [Sensor tutorials](./doc/014_sensor_tutorials.md)
     - (code example) [Temperature/Humidity sensor (DHT11/DHT22)](./examples/sensors/dht11.py) 

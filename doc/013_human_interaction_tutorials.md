@@ -8,6 +8,7 @@
 - [Button (Interrupt Handler and Debounce)](#button-interrupt-handler-and-debounce)
 - [Potentiometer](#potentiometer)
 - [Potentiometer and SSD1306 OLED](#potentiometer-and-ssd1306-oled)
+- [Joystick (XY + Button)](#joystick-xy--button)
 
 ## Prolog
 
@@ -204,5 +205,44 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 ```
 
 Press `reset` button and and turn the potentiometer. If you don't have a `reset` button, just unplug and reconnect the USB cable.
+
+## Joystick (XY + Button)
+
+What would games be without joysticks? This type of user input is very old (_I had my first joysticks on the AMIGA500_). Actually, most joysticks are two potentiometers for the XY-axes. So here is a very simple example.
+
+> **Note:** If you have a joystick without a button function, you can modify the relevant code.
+> 
+> **Important:** Even if the joystick can actually be operated with 5V, use 3.3V!
+
+### Requirements
+
+- mandatory 1x joystick
+- few cables
+- optional breadboard
+
+### Circuit
+
+![013_circuit_diagram_joystick.png](../images/examples/013_circuit_diagram_joystick.png)
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/user_input/joystick.py
+```
+
+> [Source Code](../examples/user_input/joystick.py) for `joystick.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/joystick.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./012_network_tutorials.md) | [Next](./014_sensor_tutorials.md)
