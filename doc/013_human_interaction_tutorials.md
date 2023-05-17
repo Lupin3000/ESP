@@ -245,4 +245,4 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./012_network_tutorials.md) | [Next](./014_sensor_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./012_network_tutorials.md) | [Next](./013_human_interaction_extended.md)

@@ -94,6 +94,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Potentiometer](./examples/user_input/potentiometer.py)
     - (code example) [Potentiometer and OLED (SSD1306)](./examples/user_input/potentiometer_display.py)
     - (code example) [Joystick (XY + Button)](./examples/user_input/joystick.py)
+  - [Human interaction extended](./doc/013_human_interaction_extended.md)
+    - (code example) [Move crosshair via joystick (SH1106)](./examples/user_input/joystick_display.py) 
 - 014 - Sensors
   - [Sensor tutorials](./doc/014_sensor_tutorials.md)
     - (code example) [Temperature/Humidity sensor (DHT11/DHT22)](./examples/sensors/dht11.py) 
