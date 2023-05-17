@@ -6,6 +6,7 @@
 - [Crazy Car Racer](#crazy-car-racer)
 - [Space Invaders](#space-invaders)
 - [Pong](#pong)
+- [Snake](#snake)
 
 ## Prolog
 
