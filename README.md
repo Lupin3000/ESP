@@ -110,7 +110,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [Game tutorials](./doc/015_game_tutorials.md)
     - (code example) [Crazy Car Racer (SSD1306)](./examples/games/racer.py)
     - (code example) [Space Invaders (PCD8544)](./examples/games/invader.py)
-    - (code example) [NeoPixel Matrix Pong](./examples/games/pong.py)
+    - (code example) [Pong (NeoPixel Matrix)](./examples/games/pong.py)
+    - (code example) [Snake (SH1106)](./examples/games/snake.py)
 
 ## external libraries
 

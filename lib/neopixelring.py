@@ -149,7 +149,7 @@ class NeoPixelRing:
         :param front_rgb: tuple of rgb front color to circle (eq. 255, 0, 0)
         :param back_rgb: tuple of rgb background color (eq. 0, 0, 255)
         :param ms: integer in milliseconds, Default = 100ms
-        :param way: bool for direction (forward or backward), Default = True
+        :param way: bool for snake_direction (forward or backward), Default = True
         :param on: bool value if pixel turn back to back_rgb color, Default = False
         :return: None
         """

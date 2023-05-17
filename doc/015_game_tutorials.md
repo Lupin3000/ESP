@@ -43,6 +43,8 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/games
 ```
 
 > [Source Code](../examples/games/racer.py) for `racer.py`
+> 
+> [Source Code](../lib/ssd1306.py) for `lib/ssd1306.py`
 
 Check your circuit and copy all images and the script to the microcontroller.
 
@@ -57,6 +59,12 @@ Check your circuit and copy all images and the script to the microcontroller.
 
 # upload script
 (venv) $ rshell -p [SERIAL-PORT] cp examples/games/racer.py /pyboard/main.py
+
+# copy module file into lib
+(venv) $ rshell -p [SERIAL-PORT] cp lib/ssd1306.py /pyboard/lib/
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
 Press `reset` key or start with keys `Control` + `d`.
@@ -83,12 +91,20 @@ $ touch ~/Projects/ESP/examples/games/invader.py
 ```
 
 > [Source Code](../examples/games/invader.py) for `invader.py`
+> 
+> [Source Code](../lib/pcd8544.py) for `lib/pcd8544.py`
 
 Check your circuit and copy the script to the microcontroller.
 
 ```shell
 # upload script
 (venv) $ rshell -p [SERIAL-PORT] cp examples/games/invader.py /pyboard/main.py
+
+# copy module file into lib
+(venv) $ rshell -p [SERIAL-PORT] cp lib/pcd8544.py /pyboard/lib/
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
 Press `reset` key or start with keys `Control` + `d`.
@@ -106,6 +122,8 @@ On of the retro-gaming classics! Catch the ball or die...
 - few cables 
 - optional a breadboard
 
+### Code
+
 ```shell
 # create script
 $ touch ~/Projects/ESP/examples/games/pong.py
@@ -113,16 +131,16 @@ $ touch ~/Projects/ESP/examples/games/pong.py
 
 > [Source Code](../examples/games/pong.py) for `pong.py`
 
-> [Source Code](../lib/neopixelmatrix.py) for `/lib/neopixelmatrix.py`
+> [Source Code](../lib/neopixelmatrix.py) for `lib/neopixelmatrix.py`
 
 Check your circuit and copy the script to the microcontroller.
 
 ```shell
-# copy module file into lib
-(venv) $ rshell -p [SERIAL-PORT] cp lib/neopixelmatrix.py
-
 # copy example file into pyboard as main.py
-(venv) $ rshell -p [SERIAL-PORT] cp examples/neopixel/pong.py /pyboard/main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/pong.py /pyboard/main.py
+
+# copy module file into lib
+(venv) $ rshell -p [SERIAL-PORT] cp lib/neopixelmatrix.py /pyboard/lib/
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
@@ -131,5 +149,44 @@ Check your circuit and copy the script to the microcontroller.
 Press `reset` key or start with keys `Control` + `d`.
 
 > Feel free to expand the game! For example, increase continuously the speed after some minutes.
+
+## Snake
+
+The vegan snake grows with every fruit it eats. But beware! Don't get to the edge or your own tail.
+
+## Requirements
+
+- mandatory 1x SPI OLED DISPLAY (_e.g. SH1106_) 
+- mandatory 1x Joystick
+- few cables 
+- optional a breadboard
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/games/snake.py
+```
+
+> [Source Code](../examples/games/snake.py) for `snake.py`
+
+> [Source Code](../lib/sh1106.py) for `lib/sh1106.py`
+
+Check your circuit and copy the script to the microcontroller.
+
+```shell
+# copy example file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/snake.py /pyboard/main.py
+
+# copy module file into lib
+(venv) $ rshell -p [SERIAL-PORT] cp lib/sh1106.py /pyboard/lib/
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Press `reset` key or start with keys `Control` + `d`.
+
+> Feel free to expand the game! For example, add speed or other enemies which eats the fruits too.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next]()
