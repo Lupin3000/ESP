@@ -106,6 +106,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Obstacle Detection (Laser Sensor - SSD1306)](./examples/sensors/laser_sensor_10929.py)
     - (code example) [Light Barrier (ALLNET: B18 - Pushover)](./examples/sensors/allnet_B18_light_barrier.py)
     - (code example) [Environment Sensing (Bosh: BME680 - Web Server)](./examples/sensors/bosch_sensortec_bme680.py)
+    - (code example) [Measure Distance (Pimoroni: VL53L1X - SSD1306)](./examples/sensors/pimoroni_vl53l1x.py)
 - 015 - Games
   - [Game tutorials](./doc/015_game_tutorials.md)
     - (code example) [Crazy Car Racer (SSD1306)](./examples/games/racer.py)
@@ -149,4 +150,3 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [IR Flame detection](./examples/sensors/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./examples/sensors/shadow_detection.py)
   - [ALLNET: B38 Temperature I2C Sensor](./examples/sensors/allnet_B38_temperature.py)
-  - [Pimoroni: VL53L1X TOF Sensor](./examples/sensors/pimoroni_vl53l1x.py)

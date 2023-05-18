@@ -7,6 +7,7 @@
 - [Obstacle Detection (Laser Sensor - SSD1306)](#obstacle-detection-laser-sensor---ssd1306)
 - [Light Barrier (ALLNET: B18 - Pushover)](#light-barrier-allnet-b18---pushover)
 - [Environment Sensing (Bosh: BME680 - Web Server)](#environment-sensing-bosh-bme680---web-server)
+- [Measure Distance (Pimoroni: VL53L1X - SSD1306)](#measure-distance-pimoroni-vl53l1x---ssd1306)
 
 ## Prolog
 
@@ -219,5 +220,59 @@ Check your circuit, change constants to your needs and copy all files to the mic
 
 Start with keys `Control` + `d` or press `reset` key. To stop the program and to leave the REPL, press keys `Control` + `x`.
 
+## Measure Distance (Pimoroni: VL53L1X - SSD1306)
+
+In this example two I2C devices are used in the bus. With the sensor you can measure distances and show them on the display.
+
+> If you don't know the HEX addresses, just use the [I2C scanner](./010_i2c_helper_tutorials.md) from one of the previous tutorials.
+
+### Requirements
+
+- mandatory 1x Pimoroni VL53L1X TOF (_or similar_)
+- mandatory 1x I2C OLED (_SSD1306_)
+- few cables
+- optional a breadboard
+
+### Pinout table
+
+Here you can see the respective wiring for the circuit.
+
+| VL53L1X | SSD1306 | ESP32 |
+|---------|---------|-------|
+| GND     | GND     | GND   |
+| VCC     | VCC     | 3V3   |
+| SCL     | SCL     | 22    |  
+| SDA     | SDA     | 21    |
+
+> All connections of the circuit are connected in parallel.
+
+### Code
+
+Two driver modules are needed! One for the sensor and a second for the display.
+
+> [Source Code](../examples/sensors/pimoroni_vl53l1x.py) for example `pimoroni_vl53l1x.py`
+> 
+> [Source Code](../lib/vl53l1x.py) for module `lib/vl53l1x.py`
+>
+> [Source Code](../lib/ssd1306.py) for module `lib/ssd1306.py`
+
+Check your circuit, change constants to your needs and copy all files to the microcontroller.
+
+```shell
+# connect via rshel
+(venv) $ rshell -p [SERIAL-PORT]
+
+# copy all files to esp32
+/your/current/path> cp examples/sensors/pimoroni_vl53l1x.py /pyboard/main.py
+/your/current/path> cp lib/vl53l1x.py /pyboard/lib/
+/your/current/path> cp lib/ssd1306.py /pyboard/lib/
+
+# start repl
+/your/current/path> repl
+```
+
+Start with keys `Control` + `d` or press `reset` key. To stop the program press keys `Control` + `c` and to leave the REPL, press keys `Control` + `x`.
+
+> It can happen that there are problems with the `rshell` connection, simply prepare everything in the terminal and execute the command immediately after the USB connection. If that doesn't work either, interrupt the 3V power supply first.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_tutorials.md) | [Next](./015_game_tutorials.md)
