@@ -191,7 +191,9 @@ Fire... fire... help it burns! With this sensor you can prevent worse.
 |-----------|-------|
 | VCC       | 3V3   |
 | GND       | GND   |
-| DO        | 21    |
+| DO        | 23    |
+
+The LED is simply connected to pin 21 with a resistor (_min. 220 ohms_).
 
 ### Code
 
