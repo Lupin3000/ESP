@@ -134,9 +134,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 - [MicroPython Website](https://micropython.org)
 - [MicroPython Documentation](https://docs.micropython.org/en/latest/)
-- [MicroPython Core Repository](https://github.com/micropython/micropython)
-- [MicroPython Libraries Repository](https://github.com/micropython/micropython-lib)
-- [MicroPython Discussions](https://github.com/orgs/micropython/discussions)
+- [MicroPython Core Repository (GitHub)](https://github.com/micropython/micropython)
+- [MicroPython Libraries Repository (GitHub)](https://github.com/micropython/micropython-lib)
+- [MicroPython Discussions (GitHub)](https://github.com/orgs/micropython/discussions)
 
 ## IN PROGRESS (_to be refactored_)
 
