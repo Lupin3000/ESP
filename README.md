@@ -137,6 +137,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - [MicroPython Core Repository (GitHub)](https://github.com/micropython/micropython)
 - [MicroPython Libraries Repository (GitHub)](https://github.com/micropython/micropython-lib)
 - [MicroPython Discussions (GitHub)](https://github.com/orgs/micropython/discussions)
+- [Awesome MicroPython](https://awesome-micropython.com)
 
 ## IN PROGRESS (_to be refactored_)
 
