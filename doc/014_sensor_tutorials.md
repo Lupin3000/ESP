@@ -185,12 +185,6 @@ Fire... fire... help it burns! With this sensor you can prevent worse.
 - few cables
 - optional breadboard
 
-### Circuit
-
-![014_circuit_diagram_ir_flame_detector.png](../images/examples/014_circuit_diagram_ir_flame_detector.png)
-
-> Same as in previous example, I could not find a better solution. Also the IR Flame detector looks different! It's just to understand the circuit.
-
 ### Pinout table
 
 | IR device | ESP32 |
