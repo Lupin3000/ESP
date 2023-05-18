@@ -115,6 +115,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## External libraries
 
+> Most modules listed here are copies! The content/code was not revised by me. Please check if there are more recent versions available.
+
 - Font
   - [freesans20](./lib/freesans20.py)
   - [vga bold 16x16](./lib/vga1_bold_16x16.py)
