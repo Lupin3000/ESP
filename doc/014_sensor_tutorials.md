@@ -175,7 +175,7 @@ Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To lea
 
 ## IR Flame detection
 
-...
+Fire... fire... help it burns! With this sensor you can prevent worse.
 
 ### Requirements
 
