@@ -102,6 +102,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [PIR sensor (HC-SR501)](./examples/sensors/pir.py)
     - (code example) [Ultrasonic sensor (HC-SR04)](./examples/sensors/hcsr04.py)
     - (code example) [Light/Shadow detection with LDR (Photo resistor)](./examples/sensors/shadow_detection.py)
+    - (code example) [IR Flame detection](./examples/sensors/ir_flame_detection.py)
   - [Sensor extended](./doc/014_sensor_extended.md)
     - (code example) [Measure environment decibel (MAX9814 - SSD1306)](./examples/sensors/max9814.py)
     - (code example) [Obstacle Detection (Laser Sensor - SSD1306)](./examples/sensors/laser_sensor_10929.py)
@@ -148,5 +149,4 @@ The author of this repository (_information, scripts, code_) take no responsibil
 ## IN PROGRESS (_to be refactored_)
 
 - Sensors
-  - [IR Flame detection](./examples/sensors/ir_flame_detection.py)
   - [ALLNET: B38 Temperature I2C Sensor](./examples/sensors/allnet_B38_temperature.py)
