@@ -143,5 +143,4 @@ NeoPixel
   - [IR Flame detection](./examples/sensors/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./examples/sensors/shadow_detection.py)
   - [ALLNET: B38 Temperature I2C Sensor](./examples/sensors/allnet_B38_temperature.py)
-  - [ALLNET: B08 Touch Sensor](./examples/sensors/allnet_B08_touch.py)
   - [Pimoroni: VL53L1X TOF Sensor](./examples/sensors/pimoroni_vl53l1x.py)
