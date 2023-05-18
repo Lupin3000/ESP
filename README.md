@@ -113,25 +113,22 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Pong (NeoPixel Matrix)](./examples/games/pong.py)
     - (code example) [Snake (SH1106)](./examples/games/snake.py)
 
-## external libraries
+## External libraries
 
-Font
-- [freesans20](./lib/freesans20.py)
-- [vga bold 16x16](./lib/vga1_bold_16x16.py)
-
-Display
-- [SSD1306](./lib/ssd1306.py)
-- [PCD8544](./lib/pcd8544.py)
-- [Writer](./lib/writer.py)
-- [ST7789](./lib/st7789py.py)
-- [SH1106](./lib/sh1106.py)
-
-Sensors
-- [BME680](./lib/bme680.py)
-- [Vl53L1X](./lib/vl53l1x.py)
-
-NeoPixel
-- [NeoPixel-Matrix](./lib/neopixelmatrix.py)
+- Font
+  - [freesans20](./lib/freesans20.py)
+  - [vga bold 16x16](./lib/vga1_bold_16x16.py)
+- Display
+  - [SSD1306](./lib/ssd1306.py)
+  - [PCD8544](./lib/pcd8544.py)
+  - [Writer](./lib/writer.py)
+  - [ST7789](./lib/st7789py.py)
+  - [SH1106](./lib/sh1106.py)
+- Sensors
+  - [BME680](./lib/bme680.py)
+  - [Vl53L1X](./lib/vl53l1x.py)
+- NeoPixel
+  - [NeoPixel-Matrix](./lib/neopixelmatrix.py)
 
 ### IN PROGRESS (_to be refactored_)
 
