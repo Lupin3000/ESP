@@ -138,7 +138,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - [MicroPython Libraries Repository](https://github.com/micropython/micropython-lib)
 - [MicroPython Discussions](https://github.com/orgs/micropython/discussions)
 
-### IN PROGRESS (_to be refactored_)
+## IN PROGRESS (_to be refactored_)
 
 - Sensors
   - [IR Flame detection](./examples/sensors/ir_flame_detection.py)
