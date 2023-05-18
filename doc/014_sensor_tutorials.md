@@ -181,9 +181,11 @@ Fire... fire... help it burns! With this sensor you can prevent worse.
 
 - mandatory 1x LED (_any color_)
 - mandatory 1x Resistor (_min. 220 ohms_)
-- mandatory 1x IR Flame Sensor (_[3 Pins - Digital](https://www.pcboard.ca/flame-sensor-module)_)
+- mandatory 1x IR Flame Sensor
 - few cables
 - optional breadboard
+
+![ir_flame_sensor.jpg](../images/ir_flame_sensor.jpg)
 
 ### Pinout table
 
