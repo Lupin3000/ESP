@@ -34,7 +34,7 @@ With the `DHT11/DHT22` you can record the temperature and humidity. The respecti
 
 ### Code
 
-> You can use the same source code and circuit diagram for `DHT11` and `DHT22`! Only the import  and object must adapted for specific device.
+> You can use the same source code and circuit diagram for `DHT11` and `DHT22`! Only the import  and object must adapt for specific device.
 
 ```shell
 # create new subdirectory
@@ -146,7 +146,7 @@ With an LDR sensor you can capture/measure the light in the environment. LDR is 
 
 ![014_circuit_diagram_ldr.png](../images/examples/014_circuit_diagram_ldr.png)
 
-> Unfortunately [Wokwi](https://wokwi.com) has another LDR module, [Tinkercad](https://www.tinkercad.com) doesn't have the ESP32 NodeMCU and I don't have [Fritzing](https://fritzing.org) installed. Therefore this time only the GPIO hints.
+> Unfortunately [Wokwi](https://wokwi.com) has another LDR module, [Tinkercad](https://www.tinkercad.com) doesn't have the ESP32 NodeMCU and I don't have [Fritzing](https://fritzing.org) installed. Therefore, this time only the GPIO hints.
 
 ### Code
 
