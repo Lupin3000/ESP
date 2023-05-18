@@ -135,10 +135,6 @@ NeoPixel
 
 ### IN PROGRESS (_to be refactored_)
 
-- LED
-  - [LED: Switch 1x ON/OFF by touch](Tutorials/one_single_led_touch.py)
-  - [LED: Switch 3x ON/OFF by touch](Tutorials/three_single_led_touch.py)
-  - [Webserver: WLAN station mode - control LED](Tutorials/fade_led_on_off.py)
 - Sensors
   - [IR Flame detection](./examples/sensors/ir_flame_detection.py)
   - [Light/Shadow detection with LED](./examples/sensors/shadow_detection.py)
