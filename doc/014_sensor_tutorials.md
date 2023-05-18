@@ -70,6 +70,8 @@ If you want to detect movements in the area, the PIR sensor is already suitable.
 - few cables
 - optional breadboard
 
+![pir.jpg](../images/pir.jpg)
+
 ### Circuit
 
 ![014_circuit_diagram_pir.png](../images/examples/014_circuit_diagram_pir.png)
