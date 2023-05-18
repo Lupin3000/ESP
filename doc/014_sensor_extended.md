@@ -228,7 +228,7 @@ In this example two I2C devices are used in the bus. With the sensor you can mea
 
 ### Requirements
 
-- mandatory 1x Pimoroni VL53L1X TOF (_or similar_)
+- mandatory 1x [Pimoroni](https://shop.pimoroni.com/products/vl53l1x-breakout) VL53L1X TOF (_or similar_)
 - mandatory 1x I2C OLED (_SSD1306_)
 - few cables
 - optional a breadboard
