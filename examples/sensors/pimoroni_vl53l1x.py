@@ -63,8 +63,6 @@ class Display:
         finalizer to delete i2c object
         :return: None
         """
-        self._oled.fill(0)
-        self._oled.show()
         self._i2c.deinit()
 
 
