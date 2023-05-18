@@ -7,6 +7,7 @@
 - [PIR sensor (HC-SR501)](#pir-sensor-hc-sr501)
 - [Ultrasonic sensor (HC-SR04)](#ultrasonic-sensor-hc-sr04)
 - [Light/Shadow detection with LDR (Photo resistor)](#lightshadow-detection-with-ldr-photo-resistor)
+- [IR Flame detection](#ir-flame-detection)
 
 ## Prolog
 
@@ -171,5 +172,54 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
 > You can use the protective cap of pens to darken the sensor.
+
+## IR Flame detection
+
+...
+
+### Requirements
+
+- mandatory 1x LED (_any color_)
+- mandatory 1x Resistor (_min. 220 ohms_)
+- mandatory 1x IR Flame Sensor (_[3 Pins - Digital](https://www.pcboard.ca/flame-sensor-module)_)
+- few cables
+- optional breadboard
+
+### Circuit
+
+![014_circuit_diagram_ir_flame_detector.png](../images/examples/014_circuit_diagram_ir_flame_detector.png)
+
+> Same as in previous example, I could not find a better solution. Also the IR Flame detector looks different! It's just to understand the circuit.
+
+### Pinout table
+
+| IR device | ESP32 |
+|-----------|-------|
+| VCC       | 3V3   |
+| GND       | GND   |
+| DO        | 21    |
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/sensors/shadow_detection.py
+```
+
+> [Source Code](../examples/sensors/ir_flame_detection.py) for `ir_flame_detection.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/sensors/ir_flame_detection.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+
+> You can test the sensor very well with a lighter. But don't burn down your house!
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./013_human_interaction_extended.md) | [Next](./014_sensor_extended.md)
