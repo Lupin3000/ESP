@@ -6,6 +6,7 @@
 - [Temperature/Humidity sensor (DHT11/DHT22)](#temperaturehumidity-sensor-dht11dht22)
 - [PIR sensor (HC-SR501)](#pir-sensor-hc-sr501)
 - [Ultrasonic sensor (HC-SR04)](#ultrasonic-sensor-hc-sr04)
+- [Light/Shadow detection with LDR (Photo resistor)](#lightshadow-detection-with-ldr-photo-resistor)
 
 ## Prolog
 
