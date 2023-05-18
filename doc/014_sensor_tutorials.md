@@ -129,5 +129,46 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
+## Light/Shadow detection with LDR (Photo resistor)
+
+With an LDR sensor you can capture/measure the light in the environment. LDR is also referred to as a photoresistor, photocell, or photoconductor. In the current example, the ADC is used on the microcontroller. There are also digital LDRs. 
+
+### Requirements
+
+- mandatory 1x LED (_any color_)
+- mandatory 1x Resistor (_min. 220 ohms_)
+- mandatory 1x LDR Photo resistor
+- mandatory 1x Resistor (_min. 10 kilo ohms_) 
+- few cables
+- optional breadboard
+
+### Circuit
+
+![014_circuit_diagram_ldr.png](../images/examples/014_circuit_diagram_ldr.png)
+
+> Unfortunately [Wokwi](https://wokwi.com) has another LDR module, [Tinkercad](https://www.tinkercad.com) doesn't have the ESP32 NodeMCU and I don't have [Fritzing](https://fritzing.org) installed. Therefore this time only the GPIO hints.
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/sensors/shadow_detection.py
+```
+
+> [Source Code](../examples/sensors/shadow_detection.py) for `shadow_detection.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/sensors/shadow_detection.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+
+> You can use the protective cap of pens to darken the sensor.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./013_human_interaction_extended.md) | [Next](./014_sensor_extended.md)
