@@ -10,7 +10,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## Information
 
-> Depending on your `ESP32` microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports. Many of the examples also run on the `ESP8266`, `RP2040` or other MicroPython compatible devices, you have to adjust the pins!
+> Depending on your `ESP32` microcontroller device, sensors and environment you may need to adapt values for GPIO pins. The important values are defined as constants after imports. Many of the examples also run on the `ESP8266`, `RP2040` / `Pico` or other MicroPython compatible devices, you have to adjust the pins!
 
 > If you do not yet own an ESP32 microcontroller or are unsure about your circuit, on [wokwi](https://wokwi.com) you can test mostly all scripts and simulate your circuit/code inside the browser.
 
@@ -129,6 +129,14 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [Vl53L1X](./lib/vl53l1x.py)
 - NeoPixel
   - [NeoPixel-Matrix](./lib/neopixelmatrix.py)
+
+## Important MicroPython sources
+
+- [MicroPython Website](https://micropython.org)
+- [MicroPython Documentation](https://docs.micropython.org/en/latest/)
+- [MicroPython Core Repository](https://github.com/micropython/micropython)
+- [MicroPython Libraries Repository](https://github.com/micropython/micropython-lib)
+- [MicroPython Discussions](https://github.com/orgs/micropython/discussions)
 
 ### IN PROGRESS (_to be refactored_)
 
