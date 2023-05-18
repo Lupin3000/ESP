@@ -136,6 +136,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [NeoPixel-Matrix](./lib/neopixelmatrix.py)
 - BLE
   - [BLE Advertising](./lib/ble_advertising.py) 
+- RFID
+  - [RFID RC522 (13.56 MHz)](./lib/mfrc522.py) 
 
 ## Important MicroPython sources
 
