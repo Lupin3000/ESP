@@ -129,6 +129,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
   - [Vl53L1X](./lib/vl53l1x.py)
 - NeoPixel
   - [NeoPixel-Matrix](./lib/neopixelmatrix.py)
+- BLE
+  - [BLE Advertising](./lib/ble_advertising.py) 
 
 ## Important MicroPython sources
 
