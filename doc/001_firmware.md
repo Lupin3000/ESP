@@ -1,4 +1,4 @@
-# Micropython firmware
+# MicroPython firmware
 
 ## Table of Contents
 

@@ -23,6 +23,10 @@ In fact, in this example, you're just creating a noisy tone with a passive buzze
 - few cables 
 - optional a breadboard
 
+**Example**
+
+![piezo_buzzer.jpg](../images/modules/piezo_buzzer.jpg)
+
 ### Circuit
 
 ![010_circuit_diagram_passive_buzzer.png](../images/examples/007_circuit_diagram_passive_buzzer.png)
@@ -90,11 +94,11 @@ The last example is actually a logical conclusion. Do you know Mario?
 
 ### Requirements
 
-... same as [previous example](#requirements) ...
+... same as [first example](#requirements) ...
 
 ### Circuit
 
-... same as [previous example](#circuit) ...
+... same as [first example](#circuit) ...
 
 ### Code
 
