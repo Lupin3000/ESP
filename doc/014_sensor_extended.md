@@ -44,6 +44,11 @@ Here you can see the respective wiring for the circuit.
 
 ### Code
 
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/sensors/max9814.py
+```
+
 Since an OLED display is used here to display the decibel values, other modules and fonts are required in addition to the example script.
 
 > [Source Code](../examples/sensors/max9814.py) for example `max9814.py`
@@ -54,16 +59,18 @@ Since an OLED display is used here to display the decibel values, other modules 
 > 
 > [Source Code](../lib/freesans20.py) for font `freesans20.py`
 
-Check your circuit and copy all files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # connect via rshel
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy all files to esp32
+# copy module file into /pyboard/lib/
 /your/current/path> cp lib/ssd1306.py /pyboard/lib/
 /your/current/path> cp lib/writer.py /pyboard/lib/
 /your/current/path> cp lib/freesans20.py /pyboard/lib/
+
+# copy script as main.py
 /your/current/path> cp examples/sensors/max9814.py /pyboard/main.py
 
 # start repl
@@ -106,26 +113,35 @@ Here you can see the respective wiring for the circuit.
 
 ### Code
 
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/sensors/laser_sensor_10929.py
+
+# download images
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/go.pbm' -o images/src/go.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/stop.pbm' -o images/src/stop.pbm
+```
+
 The OLED display is used to display 2 images for obstacle detection (_Stop & Go_). Therefor 2x `*.pbm` images and 1x driver module are required in addition to the example script.
 
 > [Source Code](../examples/sensors/laser_sensor_10929.py) for example `laser_sensor_10929.py`
 > 
 > [Source Code](../lib/ssd1306.py) for module `ssd1306.py`
 
-Check your circuit and copy all files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
-# download images
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/sensors/go.pbm' -o examples/sensors/go.pbm
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/sensors/stop.pbm' -o examples/sensors/stop.pbm
-
 # connect via rshel
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy all files to esp32
-/your/current/path> cp examples/sensors/go.pbm /pyboard/
-/your/current/path> cp examples/sensors/stop.pbm /pyboard/
+# copy images into /pyboard/ directory
+/your/current/path> cp images/src/go.pbm /pyboard/
+/your/current/path> cp images/src/stop.pbm /pyboard/
+
+# copy script as main.py
 /your/current/path> cp examples/sensors/laser_sensor_10929.py /pyboard/main.py
+
+# copy module file into /pyboard/lib/
 /your/current/path> cp lib/ssd1306.py /pyboard/lib/
 
 # start repl
@@ -162,20 +178,27 @@ Here you can see the respective wiring for the circuit.
 
 ### Code
 
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/sensors/allnet_B18_light_barrier.py
+```
+
 The microcontroller needs to have internet connection! Therefor you need to set the device in station mode via `boot.py`. You can reuse the example from [here](./004_wlan_tutorials.md).
 
 > [Source Code](../examples/sensors/allnet_B18_light_barrier.py) for example `allnet_B18_light_barrier.py`
 > 
 > [Source Code](../examples/network/boot.py) for station setup `boot.py`
 
-Check your circuit, change constants to your needs and copy all files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # connect via rshel
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy all files to esp32
-/your/current/path> cp examples/sensors/allnet_B18_light_barrier /pyboard/main.py
+# copy script as main.py
+/your/current/path> cp examples/sensors/allnet_B18_light_barrier.py /pyboard/main.py
+
+# copy boot.py into /pyboard/
 /your/current/path> cp examples/network/boot.py /pyboard/boot.py
 
 # start repl
@@ -211,6 +234,11 @@ Here you can see the respective wiring for the circuit.
 
 ### Code
 
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/sensors/bosch_sensortec_bme680.py
+```
+
 The connection will be via WLAN (_access point mode_). For html a template is used. 
 
 > [Source Code](../examples/sensors/bosch_sensortec_bme680.py) for example `bosch_sensortec_bme680.py`
@@ -219,15 +247,19 @@ The connection will be via WLAN (_access point mode_). For html a template is us
 >
 > [Source Code](../lib/bme680.py) for module `bme680.py`
 
-Check your circuit, change constants to your needs and copy all files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # connect via rshel
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy all files to esp32
+# copy script as main.py
 /your/current/path> cp examples/sensors/bosch_sensortec_bme680.py /pyboard/main.py
+
+# copy template.htm into /pyboard/
 /your/current/path> cp examples/sensors/template.htm /pyboard/
+
+# copy module file into /pyboard/lib/
 /your/current/path> cp lib/bme680.py /pyboard/lib/
 
 # start repl
@@ -268,6 +300,11 @@ Here you can see the respective wiring for the circuit.
 
 ### Code
 
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/sensors/pimoroni_vl53l1x.py
+```
+
 Two driver modules are needed! One for the sensor and a second for the display.
 
 > [Source Code](../examples/sensors/pimoroni_vl53l1x.py) for example `pimoroni_vl53l1x.py`
@@ -276,14 +313,16 @@ Two driver modules are needed! One for the sensor and a second for the display.
 >
 > [Source Code](../lib/ssd1306.py) for module `lib/ssd1306.py`
 
-Check your circuit, change constants to your needs and copy all files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # connect via rshel
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy all files to esp32
+# copy script as main.py
 /your/current/path> cp examples/sensors/pimoroni_vl53l1x.py /pyboard/main.py
+
+# copy module files into /pyboard/lib/
 /your/current/path> cp lib/vl53l1x.py /pyboard/lib/
 /your/current/path> cp lib/ssd1306.py /pyboard/lib/
 
