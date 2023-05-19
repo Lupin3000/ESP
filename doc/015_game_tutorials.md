@@ -34,7 +34,7 @@ It's a cold and dark night. The drugs are still working and your blood is boilin
 # create new subdirectory
 $ mkdir -p ~/Projects/ESP/examples/games
 
-# create script
+# create local script
 $ touch ~/Projects/ESP/examples/games/racer.py
 
 # download images
@@ -47,28 +47,28 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/rac
 > 
 > [Source Code](../lib/ssd1306.py) for `lib/ssd1306.py`
 
-Check your circuit and copy all images and the script to the microcontroller.
+Check your circuit careful, plugin USB and copy needed files to the microcontroller.
 
 ```shell
 # start serial connection
 (venv) $ rshell -p [SERIAL-PORT]
 
-# upload images
+# copy images into /pyboard/ directory
 (venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_car.pbm /pyboard/
 (venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_dead.pbm /pyboard/
 (venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_intro.pbm /pyboard/
 
-# upload script
+# copy script as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/games/racer.py /pyboard/main.py
 
-# copy module file into lib
+# copy module file into /pyboard/lib/
 (venv) $ rshell -p [SERIAL-PORT] cp lib/ssd1306.py /pyboard/lib/
 
-# start repl
+# start repl on microcontroller
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-Press `reset` key or start with keys `Control` + `d`.
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > Feel free to expand the game! For example, add more objects that simulate trees and bushes or more levels (_after about 10 points the road gets smaller_) and so on.
 
@@ -87,7 +87,7 @@ Everyone knows the Space Invaders! But nobody knows where they come from. If you
 ### Code
 
 ```shell
-# create script
+# create local script
 $ touch ~/Projects/ESP/examples/games/invader.py
 ```
 
@@ -95,20 +95,20 @@ $ touch ~/Projects/ESP/examples/games/invader.py
 > 
 > [Source Code](../lib/pcd8544.py) for `lib/pcd8544.py`
 
-Check your circuit and copy the script to the microcontroller.
+Check your circuit careful, plugin USB and copy needed files to the microcontroller.
 
 ```shell
-# upload script
+# copy script as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/games/invader.py /pyboard/main.py
 
-# copy module file into lib
+# copy module file into /pyboard/lib/
 (venv) $ rshell -p [SERIAL-PORT] cp lib/pcd8544.py /pyboard/lib/
 
-# start repl
+# start repl on microcontroller
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-Press `reset` key or start with keys `Control` + `d`.
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > Feel free to expand the game! For example, add more objects enemies or change speed if enemy goes down.
 
@@ -126,7 +126,7 @@ On of the retro-gaming classics! Catch the ball or die...
 ### Code
 
 ```shell
-# create script
+# create local script
 $ touch ~/Projects/ESP/examples/games/pong.py
 ```
 
@@ -134,20 +134,20 @@ $ touch ~/Projects/ESP/examples/games/pong.py
 
 > [Source Code](../lib/neopixelmatrix.py) for `lib/neopixelmatrix.py`
 
-Check your circuit and copy the script to the microcontroller.
+Check your circuit careful, plugin USB and copy needed files to the microcontroller.
 
 ```shell
-# copy example file into pyboard as main.py
+# copy script as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/games/pong.py /pyboard/main.py
 
-# copy module file into lib
+# copy module file into /pyboard/lib/
 (venv) $ rshell -p [SERIAL-PORT] cp lib/neopixelmatrix.py /pyboard/lib/
 
-# start repl
+# start repl on microcontroller
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-Press `reset` key or start with keys `Control` + `d`.
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > Feel free to expand the game! For example, increase continuously the speed after some minutes.
 
@@ -165,7 +165,7 @@ The vegan snake grows with every fruit it eats. But beware! Don't get to the edg
 ### Code
 
 ```shell
-# create script
+# create local script
 $ touch ~/Projects/ESP/examples/games/snake.py
 ```
 
@@ -173,20 +173,20 @@ $ touch ~/Projects/ESP/examples/games/snake.py
 
 > [Source Code](../lib/sh1106.py) for `lib/sh1106.py`
 
-Check your circuit and copy the script to the microcontroller.
+Check your circuit careful, plugin USB and copy needed files to the microcontroller.
 
 ```shell
-# copy example file into pyboard as main.py
+# copy script as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/games/snake.py /pyboard/main.py
 
-# copy module file into lib
+# copy module file into /pyboard/lib/
 (venv) $ rshell -p [SERIAL-PORT] cp lib/sh1106.py /pyboard/lib/
 
-# start repl
+# start repl on microcontroller
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-Press `reset` key or start with keys `Control` + `d`.
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > Feel free to expand the game! For example, add speed or other enemies which eats the fruits too.
 
