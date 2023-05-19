@@ -48,7 +48,7 @@ On NodeMCU-ESP32 following connection is used:
 # create script
 $ touch ~/Projects/ESP/examples/display/spi_lcd_nokia5110_pcd8544.py
 
-# download pcd8544
+# download driver module
 $ curl -L 'https://raw.githubusercontent.com/mcauser/micropython-pcd8544/master/pcd8544.py' -o lib/pcd8544.py
 ```
 
@@ -57,13 +57,13 @@ $ curl -L 'https://raw.githubusercontent.com/mcauser/micropython-pcd8544/master/
 Check your circuit (_adapt pins if needed via constants_) and copy the driver as `/pyboard/lib/pcd8544.py` and the script to the microcontroller as `/pyboard/main.py`.
 
 ```shell
-# connect to ESP32
+# connect via rshell
 (venv) $ rshell -p [SERIAL-PORT] 
 
-# copy pcd8544 driver
+# copy module file into /pyboard/lib/
 /your/current/path> cp lib/pcd8544.py /pyboard/lib/
 
-# copy example as main.py
+# copy script as main.py
 /your/current/path> cp examples/display/spi_lcd_nokia5110_pcd8544.py /pyboard/main.py
 
 # start repl
