@@ -47,7 +47,7 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/rac
 > 
 > [Source Code](../lib/ssd1306.py) for `lib/ssd1306.py`
 
-Check your circuit careful, plugin USB and copy needed files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # copy images into /pyboard/ directory
@@ -92,7 +92,7 @@ $ touch ~/Projects/ESP/examples/games/invader.py
 > 
 > [Source Code](../lib/pcd8544.py) for `lib/pcd8544.py`
 
-Check your circuit careful, plugin USB and copy needed files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # copy script as main.py
@@ -131,7 +131,7 @@ $ touch ~/Projects/ESP/examples/games/pong.py
 
 > [Source Code](../lib/neopixelmatrix.py) for `lib/neopixelmatrix.py`
 
-Check your circuit careful, plugin USB and copy needed files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # copy script as main.py
@@ -170,7 +170,7 @@ $ touch ~/Projects/ESP/examples/games/snake.py
 
 > [Source Code](../lib/sh1106.py) for `lib/sh1106.py`
 
-Check your circuit careful, plugin USB and copy needed files to the microcontroller.
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
 
 ```shell
 # copy script as main.py
