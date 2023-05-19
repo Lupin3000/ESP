@@ -21,6 +21,10 @@ The first option to steer the servo motor in a range of 90° is `duty`.
 - few cables 
 - optional a breadboard
 
+**Example**
+
+![sg90.jpg](../images/modules/sg90.jpg)
+
 ### Circuit
 
 ![011_circuit_diagram_servo_motor.png](../images/examples/008_circuit_diagram_servo_motor.png)
@@ -88,11 +92,11 @@ The second option to steer the servo motor in a range of 90° is `duty_u16`. The
 
 ### Requirements
 
-... same as [previous example](#requirements) ...
+... same as [first example](#requirements) ...
 
 ### Circuit
 
-... same as [previous example](#circuit) ...
+... same as [first example](#circuit) ...
 
 ### Code
 
