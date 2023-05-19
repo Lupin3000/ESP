@@ -9,6 +9,7 @@
 - [Potentiometer](#potentiometer)
 - [Potentiometer and SSD1306 OLED](#potentiometer-and-ssd1306-oled)
 - [Joystick (XY + Button)](#joystick-xy--button)
+- [RFID read (RC522 13.56 MHz)](#rfid-read-rc522-1356-mhz)
 
 ## Prolog
 
@@ -238,6 +239,62 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 ```shell
 # copy file into pyboard as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/joystick.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+
+## RFID read (RC522 13.56 MHz)
+
+With the RFID RC522 module, it is very easy to read and write cards and tags for shortwave (_HF, 3-30 MHz_). The RFID module itself is based on NXP MFRC-5222 with a frequency of 13.56 MHz and is operated with 3.3V.
+
+- Smart cards (_ISO/IEC 15693, ISO/IEC 14443 A, B_),
+- ISO-non-compliant memory cards (_Mifare Classic, iCLASS, Legic, FeliCa ..._),
+- ISO-compatible microprocessor cards (_Desfire EV1, Seos_)
+
+### Requirements
+
+- mandatory 1x RFID RC522 device (_SPI_)
+- few cables
+- optional breadboard
+
+### Pinout Table
+
+| RC522 | ESP32 |
+|-------|-------|
+| VCC   | 3V3   |
+| RST   | 4     |
+| GND   | GND   |
+| MISO  | 19    |
+| MOSI  | 23    |
+| SCK   | 18    |
+| NSS   | 5     |
+| IRQ   | -     |
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/user_input/rfid_reader.py
+
+# download driver module
+$ curl -l 'https://raw.githubusercontent.com/cefn/micropython-mfrc522/master/mfrc522.py' -o lib/mfrc522.py
+```
+
+> [Source Code](../examples/user_input/rfid_reader.py) for `rfid_reader.py`
+> 
+> [Source Code](../lib/mfrc522.py) for module `lib/mfrc522.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy module to ESP32
+(venv) $ rshell -p [SERIAL-PORT] cp lib/mfrc522.py /pyboard/lib/mfrc522.py
+
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/rfid_reader.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
