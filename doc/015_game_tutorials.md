@@ -50,9 +50,6 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/rac
 Check your circuit careful, plugin USB and copy needed files to the microcontroller.
 
 ```shell
-# start serial connection
-(venv) $ rshell -p [SERIAL-PORT]
-
 # copy images into /pyboard/ directory
 (venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_car.pbm /pyboard/
 (venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_dead.pbm /pyboard/
