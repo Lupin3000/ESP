@@ -100,11 +100,11 @@ Again, same objective but with measurement of milliseconds since button was last
 
 ### Requirements
 
-... same as [previous example](#requirements) ...
+... same as [first example](#requirements) ...
 
 ### Circuit
 
-... same as [previous example](#circuit) ...
+... same as [first example](#circuit) ...
 
 ### Code
 
@@ -205,7 +205,7 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 (venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/potentiometer_display.py /pyboard/main.py
 ```
 
-Press `reset` button and and turn the potentiometer. If you don't have a `reset` button, just unplug and reconnect the USB cable.
+Press `reset` button and turn the potentiometer. If you don't have a `reset` button, just unplug and reconnect the USB cable.
 
 ## Joystick (XY + Button)
 
