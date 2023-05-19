@@ -80,7 +80,7 @@ Here the example output from ESP:
 
 Here the example output from other device:
 
-![008_ble_serial_terminal.png](../images/examples/005_ble_serial_terminal.png)
+![008_ble_serial_terminal.png](../images/applications/005_ble_serial_terminal.png)
 
 To stop the program, press keys `Control` + `c`. If you want to leave the REPL, press keys `Control` + `x`.
 
