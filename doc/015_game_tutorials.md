@@ -38,9 +38,9 @@ $ mkdir -p ~/Projects/ESP/examples/games
 $ touch ~/Projects/ESP/examples/games/racer.py
 
 # download images
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/games/racer_car.pbm' -o examples/games/racer_car.pbm
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/games/racer_dead.pbm' -o examples/games/racer_dead.pbm
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/games/racer_intro.pbm' -o examples/games/racer_intro.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/racer_car.pbm' -o images/src/racer_car.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/racer_dead.pbm' -o images/src/racer_dead.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/racer_intro.pbm' -o images/src/racer_intro.pbm
 ```
 
 > [Source Code](../examples/games/racer.py) for `racer.py`
@@ -54,9 +54,9 @@ Check your circuit and copy all images and the script to the microcontroller.
 (venv) $ rshell -p [SERIAL-PORT]
 
 # upload images
-(venv) $ rshell -p [SERIAL-PORT] cp examples/games/racer_car.pbm /pyboard/
-(venv) $ rshell -p [SERIAL-PORT] cp examples/games/racer_dead.pbm /pyboard/
-(venv) $ rshell -p [SERIAL-PORT] cp examples/games/racer_intro.pbm /pyboard/
+(venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_car.pbm /pyboard/
+(venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_dead.pbm /pyboard/
+(venv) $ rshell -p [SERIAL-PORT] cp images/src/racer_intro.pbm /pyboard/
 
 # upload script
 (venv) $ rshell -p [SERIAL-PORT] cp examples/games/racer.py /pyboard/main.py
