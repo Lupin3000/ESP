@@ -24,6 +24,10 @@ In this example, the ambient noise is to be measured and shown on a display (_in
 - few cables 
 - optional a breadboard
 
+**Example**
+
+![max9814.jpg](../images/modules/max9814.jpg)
+
 ### Pinout table
 
 Here you can see the respective wiring for the circuit.
@@ -80,6 +84,10 @@ Everything goes very fast and your vehicles and robots must be able to stop and 
 - mandatory 1x I2C OLED (_example 0.96" 128x64_)
 - few cables 
 - optional a breadboard
+
+**Example**
+
+![laser_sensor.jpg](../images/modules/laser_sensor.jpg)
 
 ### Pinout table
 
@@ -138,6 +146,10 @@ In the next example, a sensor with a light barrier is used. As soon as the light
 - few cables 
 - optional a breadboard
 
+**Example**
+
+![light_barrier.jpg](../images/modules/light_barrier.jpg)
+
 ### Pinout table
 
 Here you can see the respective wiring for the circuit.
@@ -181,6 +193,10 @@ In this example, the measurement data of the BME680 are displayed in the browser
 - mandatory 1x Bosh Sensortec BME680 (_or similar_)
 - few cables
 - optional a breadboard
+
+**Example**
+
+![bme680.jpg](../images/modules/bme680.jpg)
 
 ### Pinout table
 
@@ -232,6 +248,10 @@ In this example two I2C devices are used in the bus. With the sensor you can mea
 - mandatory 1x I2C OLED (_SSD1306_)
 - few cables
 - optional a breadboard
+
+**Example**
+
+![vl53l1x.jpg](../images/modules/vl53l1x.jpg)
 
 ### Pinout table
 
