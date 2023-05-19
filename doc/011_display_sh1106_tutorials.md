@@ -43,16 +43,16 @@ On NodeMCU-ESP32 following connection is used:
 ### Code
 
 ```shell
-# create script
+# create local script
 $ touch ~/Projects/ESP/examples/display/spi_oled_sh1106_basics.py
 
 # download driver module
 $ curl -L 'https://raw.githubusercontent.com/robert-hh/SH1106/master/sh1106.py' -o lib/sh1106.py
 
 # download images
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/display/pill.pbm' -o examples/display/pill.pbm
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/display/morpheus.pbm' -o examples/display/morpheus.pbm
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/display/armchair.pbm' -o examples/display/armchair.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/pill.pbm' -o images/src/pill.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/morpheus.pbm' -o images/src/morpheus.pbm
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/armchair.pbm' -o images/src/armchair.pbm
 ```
 
 > [Source Code](../examples/display/spi_oled_sh1106_basics.py) for `spi_oled_sh1106_basics.py`
@@ -60,18 +60,18 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/displ
 Check your circuit (_adapt pins if needed via constants_) and copy the driver as `/pyboard/lib/sh1106.py`, the images into `/pyboard/lib/` and the script to the microcontroller as `/pyboard/main.py`.
 
 ```shell
-# connect to ESP32
+# connect via rshell
 (venv) $ rshell -p [SERIAL-PORT] 
 
-# copy sh1106 driver
+# copy module file into /pyboard/lib/
 /your/current/path> cp lib/sh1106.py /pyboard/lib/
 
-# copy images
-/your/current/path> cp examples/display/pill.pbm /pyboard/
-/your/current/path> cp examples/display/morpheus.pbm /pyboard/
-/your/current/path> cp examples/display/armchair.pbm /pyboard/
+# copy images into /pyboard/ directory
+/your/current/path> cp images/src/pill.pbm /pyboard/
+/your/current/path> cp images/src/morpheus.pbm /pyboard/
+/your/current/path> cp images/src/armchair.pbm /pyboard/
 
-# copy example as main.py
+# copy script as main.py
 /your/current/path> cp examples/display/spi_oled_sh1106_basics.py /pyboard/main.py
 
 # start repl
