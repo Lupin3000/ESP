@@ -19,6 +19,10 @@ It took me a while to find the proper connection, but after few minutes of readi
 - few cables
 - optional breadboard
 
+**Example**
+
+![lcd_nokia5110_pcd8544.jpg](../images/modules/lcd_nokia5110_pcd8544.jpg)
+
 ### Connection/Wiring
 
 On NodeMCU-ESP32 following connection is used:
