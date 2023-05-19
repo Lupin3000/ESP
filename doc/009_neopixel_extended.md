@@ -20,6 +20,10 @@ With a NeoPixel Matrix you can create incredibly beautiful effects. This module 
 - [Waveshare - Pico RGB LED](https://www.waveshare.com/wiki/Pico-RGB-LED)
 - or you create own matrix with NeoPixel strips (_with rows & cols_)
 
+**Example**
+
+![rgb_matrix_panel.jpg](../images/modules/rgb_matrix_panel.jpg)
+
 ### Code
 
 **Library & example script**
