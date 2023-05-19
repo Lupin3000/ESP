@@ -119,7 +119,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 ## External MicroPython libraries
 
-> Most driver/font modules listed here are copies! The content/code was not revised by me. Please check if there are more recent versions available.
+> Most modules (_e.g. driver, fonts and etc._) listed here are copies from other repositories! The content/code was not revised by me. Please check if there are more recent versions available.
 
 - Font
   - [freesans20](./lib/freesans20.py)
