@@ -141,11 +141,11 @@ This example is very similar to the previous one. But it should show you how you
 
 ### Requirements
 
-... same as [previous example](#requirements) ...
+... same as [first example](#requirements) ...
 
 ### Circuit
 
-... same as [previous example](#circuit) ...
+... same as [first example](#circuit) ...
 
 ### Code
 
