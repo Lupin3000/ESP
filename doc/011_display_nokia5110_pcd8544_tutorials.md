@@ -53,6 +53,8 @@ $ curl -L 'https://raw.githubusercontent.com/mcauser/micropython-pcd8544/master/
 ```
 
 > [Source Code](../examples/display/spi_lcd_nokia5110_pcd8544.py) for `spi_lcd_nokia5110_pcd8544.py`
+> 
+> [Source Code](../lib/pcd8544.py) for module `lib/pcd8544.py`
 
 Check your circuit (_adapt pins if needed via constants_) and copy the driver as `/pyboard/lib/pcd8544.py` and the script to the microcontroller as `/pyboard/main.py`.
 

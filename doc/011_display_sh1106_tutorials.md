@@ -56,6 +56,8 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/arm
 ```
 
 > [Source Code](../examples/display/spi_oled_sh1106_basics.py) for `spi_oled_sh1106_basics.py`
+> 
+> [Source Code](../lib/sh1106.py) for module `lib/sh1106.py`
 
 Check your circuit (_adapt pins if needed via constants_) and copy the driver as `/pyboard/lib/sh1106.py`, the images into `/pyboard/lib/` and the script to the microcontroller as `/pyboard/main.py`.
 

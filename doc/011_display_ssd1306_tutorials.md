@@ -46,12 +46,17 @@ $ touch ~/Projects/ESP/examples/display/i2c_oled_ssd1306_basics.py
 ```
 
 > [Source Code](../examples/display/i2c_oled_ssd1306_basics.py) for `i2c_oled_ssd1306_basics.py`
+> 
+> [Source Code](../lib/ssd1306.py) for module `lib/ssd1306.py`
 
 Check your circuit (_adapt pins if needed_) and copy the script to the microcontroller as `main.py`.
 
 ```shell
 # copy script as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/display/i2c_oled_ssd1306_basics.py /pyboard/main.py
+
+# copy module file into /pyboard/lib/
+/your/current/path> cp lib/ssd1306.py /pyboard/lib/
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
@@ -79,6 +84,8 @@ $ touch ~/Projects/ESP/examples/display/i2c_oled_ssd1306_time.py
 ```
 
 > [Source Code](../examples/display/i2c_oled_ssd1306_time.py) for `i2c_oled_ssd1306_time.py`
+> 
+> [Source Code](../lib/ssd1306.py) for module `lib/ssd1306.py`
 
 You need 2 more modules. Download this to your local environment (_in the `lib` folder_).
 
@@ -96,9 +103,12 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 # start rshell serial connection
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy files from local project to microcontroller
+# copy module files from local project to microcontroller
 /your/current/path> cp lib/freesans20.py /pyboard/lib/
 /your/current/path> cp lib/writer.py /pyboard/lib/
+/your/current/path> cp lib/ssd1306.py /pyboard/lib/
+
+# copy script as main.py
 /your/current/path> cp examples/display/i2c_oled_ssd1306_time.py /pyboard/main.py
 
 # start the REPL
@@ -132,7 +142,7 @@ $ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/dem
 
 > [Source Code](../examples/display/i2c_oled_ssd1306_icons.py) for `i2c_oled_ssd1306_icons.py`
 > 
-> [Source Code](../lib/ssd1306.py) for module `/lib/ssd1306.py`
+> [Source Code](../lib/ssd1306.py) for module `lib/ssd1306.py`
 
 Check your circuit and copy the script to the microcontroller as `main.py`.
 
