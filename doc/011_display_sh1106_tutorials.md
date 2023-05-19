@@ -19,6 +19,10 @@ Mostly everything is similar to examples for SSD1306. Except the connection is t
 - few cables
 - optional breadboard
 
+**Example**
+
+![oled_spi_sh1106.jpg](../images/modules/oled_spi_sh1106.jpg)
+
 ### Connection/Wiring
 
 On NodeMCU-ESP32 following connection is used:
