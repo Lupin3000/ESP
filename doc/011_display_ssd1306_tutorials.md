@@ -23,6 +23,10 @@ The first example should show you a few basics. Play around with it (_modify the
 - few cables 
 - optional a breadboard
 
+**Example**
+
+![oled_i2c_ssd1306.jpg](../images/modules/oled_i2c_ssd1306.jpg)
+
 ### Circuit
 
 ![015_circuit_diagram_i2c_oled.png](../images/examples/010_circuit_diagram_i2c_oled.png)
@@ -110,11 +114,11 @@ The objective of this example is to show how you can create icons. There will be
 
 ### Requirements
 
-... same as [previous example](#requirements) ...
+... same as [first example](#requirements) ...
 
 ### Circuit
 
-... same as [previous example](#circuit) ...
+... same as [first example](#circuit) ...
 
 ### Code
 
