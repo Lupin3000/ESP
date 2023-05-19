@@ -70,7 +70,7 @@ If you want to detect movements in the area, the PIR sensor is already suitable.
 - few cables
 - optional breadboard
 
-![pir.jpg](../images/pir.jpg)
+![pir.jpg](../images/modules/pir.jpg)
 
 ### Circuit
 
@@ -187,7 +187,7 @@ Fire... fire... help it burns! With this sensor you can prevent worse.
 - few cables
 - optional breadboard
 
-![ir_flame_sensor.jpg](../images/ir_flame_sensor.jpg)
+![ir_flame_sensor.jpg](../images/modules/ir_flame_sensor.jpg)
 
 ### Pinout table
 
