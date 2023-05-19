@@ -16,7 +16,7 @@ Here are the most important things you need to get started with Micropython/micr
 - Python 3.x locally installed (_minimum version 3.5_)
 - Internet access
 
-Later you will also need various cables, active/passive components, possibly a breadboard, a display plus other devices and software. I will point this out to you in the relevant examples.
+> Later you will also need various cables, active/passive components, possibly a breadboard, a display plus other devices and software. I will point this out to you in the relevant examples.
 
 ## VCP Driver
 
@@ -60,7 +60,7 @@ $ cd ~/Projects/ESP
 $ python3 -m venv venv
 ```
 
-If you don't know the advantages of this environment exactly, read this [content](https://docs.python.org/3/tutorial/venv.html).
+> If you don't know the advantages of this environment exactly, read this [content](https://docs.python.org/3/tutorial/venv.html).
 
 ## Basic Python packages
 
