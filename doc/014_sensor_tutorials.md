@@ -30,6 +30,8 @@ With the `DHT11/DHT22` you can record the temperature and humidity. The respecti
 - few cables
 - optional breadboard
 
+**Example**
+
 ![dht11.jpg](../images/modules/dht11.jpg)
 
 ### Circuit
@@ -72,6 +74,8 @@ If you want to detect movements in the area, the PIR sensor is already suitable.
 - few cables
 - optional breadboard
 
+**Example**
+
 ![pir.jpg](../images/modules/pir.jpg)
 
 ### Circuit
@@ -109,6 +113,8 @@ There are various ways of measuring the distance to objects. Depending on the ar
 - mandatory Ultrasonic Sensor (_HC-SR04_)
 - few cables
 - optional breadboard
+
+**Example**
 
 ![hcsr04.jpg](../images/modules/hcsr04.jpg)
 
@@ -150,6 +156,10 @@ With an LDR sensor you can capture/measure the light in the environment. LDR is 
 - few cables
 - optional breadboard
 
+**Example**
+
+![ldr.jpg](../images/modules/ldr.jpg)
+
 ### Circuit
 
 ![014_circuit_diagram_ldr.png](../images/examples/014_circuit_diagram_ldr.png)
@@ -190,6 +200,8 @@ Fire... fire... help it burns! With this sensor you can prevent worse.
 - mandatory 1x IR Flame Sensor
 - few cables
 - optional breadboard
+
+**Example**
 
 ![ir_flame_sensor.jpg](../images/modules/ir_flame_sensor.jpg)
 
