@@ -7,11 +7,11 @@
 
 ## Prolog
 
-The Nokia 5110 LCD display comes with  84x48 monochrome pixels. It's a very cheap display and connected via SPI (_6 cables but one-way only_).  
+The Nokia 5110 LCD comes with  84x48 monochrome pixels. It's a very cheap display and connected via SPI (_6 cables but one-way only_).  
 
 ## SPI LCD basics (ssd1306)
 
-It took me a while to find the proper connection, but after few minutes of reading different online resources I was successful. Also the initial basic example of [GitHub](https://github.com/mcauser/micropython-pcd8544) page was on a first view, some confusing. I hope that you will get started much faster with the following example!
+It took me a while to find the proper connection, but after few minutes of reading different online resources I was successful. Also, the initial basic example of [GitHub](https://github.com/mcauser/micropython-pcd8544) page was on a first view, some confusing. I hope that you will get started much faster with the following example!
 
 ### Requirements
 
