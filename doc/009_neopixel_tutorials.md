@@ -24,6 +24,10 @@ This example contains various functions to create effects with NeoPixel.
 - few cables 
 - optional a breadboard
 
+**Example**
+
+![neopixel_ring.jpg](../images/modules/neopixel_ring.jpg)
+
 ### Circuit
 
 ![012_circuit_diagram_neopixel.png](../images/examples/009_circuit_diagram_neopixel.png)
