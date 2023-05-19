@@ -29,7 +29,7 @@ In fact, in this example, you're just creating a noisy tone with a passive buzze
 
 ### Circuit
 
-![010_circuit_diagram_passive_buzzer.png](../images/examples/007_circuit_diagram_passive_buzzer.png)
+![010_circuit_diagram_passive_buzzer.png](../images/circuits/007_circuit_diagram_passive_buzzer.png)
 
 ### Code
 

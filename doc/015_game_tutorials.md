@@ -26,7 +26,7 @@ It's a cold and dark night. The drugs are still working and your blood is boilin
 
 ### Circuit
 
-![015_ciruit_racer_game.png](../images/examples/015_circuit_diagram_racer_game.png)
+![015_circuit_racer_game.png](../images/circuits/015_circuit_diagram_racer_game.png)
 
 ### Code
 

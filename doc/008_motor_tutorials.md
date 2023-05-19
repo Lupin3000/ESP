@@ -27,7 +27,7 @@ The first option to steer the servo motor in a range of 90° is `duty`.
 
 ### Circuit
 
-![011_circuit_diagram_servo_motor.png](../images/examples/008_circuit_diagram_servo_motor.png)
+![011_circuit_diagram_servo_motor.png](../images/circuits/008_circuit_diagram_servo_motor.png)
 
 ### Code
 

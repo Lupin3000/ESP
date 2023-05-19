@@ -36,7 +36,7 @@ With the `DHT11/DHT22` you can record the temperature and humidity. The respecti
 
 ### Circuit
 
-![014_circuit_diagram_dht22.png](../images/examples/014_circuit_diagram_dht22.png)
+![014_circuit_diagram_dht22.png](../images/circuits/014_circuit_diagram_dht22.png)
 
 ### Code
 
@@ -80,7 +80,7 @@ If you want to detect movements in the area, the PIR sensor is already suitable.
 
 ### Circuit
 
-![014_circuit_diagram_pir.png](../images/examples/014_circuit_diagram_pir.png)
+![014_circuit_diagram_pir.png](../images/circuits/014_circuit_diagram_pir.png)
 
 ### Code
 
@@ -120,7 +120,7 @@ There are various ways of measuring the distance to objects. Depending on the ar
 
 ### Circuit
 
-![014_circuit_diagram_hcsr04.png](../images/examples/014_circuit_diagram_hcsr04.png)
+![014_circuit_diagram_hcsr04.png](../images/circuits/014_circuit_diagram_hcsr04.png)
 
 ### Code
 
@@ -162,7 +162,7 @@ With an LDR sensor you can capture/measure the light in the environment. LDR is 
 
 ### Circuit
 
-![014_circuit_diagram_ldr.png](../images/examples/014_circuit_diagram_ldr.png)
+![014_circuit_diagram_ldr.png](../images/circuits/014_circuit_diagram_ldr.png)
 
 > Unfortunately [Wokwi](https://wokwi.com) has another LDR module, [Tinkercad](https://www.tinkercad.com) doesn't have the ESP32 NodeMCU and I don't have [Fritzing](https://fritzing.org) installed. Therefore, this time only the GPIO hints.
 

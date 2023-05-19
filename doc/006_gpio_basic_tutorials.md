@@ -30,7 +30,7 @@ In the first example, a simple LED is switched on/off endlessly.
 
 ### Circuit
 
-![009_circuit_diagram_single_led.png](../images/examples/006_circuit_diagram_single_led.png)
+![009_circuit_diagram_single_led.png](../images/circuits/006_circuit_diagram_single_led.png)
 
 ### Code
 
@@ -182,7 +182,7 @@ In the second example, an RGB LED is used. Here the color is changed endlessly (
 
 ### Circuit
 
-![009_circuit_diagram_rgb_led.png](../images/examples/006_circuit_diagram_rgb_led.png)
+![009_circuit_diagram_rgb_led.png](../images/circuits/006_circuit_diagram_rgb_led.png)
 
 ### Code
 

@@ -30,7 +30,7 @@ This example contains various functions to create effects with NeoPixel.
 
 ### Circuit
 
-![012_circuit_diagram_neopixel.png](../images/examples/009_circuit_diagram_neopixel.png)
+![012_circuit_diagram_neopixel.png](../images/circuits/009_circuit_diagram_neopixel.png)
 
 ### Code
 

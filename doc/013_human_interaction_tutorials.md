@@ -31,7 +31,7 @@ The objective is to turn an LED ON (_if LED is OFF_) or OFF (_if LED is ON_) wit
 
 ### Circuit
 
-![017_circuit_diagram_single_led_btn.png](../images/examples/013_circuit_diagram_single_led_btn.png)
+![017_circuit_diagram_single_led_btn.png](../images/circuits/013_circuit_diagram_single_led_btn.png)
 
 ### Code
 
@@ -149,7 +149,7 @@ With this passive component you can regulate the resistance (_in ohms_). On the 
 
 ### Circuit
 
-![017_circuit_diagram_potentiometer.png](../images/examples/013_circuit_diagram_potentiometer.png)
+![017_circuit_diagram_potentiometer.png](../images/circuits/013_circuit_diagram_potentiometer.png)
 
 ### Code
 
@@ -187,7 +187,7 @@ Now the values should not be shown in the REPL but on the OLED display (_ssd1306
 
 ### Circuit
 
-![017_circuit_diagram_potentiometer_display.png](../images/examples/013_circuit_diagram_potentiometer_display.png)
+![017_circuit_diagram_potentiometer_display.png](../images/circuits/013_circuit_diagram_potentiometer_display.png)
 
 ### Code
 
@@ -223,7 +223,7 @@ What would games be without joysticks? This type of user input is very old (_I h
 
 ### Circuit
 
-![013_circuit_diagram_joystick.png](../images/examples/013_circuit_diagram_joystick.png)
+![013_circuit_diagram_joystick.png](../images/circuits/013_circuit_diagram_joystick.png)
 
 ### Code
 

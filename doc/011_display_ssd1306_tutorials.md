@@ -29,7 +29,7 @@ The first example should show you a few basics. Play around with it (_modify the
 
 ### Circuit
 
-![015_circuit_diagram_i2c_oled.png](../images/examples/010_circuit_diagram_i2c_oled.png)
+![015_circuit_diagram_i2c_oled.png](../images/circuits/010_circuit_diagram_i2c_oled.png)
 
 ### Code
 
