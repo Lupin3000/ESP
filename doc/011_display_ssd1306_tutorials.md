@@ -50,7 +50,7 @@ $ touch ~/Projects/ESP/examples/display/i2c_oled_ssd1306_basics.py
 Check your circuit (_adapt pins if needed_) and copy the script to the microcontroller as `main.py`.
 
 ```shell
-# copy file into pyboard as main.py
+# copy script as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/display/i2c_oled_ssd1306_basics.py /pyboard/main.py
 
 # start repl
@@ -126,11 +126,13 @@ The objective of this example is to show how you can create icons. There will be
 # create script
 $ touch ~/Projects/ESP/examples/display/i2c_oled_ssd1306_icons.py
 
-# download image to local directory
-$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/examples/display/demo.pbm' -o examples/display/demo.pbm
+# download image
+$ curl -L 'https://raw.githubusercontent.com/Lupin3000/ESP/master/images/src/demo.pbm' -o images/src/demo.pbm
 ```
 
 > [Source Code](../examples/display/i2c_oled_ssd1306_icons.py) for `i2c_oled_ssd1306_icons.py`
+> 
+> [Source Code](../lib/ssd1306.py) for module `/lib/ssd1306.py`
 
 Check your circuit and copy the script to the microcontroller as `main.py`.
 
@@ -138,11 +140,14 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 # start rshell serial connection
 (venv) $ rshell -p [SERIAL-PORT]
 
-# copy script to target
+# copy module file into /pyboard/lib/
+/your/current/path> cp lib/ssd1306.py /pyboard/lib/
+
+# copy script as main.py
 /your/current/path> cp examples/display/i2c_oled_ssd1306_icons.py /pyboard/main.py
 
-# copy image to target
-/your/current/path> cp examples/display/demo.pbm /pyboard/
+# copy image into /pyboard/ directory
+/your/current/path> cp images/src/demo.pbm /pyboard/
 
 # start the REPL
 /your/current/path> repl
