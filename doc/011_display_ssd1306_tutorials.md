@@ -56,7 +56,7 @@ Check your circuit (_adapt pins if needed_) and copy the script to the microcont
 (venv) $ rshell -p [SERIAL-PORT] cp examples/display/i2c_oled_ssd1306_basics.py /pyboard/main.py
 
 # copy module file into /pyboard/lib/
-/your/current/path> cp lib/ssd1306.py /pyboard/lib/
+(venv) $ rshell -p [SERIAL-PORT] cp lib/ssd1306.py /pyboard/lib/
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
