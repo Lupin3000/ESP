@@ -64,4 +64,4 @@ Check your circuit and copy all files to the microcontroller.
 
 Start with keys `Control` + `d` or press `reset` key. To stop the loop press keys `Control`+ `c`, to leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./013_human_interaction_extended.md) | [Next](./014_sensor_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./013_human_interaction_tutorials.md) | [Next](./014_sensor_tutorials.md)
