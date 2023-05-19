@@ -66,9 +66,8 @@ Here an example for ESP32 with usage of `firmware` directory.
 # flash firmware (ESP32)
 (venv) $ esptool.py --chip esp32 --port [SERIAL-PORT] --baud 460800 write_flash -z 0x1000 firmware/esp32-20230426-v1.20.0.bin
 ```
+This process can take some time.
 
 > Read careful the respective `Installation instructions` on download page!
-
-This process can take some time.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./001_local_environment.md) | [Next](./001_serial_connection.md)
