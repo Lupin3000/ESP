@@ -30,6 +30,8 @@ With the `DHT11/DHT22` you can record the temperature and humidity. The respecti
 - few cables
 - optional breadboard
 
+![dht11.jpg](../images/modules/dht11.jpg)
+
 ### Circuit
 
 ![014_circuit_diagram_dht22.png](../images/examples/014_circuit_diagram_dht22.png)
@@ -107,6 +109,8 @@ There are various ways of measuring the distance to objects. Depending on the ar
 - mandatory Ultrasonic Sensor (_HC-SR04_)
 - few cables
 - optional breadboard
+
+![hcsr04.jpg](../images/modules/hcsr04.jpg)
 
 ### Circuit
 
