@@ -20,7 +20,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 - 001 - Introduction
   - [Setup local environment](./doc/001_local_environment.md)
-  - [Micropython firmware](./doc/001_firmware.md)
+  - [MicroPython firmware](./doc/001_firmware.md)
   - [Serial connection](./doc/001_serial_connection.md)
   - [MicroPython REPL](./doc/001_python_repl.md)
 - 002 - Frozen Code
@@ -117,9 +117,9 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Pong (NeoPixel Matrix)](./examples/games/pong.py)
     - (code example) [Snake (SH1106)](./examples/games/snake.py)
 
-## External libraries
+## External MicroPython libraries
 
-> Most modules listed here are copies! The content/code was not revised by me. Please check if there are more recent versions available.
+> Most driver/font modules listed here are copies! The content/code was not revised by me. Please check if there are more recent versions available.
 
 - Font
   - [freesans20](./lib/freesans20.py)
