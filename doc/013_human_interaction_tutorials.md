@@ -11,6 +11,7 @@
 - [Joystick (XY + Button)](#joystick-xy--button)
 - [RFID read (RC522 13.56 MHz)](#rfid-read-rc522-1356-mhz)
 - [Matrix Keypad](#matrix-keypad)
+- [Control LED by capacitive touch](#control-led-by-capacitive-touch)
 
 ## Prolog
 
@@ -335,6 +336,46 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
+
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+
+## Control LED by capacitive touch
+
+The ESP32's capacitive touch allows for unique controls of, for example, LEDs. The usage is very simple. Here is a very simple example.
+
+### Requirements
+
+- mandatory 1x RGB
+- mandatory 1x resistor (_min. 220 ohms_)
+- few cables
+- optional breadboard
+
+### Circuit
+
+![013_circuit_diagram_touch.png](../images/circuits/013_circuit_diagram_touch.png)
+
+> The dotted line is simply a male cable, which you can touch by hands.
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/user_input/capacitive_touch.py
+```
+
+> [Source Code](../examples/user_input/capacitive_touch.py) for `capacitive_touch.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy script as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/capacitive_touch.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+> You can touch the cable without having fear to get an electroshock!
 
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
