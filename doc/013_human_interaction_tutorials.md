@@ -219,7 +219,7 @@ What would games be without joysticks? This type of user input is very old (_I h
 
 ### Requirements
 
-- mandatory 1x joystick
+- mandatory 1x analog joystick
 - few cables
 - optional breadboard
 
