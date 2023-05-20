@@ -3,13 +3,13 @@
 ## Table of Contents
 
 - [Prolog](#prolog)
-- [Toggle LEDs via Webserver](#toggle-leds-via-webserver)
+- [Toggle LEDs via Website](#toggle-leds-via-website)
 
 ## Prolog
 
 Now that you've learned a few basics about network functions, here are a few application examples.
 
-## Toggle LEDs via Webserver
+## Toggle LEDs via Website
 
 In this example, a website is displayed in the browser using station mode. There are two toggle options on this web page to turn LEDs on or off.
 
