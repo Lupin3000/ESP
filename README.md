@@ -98,6 +98,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Potentiometer and OLED (SSD1306)](./examples/user_input/potentiometer_display.py)
     - (code example) [Joystick (XY + Button)](./examples/user_input/joystick.py)
     - (code example) [RFID read (RC522 13.56 MHz)](./examples/user_input/rfid_reader.py)
+    - (code example) [Matrix Keypad](./examples/user_input/keypad.py)
   - [Human interaction extended](./doc/013_human_interaction_extended.md)
     - (code example) [Move crosshair via joystick (SH1106)](./examples/user_input/joystick_display.py) 
 - 014 - Sensors

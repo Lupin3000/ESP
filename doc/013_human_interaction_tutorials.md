@@ -10,6 +10,7 @@
 - [Potentiometer and SSD1306 OLED](#potentiometer-and-ssd1306-oled)
 - [Joystick (XY + Button)](#joystick-xy--button)
 - [RFID read (RC522 13.56 MHz)](#rfid-read-rc522-1356-mhz)
+- [Matrix Keypad](#matrix-keypad)
 
 ## Prolog
 
@@ -295,6 +296,41 @@ Check your circuit and copy the script to the microcontroller as `main.py`.
 
 # copy file into pyboard as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/rfid_reader.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
+
+## Matrix Keypad
+
+Keypads are ideal for user inputs. They are very flat, have very low power consumption and are easy to understand. They are available in various designs and are still the best solution in some areas.
+
+### Requirements
+
+- mandatory 1x Matrix keypad (_0 - 9, *, #, A - D_)
+- few cables
+- optional breadboard
+
+### Circuit
+
+![013_circuit_diagram_keypad.png](../images/circuits/013_circuit_diagram_keypad.png)
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/user_input/keypad.py
+```
+
+> [Source Code](../examples/user_input/keypad.py) for `keypad.py`
+
+Check your circuit and copy the script to the microcontroller as `main.py`.
+
+```shell
+# copy script as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/user_input/keypad.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
