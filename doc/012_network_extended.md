@@ -4,6 +4,7 @@
 
 - [Prolog](#prolog)
 - [Toggle LEDs via Website](#toggle-leds-via-website)
+- [Control NeoPixel from AdafruitIO](#control-neopixel-from-adafruitio)
 
 ## Prolog
 
