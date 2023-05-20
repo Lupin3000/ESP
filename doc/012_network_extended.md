@@ -20,6 +20,7 @@ In this example, a website is displayed in the browser using station mode. There
 
 - mandatory 2x LEDs (_any color_)
 - mandatory 2x resistors (_min. 220 ohms_)
+- mandatory internet connection
 - few cables
 - optional a breadboard
 
