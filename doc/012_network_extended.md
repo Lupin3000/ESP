@@ -58,7 +58,7 @@ Adjust the constants (_`boot.py` and `led_controller_webserver.py`_) according t
 (venv) $ rshell -p [SERIAL-PORT] repl
 ```
 
-To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
+To start press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > If you don't know the IP, use for example `$ arp -a` (_inside local terminal_) and then enter 'http://[IP OF MICROCONTROLLER]' in the browser.
 
