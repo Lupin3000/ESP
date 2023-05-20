@@ -21,6 +21,9 @@ def scan_keypad(row: int, col: int) -> int:
     :param col: integer for col value
     :return: integer
     """
+    global row_pins
+    global col_pins
+
     row_pins[row].value(1)
 
     if col_pins[col].value():
