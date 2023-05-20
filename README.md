@@ -88,6 +88,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [HTML webserver](./examples/network/html_webserver.py)
   - [Network extended](./doc/012_network_extended.md)
     - (code example) [Toggle LEDs via Website](./examples/network/led_controller_webserver.py)
+    - (code example) [Control NeoPixel from AdafruitIO](./examples/network/adafruit_io_neopixel.py)
 - 013 - Human interaction
   - [Human interaction tutorial](./doc/013_human_interaction_tutorials.md)
     - (code example) [Button (Polling)](./examples/user_input/btn_led_polling.py)
