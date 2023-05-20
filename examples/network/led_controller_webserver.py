@@ -34,7 +34,7 @@ class Server:
     def __init__(self, led: tuple):
         """
         server constructor
-        :param led: tuple of leds
+        :param led: tuple of led objects
         """
         self._led = tuple(led)
 
