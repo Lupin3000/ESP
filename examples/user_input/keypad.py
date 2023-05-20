@@ -24,13 +24,13 @@ def scan_keypad(row: int, col: int) -> int:
     row_pins[row].value(1)
 
     if col_pins[col].value():
-        key_value = 1
+        status = 1
     else:
-        key_value = 0
+        status = 0
 
     row_pins[row].value(0)
 
-    return key_value
+    return status
 
 
 if __name__ == '__main__':
