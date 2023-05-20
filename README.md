@@ -140,7 +140,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - BLE
   - [BLE Advertising](./lib/ble_advertising.py) 
 - RFID
-  - [RFID RC522 (13.56 MHz)](./lib/mfrc522.py) 
+  - [MFRC522](./lib/mfrc522.py) 
 
 ## Important MicroPython sources
 
