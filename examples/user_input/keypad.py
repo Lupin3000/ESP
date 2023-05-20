@@ -17,8 +17,8 @@ PIN_C4 = const(23)
 def scan_keypad(row: int, col: int) -> int:
     """
     enable keypad rows and verify cols
-    :param row: integer for row value
-    :param col: integer for col value
+    :param row: integer for row number
+    :param col: integer for col number
     :return: integer
     """
     global row_pins
