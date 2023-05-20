@@ -14,7 +14,7 @@ PIN_C3 = const(22)
 PIN_C4 = const(23)
 
 
-def scan(row: int, col: int) -> int:
+def scan_keypad(row: int, col: int) -> int:
     """
     scan for status keypad rows and cols
     :param row: integer for row value
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     while True:
         for row_item in range(4):
             for col_item in range(4):
-                value = scan(row_item, col_item)
+                value = scan_keypad(row_item, col_item)
                 if value == 1:
                     print(f"[INFO] Key {keys[row_item][col_item]} pressed")
                     sleep(0.25)
