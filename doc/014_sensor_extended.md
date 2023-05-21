@@ -371,7 +371,7 @@ $ touch ~/Projects/ESP/examples/sensors/allnet_B38_temperature.py
 $ touch ~/Projects/ESP/examples/sensors/webBLE.htm
 ```
 
-One helper module and a HTML page is needed! The HTML page stays at the device where Bluetooth is enabled and Google Chrome browser is installed.
+One helper module and an HTML page is needed! The HTML page stays at the device where Bluetooth is enabled and Google Chrome browser is installed.
 
 > [Source Code](../examples/sensors/allnet_B38_temperature.py) for example `allnet_B38_temperature.py`
 > 
