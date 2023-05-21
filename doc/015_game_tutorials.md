@@ -7,6 +7,7 @@
 - [Space Invaders](#space-invaders)
 - [Pong](#pong)
 - [Snake](#snake)
+- [Mini Slot](#mini-slot)
 
 ## Prolog
 
