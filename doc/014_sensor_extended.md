@@ -341,7 +341,7 @@ Web Bluetooth (_WebBLE_) is an exciting advance in Bluetooth Low Energy (_BLE_) 
 
 ### Requirements
 
-- mandatory 1x temperature sensor (_(Allnet: B38 Temperature Sensor)_)
+- mandatory 1x temperature sensor (_Allnet: B38 Temperature Sensor_)
 - mandatory 1x device with Google Chrome Browser (_with [WebBLE](https://developer.chrome.com/articles/bluetooth/) support_)
 - few cables
 - optional a breadboard
@@ -371,11 +371,11 @@ $ touch ~/Projects/ESP/examples/sensors/allnet_B38_temperature.py
 $ touch ~/Projects/ESP/examples/sensors/webBLE.htm
 ```
 
-One driver module and a html page is needed! The HTML page stays at the device where Bluetooth is enabled and Google Chrome browser is installed.
+One helper module and a HTML page is needed! The HTML page stays at the device where Bluetooth is enabled and Google Chrome browser is installed.
 
 > [Source Code](../examples/sensors/allnet_B38_temperature.py) for example `allnet_B38_temperature.py`
 > 
-> [Source Code](../lib/ble_advertising.py) for module `lib/ble_advertising.py`
+> [Source Code](../lib/ble_advertising.py) for helper module `lib/ble_advertising.py`
 > 
 > [Source Code](../examples/sensors/webBLE.htm) for local `webBLE.htm`
 
