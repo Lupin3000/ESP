@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MicroPython - Web BLE</title>
+  </head>
+  <body>
+    <h1>MicroPython &amp; Web BLE</h1>
+    <p style="padding: 5px; border: 1px solid #000;">
+      Temperature: <span id="temp"></span>&deg;C
+    </p>
+    <button id="connect-btn">Connect to Device</button>
+    <script>
+      const box = document.getElementById('connect-btn');
+      async function connect() {
+        try {
+          const device = await navigator.bluetooth.requestDevice({
+            filters: [{ services: ['0000181a-0000-1000-8000-00805f9b34fb'] }]
+          });
+
+          const server = await device.gatt.connect();
+          const service = await server.getPrimaryService('0000181a-0000-1000-8000-00805f9b34fb');
+          const characteristic = await service.getCharacteristic('00002a6e-0000-1000-8000-00805f9b34fb');
+
+          characteristic.addEventListener('characteristicvaluechanged', (event) => {
+            const value = event.target.value;
+            const temperature = value.getInt16(0, true) / 100;
+            document.getElementById('temp').textContent = temperature.toFixed(2);
+          });
+
+          await characteristic.startNotifications();
+          box.style.display = "none";
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      box.addEventListener('click', () => {
+        connect();
+      });
+    </script>
+  </body>
+</html>

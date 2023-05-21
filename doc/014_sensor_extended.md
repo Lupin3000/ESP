@@ -8,6 +8,7 @@
 - [Light Barrier (ALLNET: B18 - Pushover)](#light-barrier-allnet-b18---pushover)
 - [Environment Sensing (Bosh: BME680 - Web Server)](#environment-sensing-bosh-bme680---web-server)
 - [Measure Distance (Pimoroni: VL53L1X - SSD1306)](#measure-distance-pimoroni-vl53l1x---ssd1306)
+- [Temperature via WebBLE (Allnet: B38 Temp. Sensor)](#temperature-via-webble-allnet-b38-temp-sensor)
 
 ## Prolog
 
@@ -333,5 +334,74 @@ Check your circuit careful, connect the microcontroller and copy needed files to
 Start with keys `Control` + `d` or press `reset` key. To stop the program press keys `Control` + `c` and to leave the REPL, press keys `Control` + `x`.
 
 > It can happen that there are problems with the `rshell` connection, simply prepare everything in the terminal and execute the command immediately after the USB connection. If that doesn't work either, interrupt the 3V power supply first.
+
+## Temperature via WebBLE (Allnet: B38 Temp. Sensor)
+
+Web Bluetooth (_WebBLE_) is an exciting advance in Bluetooth Low Energy (_BLE_) development. With less effort you can create awesome applications for example without any internet connection, LAN/WLAN technologies, server or heavy backend programming. Also, (_for IoT somehow important_) with less power consumption. Here now a very basic example.
+
+### Requirements
+
+- mandatory 1x temperature sensor (_(Allnet: B38 Temperature Sensor)_)
+- mandatory 1x device with Google Chrome Browser (_with [WebBLE](https://developer.chrome.com/articles/bluetooth/) support_)
+- few cables
+- optional a breadboard
+
+**Example**
+
+![temperature_sensor.jpg](../images/modules/temperature_sensor.jpg)
+
+### Pinout table
+
+Here you can see the respective wiring for the circuit.
+
+| B38 | ESP32 |
+|-----|-------|
+| GND | GND   |
+| +5V | V5    |
+| SCL | 22    |  
+| SDA | 21    |
+
+### Code
+
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/sensors/allnet_B38_temperature.py
+
+# create local html
+$ touch ~/Projects/ESP/examples/sensors/webBLE.htm
+```
+
+One driver module and a html page is needed! The HTML page stays at the device where Bluetooth is enabled and Google Chrome browser is installed.
+
+> [Source Code](../examples/sensors/allnet_B38_temperature.py) for example `allnet_B38_temperature.py`
+> 
+> [Source Code](../lib/ble_advertising.py) for module `lib/ble_advertising.py`
+> 
+> [Source Code](../examples/sensors/webBLE.htm) for local `webBLE.htm`
+
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
+
+```shell
+# connect via rshel
+(venv) $ rshell -p [SERIAL-PORT]
+
+# copy script as main.py
+/your/current/path> cp examples/sensors/allnet_B38_temperature.py /pyboard/main.py
+
+# copy module file into /pyboard/lib/
+/your/current/path> cp lib/ble_advertising.py /pyboard/lib/
+
+# start repl
+/your/current/path> repl
+```
+
+Start with keys `Control` + `d` or press `reset` key. To stop the program press keys `Control` + `c` and to leave the REPL, press keys `Control` + `x`.
+
+> Enable `Bluetooth` on the device and open the HTML `webBLE.htm` inside Google Chrome. Press `Connect to device` button. Select the `ESP32` and wait for few seconds.
+
+**Helpful Chrome URLs**
+
+- [chrome://bluetooth-internals/#adapter](chrome://bluetooth-internals/#adapter) to connect without HTML `webBLE.htm` example
+- [chrome://flags](chrome://flags) to enable "Experimental Web Platform features"
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_tutorials.md) | [Next](./015_game_tutorials.md)

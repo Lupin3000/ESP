@@ -115,6 +115,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Light Barrier (ALLNET: B18 - Pushover)](./examples/sensors/allnet_B18_light_barrier.py)
     - (code example) [Environment Sensing (Bosh: BME680 - Web Server)](./examples/sensors/bosch_sensortec_bme680.py)
     - (code example) [Measure Distance (Pimoroni: VL53L1X - SSD1306)](./examples/sensors/pimoroni_vl53l1x.py)
+    - (code example) [Temperature via WebBLE (Allnet: B38 Temp. Sensor)](./examples/sensors/allnet_B38_temperature.py)
 - 015 - Games
   - [Game tutorials](./doc/015_game_tutorials.md)
     - (code example) [Crazy Car Racer (SSD1306)](./examples/games/racer.py)
@@ -154,8 +155,3 @@ The author of this repository (_information, scripts, code_) take no responsibil
 - [MicroPython Libraries Repository (GitHub)](https://github.com/micropython/micropython-lib)
 - [MicroPython Discussions (GitHub)](https://github.com/orgs/micropython/discussions)
 - [Awesome MicroPython](https://awesome-micropython.com)
-
-## IN PROGRESS (_to be refactored_)
-
-- Sensors
-  - [ALLNET: B38 Temperature I2C Sensor](./examples/sensors/allnet_B38_temperature.py)
