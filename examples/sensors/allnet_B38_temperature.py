@@ -69,7 +69,7 @@ class TemperatureBLE:
 
     def set_temperature(self, temp_deg_c, notify=False, indicate=False):
         """
-        write and notify service
+        ble write and notify service
         :param temp_deg_c: temperature value
         :param notify: bool for notify
         :param indicate: bool for indicate
@@ -86,7 +86,7 @@ class TemperatureBLE:
 
     def _advertise(self, interval_us=500000):
         """
-        broadcasting
+        ble broadcasting
         :param interval_us: interval
         :return: None
         """
