@@ -121,6 +121,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Space Invaders (PCD8544)](./examples/games/invader.py)
     - (code example) [Pong (NeoPixel Matrix)](./examples/games/pong.py)
     - (code example) [Snake (SH1106)](./examples/games/snake.py)
+    - (code example) [Mini Slot (SSD1306)](./examples/games/slot.py)
 
 ## External MicroPython libraries
 

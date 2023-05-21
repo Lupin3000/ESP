@@ -187,4 +187,43 @@ To start your game press `reset` key or start with keys `Control` + `d`. To inte
 
 > Feel free to expand the game! For example, add speed or other enemies which eats the fruits too.
 
+## Mini Slot
+
+Gambling is very popular with many people. Unfortunately, the bank always wins... Be the bank and rip everyone off.
+
+## Requirements
+
+- mandatory 1x I2C OLED DISPLAY (_e.g. SSD1306_) 
+- mandatory 1x Button
+- few cables 
+- optional a breadboard
+
+### Code
+
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/games/slot.py
+```
+
+> [Source Code](../examples/games/slot.py) for `slot.py`
+
+> [Source Code](../lib/ssd1306.py) for `lib/ssd1306.py`
+
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
+
+```shell
+# copy script as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/slot.py /pyboard/main.py
+
+# copy module file into /pyboard/lib/
+(venv) $ rshell -p [SERIAL-PORT] cp lib/ssd1306.py /pyboard/lib/
+
+# start repl on microcontroller
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
+
+> Feel free to expand the game! For example, add a balance to bet for money.
+
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next]()
