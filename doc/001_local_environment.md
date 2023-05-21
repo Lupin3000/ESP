@@ -33,6 +33,7 @@ You can now connect your ESP32 with the USB cable and the local device. Shortly 
 ```shell
 # get SERIAL-PORT (on macOS)
 $ ls -l /dev/cu.usb*
+$ ls -l /dev/tty.usb*
 
 # get SERIAL-PORT (on linux)
 $ ls -l /dev/ttyUSB*
