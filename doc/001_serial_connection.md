@@ -15,6 +15,18 @@ As soon as your microcontroller has flashed the latest MicroPython firmware, you
 $ screen [SERIAL-PORT] 115200
 ```
 
+> If you cannot see anything, because a script is running - press `Control` + `x` to enter REPL mode.
+
+After detaching from the screen session (_by `Control` + `A` + `D`_), you need exit the session!
+
+```shell
+# list screen sessions
+$ screen -ls
+
+# exit screen session
+$ screen -X -S [PID] quit
+```
+
 Screen is a great tool, but there is a more comfortable way. For example tools like `picocom` or `minicom` could be interesting. I would like to mention `mpfshell` and my favorite `rshell`.
 
 ## mpfshell
