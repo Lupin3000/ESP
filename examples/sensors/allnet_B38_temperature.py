@@ -33,6 +33,11 @@ _ENV_SENSE_SERVICE = (
 
 class TemperatureBLE:
     def __init__(self, ble, name="mpy-temp"):
+        """
+        constructor
+        :param ble: ble object
+        :param name: device name
+        """
         self._ble = ble
         self._ble.active(True)
         self._ble.irq(self._irq)
@@ -46,6 +51,12 @@ class TemperatureBLE:
         self._advertise()
 
     def _irq(self, event, data):
+        """
+        ble irq
+        :param event: event
+        :param data: data
+        :return: None
+        """
         if event == _IRQ_CENTRAL_CONNECT:
             conn_handle, _, _ = data
             self._connections.add(conn_handle)
@@ -57,6 +68,13 @@ class TemperatureBLE:
             conn_handle, value_handle, status = data
 
     def set_temperature(self, temp_deg_c, notify=False, indicate=False):
+        """
+        write and notify service
+        :param temp_deg_c: temperature value
+        :param notify: bool for notify
+        :param indicate: bool for indicate
+        :return: None
+        """
         self._ble.gatts_write(self._handle, pack("<h", int(temp_deg_c * 100)))
 
         if notify or indicate:
@@ -67,6 +85,11 @@ class TemperatureBLE:
                     self._ble.gatts_indicate(conn_handle, self._handle)
 
     def _advertise(self, interval_us=500000):
+        """
+        broadcasting
+        :param interval_us: interval
+        :return: None
+        """
         self._ble.gap_advertise(interval_us, adv_data=self._payload)
 
 
