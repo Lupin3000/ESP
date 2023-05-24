@@ -128,24 +128,21 @@ The author of this repository (_information, scripts, code_) take no responsibil
 
 > Most modules (_e.g. driver, fonts and etc._) listed here, are copies from other repositories! The content/code was not revised by me. Please check if there are more recent versions available.
 
-- Font
-  - [freesans20](./lib/freesans20.py)
-  - [vga bold 16x16](./lib/vga1_bold_16x16.py)
-- Display
-  - [SSD1306](./lib/ssd1306.py)
-  - [PCD8544](./lib/pcd8544.py)
-  - [Writer](./lib/writer.py)
-  - [ST7789](./lib/st7789py.py)
-  - [SH1106](./lib/sh1106.py)
-- Sensors
-  - [BME680](./lib/bme680.py)
-  - [Vl53L1X](./lib/vl53l1x.py)
-- NeoPixel
-  - [NeoPixel-Matrix](./lib/neopixelmatrix.py)
-- BLE
-  - [BLE Advertising](./lib/ble_advertising.py) 
-- RFID
-  - [MFRC522](./lib/mfrc522.py) 
+| Topic    | Link for this repository                    | Original source                                                |
+|----------|---------------------------------------------|----------------------------------------------------------------|
+| Font     | [freesans20](./lib/freesans20.py)           | [GitHub](https://github.com/peterhinch/micropython-font-to-py) |
+| Font     | [vga bold 16x16](./lib/vga1_bold_16x16.py)  | [GitHub](https://github.com/russhughes/st7789py_mpy)           |
+| Display  | [SSD1306](./lib/ssd1306.py)                 | [GitHub](https://github.com/micropython/micropython-lib)       |
+| Display  | [PCD8544](./lib/pcd8544.py)                 | [GitHub](https://github.com/mcauser/micropython-pcd8544)       |
+| Display  | [Writer](./lib/writer.py)                   | [GitHub](https://github.com/peterhinch/micropython-font-to-py) |
+| Display  | [ST7789](./lib/st7789py.py)                 | [GitHub](https://github.com/devbis/st7789py_mpy)               |
+| Display  | [SH1106](./lib/sh1106.py)                   | [GitHub](https://github.com/robert-hh/SH1106)                  |
+| Display  | [ST7735s 096 LCD](./lib/st7735s_096_lcd.py) | -                                                              |
+| Sensors  | [BME680](./lib/bme680.py)                   | [GitHub](https://github.com/robert-hh/BME680-Micropython)      |
+| Sensors  | [Vl53L1X](./lib/vl53l1x.py)                 | [GitHub](https://github.com/drakxtwo/vl53l1x_pico)             |
+| NeoPixel | [NeoPixel-Matrix](./lib/neopixelmatrix.py)  | -                                                              |
+| BLE      | [BLE Advertising](./lib/ble_advertising.py) | [GitHub](https://github.com/micropython/micropython)           |
+| RFID     | [MFRC522](./lib/mfrc522.py)                 | [GitHub](https://github.com/cefn/micropython-mfrc522)          |
 
 ## Important MicroPython sources
 
