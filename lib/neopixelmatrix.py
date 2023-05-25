@@ -3,6 +3,10 @@ from neopixel import NeoPixel
 
 
 class NeoPixelMatrix:
+    """
+    Helper class for NeoPixel Matrix
+    Class is based on MicroPython NeoPixel
+    """
 
     NUMS = [0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0,  # 0
             0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0,  # 1
