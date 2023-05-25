@@ -82,4 +82,4 @@ Check your circuit (_adapt pins if needed via constants_) and copy the driver as
 
 Start with keys `Control` + `d`. Stop the loop with keys `Control` + `c`. To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_display_nokia5110_pcd8544_tutorials.md) | [Next](./012_network_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./011_display_nokia5110_pcd8544_tutorials.md) | [Next](./011_display_lcd_096_esp32-s2.md)

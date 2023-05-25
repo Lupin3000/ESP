@@ -79,6 +79,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [SPI LCD Nokia 5110 basics (PCD8544)](./examples/display/spi_lcd_nokia5110_pcd8544.py)
   - [OLED Display tutorial (SH1106)](./doc/011_display_sh1106_tutorials.md)
     - (code example) [SPI OLED basics (SH1106)](./examples/display/spi_oled_sh1106_basics.py)
+  - [LCD Display tutorial (ESP32-S2 LCD 096 inch)](./doc/011_display_lcd_096_esp32-s2.md)
+    - (code example) [LCD basics (ST7735s)](./examples/display/esp32-s2-lcd_basics.py) 
 - 012 - Network
   - [Network tutorial](./doc/012_network_tutorials.md)
     - (code example) [Time synchronisation with NTP](./examples/network/time_synchronisation_ntp.py)
