@@ -8,6 +8,7 @@
 - [Pong](#pong)
 - [Snake](#snake)
 - [Mini Slot](#mini-slot)
+- [Human attack Aliens](#human-attack-aliens)
 
 ## Prolog
 
@@ -129,7 +130,7 @@ $ touch ~/Projects/ESP/examples/games/pong.py
 ```
 
 > [Source Code](../examples/games/pong.py) for `pong.py`
-
+>
 > [Source Code](../lib/neopixelmatrix.py) for `lib/neopixelmatrix.py`
 
 Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
@@ -168,7 +169,7 @@ $ touch ~/Projects/ESP/examples/games/snake.py
 ```
 
 > [Source Code](../examples/games/snake.py) for `snake.py`
-
+>
 > [Source Code](../lib/sh1106.py) for `lib/sh1106.py`
 
 Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
@@ -207,7 +208,7 @@ $ touch ~/Projects/ESP/examples/games/slot.py
 ```
 
 > [Source Code](../examples/games/slot.py) for `slot.py`
-
+>
 > [Source Code](../lib/ssd1306.py) for `lib/ssd1306.py`
 
 Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
@@ -226,5 +227,52 @@ Check your circuit careful, connect the microcontroller and copy needed files to
 To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > Feel free to expand the game! For example, add a balance to bet for money.
+
+## Human attack Aliens
+
+This time you are an alien protector who has to defend himself against the human race. Protect your spaceship and destroy all humans attackers.
+
+## Requirements
+
+- mandatory 1x I2C OLED DISPLAY (_e.g. SSD1306_) 
+- mandatory 1x analog joystick
+- few cables 
+- optional a breadboard
+
+### Code
+
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/games/alien.py
+
+# create picture file
+$ touch ~/Projects/ESP/examples/games/pictures.py
+```
+
+> [Source Code](../examples/games/alien.py) for `alien.py`
+> 
+> [Source Code](../examples/games/pictures.py) for `pictures.py` 
+>
+> [Source Code](../lib/ssd1306.py) for `lib/ssd1306.py`
+
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
+
+```shell
+# copy script as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/alien.py /pyboard/main.py
+
+# copy picture file into /pyboard/lib/
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/pictures.py /pyboard/lib/
+
+# copy module file into /pyboard/lib/
+(venv) $ rshell -p [SERIAL-PORT] cp lib/ssd1306.py /pyboard/lib/
+
+# start repl on microcontroller
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
+
+> Feel free to expand the game! For example, let humans walk or add air attacks to the spaceship.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next]()
