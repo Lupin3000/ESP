@@ -275,4 +275,4 @@ To start your game press `reset` key or start with keys `Control` + `d`. To inte
 
 > Feel free to expand the game! For example, let humans walk or add air attacks to the spaceship.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next]()
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next](./016_build_firmware.md)

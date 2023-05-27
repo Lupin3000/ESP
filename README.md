@@ -126,6 +126,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Snake (SH1106)](./examples/games/snake.py)
     - (code example) [Mini Slot (SSD1306)](./examples/games/slot.py)
     - (code example) [Human attack Aliens (SSD1306)](./examples/games/alien.py)
+- 016 - Firmware
+  - [Build ESP32 GENERIC Firmware](./doc/016_build_firmware.md) 
 
 ## External MicroPython libraries
 
