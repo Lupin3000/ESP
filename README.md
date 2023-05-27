@@ -145,6 +145,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
 | NeoPixel | [NeoPixel-Matrix](./lib/neopixelmatrix.py)  | -                                                              |
 | BLE      | [BLE Advertising](./lib/ble_advertising.py) | [GitHub](https://github.com/micropython/micropython)           |
 | RFID     | [MFRC522](./lib/mfrc522.py)                 | [GitHub](https://github.com/cefn/micropython-mfrc522)          |
+| Sound    | [DFPlayer Mini](./lib/dfplayermini.py)      | [GitHub](https://github.com/lavron/micropython-dfplayermini)   |
 
 ## Important MicroPython sources
 
