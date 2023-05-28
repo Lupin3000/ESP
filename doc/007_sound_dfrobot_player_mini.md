@@ -6,6 +6,7 @@
 - [Important notes](#important-notes)
 - [Connection (ESP32 and speaker)](#connection-esp32-and-speaker)
 - [Folder and file structure](#folder-and-file-structure)
+- [Next/previous track](#nextprevious-track)
 
 ## Prolog
 
@@ -27,19 +28,6 @@ Even if MicroPython has now integrated the I2S protocol natively, it can be much
 
 - [Product page](https://www.dfrobot.com/product-1121.html)
 - [Wiki](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299)
-
-## Connection (ESP32 and speaker)
-
-| ESP32         | DFPlayer Mini | Speaker |
-|---------------|---------------|---------|
-| 3.3V          | VCC           | -       |
-| GND           | GND           | -       |
-| GPIO 17 (TX2) | RX            | -       |
-| GPIO 16 (RX2) | TX            | -       |
-| -             | SPK_1         | IN      |
-| -             | SPK_2         | OUT     |    
-
-> On many boards the pins GPIO 1 (_TX0_), GPIO 2 (_RX0_), GPIO 10 (_TX1_) and GPIO (_RX1_) cannot be used for UART connection!
 
 ## Folder and file structure
 
@@ -84,5 +72,61 @@ $ dot_clean -m /Volumes/[NAME]
 ```
 
 > To delete hidden macOS directories `.Spotlight-V100`, `.Trashes` and `.fseventsd`, I recommend to use any other OS like Linux.
+
+## Next/previous track
+
+This is about switching between different tracks. As soon as one of the two buttons is pressed, the current track should stop and one of the next ones should start.
+
+> If you haven't had any experience with buttons before, check out this [information](./013_human_interaction_tutorials.md) first.
+
+### Requirements
+
+- mandatory 1x DFPlayer Mini (_incl. 5 mp3 tracks_)
+- mandatory 1x Speaker (_Piezo Speaker_)
+- mandatory 2x buttons 
+- few cables
+- optional breadboard
+
+### Pinout table
+
+| ESP32         | DFPlayer Mini | Speaker |
+|---------------|---------------|---------|
+| 3.3V          | VCC           | -       |
+| GND           | GND           | -       |
+| GPIO 17 (TX2) | RX            | -       |
+| GPIO 16 (RX2) | TX            | -       |
+| -             | SPK_1         | IN      |
+| -             | SPK_2         | OUT     |    
+
+> On many boards the pins GPIO 1 (_TX0_), GPIO 2 (_RX0_), GPIO 10 (_TX1_) and GPIO (_RX1_) cannot be used for UART connection!
+
+### Code
+
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/sound/dfplayer_control.py
+```
+
+> [Source Code](../examples/sound/dfplayer_control.py) for example `dfplayer_control.py`
+> 
+> [Source Code](../lib/dfplayermini.py) for module `dfplayermini.py`
+
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
+
+```shell
+# connect via rshel
+(venv) $ rshell -p [SERIAL-PORT]
+
+# copy module file into /pyboard/lib/
+/your/current/path> cp lib/dfplayermini.py /pyboard/lib/
+
+# copy script as main.py
+/your/current/path> cp examples/sound/dfplayer_control.py /pyboard/main.py
+
+# start repl
+/your/current/path> repl
+```
+
+Start with keys `Control` + `d` or press `reset` key. To leave the REPL, press keys `Control` + `x`.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./007_sound_tutorials.md) | [Next](./008_motor_tutorials.md)
