@@ -4,7 +4,6 @@
 
 - [Prolog](#prolog)
 - [Important notes](#important-notes)
-- [Connection (ESP32 and speaker)](#connection-esp32-and-speaker)
 - [Folder and file structure](#folder-and-file-structure)
 - [Next/previous track](#nextprevious-track)
 
@@ -86,6 +85,12 @@ This is about switching between different tracks. As soon as one of the two butt
 - mandatory 2x buttons 
 - few cables
 - optional breadboard
+
+**Example**
+
+![piezo_speaker.png](../images/modules/piezo_speaker.png)
+
+> Be careful not to mix up the piezo speaker with the piezo buzzer! Both look very similar.
 
 ### Pinout table
 
