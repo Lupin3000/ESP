@@ -1,4 +1,4 @@
-# DFRobot Player Mini
+# DFRobot Player Mini (DFR0299)
 
 ## Table of Contents
 
