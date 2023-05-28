@@ -23,6 +23,11 @@ Even if MicroPython has now integrated the I2S protocol natively, it can be much
 - 24 -bit DAC output for dynamic range 90dB / SNR support for 85dB
 - Sound channel: Mono
 
+### Few more online information
+
+- [Product page](https://www.dfrobot.com/product-1121.html)
+- [Wiki](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299)
+
 ## Connection (ESP32 and speaker)
 
 | ESP32         | DFPlayer Mini | Speaker |
