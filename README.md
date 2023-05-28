@@ -53,7 +53,8 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Create single tone (Passive piezo buzzer)](./examples/sound/passive_buzzer_simple.py)
     - (code example) [Create different tones (Passive piezo buzzer)](./examples/sound/passive_buzzer_tones.py)
     - (code example) [Play a song (Passive piezo buzzer)](./examples/sound/passive_buzzer_sound.py)
-  - [DFRobot Player Mini (DFR0299)](./doc/007_sound_dfrobot_player_mini.md) 
+  - [DFRobot Player Mini (DFR0299)](./doc/007_sound_dfrobot_player_mini.md)
+    - (code example) [Next/previous track](./examples/sound/dfplayer_control.py)
 - 008 - Motor
   - [Motor tutorial](./doc/008_motor_tutorials.md)
     - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
