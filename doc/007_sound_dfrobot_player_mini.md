@@ -19,6 +19,9 @@ Even if MicroPython has now integrated the I2S protocol natively, it can be much
 - 1 kOhm resistor is recommended before the RX input
 - Speaker up to 3W
 - Supported sampling rates are 8/11.025/12/16/22.05/24/32/44.1/48 kHz
+- only MP3 and WMA filetypes supported
+- 24 -bit DAC output for dynamic range 90dB / SNR support for 85dB
+- Sound channel: Mono
 
 ## Connection (ESP32 and speaker)
 
