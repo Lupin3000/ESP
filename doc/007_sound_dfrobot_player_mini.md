@@ -23,6 +23,10 @@ Even if MicroPython has now integrated the I2S protocol natively, it can be much
 - 24 -bit DAC output for dynamic range 90dB / SNR support for 85dB
 - Sound channel: Mono
 
+**Example**
+
+![dfrobot_player_mini.png](../images/modules/dfrobot_player_mini.png)
+
 ### Few more online information
 
 - [Product page](https://www.dfrobot.com/product-1121.html)
