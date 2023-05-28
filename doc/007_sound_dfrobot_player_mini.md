@@ -60,7 +60,7 @@ Even if MicroPython has now integrated the I2S protocol natively, it can be much
 ### Standard directories (recommended)
 
 - folder names must be: `01`, `02` till `99` (_max. 99 directories_)
-- filenames per folder: `001.mp3`, `002.mp3` till `255.mp3` or `001xxx.mp3`
+- filenames per folder: `001.mp3`, `002.mp3` till `255.mp3` or `001xxx.mp3` (_example: 001_my_song.mp3_)
 - track order by file names
 
 ### Hidden files and folders
@@ -71,10 +71,10 @@ All hidden files and directories should be deleted! Otherwise, they also are cou
 # list all files (optional)
 $ ls -la /Volumes/MUSIC/
 
-# elete apple double files (macos)
+# delete apple double files (macos)
 $ dot_clean -m /Volumes/[NAME]
 ```
 
-> To delete hidden macos directories `.Spotlight-V100`, `.Trashes` and `.fseventsd`, I recommend to use any other OS like Linux.
+> To delete hidden macOS directories `.Spotlight-V100`, `.Trashes` and `.fseventsd`, I recommend to use any other OS like Linux.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./007_sound_tutorials.md) | [Next](./008_motor_tutorials.md)
