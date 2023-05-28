@@ -85,7 +85,7 @@ This is about switching between different tracks. As soon as one of the two butt
 ### Requirements
 
 - mandatory 1x DFPlayer Mini (_incl. 5 mp3 tracks_)
-- mandatory 1x Speaker (_Piezo Speaker_)
+- mandatory 1x Speaker (_Piezo Speaker or any other what meets requirements_)
 - mandatory 2x buttons 
 - few cables
 - optional breadboard
