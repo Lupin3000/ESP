@@ -89,14 +89,16 @@ This is about switching between different tracks. As soon as one of the two butt
 
 ### Pinout table
 
-| ESP32         | DFPlayer Mini | Speaker |
-|---------------|---------------|---------|
-| 3.3V          | VCC           | -       |
-| GND           | GND           | -       |
-| GPIO 17 (TX2) | RX            | -       |
-| GPIO 16 (RX2) | TX            | -       |
-| -             | SPK_1         | IN      |
-| -             | SPK_2         | OUT     |    
+| ESP32         | DFPlayer Mini | Speaker | Button         |
+|---------------|---------------|---------|----------------|
+| 3.3V          | VCC           | -       | -              |
+| GND           | GND           | -       | OUT (BTN Both) |
+| GPIO 17 (TX2) | RX            | -       | -              |
+| GPIO 16 (RX2) | TX            | -       | -              |
+| -             | SPK_1         | IN      | -              |
+| -             | SPK_2         | OUT     | -              |
+| GPIO 22       | -             | -       | IN (BTN NEXT)  |
+| GPIO 23       | -             | -       | IN (BTN PREV)  |
 
 > On many boards the pins GPIO 1 (_TX0_), GPIO 2 (_RX0_), GPIO 10 (_TX1_) and GPIO (_RX1_) cannot be used for UART connection!
 
