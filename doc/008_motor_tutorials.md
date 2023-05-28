@@ -117,4 +117,4 @@ $ touch ~/Projects/ESP/examples/motor/servo_duty_u16.py
 
 Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
-[Home](https://github.com/Lupin3000/ESP) | [Previous](./007_sound_tutorials.md) | [Next](./009_neopixel_tutorials.md)
+[Home](https://github.com/Lupin3000/ESP) | [Previous](./007_sound_dfrobot_player_mini.md) | [Next](./009_neopixel_tutorials.md)
