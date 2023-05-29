@@ -1,6 +1,6 @@
 from micropython import const
 from machine import Pin, SPI
-from sh1106 import SH1106_SPI
+from lib.sh1106 import SH1106_SPI
 from urandom import getrandbits
 from framebuf import FrameBuffer, MONO_HLSB
 from utime import sleep_ms
@@ -67,9 +67,9 @@ if __name__ == '__main__':
     display = SH1106_SPI(width=DP_WIDTH, height=DP_HEIGHT,
                          spi=spi, dc=Pin(DC_PIN), res=Pin(RES_PIN), cs=Pin(CS_PIN), rotate=0, delay=0)
 
-    img_armchair = load_image('../../images/src/armchair.pbm', 128, 64)
-    img_morpheus = load_image('../../images/src/morpheus.pbm', 128, 64)
-    img_pill = load_image('../../images/src/pill.pbm', 128, 64)
+    img_armchair = load_image('armchair.pbm', 128, 64)
+    img_morpheus = load_image('morpheus.pbm', 128, 64)
+    img_pill = load_image('pill.pbm', 128, 64)
 
     display.fill(0)
 
