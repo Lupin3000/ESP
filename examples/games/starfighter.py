@@ -13,19 +13,25 @@ ADC_PIN = const(32)
 
 
 class Display:
-    """
-    display constructor
-    """
     def __init__(self, sda: int, scl: int, width: int, height: int):
+        """
+        display constructor
+        :param sda: GPIO for SDA
+        :param scl: GPIO for SCL
+        :param width: display width in pixel
+        :param height: display height in pixel
+        """
         i2c = SoftI2C(sda=Pin(int(sda)), scl=Pin(int(scl)))
         self.oled = SSD1306_I2C(int(width), int(height), i2c)
 
 
 class Stars:
-    """
-    star constructor
-    """
     def __init__(self, x: int, y: int):
+        """
+        star constructor
+        :param x: x-position for star
+        :param y: y-position for star
+        """
         self.x = int(x)
         self.y = int(y)
 
