@@ -9,6 +9,7 @@
 - [Snake](#snake)
 - [Mini Slot](#mini-slot)
 - [Human attack Aliens](#human-attack-aliens)
+- [StarFighters](#starfighters)
 
 ## Prolog
 
@@ -274,5 +275,44 @@ Check your circuit careful, connect the microcontroller and copy needed files to
 To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > Feel free to expand the game! For example, let humans walk or add air attacks to the spaceship.
+
+## StarFighters
+
+There's an epic battle raging out there in space. Be part of this fight and destroy your opponents.
+
+## Requirements
+
+- mandatory 1x I2C OLED DISPLAY (_e.g. SSD1306_) 
+- mandatory 1x potentiometer
+- few cables 
+- optional a breadboard
+
+### Code
+
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/games/starfighter.py
+```
+
+> [Source Code](../examples/games/starfighter.py) for `starfighter.py` 
+>
+> [Source Code](../lib/ssd1306.py) for `lib/ssd1306.py`
+
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
+
+```shell
+# copy script as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/starfighter.py /pyboard/main.py
+
+# copy module file into /pyboard/lib/
+(venv) $ rshell -p [SERIAL-PORT] cp lib/ssd1306.py /pyboard/lib/
+
+# start repl on microcontroller
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
+
+> Feel free to expand the game! For example, add a button for shooting or let the enemy faster move.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next](./016_build_firmware.md)
