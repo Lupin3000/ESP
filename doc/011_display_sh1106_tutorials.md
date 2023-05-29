@@ -34,8 +34,8 @@ On NodeMCU-ESP32 following connection is used:
 | Pin NC   | -              |
 | Pin DIN  | GPIO 23 (Mosi) |
 | Pin CLK  | GPIO 18 (SCK)  |
-| Pin CS   | GPIO 02        |
-| Pin DC   | GPIO 05        |
+| Pin CS   | GPIO 05        |
+| Pin DC   | GPIO 02        |
 | Pin RES  | GPIO 04        |
 
 > Check the pinout for your ESP32, it can be slightly different!
