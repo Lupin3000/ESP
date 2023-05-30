@@ -97,6 +97,7 @@ if __name__ == '__main__':
                 response = response.replace('<!-- gas -->', sensor_values['gas'])
                 file.close()
             except Exception as err:
+                print(f'[ERROR] {err}')
                 header = 'HTTP/1.1 404 Not Found\n'
                 response = 'Error 404'
 
