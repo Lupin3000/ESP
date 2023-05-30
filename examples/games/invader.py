@@ -1,7 +1,7 @@
 from micropython import const
 from machine import Pin, SPI, ADC
 from utime import sleep_ms, ticks_ms
-import pcd8544
+from lib import pcd8544
 
 
 ADC_PIN = const(32)

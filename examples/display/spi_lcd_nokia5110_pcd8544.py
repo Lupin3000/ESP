@@ -1,6 +1,6 @@
 from micropython import const
 from machine import Pin, SPI
-import pcd8544
+from lib import pcd8544
 from utime import sleep
 
 LCD_BAUDRATE = const(2000000)

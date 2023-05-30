@@ -2,7 +2,7 @@ from micropython import const
 from machine import Pin, ADC, SoftI2C
 from lib.ssd1306 import SSD1306_I2C
 from lib.writer import Writer
-import freesans20
+from lib import freesans20
 from utime import sleep_ms
 
 
@@ -30,7 +30,7 @@ class Display:
     def draw_screen(self, value: str) -> None:
         """
         show value on oled screen
-        :param value: string to print on screen
+        :param value: string to print on the screen
         :return: None
         """
         self.display.fill(0)

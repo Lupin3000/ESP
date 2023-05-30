@@ -194,11 +194,11 @@ class Joystick:
 
     def get_overlap(self, x: int, y: int, w: int, h: int) -> bool:
         """
-        verify if crosshair overlaps rectangle
+        verify if crosshair overlaps object
         :param x: rectangle x coordinate
         :param y: rectangle y coordinate
-        :param w: rectangle width
-        :param h: rectangle height
+        :param w: rectangle width in pixel
+        :param h: rectangle height in pixel
         :return: bool
         """
         ch_x, ch_y = self.get_xy_coordinates()

@@ -17,7 +17,7 @@ class AdafruitIO:
     def __init__(self, usr: str, key: str, feed: str):
         """
         constructor
-        :param usr: user name for adafruit io
+        :param usr: username for adafruit io
         :param key: adafruit io key
         :param feed: adafruit feed key (not feed name!)
         """
@@ -38,7 +38,7 @@ class AdafruitIO:
 
     def get_feed(self) -> tuple:
         """
-        do feed request and return color tuple
+        do feed request and return color
         :return: tuple
         """
         headers = {'X-AIO-Key': self.__key, 'Content-Type': 'application/json'}

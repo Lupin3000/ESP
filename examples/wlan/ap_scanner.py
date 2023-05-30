@@ -22,7 +22,7 @@ def conv_wlan_mode(number: int) -> str:
         return 'unknown'
 
 
-def list_access_points(access_points: tuple) -> None:
+def list_access_points(access_points: list) -> None:
     """
     print scan report into output
     :param access_points: tuple of scan results

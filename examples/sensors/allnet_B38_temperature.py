@@ -97,8 +97,8 @@ class TemperatureSensor:
     def __init__(self, sda: int, scl: int, address: int):
         """
         temperature sensor constructor
-        :param sda: number for GPIO SDA pin
-        :param scl: number for GPIO SCL pin
+        :param sda: number for GPIO SDA
+        :param scl: number for GPIO SCL
         :param address: number for sensor address
         """
         self.__sda = int(sda)
