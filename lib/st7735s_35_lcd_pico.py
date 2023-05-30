@@ -1,7 +1,7 @@
 from micropython import const
 from machine import Pin, SPI, PWM
 from framebuf import FrameBuffer, RGB565
-from time import sleep_ms, sleep_us
+from utime import sleep_ms, sleep_us
 
 
 class LCD(FrameBuffer):
