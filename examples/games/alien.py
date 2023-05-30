@@ -1,6 +1,6 @@
 from micropython import const
 from machine import Pin, SoftI2C, ADC
-from ssd1306 import SSD1306_I2C
+from lib.ssd1306 import SSD1306_I2C
 from pictures import alien_screen, human_icon, space_ship
 from urandom import randrange
 from utime import sleep_ms, ticks_ms

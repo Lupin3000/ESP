@@ -1,6 +1,6 @@
 from micropython import const
 from machine import Pin, SoftSPI
-from mfrc522 import MFRC522
+from lib.mfrc522 import MFRC522
 from utime import sleep_ms
 
 

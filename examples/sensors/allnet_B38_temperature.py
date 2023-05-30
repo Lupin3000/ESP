@@ -2,7 +2,7 @@ from micropython import const
 from machine import Pin, I2C
 from ubluetooth import BLE, UUID
 from ustruct import pack
-from ble_advertising import advertising_payload
+from lib.ble_advertising import advertising_payload
 from utime import sleep_ms
 
 

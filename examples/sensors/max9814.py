@@ -1,7 +1,7 @@
 from micropython import const
 from machine import Pin, ADC, SoftI2C
-from ssd1306 import SSD1306_I2C
-from writer import Writer
+from lib.ssd1306 import SSD1306_I2C
+from lib.writer import Writer
 import freesans20
 from utime import sleep_ms
 

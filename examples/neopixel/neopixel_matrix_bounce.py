@@ -1,5 +1,5 @@
 from micropython import const
-from neopixelmatrix import NeoPixelMatrix
+from lib.neopixelmatrix import NeoPixelMatrix
 from urandom import randrange, randint
 from utime import sleep_ms
 

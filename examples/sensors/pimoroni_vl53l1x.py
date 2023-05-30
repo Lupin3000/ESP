@@ -1,7 +1,7 @@
 from micropython import const
 from machine import Pin, I2C
-from vl53l1x import VL53L1X
-from ssd1306 import SSD1306_I2C
+from lib.vl53l1x import VL53L1X
+from lib.ssd1306 import SSD1306_I2C
 from utime import sleep_ms
 
 

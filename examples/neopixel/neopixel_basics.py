@@ -1,7 +1,7 @@
 from micropython import const
 from machine import Pin
 from neopixel import NeoPixel
-from random import randint
+from urandom import randint
 from utime import sleep, sleep_ms
 
 

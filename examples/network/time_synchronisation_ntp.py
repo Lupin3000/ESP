@@ -1,5 +1,5 @@
 from micropython import const
-from time import time, localtime
+from utime import time, localtime
 from ntptime import settime
 
 

@@ -1,6 +1,6 @@
 from micropython import const
 from machine import Pin, ADC
-from neopixelmatrix import NeoPixelMatrix
+from lib.neopixelmatrix import NeoPixelMatrix
 from urandom import randint, randrange
 from utime import sleep_ms
 

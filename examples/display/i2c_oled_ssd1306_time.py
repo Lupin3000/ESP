@@ -1,6 +1,6 @@
 from micropython import const
 from machine import Pin, SoftI2C, RTC
-from ssd1306 import SSD1306_I2C
+from lib.ssd1306 import SSD1306_I2C
 import freesans20
 import writer
 from utime import sleep

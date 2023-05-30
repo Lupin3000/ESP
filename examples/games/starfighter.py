@@ -1,7 +1,7 @@
 from micropython import const
 from machine import Pin, ADC, SoftI2C
 from lib.ssd1306 import SSD1306_I2C
-from random import randint
+from urandom import randint
 from utime import sleep_ms
 
 

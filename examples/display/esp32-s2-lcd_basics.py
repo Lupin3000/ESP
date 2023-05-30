@@ -1,5 +1,5 @@
 from micropython import const
-from st7735s_096_lcd import LCD
+from lib.st7735s_096_lcd import LCD
 from umachine import freq
 from uos import uname
 from utime import sleep

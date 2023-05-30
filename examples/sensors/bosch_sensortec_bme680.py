@@ -2,7 +2,7 @@ from micropython import const
 from machine import Pin, SoftI2C
 from network import WLAN, AP_IF
 from utime import localtime
-from bme680 import BME680_I2C
+from lib.bme680 import BME680_I2C
 from usocket import socket, AF_INET, SOCK_STREAM, SOL_SOCKET, SO_REUSEADDR
 
 

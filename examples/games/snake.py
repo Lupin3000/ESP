@@ -1,6 +1,6 @@
 from micropython import const
 from machine import Pin, ADC, SPI
-from sh1106 import SH1106_SPI
+from lib.sh1106 import SH1106_SPI
 from urandom import randint
 from utime import sleep_ms
 
