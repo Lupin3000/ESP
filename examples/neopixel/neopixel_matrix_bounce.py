@@ -24,8 +24,8 @@ class Ball:
         self.pos_y = int(pos_y)
         self.color = tuple(rgb)
 
-        self.direction_x = [-1, 1][randrange(2)]
-        self.direction_y = [-1, 1][randrange(2)]
+        self.direction_x = [-1, 1][randrange(0, 2)]
+        self.direction_y = [-1, 1][randrange(0, 2)]
 
     def draw_ball(self, pos_x: int, pos_y: int, reset: bool) -> None:
         """

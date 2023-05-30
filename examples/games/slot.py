@@ -81,6 +81,7 @@ def interrupt_handler(pin) -> None:
     :param pin: GPIO pin
     :return: None
     """
+    _ = pin
     spin_slots()
 
 

@@ -47,8 +47,8 @@ class Ball:
         self.pos_x = randint(3, MATRIX_COLS - 2)
         self.pos_y = randint(3, MATRIX_ROWS - 2)
 
-        self.direction_x = [-1, 1][randrange(2)]
-        self.direction_y = [-1, 1][randrange(2)]
+        self.direction_x = [-1, 1][randrange(0, 2)]
+        self.direction_y = [-1, 1][randrange(0, 2)]
 
     def draw_ball(self) -> None:
         """

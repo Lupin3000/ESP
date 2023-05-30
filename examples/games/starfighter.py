@@ -26,14 +26,14 @@ class Display:
 
 
 class Stars:
-    def __init__(self, x: int, y: int):
+    def __init__(self, x_pos: int, y_pos: int):
         """
         star constructor
-        :param x: x-position for star
-        :param y: y-position for star
+        :param x_pos: x-position for star
+        :param y_pos: y-position for star
         """
-        self.x = int(x)
-        self.y = int(y)
+        self.x = int(x_pos)
+        self.y = int(y_pos)
 
 
 class Enemy:
@@ -126,7 +126,7 @@ def add_stars(amount: int) -> None:
     global stars
 
     for i in range(int(amount)):
-        star = Stars(x=randint(0, DISPLAY_WIDTH - 1), y=randint(0, DISPLAY_HEIGHT - 1))
+        star = Stars(x_pos=randint(0, DISPLAY_WIDTH - 1), y_pos=randint(0, DISPLAY_HEIGHT - 1))
         stars.append(star)
 
 
@@ -140,10 +140,10 @@ def is_point_in_rect(point: list, rect: list) -> bool:
     x1, y1, w, h = rect
     x2, y2 = x1 + w, y1 + h
 
-    x, y = point
+    point_x, point_y = point
 
-    if x1 < x < x2:
-        if y1 < y < y2:
+    if x1 < point_x < x2:
+        if y1 < point_y < y2:
             return True
     return False
 
@@ -184,10 +184,8 @@ if __name__ == '__main__':
             fighter_bullet_x_pos += fighter.bullet_speed
             display.oled.fill_rect(fighter_bullet_x_pos, fighter_bullet_y_pos, 3, 2, 1)
 
-        hit = is_point_in_rect(point=[fighter_bullet_x_pos, fighter_bullet_y_pos],
-                               rect=[enemy.x, enemy.y, enemy.width, enemy.height])
-
-        if hit:
+        if is_point_in_rect(point=[fighter_bullet_x_pos, fighter_bullet_y_pos],
+                            rect=[enemy.x, enemy.y, enemy.width, enemy.height]):
             enemy.shield -= 5
             fighter.bullet_state = "ready"
             fighter_bullet_x_pos = fighter.x - int(fighter.height / 2)
@@ -227,10 +225,8 @@ if __name__ == '__main__':
             enemy_bullet_x_pos -= enemy.bullet_speed
             display.oled.fill_rect(enemy_bullet_x_pos, enemy_bullet_y_pos, 3, 2, 1)
 
-        hit = is_point_in_rect(point=[enemy_bullet_x_pos, enemy_bullet_y_pos],
-                               rect=[fighter.x, fighter.y, fighter.width, fighter.height])
-
-        if hit:
+        if is_point_in_rect(point=[enemy_bullet_x_pos, enemy_bullet_y_pos],
+                            rect=[fighter.x, fighter.y, fighter.width, fighter.height]):
             fighter.shield -= 5
             enemy.bullet_state = "ready"
             enemy_bullet_x_pos = enemy.x - int(enemy.height / 2)

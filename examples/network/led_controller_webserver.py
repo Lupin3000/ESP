@@ -68,6 +68,7 @@ class Server:
             response = file.read()
             file.close()
         except Exception as err:
+            print(f'[ERROR] {err}')
             header = 'HTTP/1.1 404 Not Found\n'
             response = 'Error 404'
 

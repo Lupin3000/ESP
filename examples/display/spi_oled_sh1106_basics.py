@@ -23,9 +23,9 @@ def matrix() -> None:
     """
     global display
 
-    for i in range(DP_WIDTH):
-        for j in range(DP_HEIGHT):
-            display.pixel(i, j, getrandbits(1))
+    for px_i in range(DP_WIDTH):
+        for px_j in range(DP_HEIGHT):
+            display.pixel(px_i, px_j, getrandbits(1))
 
     display.show()
 
@@ -38,9 +38,9 @@ def scroll_text(text: str) -> None:
     """
     global display
 
-    for i in range(len(text)*6):
+    for item in range(len(text) * 6):
         display.fill(0)
-        display.text(text, -i, 30)
+        display.text(text, -item, 30)
         display.show()
         sleep_ms(5)
 

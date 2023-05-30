@@ -19,6 +19,7 @@ def irq_handler(pin) -> None:
     """
     global last_time
 
+    _ = pin
     new_time = ticks_ms()
 
     if (new_time - last_time) > 500:
