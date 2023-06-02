@@ -10,6 +10,7 @@
 - [Mini Slot](#mini-slot)
 - [Human attack Aliens](#human-attack-aliens)
 - [StarFighters](#starfighters)
+- [Tic-Tac-Toe](#tic-tac-toe)
 
 ## Prolog
 
@@ -314,5 +315,44 @@ Check your circuit careful, connect the microcontroller and copy needed files to
 To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
 
 > Feel free to expand the game! For example, add a button for shooting or let the enemy faster move.
+
+## Tic-Tac-Toe
+
+Also, a well-known already old multiplayer game. Oh yes, the time at school was nice.
+
+## Requirements
+
+- mandatory 1x SPI OLED DISPLAY (_e.g. SH1106_) 
+- mandatory 1x analog joystick
+- few cables 
+- optional a breadboard
+
+### Code
+
+```shell
+# create local script
+$ touch ~/Projects/ESP/examples/games/tictactoe.py
+```
+
+> [Source Code](../examples/games/tictactoe.py) for `tictactoe.py` 
+>
+> [Source Code](../lib/sh1106.py) for `lib/sh1106.py`
+
+Check your circuit careful, connect the microcontroller and copy needed files to the microcontroller.
+
+```shell
+# copy script as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/games/tictactoe.py /pyboard/main.py
+
+# copy module file into /pyboard/lib/
+(venv) $ rshell -p [SERIAL-PORT] cp lib/sh1106.py /pyboard/lib/
+
+# start repl on microcontroller
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+To start your game press `reset` key or start with keys `Control` + `d`. To interrupt press keys `Control` + `c`. To finish the `rshell` - `repl` session, press keys `Control` + `x`.
+
+> Feel free to expand the game! For example, add few more effects or nice introduction.
 
 [Home](https://github.com/Lupin3000/ESP) | [Previous](./014_sensor_extended.md) | [Next](./016_build_firmware.md)

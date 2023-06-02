@@ -129,6 +129,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Mini Slot (SSD1306)](./examples/games/slot.py)
     - (code example) [Human attack Aliens (SSD1306)](./examples/games/alien.py)
     - (code example) [StarFighters (SSD1306)](./examples/games/starfighter.py)
+    - (code example) [Tic-Tac-Toe (SH1106)](./examples/games/tictactoe.py)
 - 016 - Firmware
   - [Build ESP32 GENERIC Firmware](./doc/016_build_firmware.md) 
 
