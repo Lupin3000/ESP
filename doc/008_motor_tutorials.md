@@ -18,7 +18,7 @@ The first option to steer the servo motor in a range of 90° is `duty`.
 
 ### Requirements
 
-- mandatory 1x servo motor (_example: SG90_)
+- mandatory 1x servo motor (_example: SG90 or SG92R_)
 - few cables 
 - optional a breadboard
 
