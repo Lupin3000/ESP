@@ -6,6 +6,7 @@
 - [Control servo via duty](#control-servo-via-duty)
 - [Control servo via duty_ns](#control-servo-via-dutyns)
 - [Control servo via duty_u16](#control-servo-via-dutyu16)
+- []()
 
 ## Prolog
 
@@ -88,7 +89,7 @@ Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
 
 ## Control servo via duty_u16
 
-The second option to steer the servo motor in a range of 90° is `duty_u16`. The circuit stays the same only the code is slightly adjusted.
+The third option to steer the servo motor in a range of 90° is `duty_u16`. The circuit stays the same only the code is slightly adjusted.
 
 ### Requirements
 
@@ -110,6 +111,37 @@ $ touch ~/Projects/ESP/examples/motor/servo_duty_u16.py
 ```shell
 # copy file into pyboard as main.py
 (venv) $ rshell -p [SERIAL-PORT] cp examples/motor/servo_duty_u16.py /pyboard/main.py
+
+# start repl
+(venv) $ rshell -p [SERIAL-PORT] repl
+```
+
+Start with keys `Control` + `d`. To leave the REPL, press keys `Control` + `x`.
+
+## Control servo via angle
+
+The fourth option to steer the servo motor is to use angle. The circuit stays the same only the code is slightly adjusted.
+
+### Requirements
+
+... same as [first example](#requirements) ...
+
+### Circuit
+
+... same as [first example](#circuit) ...
+
+### Code
+
+```shell
+# create script
+$ touch ~/Projects/ESP/examples/motor/servo_angle.py.py
+```
+
+> [Source Code](../examples/motor/servo_angle.py) for `servo_angle.py`
+
+```shell
+# copy file into pyboard as main.py
+(venv) $ rshell -p [SERIAL-PORT] cp examples/motor/servo_angle.py /pyboard/main.py
 
 # start repl
 (venv) $ rshell -p [SERIAL-PORT] repl
