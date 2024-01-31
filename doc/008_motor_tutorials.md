@@ -6,7 +6,7 @@
 - [Control servo via duty](#control-servo-via-duty)
 - [Control servo via duty_ns](#control-servo-via-dutyns)
 - [Control servo via duty_u16](#control-servo-via-dutyu16)
-- []()
+- [Control servo via angle](#control-servo-via-angle)
 
 ## Prolog
 
