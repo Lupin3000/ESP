@@ -60,6 +60,7 @@ The author of this repository (_information, scripts, code_) take no responsibil
     - (code example) [Control servo via duty](./examples/motor/servo_duty.py)
     - (code example) [Control servo via duty_ns](./examples/motor/servo_duty_ns.py)
     - (code example) [Control servo via duty_u16](./examples/motor/servo_duty_u16.py)
+    - (code example) [Control servo via angle](./examples/motor/servo_angle.py)
 - 009 - NeoPixel
   - [NeoPixel tutorial](./doc/009_neopixel_tutorials.md)
     - (code example) [NeoPixel basics](./examples/neopixel/neopixel_basics.py)
