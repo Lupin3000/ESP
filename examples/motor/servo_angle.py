@@ -10,7 +10,7 @@ DELAY_SECONDS = const(1)
 
 def servo_angle(degree: int) -> int:
     """
-    Convert degrees to duty_16 value
+    Convert degrees to duty_16 value (50Hz only)
     :param degree: integer value for degrees
     :return: integer duty cycle value
     """
@@ -22,7 +22,7 @@ def servo_angle(degree: int) -> int:
 if __name__ == '__main__':
     servo = PWM(Pin(SERVO_GPIO_PIN), freq=SERVO_FREQUENCY)
 
-    # define min and max variables
+    # define min and max angle variables (in degrees)
     min_angle = 45
     max_angle = 135
 
